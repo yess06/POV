@@ -7,21 +7,20 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class loginTeacher extends AppCompatActivity {
+public class qualificationReport extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_teacher);
+        setContentView(R.layout.activity_qualification_report);
 
-        Button login = findViewById(R.id.btnLoginT);
-        login.setOnClickListener(new View.OnClickListener() {
+        Button btnRegister = findViewById(R.id.btnRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(loginTeacher.this, qualificationReport.class);
+                Intent intent = new Intent(qualificationReport.this, registerUser.class);
                 startActivity(intent);
             }
         });
-
     }
 }
