@@ -18,7 +18,7 @@ public class loginTeacher extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(loginTeacher.this, qualificationReport.class);
+                Intent intent = new Intent(loginTeacher.this, Qualificationreport.class);
                 startActivity(intent);
             }
         });
