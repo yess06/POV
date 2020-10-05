@@ -9,17 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfoStudent"
+        <activity android:name=".reportStudent"></activity>
+        <activity
+            android:name=".InfoStudent"
             android:label="Info Student"
-            android:parentActivityName=".Studentlist"
-            ></activity>
+            android:parentActivityName=".Studentlist" />
         <activity
             android:name=".Studentlist"
             android:label="Student List" />
-        <activity
-            android:name=".Qualificationreport"
-            android:label="Qualification report"
-            android:parentActivityName=".PovQualification" />
         <activity
             android:name=".PovQualification"
             android:label="POV Qualification" />
