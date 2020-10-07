@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".qualificationvocabulary"></activity>
+        <activity android:name=".answervocabulary"></activity>
+        <activity android:name=".answerfilltheverbs" />
+        <activity android:name=".answeransthequestion" />
+        <activity android:name=".qualificationvocabulary" />
         <activity android:name=".qualificationanswer" />
         <activity android:name=".qualificationfilltheverb" />
         <activity android:name=".qualificationlistenandread" />
