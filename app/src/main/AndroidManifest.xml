@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".answervocabulary"></activity>
-        <activity android:name=".answerfilltheverbs" />
-        <activity android:name=".answeransthequestion" />
-        <activity android:name=".qualificationvocabulary" />
-        <activity android:name=".qualificationanswer" />
+        <activity android:name=".practiceVocabulary"></activity>
+        <activity android:name=".previewVocabulary" />
         <activity android:name=".qualificationfilltheverb" />
-        <activity android:name=".qualificationlistenandread" />
+        <activity android:name=".fillVerbs" />
+        <activity android:name=".answerQuestions" />
+        <activity android:name=".listenRead" />
+        <activity android:name=".qualificationStudent" />
         <activity android:name=".reportStudent" />
         <activity
             android:name=".InfoStudent"
@@ -25,8 +25,22 @@
             android:name=".Studentlist"
             android:label="Student List" />
         <activity
+            android:name=".menuActivities"
+            android:label="Menu Activities" />
+        <activity
             android:name=".PovQualification"
             android:label="POV Qualification" />
+        <activity
+            android:name=".answerfilltheverbs"
+            android:label="Answers" />
+        <activity
+            android:name=".answeransthequestion"
+            android:label="Answers" />
+        <activity
+            android:name=".qualificationanswer"
+            android:label="Qualification" />
+        <activity android:name=".menuVocabulary"
+            android:label="Vocabulary"/>
         <activity
             android:name=".menuTenses"
             android:label="Menu Tenses"
