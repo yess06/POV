@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".practiceVocabulary"></activity>
+        <activity android:name=".QualificationReport"></activity>
+        <activity android:name=".MenuTeacher" />
+        <activity android:name=".practiceVocabulary" />
         <activity android:name=".previewVocabulary" />
         <activity android:name=".qualificationfilltheverb" />
         <activity android:name=".fillVerbs" />
@@ -39,8 +41,9 @@
         <activity
             android:name=".qualificationanswer"
             android:label="Qualification" />
-        <activity android:name=".menuVocabulary"
-            android:label="Vocabulary"/>
+        <activity
+            android:name=".menuVocabulary"
+            android:label="Vocabulary" />
         <activity
             android:name=".menuTenses"
             android:label="Menu Tenses"
