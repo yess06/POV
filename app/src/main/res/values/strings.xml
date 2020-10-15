@@ -6,4 +6,8 @@
         <item>ate</item>
         <item>eaten</item>
     </string-array>
+
+    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
+    <string name="urllogout">"http://10.0.0.5:8000/api/auth/logout"</string>
+    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
 </resources>

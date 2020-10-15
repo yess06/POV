@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.136" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/passteacher"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:background="@drawable/borde_redondo"
@@ -57,11 +57,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/emailteacher"
         app:layout_constraintVertical_bias="0.046" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/emailteacher"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginTop="8dp"
@@ -78,13 +78,14 @@
         android:layout_width="94dp"
         android:layout_height="48dp"
         android:backgroundTint="#E7323D"
+        android:onClick="login"
         android:text="Log In"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/passteacher"
         app:layout_constraintVertical_bias="0.298" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

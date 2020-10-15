@@ -1,27 +1,70 @@
 package com.example.pov;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class loginTeacher extends AppCompatActivity {
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class loginTeacher extends AppCompatActivity {
+    private String token;
+    private EditText emailt, passt;
+    private Button login;
+    private static final String TAG = MainActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_teacher);
 
-        Button login = findViewById(R.id.btnLoginT);
-        login.setOnClickListener(new View.OnClickListener() {
+        login = findViewById(R.id.btnLoginT);
+        emailt = findViewById(R.id.emailteacher);
+        passt = findViewById(R.id.passteacher);
+
+    }
+    public void login(View view){
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        JSONObject object = new JSONObject();
+        try {
+            object.put("email", emailt.getText().toString());
+            object.put("password", passt.getText().toString());
+            object.put("remember_me", true);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String url = getResources().getString(R.string.urllogin);
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
+                object, new Response.Listener<JSONObject>() {
             @Override
-            public void onClick(View view) {
-                /*Intent intent = new Intent(loginTeacher.this, Qualificationreport.class);
-                startActivity(intent);*/
+            public void onResponse(JSONObject response) {
+                try {
+                    token = response.getString("access_token");
+                    Toast.makeText(getBaseContext(), "successful login", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getBaseContext(), MenuTeacher.class);
+                    intent.putExtra("token", token);
+                    startActivity(intent);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getBaseContext(), "Wrong data verify your email or password",Toast.LENGTH_SHORT).show();
             }
         });
-
+        requestQueue.add(jsonObjectRequest);
     }
 }
