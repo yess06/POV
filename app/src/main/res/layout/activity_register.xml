@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/nameuser"
+        android:id="@+id/txtinfoemail"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
@@ -40,10 +40,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameuser" />
+        app:layout_constraintTop_toBottomOf="@+id/txtinfoemail" />
 
     <EditText
-        android:id="@+id/emailuser"
+        android:id="@+id/txtinfopass"
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailuser" />
+        app:layout_constraintTop_toBottomOf="@+id/txtinfopass" />
 
     <EditText
         android:id="@+id/passuser"

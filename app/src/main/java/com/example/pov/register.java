@@ -22,8 +22,8 @@ public class register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        txtname = findViewById(R.id.nameuser);
-        txtemail = findViewById(R.id.emailuser);
+        txtname = findViewById(R.id.txtinfoemail);
+        txtemail = findViewById(R.id.txtinfopass);
         txtpass = findViewById(R.id.passuser);
         txtreppass = findViewById(R.id.reppassuser);
     }
@@ -45,7 +45,7 @@ public class register extends AppCompatActivity {
         }
         String url = getResources().getString(R.string.urlregister);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST,
-                url, object, new Response.Listener<JSONObject>() {
+                url, object,  new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                     Toast.makeText(register.this, "Successful register", Toast.LENGTH_SHORT).show();

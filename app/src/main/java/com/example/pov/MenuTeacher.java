@@ -25,6 +25,10 @@ public class MenuTeacher extends AppCompatActivity {
         Intent intent = new Intent(MenuTeacher.this, register.class);
         startActivity(intent);
     }
+    public void studentlist(View view){
+        Intent intent = new Intent(MenuTeacher.this, Studentlist.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

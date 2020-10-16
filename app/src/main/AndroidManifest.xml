@@ -60,7 +60,9 @@
             android:parentActivityName=".Studentlist" />
         <activity
             android:name=".Studentlist"
-            android:label="Student List" />
+            android:label="Student List"
+            android:parentActivityName=".MenuTeacher"
+            />
         <activity
             android:name=".menuActivities"
             android:label="Menu Activities" />

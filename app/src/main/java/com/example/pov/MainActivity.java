@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
-public class MainActivity extends AppCompatActivity implements dialog.codedialog{
+public class MainActivity extends AppCompatActivity{
 
     public String cod;
     public TextView tx;
@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements dialog.codedialog
         btnTeacher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                poneDialog();
+                Intent intent = new Intent(MainActivity.this, loginTeacher.class);
+                startActivity(intent);
             }
         });
 
@@ -42,17 +43,6 @@ public class MainActivity extends AppCompatActivity implements dialog.codedialog
 
 
 
-    }
-
-    private void poneDialog() {
-        dialog dial = new dialog();
-        dial.show(getSupportFragmentManager(), "dialog");
-    }
-
-    @Override
-    public void applyText(String code) {
-         cod = code;
-         tx.setText(cod);
     }
     }
 
