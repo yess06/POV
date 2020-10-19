@@ -1,11 +1,11 @@
 package com.example.pov;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -28,7 +28,7 @@ public class register extends AppCompatActivity {
         txtreppass = findViewById(R.id.reppassuser);
     }
 
-    public void register(View view){
+  public void register(View view){
         String name = txtname.getText().toString();
         String email = txtemail.getText().toString();
         String pass = txtpass.getText().toString();

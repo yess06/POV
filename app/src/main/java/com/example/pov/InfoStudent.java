@@ -1,8 +1,5 @@
 package com.example.pov;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -48,7 +49,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://12.12.12.28:8000/api/auth/updateuser/"+id+"/";
+        String url = "http://192.168.1.77:8000/api/auth/updateuser/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -73,7 +74,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://12.12.12.28:8000/api/auth/updatepass/"+id+"/";
+        String url = "http://192.168.1.77:8000/api/auth/updatepass/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
@@ -90,6 +91,28 @@ public class InfoStudent extends AppCompatActivity {
         });
         requestQueue.add(jsonObjectRequest);
     }
+    public void deleteUser(){
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        JSONObject object = new JSONObject();
+        String url = "http://192.168.1.77:8000/api/auth/deleteuser/"+id+"/";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Toast.makeText(InfoStudent.this, "Successful delete", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getBaseContext(), Studentlist.class);
+                startActivity(intent);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(InfoStudent.this, "wrong with the delete", Toast.LENGTH_SHORT).show();
+            }
+        });
+        requestQueue.add(jsonObjectRequest);
+    }
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -101,7 +124,10 @@ public class InfoStudent extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.deleteuser){
+            deleteUser();
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

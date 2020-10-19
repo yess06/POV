@@ -8,13 +8,43 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class lessons extends AppCompatActivity {
+
+    RecyclerView rvLesson;
+    lessonsAdapter adapter;
+    ArrayList<lesson> datos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons);
+        datos = new ArrayList<>();
+
+        rvLesson = (RecyclerView) findViewById(R.id.rvLessons);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager rvLayout = layoutManager;
+        rvLesson.setLayoutManager(rvLayout);
+        RecyclerView.Adapter adaptador = new lessonsAdapter(dataSet(), lessons.this);
+        rvLesson.setAdapter(adaptador);
+    }
+
+    private ArrayList<lesson>dataSet(){
+        datos.add(new lesson("POV 1"));
+        datos.add(new lesson("POV 2"));
+        datos.add(new lesson("POV 3"));
+        datos.add(new lesson("POV 4"));
+        datos.add(new lesson("POV 5"));
+        datos.add(new lesson("POV 6"));
+        datos.add(new lesson("POV 7"));
+        datos.add(new lesson("POV 8"));
+        datos.add(new lesson("POV 9"));
+        datos.add(new lesson("POV 10"));
+        return datos;
     }
 
     @Override
