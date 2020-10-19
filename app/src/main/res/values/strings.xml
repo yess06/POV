@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">POV</string>
+    <string name="app_name">English For All</string>
 
     <string-array name="verbs">
         <item>eat</item>
@@ -7,8 +7,8 @@
         <item>eaten</item>
     </string-array>
 
-    <string name="urllogin">"http://10.0.0.9:8000/api/auth/login"</string>
-    <string name="urllogout">"http://10.0.0.9:8000/api/auth/logout"</string>
-    <string name="urlregister">"http://10.0.0.9:8000/api/auth/signup"</string>
-    <string name="urlgetusers">http://10.0.0.9:8000/api/auth/users</string>
+    <string name="urllogin">"http://12.12.12.28:8000/api/auth/login"</string>
+    <string name="urllogout">"http://12.12.12.28:8000/api/auth/logout"</string>
+    <string name="urlregister">"http://12.12.12.28:8000/api/auth/signup"</string>
+    <string name="urlgetusers">http://12.12.12.28:8000/api/auth/users</string>
 </resources>

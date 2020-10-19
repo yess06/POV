@@ -48,7 +48,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://10.0.0.9:8000/api/auth/updateuser/"+id+"/";
+        String url = "http://12.12.12.28:8000/api/auth/updateuser/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -73,7 +73,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://10.0.0.9:8000/api/auth/updatepass/"+id+"/";
+        String url = "http://12.12.12.28:8000/api/auth/updatepass/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
