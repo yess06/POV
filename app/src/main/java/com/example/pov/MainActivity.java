@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tx = findViewById(R.id.txtexample);
         Button btnTeacher = findViewById(R.id.btnteach);
         btnTeacher.setOnClickListener(new View.OnClickListener() {
             @Override
