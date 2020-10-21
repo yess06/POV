@@ -59,7 +59,7 @@ public class lessonsAdapter extends RecyclerView.Adapter<lessonsAdapter.ViewHold
             super(itemView);
             descripcion=(TextView)itemView.findViewById(R.id.descripcion);
 
-            cardView=(CardView) itemView.findViewById(R.id.lessonCard);
+            cardView=(CardView) itemView.findViewById(R.id.userCard);
         }
     }
 

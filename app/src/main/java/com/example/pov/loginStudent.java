@@ -35,7 +35,7 @@ public class loginStudent extends AppCompatActivity {
       txtemail = findViewById(R.id.tvEmail);
         txtpassword = findViewById(R.id.tvPassword);
 
-      resul = findViewById(R.id.textResult);
+
        login = findViewById(R.id.btnlogin);
         login.setOnClickListener(new View.OnClickListener() {
             @Override

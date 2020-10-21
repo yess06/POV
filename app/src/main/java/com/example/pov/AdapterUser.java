@@ -48,11 +48,13 @@ public class AdapterUser extends RecyclerView.Adapter<AdapterUser.ViewHolder> im
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView id, name, email;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            id = itemView.findViewById(R.id.txtuserid);
-            name = itemView.findViewById(R.id.txtusername);
-            email = itemView.findViewById(R.id.txtuseremail);
+            id = (TextView)itemView.findViewById(R.id.txtuserid);
+            name = (TextView)itemView.findViewById(R.id.txtusername);
+            email = (TextView)itemView.findViewById(R.id.txtuseremail);
+
         }
     }
 }
