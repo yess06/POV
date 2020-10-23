@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">POV</string>
-    <string name="urlpost">"http://192.168.1.77:8000/api/auth/login"</string>
-    <string name="urllogin">"http://192.168.1.77:8000/api/auth/login"</string>
-    <string name="urlregister">"http://192.168.1.77:8000/api/auth/signup"</string>
-    <string name="urlgetusers">"http://192.168.1.77:8000/api/auth/users"</string>
+    <string name="urlpost">"http://10.0.0.5:8000/api/auth/login"</string>
+    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
+    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
+    <string name="urlgetusers">"http://10.0.0.5:8000/api/auth/users"</string>
 
 
     <string-array name="verbs">

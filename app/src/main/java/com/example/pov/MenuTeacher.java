@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -22,21 +23,26 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MenuTeacher extends AppCompatActivity {
-    private Button btnregister;
-    String token;
+    TextView example;
+    public String token, id, name, email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_teacher);
-        btnregister =  findViewById(R.id.btnRegister);
+        example = findViewById(R.id.exampletxt);
         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+        SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
+        email = preferences.getString("email", "null");
+        example.append("Name: " + info.getString("name", "null") +"\n" + "Email: " + preferences.getString("email", "null"));
     }
     public void register(View view){
         //Toast.makeText(getBaseContext(), "hola", Toast.LENGTH_SHORT).show();
@@ -64,7 +70,7 @@ public class MenuTeacher extends AppCompatActivity {
 
     public void logout(){
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String url = "http://12.12.12.28:8000/api/auth/logout";
+        String url = "http://10.0.0.5:8000/api/auth/logout";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
                 null, new Response.Listener<JSONObject>() {
             @Override

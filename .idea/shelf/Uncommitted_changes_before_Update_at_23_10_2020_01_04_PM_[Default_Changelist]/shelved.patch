@@ -1,0 +1,411 @@
+Index: app/src/main/res/layout/activity_menu_teacher.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MenuTeacher\">\r\n\r\n    <Button\r\n        android:id=\"@+id/btnRegister\"\r\n        android:layout_width=\"337dp\"\r\n        android:layout_height=\"122dp\"\r\n        android:layout_marginTop=\"172dp\"\r\n        android:background=\"#EBEBEB\"\r\n        android:drawableLeft=\"@drawable/registerstudent\"\r\n        android:onClick=\"register\"\r\n        android:text=\"Register Student\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.501\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/button10\"\r\n        android:layout_width=\"337dp\"\r\n        android:layout_height=\"122dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:background=\"#EBEBEB\"\r\n        android:drawableLeft=\"@drawable/report\"\r\n        android:text=\"Qualification Report\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.501\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/btnRegister\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/button11\"\r\n        android:layout_width=\"337dp\"\r\n        android:layout_height=\"122dp\"\r\n        android:layout_marginTop=\"16dp\"\r\n        android:background=\"#EBEBEB\"\r\n        android:drawableLeft=\"@drawable/student1\"\r\n        android:onClick=\"studentlist\"\r\n        android:text=\"Students list\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.501\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toBottomOf=\"@+id/button10\"\r\n        app:layout_constraintVertical_bias=\"0.0\" />\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_menu_teacher.xml	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ app/src/main/res/layout/activity_menu_teacher.xml	(date 1603388283964)
+@@ -49,4 +49,15 @@
+         app:layout_constraintTop_toBottomOf="@+id/button10"
+         app:layout_constraintVertical_bias="0.0" />
+ 
++    <TextView
++        android:id="@+id/exampletxt"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.101" />
++
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/pov/MenuTeacher.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.pov;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.content.SharedPreferences;\r\nimport android.os.Bundle;\r\nimport android.view.Menu;\r\nimport android.view.MenuInflater;\r\nimport android.view.MenuItem;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.Toast;\r\n\r\nimport com.android.volley.AuthFailureError;\r\nimport com.android.volley.Request;\r\nimport com.android.volley.RequestQueue;\r\nimport com.android.volley.Response;\r\nimport com.android.volley.VolleyError;\r\nimport com.android.volley.toolbox.JsonObjectRequest;\r\nimport com.android.volley.toolbox.Volley;\r\n\r\nimport org.json.JSONObject;\r\n\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\npublic class MenuTeacher extends AppCompatActivity {\r\n    private Button btnregister;\r\n    String token;\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_menu_teacher);\r\n        btnregister =  findViewById(R.id.btnRegister);\r\n        SharedPreferences preferences = getSharedPreferences(\"credentials\", Context.MODE_PRIVATE);\r\n        token = preferences.getString(\"token\", \"null\");\r\n    }\r\n    public void register(View view){\r\n        //Toast.makeText(getBaseContext(), \"hola\", Toast.LENGTH_SHORT).show();\r\n        Intent intent = new Intent(MenuTeacher.this, register.class);\r\n        startActivity(intent);\r\n    }\r\n    public void studentlist(View view){\r\n        Intent intent = new Intent(MenuTeacher.this, Studentlist.class);\r\n        startActivity(intent);\r\n    }\r\n    @Override\r\n    public boolean onCreateOptionsMenu(Menu menu) {\r\n        MenuInflater inflater = getMenuInflater();\r\n        inflater.inflate(R.menu.logout,menu);\r\n        return super.onCreateOptionsMenu(menu);\r\n    }\r\n    @Override\r\n    public boolean onOptionsItemSelected(@NonNull MenuItem item) {\r\n        int id = item.getItemId();\r\n        if(id == R.id.log){\r\n            logout();\r\n        }\r\n        return super.onOptionsItemSelected(item);\r\n    }\r\n\r\n    public void logout(){\r\n        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());\r\n        String url = \"http://12.12.12.28:8000/api/auth/logout\";\r\n        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,\r\n                null, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();\r\n                Intent intent = new Intent(getApplicationContext(),loginTeacher.class);\r\n                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);\r\n                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\r\n                startActivity(intent);\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();\r\n            }\r\n        }){\r\n            @Override\r\n            public Map getHeaders() throws AuthFailureError {\r\n                HashMap headers = new HashMap();\r\n                headers.put(\"Authorization\", \"Bearer \" + token);\r\n                return headers;\r\n            }\r\n        };\r\n        requestQueue.add(jsonObjectRequest);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/pov/MenuTeacher.java	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ app/src/main/java/com/example/pov/MenuTeacher.java	(date 1603388283984)
+@@ -12,6 +12,7 @@
+ import android.view.MenuItem;
+ import android.view.View;
+ import android.widget.Button;
++import android.widget.TextView;
+ import android.widget.Toast;
+ 
+ import com.android.volley.AuthFailureError;
+@@ -22,21 +23,27 @@
+ import com.android.volley.toolbox.JsonObjectRequest;
+ import com.android.volley.toolbox.Volley;
+ 
++import org.json.JSONArray;
++import org.json.JSONException;
+ import org.json.JSONObject;
+ 
+ import java.util.HashMap;
+ import java.util.Map;
+ 
+ public class MenuTeacher extends AppCompatActivity {
+-    private Button btnregister;
+-    String token;
++    TextView example;
++    public String token, id, name, idi, nam, email;
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_menu_teacher);
+-        btnregister =  findViewById(R.id.btnRegister);
++        example = findViewById(R.id.exampletxt);
++        //userlog();
+         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
++        SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
+         token = preferences.getString("token", "null");
++        email = preferences.getString("email", "null");
++        example.append("id: " + info.getString("id", "null") +"\n" + "name: " + info.getString("name", "null"));
+     }
+     public void register(View view){
+         //Toast.makeText(getBaseContext(), "hola", Toast.LENGTH_SHORT).show();
+@@ -64,7 +71,7 @@
+ 
+     public void logout(){
+         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+-        String url = "http://12.12.12.28:8000/api/auth/logout";
++        String url = "http://10.0.0.5:8000/api/auth/logout";
+         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
+                 null, new Response.Listener<JSONObject>() {
+             @Override
+@@ -90,4 +97,44 @@
+         };
+         requestQueue.add(jsonObjectRequest);
+     }
++    public void userlog(){
++        RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
++        JSONObject jsonObject = new JSONObject();
++        String url2 = "http://10.0.0.5:8000/api/auth/users";
++        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
++                new Response.Listener<JSONObject>() {
++                    @Override
++                    public void onResponse(JSONObject response) {
++                        try {
++                            SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
++                            SharedPreferences.Editor editor = preferences.edit();
++
++                            JSONArray user = response.getJSONArray("users");
++                            for (int i = 0; i <= user.length(); i++) {
++                                JSONObject u = user.getJSONObject(i);
++                                if (email.equals(u.getString("email"))){
++                                    editor.putString("id", u.getString("id"));
++                                    editor.putString("name", u.getString("name"));
++                                    editor.commit();
++                                }
++                            }
++                        } catch (JSONException e) {
++                            e.printStackTrace();
++                        }
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError error) {
++
++            }
++        }){
++            @Override
++            public Map getHeaders() throws AuthFailureError {
++                HashMap headers = new HashMap();
++                headers.put("Content-Type", "application/json");
++                return headers;
++            }
++        };
++        requestQueue1.add(objectRequest);
++    }
+ }
+\ No newline at end of file
+Index: app/src/main/java/com/example/pov/loginTeacher.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.pov;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.content.SharedPreferences;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.Toast;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport com.android.volley.AuthFailureError;\r\nimport com.android.volley.RequestQueue;\r\nimport com.android.volley.Response;\r\nimport com.android.volley.VolleyError;\r\nimport com.android.volley.toolbox.JsonObjectRequest;\r\nimport com.android.volley.toolbox.Volley;\r\n\r\nimport org.json.JSONException;\r\nimport org.json.JSONObject;\r\n\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\n\r\npublic class loginTeacher extends AppCompatActivity {\r\n    private String token;\r\n    private EditText emailt, passt;\r\n    private Button login;\r\n    private static final String TAG = MainActivity.class.getSimpleName();\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_login_teacher);\r\n\r\n        login = findViewById(R.id.btnLoginT);\r\n        emailt = findViewById(R.id.emailteacher);\r\n        passt = findViewById(R.id.passteacher);\r\n\r\n    }\r\n    public void login(View view){\r\n        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());\r\n        JSONObject object = new JSONObject();\r\n        try {\r\n            object.put(\"email\", emailt.getText().toString());\r\n            object.put(\"password\", passt.getText().toString());\r\n            object.put(\"remember_me\", true);\r\n        } catch (JSONException e) {\r\n            e.printStackTrace();\r\n        }\r\n        String url = getResources().getString(R.string.urllogin);\r\n        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,\r\n                object, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                try {\r\n                    token = response.getString(\"access_token\");\r\n                    SharedPreferences sharedPreferences = getSharedPreferences(\"credentials\", Context.MODE_PRIVATE);\r\n                    SharedPreferences.Editor editor = sharedPreferences.edit();\r\n                    editor.putString(\"token\", token);\r\n                    editor.commit();\r\n                    Toast.makeText(getBaseContext(), \"successful login\", Toast.LENGTH_SHORT).show();\r\n                    Intent intent = new Intent(getBaseContext(), MenuTeacher.class);\r\n\r\n                    startActivity(intent);\r\n                } catch (JSONException e) {\r\n                    e.printStackTrace();\r\n                }\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                Toast.makeText(getBaseContext(), \"Wrong data verify your email or password\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        }){\r\n            @Override\r\n            public Map getHeaders() throws AuthFailureError {\r\n                HashMap headers = new HashMap();\r\n                headers.put(\"Content-Type\", \"application/json\");\r\n                return headers;\r\n            }\r\n        };\r\n        requestQueue.add(jsonObjectRequest);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/pov/loginTeacher.java	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ app/src/main/java/com/example/pov/loginTeacher.java	(date 1603476055815)
+@@ -18,6 +18,7 @@
+ import com.android.volley.toolbox.JsonObjectRequest;
+ import com.android.volley.toolbox.Volley;
+ 
++import org.json.JSONArray;
+ import org.json.JSONException;
+ import org.json.JSONObject;
+ 
+@@ -25,7 +26,7 @@
+ import java.util.Map;
+ 
+ public class loginTeacher extends AppCompatActivity {
+-    private String token;
++    private String token, id, na;
+     private EditText emailt, passt;
+     private Button login;
+     private static final String TAG = MainActivity.class.getSimpleName();
+@@ -57,14 +58,57 @@
+             public void onResponse(JSONObject response) {
+                 try {
+                     token = response.getString("access_token");
++
+                     SharedPreferences sharedPreferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+                     SharedPreferences.Editor editor = sharedPreferences.edit();
+                     editor.putString("token", token);
++                    editor.putString("email", emailt.getText().toString());
+                     editor.commit();
+-                    Toast.makeText(getBaseContext(), "successful login", Toast.LENGTH_SHORT).show();
+-                    Intent intent = new Intent(getBaseContext(), MenuTeacher.class);
+-
+-                    startActivity(intent);
++                    userlog();
++                    RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
++                    JSONObject jsonObject = new JSONObject();
++                    String url3 = "http://10.0.0.5:8000/api/auth/roles";
++                    JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
++                            new Response.Listener<JSONObject>() {
++                                @Override
++                                public void onResponse(JSONObject response) {
++                                    SharedPreferences preferences3 = getSharedPreferences("info", Context.MODE_PRIVATE);
++                                    try {
++                                        JSONArray role = response.getJSONArray("roles");
++                                        for (int i = 0; i<=role.length();i++){
++                                            JSONObject u = role.getJSONObject(i);
++                                            if (preferences3.getString("id", "null").equals(u.getString("user_id"))){
++                                                if (u.getString("name").equals("Teacher")){
++                                                    Toast.makeText(getBaseContext(), "successful login", Toast.LENGTH_SHORT).show();
++                                                    Intent intent = new Intent(getBaseContext(), MenuTeacher.class);
++                                                    startActivity(intent);
++                                                }else{
++                                                    Toast.makeText(getBaseContext(), "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
++                                                }
++                                            }
++                                        }
++
++
++                                    } catch (JSONException e) {
++                                        e.printStackTrace();
++                                    }
++
++                                }
++                            }, new Response.ErrorListener() {
++                        @Override
++                        public void onErrorResponse(VolleyError error) {
++
++                        }
++                    }){
++                        @Override
++                        public Map getHeaders() throws AuthFailureError {
++                            HashMap headers = new HashMap();
++                            headers.put("Content-Type", "application/json");
++                            return headers;
++                        }
++                    };
++                    requestQueue2.add(request);
++
+                 } catch (JSONException e) {
+                     e.printStackTrace();
+                 }
+@@ -84,4 +128,48 @@
+         };
+         requestQueue.add(jsonObjectRequest);
+     }
++    public void userlog(){
++        RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
++        JSONObject jsonObject = new JSONObject();
++        String url2 = "http://10.0.0.5:8000/api/auth/users";
++        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
++                new Response.Listener<JSONObject>() {
++                    @Override
++                    public void onResponse(JSONObject response) {
++                        try {
++                            SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
++                            SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
++                            SharedPreferences.Editor editor = preferences.edit();
++
++                            JSONArray user = response.getJSONArray("users");
++                            for (int i = 0; i <= user.length(); i++) {
++                                JSONObject u = user.getJSONObject(i);
++                                if (preferencess.getString("email", "null").equals(u.getString("email"))){
++                                    editor.putString("id", u.getString("id"));
++                                    editor.putString("name", u.getString("name"));
++                                    editor.commit();
++                                }
++                            }
++                        } catch (JSONException e) {
++                            e.printStackTrace();
++                        }
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError error) {
++
++            }
++        }){
++            @Override
++            public Map getHeaders() throws AuthFailureError {
++                HashMap headers = new HashMap();
++                headers.put("Content-Type", "application/json");
++                return headers;
++            }
++        };
++        requestQueue1.add(objectRequest);
++    }
++     public void role(){
++
++     }
+ }
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">POV</string>\r\n    <string name=\"urlpost\">\"http://192.168.1.77:8000/api/auth/login\"</string>\r\n    <string name=\"urllogin\">\"http://192.168.1.77:8000/api/auth/login\"</string>\r\n    <string name=\"urlregister\">\"http://192.168.1.77:8000/api/auth/signup\"</string>\r\n    <string name=\"urlgetusers\">\"http://192.168.1.77:8000/api/auth/users\"</string>\r\n\r\n\r\n    <string-array name=\"verbs\">\r\n        <item>eat</item>\r\n        <item>ate</item>\r\n        <item>eaten</item>\r\n    </string-array>\r\n\r\n\r\n</resources>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ app/src/main/res/values/strings.xml	(date 1603388063865)
+@@ -1,9 +1,9 @@
+ <resources>
+     <string name="app_name">POV</string>
+-    <string name="urlpost">"http://192.168.1.77:8000/api/auth/login"</string>
+-    <string name="urllogin">"http://192.168.1.77:8000/api/auth/login"</string>
+-    <string name="urlregister">"http://192.168.1.77:8000/api/auth/signup"</string>
+-    <string name="urlgetusers">"http://192.168.1.77:8000/api/auth/users"</string>
++    <string name="urlpost">"http://10.0.0.5:8000/api/auth/login"</string>
++    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
++    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
++    <string name="urlgetusers">"http://10.0.0.5:8000/api/auth/users"</string>
+ 
+ 
+     <string-array name="verbs">
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ .idea/misc.xml	(date 1603209368601)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\n\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        \r\n    }\r\n    dependencies {\r\n        classpath 'com.android.tools.build:gradle:4.0.2'\r\n        \r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n        \r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ build.gradle	(date 1603209841549)
+@@ -7,7 +7,7 @@
+         
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:4.0.2'
++        classpath 'com.android.tools.build:gradle:4.1.0'
+         
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1603209368664)
++++ .idea/compiler.xml	(date 1603209368664)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/java/com/example/pov/InfoStudent.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.pov;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.Menu;\r\nimport android.view.MenuInflater;\r\nimport android.view.MenuItem;\r\nimport android.view.View;\r\nimport android.widget.EditText;\r\nimport android.widget.Toast;\r\n\r\nimport androidx.annotation.NonNull;\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport com.android.volley.Request;\r\nimport com.android.volley.RequestQueue;\r\nimport com.android.volley.Response;\r\nimport com.android.volley.VolleyError;\r\nimport com.android.volley.toolbox.JsonObjectRequest;\r\nimport com.android.volley.toolbox.Volley;\r\n\r\nimport org.json.JSONException;\r\nimport org.json.JSONObject;\r\n\r\npublic class InfoStudent extends AppCompatActivity {\r\n    EditText txtname, txtemail, txtpass,txtpassconfirmation;\r\n    String id;\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_info_student);\r\n        txtname = findViewById(R.id.txtinfoname);\r\n        txtemail = findViewById(R.id.txtinfoemail);\r\n        txtpass = findViewById(R.id.txtinfopass);\r\n        txtpassconfirmation = findViewById(R.id.txtpassconfirm);\r\n        Bundle bundle = this.getIntent().getExtras();\r\n        txtname.setText(bundle.getString(\"name\"));\r\n        txtemail.setText(bundle.getString(\"email\"));\r\n        id = bundle.getString(\"id\");\r\n    }\r\n    public void updateuser(View view){\r\n        String name = txtname.getText().toString();\r\n        String email = txtemail.getText().toString();\r\n        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());\r\n        JSONObject object = new JSONObject();\r\n        try {\r\n            object.put(\"name\", name);\r\n            object.put(\"email\", email);\r\n        } catch (JSONException e) {\r\n            e.printStackTrace();\r\n        }\r\n        String url = \"http://192.168.1.77:8000/api/auth/updateuser/\"+id+\"/\";\r\n        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                Toast.makeText(InfoStudent.this, \"Successful updated\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                Toast.makeText(InfoStudent.this, \"wrong with the update\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        });\r\n        requestQueue.add(jsonObjectRequest);\r\n    }\r\n    public void updatepass(View view){\r\n        String pass = txtpass.getText().toString();\r\n        String repp = txtpassconfirmation.getText().toString();\r\n        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());\r\n        JSONObject object = new JSONObject();\r\n        try {\r\n            object.put(\"password\", pass);\r\n            object.put(\"password_confirmation\", repp);\r\n        } catch (JSONException e) {\r\n            e.printStackTrace();\r\n        }\r\n        String url = \"http://192.168.1.77:8000/api/auth/updatepass/\"+id+\"/\";\r\n        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,\r\n                url, object, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                Toast.makeText(InfoStudent.this, \"Successful updated\", Toast.LENGTH_SHORT).show();\r\n                txtpass.setText(\"\");\r\n                txtpassconfirmation.setText(\"\");\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                Toast.makeText(InfoStudent.this, \"wrong with the update\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        });\r\n        requestQueue.add(jsonObjectRequest);\r\n    }\r\n    public void deleteUser(){\r\n        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());\r\n        JSONObject object = new JSONObject();\r\n        String url = \"http://192.168.1.77:8000/api/auth/deleteuser/\"+id+\"/\";\r\n        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {\r\n            @Override\r\n            public void onResponse(JSONObject response) {\r\n                Toast.makeText(InfoStudent.this, \"Successful delete\", Toast.LENGTH_SHORT).show();\r\n                Intent intent = new Intent(getBaseContext(), Studentlist.class);\r\n                startActivity(intent);\r\n            }\r\n        }, new Response.ErrorListener() {\r\n            @Override\r\n            public void onErrorResponse(VolleyError error) {\r\n                Toast.makeText(InfoStudent.this, \"wrong with the delete\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        });\r\n        requestQueue.add(jsonObjectRequest);\r\n    }\r\n\r\n\r\n\r\n    @Override\r\n    public boolean onCreateOptionsMenu(Menu menu) {\r\n        MenuInflater inflater = getMenuInflater();\r\n        inflater.inflate(R.menu.infst,menu);\r\n        return super.onCreateOptionsMenu(menu);\r\n    }\r\n\r\n    @Override\r\n    public boolean onOptionsItemSelected(@NonNull MenuItem item) {\r\n        int id = item.getItemId();\r\n        if(id == R.id.deleteuser){\r\n            deleteUser();\r\n        }\r\n        return super.onOptionsItemSelected(item);\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/pov/InfoStudent.java	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ app/src/main/java/com/example/pov/InfoStudent.java	(date 1603388063825)
+@@ -49,7 +49,7 @@
+         } catch (JSONException e) {
+             e.printStackTrace();
+         }
+-        String url = "http://192.168.1.77:8000/api/auth/updateuser/"+id+"/";
++        String url = "http://10.0.0.5:8000/api/auth/updateuser/"+id+"/";
+         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
+             @Override
+             public void onResponse(JSONObject response) {
+@@ -74,7 +74,7 @@
+         } catch (JSONException e) {
+             e.printStackTrace();
+         }
+-        String url = "http://192.168.1.77:8000/api/auth/updatepass/"+id+"/";
++        String url = "http://10.0.0.5:8000/api/auth/updatepass/"+id+"/";
+         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
+                 url, object, new Response.Listener<JSONObject>() {
+             @Override
+@@ -94,7 +94,7 @@
+     public void deleteUser(){
+         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+         JSONObject object = new JSONObject();
+-        String url = "http://192.168.1.77:8000/api/auth/deleteuser/"+id+"/";
++        String url = "http://10.0.0.5:8000/api/auth/deleteuser/"+id+"/";
+         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {
+             @Override
+             public void onResponse(JSONObject response) {
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"delegatedBuild\" value=\"false\" />\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ .idea/gradle.xml	(date 1603209368679)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Tue Oct 06 17:35:43 CDT 2020\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.1.1-all.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(revision 7281773b55fd30cc0e900c34cf21dedddc9e9504)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1603209841565)
+@@ -1,6 +1,6 @@
+-#Tue Oct 06 17:35:43 CDT 2020
++#Tue Oct 20 11:04:01 CDT 2020
+ distributionBase=GRADLE_USER_HOME
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip

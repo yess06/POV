@@ -49,7 +49,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://192.168.1.77:8000/api/auth/updateuser/"+id+"/";
+        String url = "http://10.0.0.5:8000/api/auth/updateuser/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -74,7 +74,7 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = "http://192.168.1.77:8000/api/auth/updatepass/"+id+"/";
+        String url = "http://10.0.0.5:8000/api/auth/updatepass/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
@@ -94,7 +94,7 @@ public class InfoStudent extends AppCompatActivity {
     public void deleteUser(){
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JSONObject object = new JSONObject();
-        String url = "http://192.168.1.77:8000/api/auth/deleteuser/"+id+"/";
+        String url = "http://10.0.0.5:8000/api/auth/deleteuser/"+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
