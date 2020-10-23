@@ -3,6 +3,7 @@
     package="com.example.pov">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".register"
+        <activity android:name=".Splashactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register"
             android:label="Register Student"
-            android:parentActivityName=".MenuTeacher"
-            ></activity>
+            android:parentActivityName=".MenuTeacher" />
         <activity
             android:name=".QualificationReport"
             android:label="Qualification Report"
@@ -61,8 +69,7 @@
         <activity
             android:name=".Studentlist"
             android:label="Student List"
-            android:parentActivityName=".MenuTeacher"
-            />
+            android:parentActivityName=".MenuTeacher" />
         <activity
             android:name=".menuActivities"
             android:label="Menu Activities" />
@@ -98,12 +105,8 @@
             android:label="Login Teacher"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 </manifest>
