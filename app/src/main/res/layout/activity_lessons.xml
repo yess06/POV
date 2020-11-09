@@ -1,15 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".lessons">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvLessons"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
-</LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnPOV1"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="40dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 1"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnPOV2"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPOV1" />
+
+            <Button
+                android:id="@+id/button34"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 3"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPOV2" />
+
+            <Button
+                android:id="@+id/button35"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 4"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button34" />
+
+            <Button
+                android:id="@+id/button36"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 5"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button35" />
+
+            <Button
+                android:id="@+id/button37"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 6"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button36" />
+
+            <Button
+                android:id="@+id/button38"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 7"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button37" />
+
+            <Button
+                android:id="@+id/button39"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 8"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button38" />
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 9"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button39" />
+
+            <Button
+                android:id="@+id/button41"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="#EBEBEB"
+                android:drawableLeft="@drawable/lesson"
+                android:text="POV 10"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button40" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

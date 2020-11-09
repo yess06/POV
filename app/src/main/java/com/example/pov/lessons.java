@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.AuthFailureError;
@@ -31,7 +32,7 @@ import java.util.Map;
 public class lessons extends AppCompatActivity {
 
     RecyclerView rvLesson;
-    lessonsAdapter adapter;
+
     ArrayList<lesson> datos;
     public String token, id, name, email;
     @Override
@@ -42,28 +43,30 @@ public class lessons extends AppCompatActivity {
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
         email = preferences.getString("email", "null");
-        datos = new ArrayList<>();
-        rvLesson = (RecyclerView) findViewById(R.id.rvLessons);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        RecyclerView.LayoutManager rvLayout = layoutManager;
-        rvLesson.setLayoutManager(rvLayout);
-        RecyclerView.Adapter adaptador = new lessonsAdapter(dataSet(), lessons.this);
-        rvLesson.setAdapter(adaptador);
+
+        Button pov1 = findViewById(R.id.btnPOV1);
+        pov1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lessons.this, menuTenses.class);
+                startActivity(intent);
+            }
+        });
+
+        Button pov2 = findViewById(R.id.btnPOV2);
+        pov2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lessons.this, lesson2_menu_tenses.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
-    private ArrayList<lesson>dataSet(){
-        datos.add(new lesson("POV 1"));
-        datos.add(new lesson("POV 2"));
-        datos.add(new lesson("POV 3"));
-        datos.add(new lesson("POV 4"));
-        datos.add(new lesson("POV 5"));
-        datos.add(new lesson("POV 6"));
-        datos.add(new lesson("POV 7"));
-        datos.add(new lesson("POV 8"));
-        datos.add(new lesson("POV 9"));
-        datos.add(new lesson("POV 10"));
-        return datos;
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

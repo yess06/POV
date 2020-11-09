@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">POV</string>
-    <string name="urlpost">"http://10.0.0.5:8000/api/auth/login"</string>
-    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
-    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
-    <string name="urlgetusers">"http://10.0.0.5:8000/api/auth/users"</string>
+    <string name="urlpost">"http://192.168.1.66:8000/api/auth/login"</string>
+    <string name="urllogin">"http://192.168.1.66:8000/api/auth/login"</string>
+    <string name="urlregister">"http://192.168.1.66:8000/api/auth/signup"</string>
+    <string name="urlgetusers">"http://192.168.1.66:8000/api/auth/users"</string>
 
 
     <string-array name="verbs">
@@ -11,6 +11,1043 @@
         <item>ate</item>
         <item>eaten</item>
     </string-array>
+
+    <string-array name="fillFut1">
+        <item>answer</item>
+        <item>will never eat</item>
+        <item>is eating</item>
+        <item>ate</item>
+    </string-array>
+
+    <string-array name="fillFut2">
+        <item>answer</item>
+        <item>lived</item>
+        <item>is gonna live</item>
+        <item>lives</item>
+    </string-array>
+
+    <string-array name="fillFut3">
+        <item>answer</item>
+        <item>will also be</item>
+        <item>be</item>
+        <item>was</item>
+    </string-array>
+
+    <string-array name="fillFut4">
+        <item>answer</item>
+        <item>is gonna beg</item>
+        <item>begged</item>
+        <item>begs</item>
+    </string-array>
+
+    <string-array name="fillFut5">
+        <item>answer</item>
+        <item>will only eat</item>
+        <item>only eats</item>
+        <item>ate</item>
+    </string-array>
+
+    <string-array name="fillFut6">
+        <item>answer</item>
+        <item>will be</item>
+        <item>is</item>
+        <item>was</item>
+    </string-array>
+
+    <string-array name="fillFut7">
+        <item>answer</item>
+        <item>will go</item>
+        <item>went</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillFut8">
+        <item>answer</item>
+        <item>went</item>
+        <item>will go</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillFut9">
+        <item>answer</item>
+        <item>is gonna eat</item>
+        <item>eats</item>
+        <item>ate</item>
+    </string-array>
+
+    <string-array name="fillFut10">
+        <item>answer</item>
+        <item>is gonna eat</item>
+        <item>ate</item>
+        <item>eats</item>
+    </string-array>
+
+    <string-array name="fillFut11">
+        <item>answer</item>
+        <item>is gonna start</item>
+        <item>started</item>
+        <item>starts</item>
+    </string-array>
+
+    <string-array name="fillFut12">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>is gonna think</item>
+        <item>thought</item>
+    </string-array>
+
+    <string-array name="fillFut13">
+        <item>answer</item>
+        <item>will go</item>
+        <item>went</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillFut14">
+        <item>answer</item>
+        <item>will say</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillFut15">
+        <item>answer</item>
+        <item>will say</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillFut16">
+        <item>answer</item>
+        <item>is going to tell</item>
+        <item>told</item>
+        <item>tell</item>
+    </string-array>
+
+    <string-array name="fillFut17">
+        <item>answer</item>
+        <item>is going to start</item>
+        <item>started</item>
+        <item>starts</item>
+    </string-array>
+
+    <string-array name="fillFut18">
+        <item>answer</item>
+        <item>will get</item>
+        <item>got</item>
+        <item>gets</item>
+    </string-array>
+
+    <string-array name="fillFut19">
+        <item>answer</item>
+        <item>will never get</item>
+        <item>never got</item>
+        <item>never gets</item>
+    </string-array>
+
+
+    <string-array name="fillpast1">
+        <item>answer</item>
+        <item>eat</item>
+        <item>ate</item>
+        <item>eats</item>
+    </string-array>
+
+    <string-array name="fillpast2">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>gonna live</item>
+    </string-array>
+
+    <string-array name="fillpast3">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpast4">
+        <item>answer</item>
+        <item>used to</item>
+        <item>use to</item>
+        <item>using to</item>
+    </string-array>
+
+    <string-array name="fillpast5">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>be</item>
+    </string-array>
+
+    <string-array name="fillpast6">
+        <item>answer</item>
+        <item>go</item>
+        <item>went</item>
+        <item>goes</item>
+    </string-array>
+
+
+    <string-array name="fillpast7">
+        <item>answer</item>
+        <item>go</item>
+        <item>went</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillpast8">
+        <item>answer</item>
+        <item>eat</item>
+        <item>ate</item>
+        <item>eats</item>
+    </string-array>
+
+    <string-array name="fillpast9">
+        <item>answer</item>
+        <item>eat</item>
+        <item>ate</item>
+        <item>eats</item>
+    </string-array>
+
+    <string-array name="fillpast10">
+        <item>answer</item>
+        <item>started</item>
+        <item>starts</item>
+        <item>will start</item>
+    </string-array>
+
+    <string-array name="fillpast11">
+        <item>answer</item>
+        <item>thought</item>
+        <item>think</item>
+        <item>thinks</item>
+    </string-array>
+
+    <string-array name="fillpast12">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>be</item>
+    </string-array>
+
+    <string-array name="fillpast13">
+        <item>answer</item>
+        <item>go</item>
+        <item>went</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillpast14">
+        <item>answer</item>
+        <item>said</item>
+        <item>say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillpast15">
+        <item>answer</item>
+        <item>said</item>
+        <item>say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillpast16">
+        <item>answer</item>
+        <item>told</item>
+        <item>tells</item>
+        <item>tells</item>
+    </string-array>
+
+    <string-array name="fillpast17">
+        <item>answer</item>
+        <item>started</item>
+        <item>starts</item>
+        <item>start</item>
+    </string-array>
+
+    <string-array name="fillpast18">
+        <item>answer</item>
+        <item>got</item>
+        <item>gets</item>
+        <item>get</item>
+    </string-array>
+
+    <string-array name="fillpast19">
+        <item>answer</item>
+        <item>got</item>
+        <item>gets</item>
+        <item>get</item>
+    </string-array>
+
+
+    <string-array name="exercise1">
+        <item>answer</item>
+        <item>ate</item>
+        <item>eats</item>
+        <item>eat</item>
+    </string-array>
+
+    <string-array name="exercise2">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>living</item>
+    </string-array>
+
+    <string-array name="exercise3">
+        <item>answer</item>
+        <item>are</item>
+        <item>is</item>
+        <item>was</item>
+    </string-array>
+
+    <string-array name="exercise4">
+        <item>answer</item>
+        <item>said</item>
+        <item>begs</item>
+        <item>begged</item>
+    </string-array>
+
+    <string-array name="exercise5">
+        <item>answer</item>
+        <item>eats</item>
+        <item>eat</item>
+        <item>ate</item>
+    </string-array>
+
+    <string-array name="exercise6">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>are</item>
+    </string-array>
+
+    <string-array name="exercise7">
+        <item>answer</item>
+        <item>gone</item>
+        <item>went</item>
+        <item>go</item>
+    </string-array>
+
+    <string-array name="exercise8">
+        <item>answer</item>
+        <item>gone</item>
+        <item>went</item>
+        <item>go</item>
+    </string-array>
+
+    <string-array name="exercise9">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>eaten</item>
+    </string-array>
+
+    <string-array name="exercise10">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>eat</item>
+    </string-array>
+
+    <string-array name="exercise11">
+        <item>answer</item>
+        <item>started</item>
+        <item>starts</item>
+        <item>starting</item>
+    </string-array>
+
+    <string-array name="exercise12">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>think</item>
+    </string-array>
+
+    <string-array name="exercise13">
+        <item>answer</item>
+        <item>goes</item>
+        <item>go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="exercise14">
+        <item>answer</item>
+        <item>says</item>
+        <item>told</item>
+        <item>said</item>
+    </string-array>
+
+    <string-array name="exercise15">
+        <item>answer</item>
+        <item>says</item>
+        <item>told</item>
+        <item>said</item>
+    </string-array>
+
+    <string-array name="exercise16">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="exercise17">
+        <item>answer</item>
+        <item>eats</item>
+        <item>eat</item>
+        <item>ate</item>
+    </string-array>
+
+    <string-array name="exercise18">
+        <item>answer</item>
+        <item>starts</item>
+        <item>started</item>
+    </string-array>
+
+    <string-array name="exercise19">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>gotten</item>
+    </string-array>
+
+    <string-array name="exercise20">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>gotten</item>
+    </string-array>
+
+
+    <string-array name="QsFutL11">
+        <item>answer</item>
+        <item>Yes, carlos is only going to eat sweets</item>
+        <item>No, carlos never ate sweets </item>
+        <item>Yes, he eats sweets</item>
+    </string-array>
+
+    <string-array name="QsFutL12">
+        <item>answer</item>
+        <item>Yes, he will live just a stone’s throw away from a bakery</item>
+        <item>No, he will not live just a stone’s throw away from a bakery</item>
+        <item>Yes, he lives close to a bakery</item>
+    </string-array>
+
+    <string-array name="QsFutL13">
+        <item>answer</item>
+        <item>No, there will not be an ice cream store one block from his house</item>
+        <item>Yes, there will be an ice cream store one block from his house</item>
+        <item>Yes, there is an ice cream store one block from his house</item>
+    </string-array>
+
+    <string-array name="QsFutL14">
+        <item>answer</item>
+        <item>No, his mother will not beg him to eat vegetables</item>
+        <item>Yes, his mother is gonna beg him to eat vegetables </item>
+        <item>Yes, his mother begs him to eat vegetables</item>
+    </string-array>
+
+    <string-array name="QsFutL15">
+        <item>answer</item>
+        <item>No, we won’t be out and about with his girlfriend</item>
+        <item>Yes, he will be out and about with his girlfriend</item>
+        <item>Yes, he is out and about with his girlfriend</item>
+    </string-array>
+
+    <string-array name="QsFutL16">
+        <item>answer</item>
+        <item>They are gonna go to a restaurant</item>
+        <item>They went to a restaurant</item>
+        <item>They go to a restaurant</item>
+    </string-array>
+
+    <string-array name="QsFutL17">
+        <item>answer</item>
+        <item>Yes, they will go to a restaurant</item>
+        <item>No, they will not go to a restaurant</item>
+        <item>Yes, they went to a restaurant</item>
+    </string-array>
+
+    <string-array name="QsFutL18">
+        <item>answer</item>
+        <item>Martha will eat a salad</item>
+        <item>Carlos will eat a salad</item>
+        <item>Carlos ate a salad</item>
+    </string-array>
+
+    <string-array name="QsFutL19">
+        <item>answer</item>
+        <item>Carlos ate seven pieces of cake and two bowls of ice cream</item>
+        <item>Carlos is gonna eat seven pieces of cake and two bowls of ice cream</item>
+        <item>Carlos eats seven pieces of cake and two bowels of ice cream</item>
+    </string-array>
+
+    <string-array name="QsFutL110">
+        <item>answer</item>
+        <item>The doctor told him that he must eat vegetables</item>
+        <item>The doctor tells him that he must eat vegetables</item>
+        <item>The doctor is going to tell him that he must eat vegetables</item>
+    </string-array>
+
+    <string-array name="QsPasL11">
+        <item>answer</item>
+        <item>No, he ate vegtables</item>
+        <item>Yes, he eats sweets</item>
+        <item>Yes, Carlos only ate sweets</item>
+    </string-array>
+
+    <string-array name="QsPasL12">
+        <item>answer</item>
+        <item>Yes, he lived just a stone’s throw away from a bakery</item>
+        <item>No, he lived far away</item>
+        <item>Yes, he lives close</item>
+    </string-array>
+
+    <string-array name="QsPasL13">
+        <item>answer</item>
+        <item>Yes, there was an ice cream store one block from his house</item>
+        <item>No, there was no ice cream store</item>
+        <item>Yes, there is an ice cream store one block from his house</item>
+    </string-array>
+
+    <string-array name="QsPasL14">
+        <item>answer</item>
+        <item>Yes, his mom begged him to eat vegetables</item>
+        <item>Yes, his mom begs him to eat vegetables</item>
+        <item>No, his mom did not beg him to eat vegetables</item>
+    </string-array>
+
+    <string-array name="QsPasL15">
+        <item>answer</item>
+        <item>No, Carlos was out and about with his friends</item>
+        <item>Yes, Carlos was out and about with his girlfriend Martha</item>
+        <item>Yes, Carlos is out and about with his girlfriend Martha</item>
+    </string-array>
+
+    <string-array name="QsPasL16">
+        <item>answer</item>
+        <item>They went to a second hand store</item>
+        <item>They went home</item>
+        <item>They go to a second hand store</item>
+    </string-array>
+
+    <string-array name="QsPasL17">
+        <item>answer</item>
+        <item>Yes, they went to a restaurant</item>
+        <item>No, they went home</item>
+        <item>Yes, they go to a restaurant</item>
+    </string-array>
+
+    <string-array name="QsPasL18">
+        <item>answer</item>
+        <item>Carlos ate a salad</item>
+        <item>Martha eats a salad</item>
+        <item>Martha ate a salad</item>
+    </string-array>
+
+    <string-array name="QsPasL19">
+        <item>answer</item>
+        <item>The doctor told him to eat vegetables</item>
+        <item>The doctor tells him to eat vegetables</item>
+        <item>The doctor told him to eat sweets</item>
+    </string-array>
+
+    <string-array name="QsPasL110">
+        <item>answer</item>
+        <item>No, his body didn’t get stronger</item>
+        <item>Yes, his body got stronger</item>
+        <item>Yes, his body gets stronger</item>
+    </string-array>
+
+
+
+    <string-array name="QsPsL11">
+        <item>answer</item>
+        <item>No, Carlos never eats sweets</item>
+        <item>Yes, Carlos only eats sweets</item>
+        <item>Yes, Carlos ate sweets</item>
+    </string-array>
+
+    <string-array name="QsPsL12">
+        <item>answer</item>
+        <item>Yes, he lives just a just a stone’s throw away from a bakery</item>
+        <item>No, he does not live just a stone’s throw away from a bakery</item>
+        <item>He, will live just a stone’s throw away from a bakery</item>
+    </string-array>
+
+    <string-array name="QsPsL13">
+        <item>answer</item>
+        <item>There will be an ice cream store one block from his house</item>
+        <item>Yes, there is an ice cream store one block from his house.</item>
+        <item>No, he lives far away</item>
+    </string-array>
+
+    <string-array name="QsPsL14">
+        <item>answer</item>
+        <item>No, his mom does not beg him to eat vegetables</item>
+        <item>Yes his mom begged him to eat vegetables</item>
+        <item>Yes his mom begs him to eat vegetables</item>
+    </string-array>
+
+    <string-array name="QsPsL15">
+        <item>answer</item>
+        <item>Yes Carlos and Martha will be out and about</item>
+        <item>Yes Carlos and Martha are out and about</item>
+        <item>Yes Carlos and Martha were out and about</item>
+    </string-array>
+
+    <string-array name="QsPsL16">
+        <item>answer</item>
+        <item>They went to a second hand store and a restaurant</item>
+        <item>They go home</item>
+        <item>They go to a second hand store and a restaurant</item>
+    </string-array>
+
+    <string-array name="QsPsL17">
+        <item>answer</item>
+        <item>Yes, they go to a restaurant</item>
+        <item>No, they went to the beach</item>
+        <item>No, they will go home</item>
+    </string-array>
+
+    <string-array name="QsPsL18">
+        <item>answer</item>
+        <item>He goes to the doctor</item>
+        <item>He will go to the doctor</item>
+        <item>He went to the doctor</item>
+    </string-array>
+    <string-array name="QsPsL19">
+        <item>answer</item>
+        <item>The doctor told him that he must eat vegetables</item>
+        <item>The doctor tells him that he must eat vegetables</item>
+        <item>The doctor is going to tell him that he must eat vegetables</item>
+    </string-array>
+
+    <string-array name="QsPsL110">
+        <item>answer</item>
+        <item>No, he never gets sick again</item>
+        <item>Yes, he gets sick again</item>
+        <item>No, he will never get sick again</item>
+    </string-array>
+
+
+    <string-array name="QsPsL21">
+        <item>answer</item>
+        <item>Yes Jackie has her hands full</item>
+        <item>No Jackie doesn’t have her hands full</item>
+        <item>Yes Jackie had her hands full</item>
+    </string-array>
+
+    <string-array name="QsPsL22">
+        <item>answer</item>
+        <item>Mary has her hands full</item>
+        <item>Jackie has her hands full</item>
+        <item>Jackie had her hands full</item>
+    </string-array>
+
+    <string-array name="QsPsL23">
+        <item>answer</item>
+        <item>Yes Jackie has her hands full</item>
+        <item>Yes Jackie had her hands full</item>
+        <item>Yes Jackie will have her hands full</item>
+    </string-array>
+
+    <string-array name="QsPsL24">
+        <item>answer</item>
+        <item>She works twelve hours everyday</item>
+        <item>She is gonna work twelve hours everyday</item>
+        <item>She worked twelve hours everyday</item>
+    </string-array>
+
+    <string-array name="QsPsL25">
+        <item>answer</item>
+        <item>She worked as a lawyer</item>
+        <item>She will work as a lawyer</item>
+        <item>She works as a lawyer</item>
+    </string-array>
+
+    <string-array name="QsPsL26">
+        <item>answer</item>
+        <item>She works everyday</item>
+        <item>She worked everyday</item>
+        <item>She will work everyday</item>
+    </string-array>
+
+    <string-array name="QsPsL27">
+        <item>answer</item>
+        <item>She works for twelve hours</item>
+        <item>She worked for twelve hours</item>
+        <item>She is going to work for twelve hours</item>
+    </string-array>
+
+    <string-array name="QsPsL28">
+        <item>answer</item>
+        <item>Yes she needs a vacation</item>
+        <item>Yes she needed a vacation</item>
+        <item>Yes she will need a vacation </item>
+    </string-array>
+
+    <string-array name="QsPsL29">
+        <item>answer</item>
+        <item>She is very stressed out</item>
+        <item>She was very stressed out</item>
+        <item>She will be very stressed out</item>
+    </string-array>
+
+    <string-array name="QsPsL210">
+        <item>answer</item>
+        <item>Yes mary lives in Thailand</item>
+        <item>Yes mary lived in Thailand </item>
+        <item>Yes mary will live in Thailand</item>
+    </string-array>
+
+
+    <string-array name="QsPasL21">
+        <item>answer</item>
+        <item>Yes Jackie has her hands full</item>
+        <item>No Jackie doesn’t have her hands full</item>
+        <item>Yes Jackie had her hands full</item>
+    </string-array>
+
+    <string-array name="QsPasL22">
+        <item>answer</item>
+        <item>Mary has her hands full</item>
+        <item>Jackie has her hands full</item>
+        <item>Jackie had her hands full</item>
+    </string-array>
+
+    <string-array name="QsPasL23">
+        <item>answer</item>
+        <item>Yes Jackie has her hands full</item>
+        <item>Yes Jackie had her hands full </item>
+        <item>Yes Jackie will have her hands full </item>
+    </string-array>
+
+    <string-array name="QsPasL24">
+        <item>answer</item>
+        <item>She works twelve hours everyday</item>
+        <item>She is gonna work twelve hours everyday</item>
+        <item>She worked twelve hours everyday </item>
+    </string-array>
+
+
+    <string-array name="QsPasL25">
+        <item>answer</item>
+        <item>She worked as a lawyer</item>
+        <item>She will work as a lawyer</item>
+        <item>She works as a lawyer</item>
+    </string-array>
+
+    <string-array name="QsPasL26">
+        <item>answer</item>
+        <item>She works everyday</item>
+        <item>She worked everyday</item>
+        <item>She will work everyday</item>
+    </string-array>
+
+    <string-array name="QsPasL27">
+        <item>answer</item>
+        <item>She works for twelve hours</item>
+        <item>She worked for twelve hours</item>
+        <item>She is going to work for twelve hours</item>
+    </string-array>
+
+    <string-array name="QsPasL28">
+        <item>answer</item>
+        <item>Yes she needs a vacation</item>
+        <item>Yes she needed a vacation</item>
+        <item>Yes she will need a vacation</item>
+    </string-array>
+
+    <string-array name="QsPasL29">
+        <item>answer</item>
+        <item>She is very stressed out</item>
+        <item>She was very stressed out</item>
+        <item>She will be very stressed out</item>
+    </string-array>
+
+    <string-array name="QsPasL210">
+        <item>answer</item>
+        <item>Yes mary lives in Thailand</item>
+        <item>Yes mary lived in Thailand </item>
+        <item>Yes mary will live in Thailand</item>
+    </string-array>
+
+    <string-array name="fillpastL21">
+        <item>answer</item>
+        <item>works</item>
+        <item>worked</item>
+        <item>ll be working</item>
+    </string-array>
+
+    <string-array name="fillpastL22">
+        <item>answer</item>
+        <item>needs</item>
+        <item>needed</item>
+        <item>gonna need</item>
+    </string-array>
+
+    <string-array name="fillpastL23">
+        <item>answer</item>
+        <item>example</item>
+        <item>example</item>
+        <item>example</item>
+    </string-array>
+
+    <string-array name="fillpastL24">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>gonna live</item>
+    </string-array>
+
+    <string-array name="fillpastL25">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>gonna tell</item>
+    </string-array>
+
+    <string-array name="fillpastL26">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>ll say</item>
+    </string-array>
+
+    <string-array name="fillpastL27">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>ll say</item>
+    </string-array>
+
+    <string-array name="fillpastL28">
+        <item>answer</item>
+        <item>flies</item>
+        <item>flew</item>
+        <item>ll fly to Thailand</item>
+    </string-array>
+
+    <string-array name="fillpastL29">
+        <item>answer</item>
+        <item>loves</item>
+        <item>loved</item>
+        <item>gonna love</item>
+    </string-array>
+
+    <string-array name="fillpastL210">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>will tell</item>
+    </string-array>
+
+    <string-array name="fillpastL211">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpastL212">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL213">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>will meet</item>
+    </string-array>
+
+    <string-array name="fillpastL214">
+        <item>answer</item>
+        <item>are</item>
+        <item>were</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL215">
+        <item>answer</item>
+        <item>need</item>
+        <item>needed</item>
+        <item>will need</item>
+    </string-array>
+
+    <string-array name="fillpastL216">
+        <item>answer</item>
+        <item>ask</item>
+        <item>asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpastL217">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL218">
+        <item>answer</item>
+        <item>enjoys</item>
+        <item>enjoyed</item>
+        <item>will enjoy</item>
+    </string-array>
+
+    <string-array name="fillpastL219">
+        <item>answer</item>
+        <item>decided</item>
+        <item>decides</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillpastL220">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpastL221">
+        <item>answer</item>
+        <item>did</item>
+        <item>do</item>
+        <item>will do</item>
+    </string-array>
+
+
+    <string-array name="fillpsL21">
+        <item>answer</item>
+    <item>has</item>
+    <item>had</item>
+    <item>will have</item>
+</string-array>
+
+    <string-array name="fillpsL22">
+        <item>answer</item>
+        <item>works</item>
+        <item>worked</item>
+        <item>ll be working</item>
+    </string-array>
+
+    <string-array name="fillpsL23">
+        <item>answer</item>
+        <item>needs</item>
+        <item>needed</item>
+        <item>gonna need</item>
+    </string-array>
+
+    <string-array name="fillpsL24">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>gonna live</item>
+    </string-array>
+
+    <string-array name="fillpsL25">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>gonna tell</item>
+    </string-array>
+
+    <string-array name="fillpsL26">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>ll say</item>
+    </string-array>
+
+    <string-array name="fillpsL27">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>ll say</item>
+    </string-array>
+
+    <string-array name="fillpsL28">
+        <item>answer</item>
+        <item>flies</item>
+        <item>flew</item>
+        <item>ll fly</item>
+    </string-array>
+
+    <string-array name="fillpsL29">
+        <item>answer</item>
+        <item>loves</item>
+        <item>loved</item>
+        <item>gonna love</item>
+    </string-array>
+
+    <string-array name="fillpsL210">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>going to know</item>
+    </string-array>
+
+    <string-array name="fillpsL211">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>gonna meet</item>
+    </string-array>
+
+    <string-array name="fillpsL212">
+        <item>answer</item>
+        <item>need</item>
+        <item>needed</item>
+        <item>going to need</item>
+    </string-array>
+
+    <string-array name="fillpsL213">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL214">
+        <item>answer</item>
+        <item>enjoys</item>
+        <item>enjoyed</item>
+        <item>going to enjoy</item>
+    </string-array>
+
+    <string-array name="fillpsL215">
+        <item>answer</item>
+        <item>decides</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillpsL216">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>gonna think</item>
+    </string-array>
+
+    <string-array name="fillpsL217">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+
+
+
+
+
+
 
 
 </resources>

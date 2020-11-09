@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".readingPastL1">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Now let’s hear the story from Carlos’ point of view. So in this version Carlos is actually the one telling the story. Here goes. "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="323dp"
+        android:layout_height="385dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I never ate anything but sweets. I lived just a stone’s throw away from a bakery. There was also an ice cream store one block from my house. My mother used to beg me to eat vegetables but I would only eat sweets. One day I was out and about with my girlfriend Marta. First we went to a secondhand store. Then we went to a restaurant. Marta ate a salad. I ate seven pieces of cake and two bowls of ice cream. Later that day I started feeling under the weather. I thought that there was something going around so I went to the doctor. “Getting sick is a bummer,” I said. “You are sick because you only eat sweets,” said the doctor. Then the doctor told me that I must eat vegetables. So I started to eat vegetables every day. My body got stronger and I never got sick again."
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="106dp"
+        android:layout_height="48dp"
+        android:background="#E7323D"
+        android:text="Check Score"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+</androidx.constraintlayout.widget.ConstraintLayout>

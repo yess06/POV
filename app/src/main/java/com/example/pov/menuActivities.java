@@ -14,26 +14,34 @@ public class menuActivities extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_activities);
 
-        Button btnFill = findViewById(R.id.btnFill);
 
-        btnFill.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (menuActivities.this, fillVerbs.class);
-                startActivity(intent);
-            }
-        });
+    Button btnFill = findViewById(R.id.btnFill);
+    btnFill.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(menuActivities.this, fillPresentL1.class);
+            startActivity(intent);
+        }
+    });
 
-     Button btnAnswer = findViewById(R.id.btnAnswer);
+
+     Button btnAnswer = findViewById(R.id.btnAnswerPresent);
      btnAnswer.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {
-             Intent intent = new Intent(menuActivities.this, answerQuestions.class);
+             Intent intent = new Intent(menuActivities.this, questionPresentL1.class);
              startActivity(intent);
          }
      });
 
-
+   Button btnListen = findViewById(R.id.btnlistenPresentL1);
+   btnListen.setOnClickListener(new View.OnClickListener() {
+       @Override
+       public void onClick(View view) {
+           Intent intent = new Intent(menuActivities.this, readingPresentL1.class);
+           startActivity(intent);
+       }
+   });
 
     }
 }

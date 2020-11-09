@@ -13,6 +13,8 @@ public class menuTenses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_tenses);
+
+
         Button btnPresent = findViewById(R.id.btnPresent);
         btnPresent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,5 +33,30 @@ public class menuTenses extends AppCompatActivity {
 
             }
         });
+
+
+        Button btnPast = findViewById(R.id.btnPastL1);
+        btnPast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menuTenses.this, menuPastL1.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnFuture = findViewById(R.id.btnFutureL1);
+        btnFuture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menuTenses.this, menuFutureL1.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 }
