@@ -5,17 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lesson5_listenread_future">
+
+    <TextView
+        android:id="@+id/textView327"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Now let’s hear it as if it will happen one year from now. Let’s begin."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="385dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView327"
+        app:layout_constraintVertical_bias="0.049">
+
+        <TextView
+            android:id="@+id/textView328"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One year from now Peter will not be able to stand bathing. He will not have taken a shower for two years. He’s gonna smell very bad. His mother is going to think that it has gotten out of hand. She’ll ask Peter to bathe but he will not do it. Peter’s gonna want a girlfriend. He’s gonna ask quite a few girls for a date but they will always say no. He’s going to think that he’s in over his head. One time his sister will find him a date with a nice girl. But then the girl is gonna get sick so the date will fall through. So Peter is going to try to meet a girl on a dating website. He’ll meet a very nice girl named Paula and they’ll decide to meet for dinner. When Paula meets Peter she’ll not know what she’s getting into. He’s gonna smell awful. When Peter sees Paula, he won’t be able to believe his eyes. He’ll be blown away because she is going to be so beautiful. They’re gonna have a lot of fun that night. Paula is gonna tell Peter she’ll have dinner with him again if he takes a shower. Then Peter’ll bathe every day."
+            android:textSize="18sp" />
+    </ScrollView>
+
     <Button
-        android:id="@+id/btnActivitiesAnsw"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
+        android:id="@+id/button44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="628dp"
         android:background="#E7323D"
         android:text="Check Score"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="338dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="540dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="564dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

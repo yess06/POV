@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".lesson2_menu_activities_past">
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnlisten"
         android:layout_width="337dp"
         android:layout_height="122dp"
         android:layout_marginTop="172dp"
@@ -28,10 +28,10 @@
         android:text="Fill the verbs"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnlisten" />
 
     <Button
-        android:id="@+id/btnAnswerPresent"
+        android:id="@+id/btnAnswer"
         android:layout_width="337dp"
         android:layout_height="122dp"
         android:layout_marginTop="20dp"

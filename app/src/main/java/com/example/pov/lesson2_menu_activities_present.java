@@ -14,7 +14,7 @@ public class lesson2_menu_activities_present extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_menu_activities_present);
 
-        Button answer = findViewById(R.id.btnAnswerPresent);
+        Button answer = findViewById(R.id.btnAnswer);
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +28,15 @@ public class lesson2_menu_activities_present extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson2_menu_activities_present.this, lesson2_fillverbs_present.class);
+                startActivity(intent);
+            }
+        });
+
+        Button listen = findViewById(R.id.btnlisten);
+        listen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson2_menu_activities_present.this, lesson2_listenread_present.class);
                 startActivity(intent);
             }
         });

@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".lesson7_listenread_present">
 
+    <TextView
+        android:id="@+id/textView333"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" In the first version we will hear the story as if it is happening right now. So let’s get started."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView334"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Carly the cat is ready to stop dating. She only seems to meet total losers. Then on December 31st, her luck changes. She runs into her friend Katie the cougar at the library. Katie moved to Africa three years ago. They have not been in touch since then but Katie is now living in America again. Katie wants to set her up on a blind date with her friend Timmy the tiger. Carly thinks that all blind dates are a recipe for disaster. But she agrees to go out with Timmy one time. One month later Katie sees Carly at a café. She’s bursting at the seams. She and Timmy have fallen in love. “Thank you so much, Katie,” Carly says. “Timmy is really head and shoulders above the rest.”"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView333" />
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="604dp"
+        android:background="#E7323D"
+        android:text="Check Score"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="338dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="540dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="564dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

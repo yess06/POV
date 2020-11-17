@@ -5,17 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lesson4_listenread_future">
+
+    <TextView
+        android:id="@+id/textView321"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Now let’s hear the story as if it is happening in the future. So we will think of the story happening next year. Here we go."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView321">
+
+        <TextView
+            android:id="@+id/textView322"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Next year Freddie the frog will live in the country of Frogland. His father is gonna run a tight ship. He’ll make Freddie practice jumping ten hours every day. Freddie’ll always be tired so he will not be able to pay attention in school. Sometimes he won’t be able to even tell what day it is. “I’m telling you, I just want to chase flies with my friends,” Freddie’ll say to his dad. Then his dad’ll say, “It’s my way or the highway.” His dad is always gonna tell him that he will be a jumping champion. Sure enough, when he is 18 years old, he will become the jumping champion of his country. When Freddie is 55 years old he’ll think about his dad a lot. He’ll know that there is method to his dad’s madness."
+            android:textSize="18sp" />
+    </ScrollView>
+
     <Button
-        android:id="@+id/btnActivitiesAnsw"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
+        android:id="@+id/button33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="612dp"
         android:background="#E7323D"
         android:text="Check Score"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="338dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="540dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="564dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

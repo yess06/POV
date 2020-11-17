@@ -41,10 +41,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:text="2. Who had her hands full? "
+                android:text="2. What did she do? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.082"
+                app:layout_constraintHorizontal_bias="0.056"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,10 +63,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="168dp"
-                android:text="3. Did Jackie or Mary have her hands full? "
+                android:text="3. How often did Jackie work? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.213"
+                app:layout_constraintHorizontal_bias="0.089"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,10 +85,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="236dp"
-                android:text="4. What did she do? "
+                android:text="4. How many hours did she work each day? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintHorizontal_bias="0.241"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,11 +106,11 @@
                 android:id="@+id/textView187"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="306dp"
-                android:text="5. Did she go to school or work as a lawyer? "
+                android:layout_marginTop="304dp"
+                android:text="5. Did she need a vacation? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.275"
+                app:layout_constraintHorizontal_bias="0.084"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="376dp"
-                android:text="6. How often did Jackie work? "
+                android:text="6. Why did she need a vacation? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.095"
@@ -151,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="450dp"
-                android:text="7. How many hours did she work each day? "
+                android:text="7. did Jackie’s cousin Mary live in Thailand? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.258"
@@ -173,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="522dp"
-                android:text="8. Did she need a vacation? "
+                android:text="8. Did Jackie fly to Thailand? "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.084"
@@ -195,10 +195,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="592dp"
-                android:text="9. Why did she need a vacation? "
+                android:text="9. Did she really enjoy singing in the band?"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintHorizontal_bias="0.197"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -216,11 +216,11 @@
                 android:id="@+id/textView192"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="662dp"
-                android:text="10. Did Jackie’s cousin Mary live in Thailand? "
+                android:layout_marginTop="660dp"
+                android:text="10. Did she decide to stay in Thailand?"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.32"
+                app:layout_constraintHorizontal_bias="0.141"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

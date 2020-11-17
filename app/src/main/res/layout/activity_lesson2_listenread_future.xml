@@ -5,17 +5,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lesson2_listenread_future">
+
+    <TextView
+        android:id="@+id/textView263"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Now let’s tell the story as if it’s happening in the future. So we’ll think of the story two years from now."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView263">
+
+        <TextView
+            android:id="@+id/textView264"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In two years Jackie will have her hands full. She’ll be working as a lawyer for twelve hours every day. She’s gonna need a vacation because she’ll really be stressed out. Jackie’s cousin Mary will be living in Thailand. She’s gonna tell Jackie to visit her in Thailand. “I don’t want to put you out,” Jackie’ll say. “I want you to visit,” Mary’ll say. So Jackie’ll fly to Thailand. Jackie’s really gonna love Thailand. Mary told her that she would really like it so she’s going to know that it was bound to happen. One day Jackie's gonna be at a café and she’ll meet a bunch of dolphins. The dolphins will be playing music at the café. They’re gonna need a new singer so they’ll ask Jackie to join the band. Jackie’ll be so happy. She’ll really enjoy singing in the band so she’ll decide to stay in Thailand. Every once in a while Jackie will think about being a lawyer, but she’ll never want to do it again."
+            android:textSize="18sp" />
+    </ScrollView>
+
     <Button
-        android:id="@+id/btnActivitiesAnsw"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
         android:background="#E7323D"
         android:text="Check Score"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.891"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="338dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="540dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="564dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

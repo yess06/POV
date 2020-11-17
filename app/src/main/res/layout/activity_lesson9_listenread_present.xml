@@ -6,4 +6,101 @@
     android:layout_height="match_parent"
     tools:context=".lesson9ListenreadPresent">
 
+    <TextView
+        android:id="@+id/textView341"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Hello, this is AJ Hoge. Welcome to the POV lesson for “Vegetarian”. Let’s get started."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView341">
+
+        <TextView
+            android:id="@+id/textView342"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porky pig wants to lose weight. So he goes to Dr. Atkins. He says, “Dr. Atkins, I want to lose weight. Please help me.” Dr. Atkins says, “Okay, eat lots of meat and fat. It tastes great and you’ll lose weight.” Porky says, “Hey, you are preachin’ to the choir. I love meat.” So Porky goes home. Every day he eats lots and lots of meat. Lots and lots of fat, everything but the kitchen sink. How does he feel? Well, in fact he feels terrible. Porky gets sick. Every day he feels more and more sick. In the beginning he loses some weight. But eventually he gains more and more and more weight. He gets fatter and fatter and fatter. He becomes super fat. So Porky pig becomes obese. He decides, “I need to see someone else. I need to ask another person for help.” He goes to John Robbins. John Robbins says, “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.” Porky does not like this idea. This information goes in one ear and out the other. Porky ignores John’s advice and he keeps eating meat and he keeps eating fat. Well, one month later Porky has a heart attack. And he almost dies. He says, “I’ve seen the light. I must eat lots of fruits and vegetables.” He goes home from the hospital and becomes a vegetarian. He eats only fresh fruit and vegetables and brown rice. He begins to feel better and better and he loses 528 pounds. He becomes a slim and handsome pig. And, of course, his vegetarian diet plays a major role in helping him become healthy. "
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:background="#E7323D"
+        android:text="Check Score"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="338dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="540dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="552dp"
+        android:text="00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btPlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="564dp"
+        android:src="@drawable/ic_pause"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

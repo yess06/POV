@@ -25,7 +25,7 @@ public class menuActivities extends AppCompatActivity {
     });
 
 
-     Button btnAnswer = findViewById(R.id.btnAnswerPresent);
+     Button btnAnswer = findViewById(R.id.btnAnswer);
      btnAnswer.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {

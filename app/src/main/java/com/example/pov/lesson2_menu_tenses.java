@@ -31,5 +31,23 @@ public class lesson2_menu_tenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnFuture = findViewById(R.id.btnlessontwofuture);
+        btnFuture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_activities_future.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnVocabulary = findViewById(R.id.btnlessontwoVocabulary);
+        btnVocabulary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_vocabulary.class);
+                startActivity(intent);
+            }
+        });
     }
 }

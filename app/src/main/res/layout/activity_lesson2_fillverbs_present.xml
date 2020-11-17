@@ -181,7 +181,7 @@
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="320dp"
-                android:text="She “I don’t want to put you out,” Jackie "
+                android:text=" “I don’t want to put you out,” Jackie "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.078"

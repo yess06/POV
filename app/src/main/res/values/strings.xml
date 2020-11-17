@@ -642,65 +642,65 @@
 
     <string-array name="QsPsL22">
         <item>answer</item>
-        <item>Mary has her hands full</item>
-        <item>Jackie has her hands full</item>
-        <item>Jackie had her hands full</item>
+        <item>She works as a lawyer. She is a lawyer</item>
+        <item>She works as a nurse. She is a nurse</item>
+        <item>She works as a teacher. She is a teacher</item>
     </string-array>
 
     <string-array name="QsPsL23">
-        <item>answer</item>
-        <item>Yes Jackie has her hands full</item>
-        <item>Yes Jackie had her hands full</item>
-        <item>Yes Jackie will have her hands full</item>
-    </string-array>
-
-    <string-array name="QsPsL24">
-        <item>answer</item>
-        <item>She works twelve hours everyday</item>
-        <item>She is gonna work twelve hours everyday</item>
-        <item>She worked twelve hours everyday</item>
-    </string-array>
-
-    <string-array name="QsPsL25">
-        <item>answer</item>
-        <item>She worked as a lawyer</item>
-        <item>She will work as a lawyer</item>
-        <item>She works as a lawyer</item>
-    </string-array>
-
-    <string-array name="QsPsL26">
         <item>answer</item>
         <item>She works everyday</item>
         <item>She worked everyday</item>
         <item>She will work everyday</item>
     </string-array>
 
-    <string-array name="QsPsL27">
+    <string-array name="QsPsL24">
         <item>answer</item>
         <item>She works for twelve hours</item>
         <item>She worked for twelve hours</item>
         <item>She is going to work for twelve hours</item>
     </string-array>
 
-    <string-array name="QsPsL28">
+    <string-array name="QsPsL25">
         <item>answer</item>
-        <item>Yes she needs a vacation</item>
-        <item>Yes she needed a vacation</item>
-        <item>Yes she will need a vacation </item>
+        <item>Yes, she needs a vacation</item>
+        <item>Yes, she needed a vacation</item>
+        <item>Yes, she will need a vacation</item>
     </string-array>
 
-    <string-array name="QsPsL29">
+    <string-array name="QsPsL26">
         <item>answer</item>
         <item>She is very stressed out</item>
         <item>She was very stressed out</item>
         <item>She will be very stressed out</item>
     </string-array>
 
+    <string-array name="QsPsL27">
+        <item>answer</item>
+        <item>Yes, Mary lives in Thailand</item>
+        <item>Yes, Mary lived in Thailand</item>
+        <item>Yes, Mary will live in Thailand</item>
+    </string-array>
+
+    <string-array name="QsPsL28">
+        <item>answer</item>
+        <item>Yes, she does. Jackie flies to  Thailand</item>
+        <item>Yes, she did. Jackie flew to Thailand</item>
+        <item>Yes, she will. Jackie will fly to Thailand</item>
+    </string-array>
+
+    <string-array name="QsPsL29">
+        <item>answer</item>
+        <item>Yes, she did. She really enjoyed singing in the band</item>
+        <item>Yes, she does. She really enjoys singing in the band</item>
+        <item>Yes, she will. She will really enjoy singing in the band</item>
+    </string-array>
+
     <string-array name="QsPsL210">
         <item>answer</item>
-        <item>Yes mary lives in Thailand</item>
-        <item>Yes mary lived in Thailand </item>
-        <item>Yes mary will live in Thailand</item>
+        <item>Yes, she did. She decided to stay in Thailand</item>
+        <item>Yes, she will. She will decide to stay in Thailand</item>
+        <item>Yes, she does. She decides to stay in Thailand</item>
     </string-array>
 
 
@@ -713,66 +713,136 @@
 
     <string-array name="QsPasL22">
         <item>answer</item>
-        <item>Mary has her hands full</item>
-        <item>Jackie has her hands full</item>
-        <item>Jackie had her hands full</item>
+        <item>She is working as a lawyer</item>
+        <item>She is working as a lawyer</item>
+        <item>She worked as a lawyer</item>
     </string-array>
 
     <string-array name="QsPasL23">
-        <item>answer</item>
-        <item>Yes Jackie has her hands full</item>
-        <item>Yes Jackie had her hands full </item>
-        <item>Yes Jackie will have her hands full </item>
-    </string-array>
-
-    <string-array name="QsPasL24">
-        <item>answer</item>
-        <item>She works twelve hours everyday</item>
-        <item>She is gonna work twelve hours everyday</item>
-        <item>She worked twelve hours everyday </item>
-    </string-array>
-
-
-    <string-array name="QsPasL25">
-        <item>answer</item>
-        <item>She worked as a lawyer</item>
-        <item>She will work as a lawyer</item>
-        <item>She works as a lawyer</item>
-    </string-array>
-
-    <string-array name="QsPasL26">
         <item>answer</item>
         <item>She works everyday</item>
         <item>She worked everyday</item>
         <item>She will work everyday</item>
     </string-array>
 
-    <string-array name="QsPasL27">
+    <string-array name="QsPasL24">
         <item>answer</item>
         <item>She works for twelve hours</item>
         <item>She worked for twelve hours</item>
-        <item>She is going to work for twelve hours</item>
+        <item>She will work for twelve hours</item>
     </string-array>
 
-    <string-array name="QsPasL28">
+
+    <string-array name="QsPasL25">
         <item>answer</item>
-        <item>Yes she needs a vacation</item>
-        <item>Yes she needed a vacation</item>
-        <item>Yes she will need a vacation</item>
+        <item>Yes, she needs a vacation</item>
+        <item>Yes, she needed a vacation</item>
+        <item>Yes, she needed a vacation</item>
     </string-array>
 
-    <string-array name="QsPasL29">
+    <string-array name="QsPasL26">
         <item>answer</item>
         <item>She is very stressed out</item>
         <item>She was very stressed out</item>
         <item>She will be very stressed out</item>
     </string-array>
 
+    <string-array name="QsPasL27">
+        <item>answer</item>
+        <item>Yes, Mary lives in Thailand</item>
+        <item>Yes, Mary lived in Thailand</item>
+        <item>Yes, Mary will be living in Thailand</item>
+    </string-array>
+
+    <string-array name="QsPasL28">
+        <item>answer</item>
+        <item>Yes, she does. Jackie flies to  Thailand</item>
+        <item>Yes, she did. Jackie flew to Thailand</item>
+        <item>Yes, she will. Jackie will fly to Thailand</item>
+    </string-array>
+
+    <string-array name="QsPasL29">
+        <item>answer</item>
+        <item>Yes, she did. She really enjoyed singing in the band</item>
+        <item>Yes, she does. She really enjoys singing in the band</item>
+        <item>Yes, she will. She will really enjoy singing in the band</item>
+    </string-array>
+
     <string-array name="QsPasL210">
         <item>answer</item>
-        <item>Yes mary lives in Thailand</item>
-        <item>Yes mary lived in Thailand </item>
-        <item>Yes mary will live in Thailand</item>
+        <item>Yes, she did. She decided to stay in Thailand</item>
+        <item>Yes, she will. She’ll decide to stay in Thailand</item>
+        <item>ºYes, she does. She decides to stay in Thailand</item>
+    </string-array>
+
+    <string-array name="QsFutL21">
+        <item>answer</item>
+        <item>Yes, Jackie has her hands full</item>
+        <item>Yes, Jackie will have her hands full</item>
+        <item>Yes, Jackie had her hands full</item>
+    </string-array>
+
+    <string-array name="QsFutL22">
+        <item>answer</item>
+        <item>She is working as a lawyer</item>
+        <item>She will be working as a lawyer</item>
+        <item>She was working as a lawyer</item>
+    </string-array>
+
+    <string-array name="QsFutL23">
+        <item>answer</item>
+        <item>She works everyday</item>
+        <item>She worked everyday</item>
+        <item>She worked everyday</item>
+    </string-array>
+
+    <string-array name="QsFutL24">
+        <item>answer</item>
+        <item>She works for twelve hours</item>
+        <item>She worked for twelve hours</item>
+        <item>She will work for twelve hours</item>
+    </string-array>
+
+    <string-array name="QsFutL25">
+        <item>answer</item>
+        <item>Yes, she needs a vacation</item>
+        <item>Yes, she needed a vacation</item>
+        <item>Yes, she’s gonna need a vacation</item>
+    </string-array>
+
+    <string-array name="QsFutL26">
+        <item>answer</item>
+        <item>She is very stressed out</item>
+        <item>She was very stressed out</item>
+        <item>She will be very stressed out</item>
+    </string-array>
+
+    <string-array name="QsFutL27">
+        <item>answer</item>
+        <item>Yes, Mary lives in Thailand</item>
+        <item>Yes, Mary lived in Thailand</item>
+        <item>Yes, Mary will be living in Thailand</item>
+    </string-array>
+
+    <string-array name="QsFutL28">
+        <item>answer</item>
+        <item>Yes, she does. Jackie flies to  Thailand</item>
+        <item>Yes, she did. Jackie flew to Thailand</item>
+        <item>Yes, she will. Jackie will fly to Thailand</item>
+    </string-array>
+
+    <string-array name="QsFutL29">
+        <item>answer</item>
+        <item>Yes, she did. She really enjoyed singing in the band</item>
+        <item>Yes, she does. She really enjoys singing in the band</item>
+        <item>Yes, she will. She will really enjoy singing in the band</item>
+    </string-array>
+
+    <string-array name="QsFutL210">
+        <item>answer</item>
+        <item>Yes, she did. She decided to stay in Thailand</item>
+        <item>Yes, she will. She’ll decide to stay in Thailand</item>
+        <item>Yes, she does. She decides to stay in Thailand</item>
     </string-array>
 
     <string-array name="fillpastL21">
@@ -1042,12 +1112,123 @@
         <item>will want</item>
     </string-array>
 
+    <string-array name="fillfutL21">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will have</item>
+    </string-array>
 
+    <string-array name="fillfutL22">
+        <item>answer</item>
+        <item>works</item>
+        <item>worked</item>
+        <item>will be working</item>
+    </string-array>
 
+    <string-array name="fillfutL23">
+        <item>answer</item>
+        <item>needs</item>
+        <item>needed</item>
+        <item>is gonna need</item>
+    </string-array>
 
+    <string-array name="fillfutL24">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>will be living</item>
+    </string-array>
 
+    <string-array name="fillfutL25">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>is gonna tell</item>
+    </string-array>
 
+    <string-array name="fillfutL26">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
 
+    <string-array name="fillfutL27">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
 
+    <string-array name="fillfutL28">
+        <item>answer</item>
+        <item>flies</item>
+        <item>flew</item>
+        <item>will fly</item>
+    </string-array>
+
+    <string-array name="fillfutL29">
+        <item>answer</item>
+        <item>loves</item>
+        <item>loved</item>
+        <item>gonna love</item>
+    </string-array>
+
+    <string-array name="fillfutL210">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>is going to know</item>
+    </string-array>
+
+    <string-array name="fillfutL211">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>will meet</item>
+    </string-array>
+
+    <string-array name="fillfutL212">
+        <item>answer</item>
+        <item>need</item>
+        <item>needed</item>
+        <item>gonna need</item>
+    </string-array>
+
+    <string-array name="fillfutL213">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL214">
+        <item>answer</item>
+        <item>enjoy</item>
+        <item>enjoyed</item>
+        <item>going to enjoy</item>
+    </string-array>
+
+    <string-array name="fillfutL215">
+        <item>answer</item>
+        <item>decides</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillfutL216">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillfutL217">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
 
 </resources>

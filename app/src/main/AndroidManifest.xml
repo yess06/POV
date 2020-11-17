@@ -36,11 +36,11 @@
         <activity
             android:name=".lesson2_answerquestion_present"
             android:label="Answer and Questions"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_activities_present" />
         <activity
             android:name=".lesson2_answerquestion_past"
             android:label="Answer and Questions"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_activities_past" />
         <activity
             android:name=".lesson2_menu_activities_present"
             android:label="Activities"
@@ -52,11 +52,50 @@
         <activity
             android:name=".lesson2_fillverbs_present"
             android:label="Fill Verbs"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_activities_present" />
         <activity
             android:name=".lesson2_fillverbs_past"
             android:label="Fill Verbs"
+            android:parentActivityName=".lesson2_menu_activities_past" />
+
+        <activity
+            android:name=".lesson2_answer_vocabulary"
+            android:label="Vocabulary"
+            android:parentActivityName=".lesson2_menu_vocabulary" />
+
+        <activity
+            android:name=".lesson2_menu_vocabulary"
+            android:label="Menu"
             android:parentActivityName=".lesson2_menu_tenses" />
+
+        <activity
+            android:name=".lesson2_listenread_present"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson2_menu_activities_present" />
+
+        <activity
+            android:name=".lesson2_listen_read_past"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson2_menu_activities_past" />
+
+        <activity
+            android:name=".lesson2_listenread_future"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson2_menu_activities_future" />
+
+        <activity
+            android:name=".lesson2_menu_activities_future"
+            android:label="Menu"
+            android:parentActivityName=".lesson2_menu_tenses" />
+
+        <activity
+            android:name=".lesson2_fillverbs_future"
+            android:label="Fill Verbs"
+            android:parentActivityName=".lesson2_menu_activities_future" />
+        <activity
+            android:name=".lesson2_answerquestion_future"
+            android:label="Answer and Question"
+            android:parentActivityName=".lesson2_menu_activities_future" />
 
         <activity
             android:name=".readingFutureL1"
