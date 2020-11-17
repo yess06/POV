@@ -24,16 +24,17 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class qualificationvocabulary extends AppCompatActivity {
+public class qualificationfuturelesson1 extends AppCompatActivity {
     String id, token;
     TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qualificationvocabulary);
-        quallificationlesson();
+        setContentView(R.layout.activity_qualificationfuturelesson1);
+        score = findViewById(R.id.txtscorefuture);
+        quallificationtime();
     }
-    public void qualifilesson(View view){
+    public void qualifitime(View view){
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -44,11 +45,12 @@ public class qualificationvocabulary extends AppCompatActivity {
         try {
             object.put("user_id", id);
             object.put("lesson_id", "1");
+            object.put("time_id", "4");
             object.put("qualification", valid.getString("qualifi", ""));
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = getResources().getString(R.string.urlpostqualificationlessonlesson1);
+        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
@@ -69,17 +71,17 @@ public class qualificationvocabulary extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(qualificationvocabulary.this, lessons.class);
+        Intent intent = new Intent(qualificationfuturelesson1.this, qualificationvocabulary.class);
         startActivity(intent);
     }
-    public void quallificationlesson(){
+    public void quallificationtime(){
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
-            String url = getResources().getString(R.string.urlgetqualificationstimelesson1);
+            String url = getResources().getString(R.string.urlgetqualificationsactivity);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
@@ -92,12 +94,14 @@ public class qualificationvocabulary extends AppCompatActivity {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
                                 if (u.getString("lesson_id").equals("1")) {
+                                    if (u.getString("time_id").equals("4")) {
                                         qualification += Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationvocabulary.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(qualificationfuturelesson1.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));
                                         editor.commit();
+                                    }
                                 }
 
                             }
@@ -110,7 +114,7 @@ public class qualificationvocabulary extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(qualificationvocabulary.this, "Wrong data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(qualificationfuturelesson1.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
                 @Override

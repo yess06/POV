@@ -98,6 +98,5 @@ public class lesson2_fillverbs_future extends AppCompatActivity {
         adapter17.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise17.setAdapter(adapter17);
 
-
     }
 }

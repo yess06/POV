@@ -4,8 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,7 +34,7 @@ public class loginStudent extends AppCompatActivity {
 
     private EditText txtemail;
     private EditText txtpassword;
-
+    CheckBox pass;
     Button login;
     private String token;
     private TextView resul;
@@ -42,15 +46,27 @@ public class loginStudent extends AppCompatActivity {
         setContentView(R.layout.activity_login_student);
       txtemail = findViewById(R.id.tvEmail);
         txtpassword = findViewById(R.id.tvPassword);
+        pass = findViewById(R.id.checkBoxloginstudent);
+
+        pass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    txtpassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }else {
+                    txtpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
 
 
        login = findViewById(R.id.btnlogin);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*login();*/
-                Intent intent = new Intent(loginStudent.this, lessons.class);
-                startActivity(intent);
+                login();
+                //Intent intent = new Intent(loginStudent.this, lessons.class);
+                //startActivity(intent);
             }
         });
     }
@@ -67,7 +83,7 @@ public class loginStudent extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        String url = getResources().getString(R.string.urlpost);
+        String url = getResources().getString(R.string.urllogin);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url, object,
                 new
                         com.android.volley.Response.Listener<JSONObject>(){
@@ -79,6 +95,7 @@ public class loginStudent extends AppCompatActivity {
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("token", token);
                     editor.putString("email", txtemail.getText().toString());
+                    editor.putString("qualifi", "0");
                     editor.commit();
                     userlog();
                     Intent intent = new Intent(loginStudent.this, lessons.class);
@@ -103,7 +120,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.5:8000/api/auth/users";
+        String url2 = "http://10.0.0.4:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

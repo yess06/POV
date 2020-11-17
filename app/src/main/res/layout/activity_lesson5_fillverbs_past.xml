@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/txtscorefuture"
         android:layout_width="240dp"
         android:layout_height="41dp"
         android:layout_marginTop="60dp"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/txtscorefuture" />
 
     <Spinner
         android:id="@+id/spinner2"

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="402dp"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-
-    android:weightSum="5">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <androidx.cardview.widget.CardView
         android:id="@+id/listUserCard"
         android:layout_width="402dp"
@@ -30,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="ID:"
+                    android:text="Lesson:"
                     android:textSize="18sp" />
 
                 <TextView
@@ -92,8 +87,29 @@
                     android:textSize="18sp" />
 
             </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtqualificationrvrtt"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Qualification: "
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txtqualificationrv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>

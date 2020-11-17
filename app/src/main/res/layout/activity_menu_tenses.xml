@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPastL1" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnScore"
         android:layout_width="285dp"
         android:layout_height="71dp"
         android:layout_marginTop="16dp"

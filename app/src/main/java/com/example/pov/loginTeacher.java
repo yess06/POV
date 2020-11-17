@@ -4,8 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -29,6 +33,7 @@ public class loginTeacher extends AppCompatActivity {
     private String token, id, na;
     private EditText emailt, passt;
     private Button login;
+    CheckBox pass;
     private static final String TAG = MainActivity.class.getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,17 @@ public class loginTeacher extends AppCompatActivity {
         login = findViewById(R.id.btnLoginT);
         emailt = findViewById(R.id.emailteacher);
         passt = findViewById(R.id.passteacher);
+        pass = findViewById(R.id.checkBoxloginteacher);
+        pass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    passt.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                }else {
+                    passt.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
 
     }
     public void login(View view){
@@ -67,7 +83,7 @@ public class loginTeacher extends AppCompatActivity {
                     userlog();
                     RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonObject = new JSONObject();
-                    String url3 = "http://10.0.0.5:8000/api/auth/roles";
+                    String url3 = "http://10.0.0.4:8000/api/auth/roles";
                     JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
                             new Response.Listener<JSONObject>() {
                                 @Override
@@ -83,7 +99,7 @@ public class loginTeacher extends AppCompatActivity {
                                                     Intent intent = new Intent(getBaseContext(), MenuTeacher.class);
                                                     startActivity(intent);
                                                 }else{
-                                                    Toast.makeText(getBaseContext(), "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(getBaseContext(), "wrong data", Toast.LENGTH_SHORT).show();
                                                 }
                                             }
                                         }
@@ -131,7 +147,7 @@ public class loginTeacher extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.5:8000/api/auth/users";
+        String url2 = "http://10.0.0.4:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

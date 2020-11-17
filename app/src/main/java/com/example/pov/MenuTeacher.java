@@ -44,6 +44,10 @@ public class MenuTeacher extends AppCompatActivity {
         email = preferences.getString("email", "null");
         example.append("Name: " + info.getString("name", "null") +"\n" + "Email: " + preferences.getString("email", "null"));
     }
+    public void lessons(View view){
+        Intent intent = new Intent(MenuTeacher.this, PovQualification.class);
+        startActivity(intent);
+    }
     public void register(View view){
         //Toast.makeText(getBaseContext(), "hola", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MenuTeacher.this, register.class);
@@ -70,7 +74,7 @@ public class MenuTeacher extends AppCompatActivity {
 
     public void logout(){
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        String url = "http://10.0.0.5:8000/api/auth/logout";
+        String url = getResources().getString(R.string.urllogout);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
                 null, new Response.Listener<JSONObject>() {
             @Override
@@ -80,6 +84,10 @@ public class MenuTeacher extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+                SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.clear();
+                editor.commit();
             }
         }, new Response.ErrorListener() {
             @Override
@@ -95,5 +103,6 @@ public class MenuTeacher extends AppCompatActivity {
             }
         };
         requestQueue.add(jsonObjectRequest);
+
     }
 }

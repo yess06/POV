@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Info_Student"
+            android:label="Information Student"
+            android:parentActivityName=".lessons"></activity>
+        <activity
+            android:name=".qualificationfuturelesson1"
+            android:label="Qualification" />
         <activity android:name=".Splashactivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,9 +32,8 @@
             android:parentActivityName=".MenuTeacher" />
         <activity
             android:name=".QualificationReport"
-            android:label="Qualification Report"
-            android:parentActivityName=".MenuTeacher" />
-
+            android:label="Qualification Users"
+            android:parentActivityName=".PovQualification" />
         <activity
             android:name=".lesson2_menu_tenses"
             android:label="Lesson 2"
@@ -67,7 +72,6 @@
             android:name=".lesson2_menu_vocabulary"
             android:label="Menu"
             android:parentActivityName=".lesson2_menu_tenses" />
-
         <activity
             android:name=".lesson2_listenread_present"
             android:label="Listen and Read"
@@ -109,60 +113,55 @@
             android:name=".readingPresentL1"
             android:label="Listen and Read"
             android:parentActivityName=".menuActivities" />
-
         <activity
             android:name=".questionFutureL1"
             android:label="Answer and Question"
             android:parentActivityName=".menuFutureL1" />
-
         <activity
             android:name=".questionPastL1"
             android:label="Answer and Question"
             android:parentActivityName=".menuPastL1" />
-
         <activity
             android:name=".questionPresentL1"
             android:label="Answer and Question"
             android:parentActivityName=".menuActivities" />
-
         <activity
             android:name=".fillPastL1"
             android:label="Fill the Verbs"
             android:parentActivityName=".menuPastL1" />
-
         <activity
             android:name=".fillFutureL1"
             android:label="Fill the Verbs"
             android:parentActivityName=".menuFutureL1" />
-
         <activity
             android:name=".fillPresentL1"
             android:label="Fill the Verbs"
             android:parentActivityName=".menuActivities" />
-
         <activity
             android:name=".vocabularyL1"
             android:label="Vocabulary"
             android:parentActivityName=".menuVocabulary" />
-
         <activity
             android:name=".menuPastL1"
             android:label="Menu Activities"
             android:parentActivityName=".menuTenses" />
-
         <activity
             android:name=".menuFutureL1"
             android:label="Menu Activities"
             android:parentActivityName=".menuTenses" />
-
-.
-
         <activity
             android:name=".MenuTeacher"
             android:label="Menu Teacher" />
         <activity
             android:name=".qualificationfilltheverb"
             android:label="Qualification fill the verbs" />
+        <activity
+            android:name=".qualificationlistenandread"
+            android:label="Qualification "
+            android:parentActivityName=".menuTenses" />
+        <activity
+            android:name=".qualificationvocabulary"
+            android:label="Qualification" />
         <activity
             android:name=".qualificationStudent"
             android:label="Qualification Student"
@@ -181,10 +180,12 @@
             android:parentActivityName=".MenuTeacher" />
         <activity
             android:name=".menuActivities"
-            android:label="Menu Activities" />
+            android:label="Menu Activities"
+            android:parentActivityName=".menuTenses" />
         <activity
             android:name=".PovQualification"
-            android:label="POV Qualification" />
+            android:label="POV Lessons"
+            android:parentActivityName=".MenuTeacher" />
         <activity
             android:name=".answerfilltheverbs"
             android:label="Answers" />
@@ -213,9 +214,7 @@
             android:name=".loginTeacher"
             android:label="Login Teacher"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
