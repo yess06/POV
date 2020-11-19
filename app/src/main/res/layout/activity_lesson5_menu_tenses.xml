@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".lesson5_menu_tenses">
     <Button
-        android:id="@+id/btnlessontwoVocabulary"
+        android:id="@+id/vocabularyL3"
         android:layout_width="285dp"
         android:layout_height="71dp"
         android:layout_marginTop="120dp"
@@ -26,7 +26,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlessontwoVocabulary" />
+        app:layout_constraintTop_toBottomOf="@+id/vocabularyL3" />
 
     <Button
         android:id="@+id/btnlessontwopast"

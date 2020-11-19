@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -27,7 +26,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -37,14 +35,14 @@ public class lessons extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons);
-        SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+        /*SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
         email = preferences.getString("email", "null");
         getbtn();
         getbtn2();
         getbtn3();
-        getbtn4();
+        getbtn4();*/
         getbtn5();
         getbtn6();
         getbtn7();
@@ -63,6 +61,15 @@ public class lessons extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lessons.this, lesson2_menu_tenses.class);
+                startActivity(intent);
+            }
+        });
+
+        Button pov3 = findViewById(R.id.btnPOV3);
+        pov3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lessons.this, lesson3_menu_tenses.class);
                 startActivity(intent);
             }
         });

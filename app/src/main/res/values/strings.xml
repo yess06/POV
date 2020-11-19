@@ -1240,4 +1240,477 @@
         <item>will want</item>
     </string-array>
 
+
+    <string-array name="fillpsL31">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL32">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL33">
+        <item>answer</item>
+        <item>joins</item>
+        <item>joined</item>
+        <item>will join</item>
+    </string-array>
+
+    <string-array name="fillpsL34">
+        <item>answer</item>
+        <item>live</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillpsL35">
+        <item>answer</item>
+        <item>move</item>
+        <item>moved</item>
+        <item>will move</item>
+    </string-array>
+
+    <string-array name="fillpsL36">
+        <item>answer</item>
+        <item>hates</item>
+        <item>hated</item>
+        <item>will hate</item>
+    </string-array>
+
+    <string-array name="fillpsL37">
+        <item>answer</item>
+        <item>move</item>
+        <item>moved</item>
+        <item>will move</item>
+    </string-array>
+
+    <string-array name="fillpsL38">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpsL39">
+        <item>answer</item>
+        <item>misses</item>
+        <item>missed</item>
+        <item>will miss</item>
+    </string-array>
+
+    <string-array name="fillpsL310">
+        <item>answer</item>
+        <item>starts</item>
+        <item>started</item>
+        <item>will start</item>
+    </string-array>
+
+    <string-array name="fillpsL311">
+        <item>answer</item>
+        <item>makes</item>
+        <item>made</item>
+        <item>gonna make</item>
+    </string-array>
+
+    <string-array name="fillpsL312">
+        <item>answer</item>
+        <item>likes</item>
+        <item>liked</item>
+        <item>will like</item>
+    </string-array>
+
+    <string-array name="fillpastL31">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL32">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL33">
+        <item>answer</item>
+        <item>joins</item>
+        <item>joined</item>
+        <item>will join</item>
+    </string-array>
+
+    <string-array name="fillpastL34">
+        <item>answer</item>
+        <item>live</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillpastL35">
+        <item>answer</item>
+        <item>move</item>
+        <item>moved</item>
+        <item>will move</item>
+    </string-array>
+
+    <string-array name="fillpastL36">
+        <item>answer</item>
+        <item>hates</item>
+        <item>hated</item>
+        <item>will hate</item>
+    </string-array>
+
+    <string-array name="fillpastL37">
+        <item>answer</item>
+        <item>move</item>
+        <item>moved</item>
+        <item>will move</item>
+    </string-array>
+
+    <string-array name="fillpastL38">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+
+    <string-array name="fillpastL39">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpastL310">
+        <item>answer</item>
+        <item>miss</item>
+        <item>missed</item>
+        <item>will miss</item>
+    </string-array>
+
+
+    <string-array name="fillpastL311">
+        <item>answer</item>
+        <item>starts</item>
+        <item>started</item>
+        <item>will start</item>
+    </string-array>
+
+    <string-array name="fillpastL312">
+        <item>answer</item>
+        <item>make</item>
+        <item>made</item>
+        <item>will make</item>
+    </string-array>
+
+    <string-array name="fillpastL313">
+        <item>answer</item>
+        <item>likes</item>
+        <item>liked</item>
+        <item>will like</item>
+    </string-array>
+
+    <string-array name="fillfutL31">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>be</item>
+    </string-array>
+
+
+    <string-array name="fillfutL32">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>be</item>
+    </string-array>
+
+    <string-array name="fillfutL33">
+        <item>answer</item>
+        <item>joins</item>
+        <item>joined</item>
+        <item>will join</item>
+    </string-array>
+
+    <string-array name="fillfutL34">
+        <item>answer</item>
+        <item>are gonna</item>
+        <item>were gonna</item>
+        <item>was gonna</item>
+    </string-array>
+
+    <string-array name="fillfutL35">
+        <item>answer</item>
+        <item>will move</item>
+        <item>moved</item>
+        <item>moving</item>
+    </string-array>
+
+    <string-array name="fillfutL36">
+        <item>answer</item>
+        <item>ll hate</item>
+        <item>hated</item>
+        <item>hates</item>
+    </string-array>
+
+    <string-array name="fillfutL37">
+        <item>answer</item>
+        <item>will be</item>
+        <item>is</item>
+        <item>was</item>
+    </string-array>
+
+    <string-array name="fillfutL38">
+        <item>answer</item>
+        <item>going to</item>
+        <item>was</item>
+        <item>be</item>
+    </string-array>
+
+    <string-array name="fillfutL39">
+        <item>answer</item>
+        <item>misses</item>
+        <item>going to miss</item>
+        <item>missed</item>
+    </string-array>
+
+    <string-array name="fillfutL310">
+        <item>answer</item>
+        <item>is going to</item>
+        <item>was going to</item>
+        <item>were going to</item>
+    </string-array>
+
+    <string-array name="fillfutL311">
+        <item>answer</item>
+        <item>make</item>
+        <item>made</item>
+        <item>making</item>
+    </string-array>
+
+    <string-array name="fillfutL312">
+        <item>answer</item>
+        <item>will</item>
+        <item>was</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="QsFutL31">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsFutL32">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsFutL33">
+        <item>answer</item>
+        <item>Alex is an army brat</item>
+        <item>Alex was an army brat</item>
+        <item>Alex will be an army brat</item>
+    </string-array>
+
+    <string-array name="QsFutL34">
+        <item>answer</item>
+        <item>Yes, he does. His dad joins the Army</item>
+        <item>Yes, he will. His dad will join the Army</item>
+        <item>Yes, he did.  His dad joined the Army</item>
+    </string-array>
+
+    <string-array name="QsFutL35">
+        <item>answer</item>
+        <item>Yes, they do. They move to America</item>
+        <item>Yes, they did. They moved to America</item>
+        <item>Yes, they will. They will move to America</item>
+    </string-array>
+
+    <string-array name="QsFutL36">
+        <item>answer</item>
+        <item>Everyone knows Alex is the new kid on the block</item>
+        <item>Everyone knew Alex is the new kid on the block</item>
+        <item>Everyone will know Alex is the new kid on the block</item>
+    </string-array>
+
+    <string-array name="QsFutL37">
+        <item>answer</item>
+        <item>No, he has no friends at school</item>
+        <item>No, he had no friends at school</item>
+        <item>No, won’t have friends at school</item>
+    </string-array>
+
+    <string-array name="QsFutL38">
+        <item>answer</item>
+        <item>He starts to play little league sports</item>
+        <item>He started to play little league sports</item>
+        <item>He will start to play little league sports</item>
+    </string-array>
+
+    <string-array name="QsFutL39">
+        <item>answer</item>
+        <item>He feels settled in</item>
+        <item>He felt settled in</item>
+        <item>He will feel settled in</item>
+    </string-array>
+
+    <string-array name="QsFutL310">
+        <item>answer</item>
+        <item>Yes, he likes living in America now</item>
+        <item>Yes, he liked living in America now</item>
+        <item>Yes, he will like living in America now</item>
+    </string-array>
+
+    <string-array name="QsPasL31">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsPasL32">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsPasL33">
+        <item>answer</item>
+        <item>Alex is an army brat</item>
+        <item>Alex was an army brat</item>
+        <item>Alex will be an army brat</item>
+    </string-array>
+
+    <string-array name="QsPasL34">
+        <item>answer</item>
+        <item>Yes, he does. His dad joins the Army before he was born</item>
+        <item>Yes, he will. His dad will join the Army</item>
+        <item>Yes, he did.  His dad joined the Army before he was born</item>
+    </string-array>
+
+    <string-array name="QsPasL35">
+        <item>answer</item>
+        <item>Yes, they do. They move to America</item>
+        <item>Yes, they did. They moved to America</item>
+        <item>Yes, they will. They will move to America</item>
+    </string-array>
+
+    <string-array name="QsPasL36">
+        <item>answer</item>
+        <item>Everyone knows Alex is the new kid on the block</item>
+        <item>Everyone knew Alex is the new kid on the block</item>
+        <item>Everyone will know Alex is the new kid on the block</item>
+    </string-array>
+
+    <string-array name="QsPasL37">
+        <item>answer</item>
+        <item>No, he has no friends at school</item>
+        <item>No, he had no friends at school</item>
+        <item>No, won’t have friends at school</item>
+    </string-array>
+
+    <string-array name="QsPasL38">
+        <item>answer</item>
+        <item>He starts to play little league sports</item>
+        <item>He started to play little league sports</item>
+        <item>He will start to play little league sports</item>
+    </string-array>
+
+    <string-array name="QsPasL39">
+        <item>answer</item>
+        <item>He feels settled in</item>
+        <item>He felt settled in</item>
+        <item>He will feel settled in</item>
+    </string-array>
+
+    <string-array name="QsPasL310">
+        <item>answer</item>
+        <item>Yes, he likes living in America now</item>
+        <item>Yes, he liked living in America now</item>
+        <item>Yes, he will like living in America now</item>
+    </string-array>
+
+    <string-array name="QsPsL31">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsPsL32">
+        <item>answer</item>
+        <item>Alex is twelve years old</item>
+        <item>Alex was twelve years old</item>
+        <item>Alex will be twelve years old</item>
+    </string-array>
+
+    <string-array name="QsPsL33">
+        <item>answer</item>
+        <item>Alex is an army brat</item>
+        <item>Alex was an army brat</item>
+        <item>Alex will be an army brat</item>
+    </string-array>
+
+    <string-array name="QsPsL34">
+        <item>answer</item>
+        <item>Yes, he does. His dad joins the Army before he was born</item>
+        <item>Yes, he will. His dad will join the Army</item>
+        <item>Yes, he did.  His dad joined the Army before he was born</item>
+    </string-array>
+
+    <string-array name="QsPsL35">
+        <item>answer</item>
+        <item>Yes, they do. They move to America</item>
+        <item>Yes, they did. They moved to America</item>
+        <item>Yes, they will. They will move to America</item>
+    </string-array>
+
+    <string-array name="QsPsL36">
+        <item>answer</item>
+        <item>Everyone knows Alex is the new kid on the block</item>
+        <item>Everyone knew Alex is the new kid on the block</item>
+        <item>Everyone will know Alex is the new kid on the block</item>
+    </string-array>
+
+    <string-array name="QsPsL37">
+        <item>answer</item>
+        <item>No, he has no friends at school</item>
+        <item>No, he had no friends at school</item>
+        <item>No, he won’t have friends at school</item>
+    </string-array>
+
+
+    <string-array name="QsPsL38">
+        <item>answer</item>
+        <item>He starts to play little league sports</item>
+        <item>He started to play little league sports</item>
+        <item>He will start to play little league sports</item>
+    </string-array>
+
+    <string-array name="QsPsL39">
+        <item>answer</item>
+        <item>He feels settled in</item>
+        <item>He felt settled in</item>
+        <item>He will feel settled in</item>
+    </string-array>
+
+    <string-array name="QsPsL310">
+        <item>answer</item>
+        <item>Yes, he does. He likes living in America now</item>
+        <item>Yes, he did. He liked living in America now</item>
+        <item>Yes, he will. He will like living in America now</item>
+    </string-array>
 </resources>

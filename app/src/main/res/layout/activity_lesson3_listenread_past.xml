@@ -34,7 +34,7 @@
         android:id="@+id/button29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="612dp"
         android:background="#E7323D"
         android:text="Check Score"
         android:textColor="#FFFFFF"
