@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lesson2_qualification_vocabulary">
+    tools:context=".lesson2_qualification_lesson">
     <ImageView
         android:id="@+id/imageViewlessontwo"
         android:layout_width="287dp"
@@ -20,7 +20,7 @@
         android:id="@+id/txtlessontwohigh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="High Score: 30"
+        android:text="High Score: 100"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

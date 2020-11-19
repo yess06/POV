@@ -13,9 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Info_Student"
+        <activity android:name=".lesson2_qualification_vocabulary"
+            android:label="Qualification Present"/>
+        <activity android:name=".lesson2_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson2_menu_tenses"></activity>
+        <activity
+            android:name=".lesson2_qualification_lesson"
+            android:label="Qualification lesson" />
+        <activity
+            android:name=".lesson2_qualification_future"
+            android:label="Qualification future" />
+        <activity
+            android:name=".lesson2_qualification_past"
+            android:label="qualification past" />
+        <activity
+            android:name=".Info_Student"
             android:label="Information Student"
-            android:parentActivityName=".lessons"></activity>
+            android:parentActivityName=".lessons" />
         <activity
             android:name=".qualificationfuturelesson1"
             android:label="Qualification" />
@@ -62,12 +77,10 @@
             android:name=".lesson2_fillverbs_past"
             android:label="Fill Verbs"
             android:parentActivityName=".lesson2_menu_activities_past" />
-
         <activity
             android:name=".lesson2_answer_vocabulary"
             android:label="Vocabulary"
             android:parentActivityName=".lesson2_menu_vocabulary" />
-
         <activity
             android:name=".lesson2_menu_vocabulary"
             android:label="Menu"
@@ -76,22 +89,18 @@
             android:name=".lesson2_listenread_present"
             android:label="Listen and Read"
             android:parentActivityName=".lesson2_menu_activities_present" />
-
         <activity
             android:name=".lesson2_listen_read_past"
             android:label="Listen and Read"
             android:parentActivityName=".lesson2_menu_activities_past" />
-
         <activity
             android:name=".lesson2_listenread_future"
             android:label="Listen and Read"
             android:parentActivityName=".lesson2_menu_activities_future" />
-
         <activity
             android:name=".lesson2_menu_activities_future"
             android:label="Menu"
             android:parentActivityName=".lesson2_menu_tenses" />
-
         <activity
             android:name=".lesson2_fillverbs_future"
             android:label="Fill Verbs"
@@ -100,7 +109,6 @@
             android:name=".lesson2_answerquestion_future"
             android:label="Answer and Question"
             android:parentActivityName=".lesson2_menu_activities_future" />
-
         <activity
             android:name=".readingFutureL1"
             android:label="Listen and Read"

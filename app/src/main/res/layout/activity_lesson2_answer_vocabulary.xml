@@ -79,11 +79,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView266" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/btnlessonpractice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="484dp"
         android:background="#207A7A"
+        android:onClick="practicepage"
         android:text="More Practice"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="484dp"
         android:background="#E7323D"
+        android:onClick="postqualification"
         android:text="Check Score"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"

@@ -60,13 +60,13 @@ public class MenuTeacher extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.logout,menu);
+        inflater.inflate(R.menu.logout_teacher,menu);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.log){
+        if(id == R.id.logoutt){
             logout();
         }
         return super.onOptionsItemSelected(item);

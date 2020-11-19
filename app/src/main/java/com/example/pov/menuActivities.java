@@ -145,49 +145,5 @@ public class menuActivities extends AppCompatActivity {
         }
 
     }
-    public void qualifitime(View view){
-        //SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        JSONObject object = new JSONObject();
-        try {
-            object.put("user_id", id);
-            object.put("lesson_id", "1");
-            object.put("time_id", "2");
-            object.put("qualification", preferencess.getString("qualifi", "null"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
-        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
-                object, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
-            }
-        }){
-            @Override
-            public Map getHeaders() throws AuthFailureError {
-                HashMap headers = new HashMap();
-                headers.put("Authorization", "Bearer " + token);
-                return headers;
-            }
-        };
-        requestQueue.add(objectRequest);
-        SharedPreferences validd = getSharedPreferences("valid", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = validd.edit();
-        editor.clear();
-        editor.commit();
-        Intent intent = new Intent(menuActivities.this, lessons.class);
-        startActivity(intent);
 
-    }
 }

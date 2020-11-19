@@ -1,15 +1,13 @@
 package com.example.pov;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.RequestQueue;
@@ -25,24 +23,15 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class qualificationanswer extends AppCompatActivity {
+public class lesson2_qualification_future extends AppCompatActivity {
     String id, token;
-    TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qualificationanswer);
+        setContentView(R.layout.activity_lesson2_qualification_future);
         quallificationtime();
-        Button activities = findViewById(R.id.btnActivitiesAnsw);
-        activities.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                qualifitime();
-            }
-        });
-
     }
-    public void qualifitime(){
+    public void qualifitime(View view){
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -52,8 +41,8 @@ public class qualificationanswer extends AppCompatActivity {
         JSONObject object = new JSONObject();
         try {
             object.put("user_id", id);
-            object.put("lesson_id", "1");
-            object.put("time_id", "2");
+            object.put("lesson_id", "2");
+            object.put("time_id", "4");
             object.put("qualification", valid.getString("qualifi", "null"));
         } catch (JSONException e) {
             e.printStackTrace();
@@ -79,7 +68,7 @@ public class qualificationanswer extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(qualificationanswer.this, lessons.class);
+        Intent intent = new Intent(lesson2_qualification_future.this, lesson2_qualification_lesson.class);
         startActivity(intent);
     }
     public void quallificationtime(){
@@ -101,10 +90,10 @@ public class qualificationanswer extends AppCompatActivity {
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
-                                if (u.getString("lesson_id").equals("1")) {
-                                    if (u.getString("time_id").equals("2")) {
+                                if (u.getString("lesson_id").equals("2")) {
+                                    if (u.getString("time_id").equals("4")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationanswer.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(lesson2_qualification_future.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));
@@ -121,7 +110,7 @@ public class qualificationanswer extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(qualificationanswer.this, "Wrong data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(lesson2_qualification_future.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
                 @Override
