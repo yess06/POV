@@ -52,6 +52,8 @@ public class lesson2_qualification_lesson extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(lesson2_qualification_lesson.this, lessons.class);
+                startActivity(intent);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -67,8 +69,7 @@ public class lesson2_qualification_lesson extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(lesson2_qualification_lesson.this, lessons.class);
-        startActivity(intent);
+
     }
     public void quallificationlesson(){
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);

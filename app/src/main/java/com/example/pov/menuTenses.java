@@ -25,7 +25,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class menuTenses extends AppCompatActivity {
-    String token, id;
     Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

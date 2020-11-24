@@ -63,13 +63,25 @@ public class QualificationReport extends AppCompatActivity {
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("lesson_id").equals(lesson)){
-                                listqual.add(new Qualifications(u.getString("name"),u.getString("email"),u.getString("lesson_id"),u.getString("qualification")));
+                                listqual.add(new Qualifications(u.getString("id"),u.getString("name"),u.getString("email"),u.getString("lesson_id"),u.getString("qualification")));
                             }
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                     AdapterQualification adapterQualification = new AdapterQualification(listqual);
+                    adapterQualification.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(QualificationReport.this, Qualification_user_teacher.class);
+                            intent.putExtra("user_id", listqual.get(recycler.getChildAdapterPosition(view)).getUser_id());
+                            intent.putExtra("id", listqual.get(recycler.getChildAdapterPosition(view)).getLesson_id());
+                            intent.putExtra("name", listqual.get(recycler.getChildAdapterPosition(view)).getName());
+                            intent.putExtra("email", listqual.get(recycler.getChildAdapterPosition(view)).getEmail());
+                            intent.putExtra("qualification", listqual.get(recycler.getChildAdapterPosition(view)).getQualification());
+                            startActivity(intent);
+                        }
+                    });
                     recycler.setAdapter(adapterQualification);
                 }
             }, new Response.ErrorListener() {
@@ -108,7 +120,7 @@ public class QualificationReport extends AppCompatActivity {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("lesson_id").equals(lesson)){
                                 if (u.getString("name").equals(txtname.getText().toString())){
-                                    listqual.add(new Qualifications(u.getString("name"),u.getString("email"),u.getString("lesson_id"),u.getString("qualification")));
+                                    listqual.add(new Qualifications(u.getString("id"),u.getString("name"),u.getString("email"),u.getString("lesson_id"),u.getString("qualification")));
                                 }
                             }
                         }
@@ -116,6 +128,18 @@ public class QualificationReport extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     AdapterQualification adapterQualification = new AdapterQualification(listqual);
+                    adapterQualification.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(QualificationReport.this, Qualification_user_teacher.class);
+                            intent.putExtra("user_id", listqual.get(recycler.getChildAdapterPosition(view)).getUser_id());
+                            intent.putExtra("id", listqual.get(recycler.getChildAdapterPosition(view)).getLesson_id());
+                            intent.putExtra("name", listqual.get(recycler.getChildAdapterPosition(view)).getName());
+                            intent.putExtra("email", listqual.get(recycler.getChildAdapterPosition(view)).getEmail());
+                            intent.putExtra("qualification", listqual.get(recycler.getChildAdapterPosition(view)).getQualification());
+                            startActivity(intent);
+                        }
+                    });
                     recycler.setAdapter(adapterQualification);
                 }
             }, new Response.ErrorListener() {

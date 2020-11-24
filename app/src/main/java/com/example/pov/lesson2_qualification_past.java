@@ -109,6 +109,8 @@ public class lesson2_qualification_past extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(lesson2_qualification_past.this, lessons.class);
+                startActivity(intent);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -124,11 +126,5 @@ public class lesson2_qualification_past extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        //SharedPreferences validd = getSharedPreferences("valid", Context.MODE_PRIVATE);
-        //SharedPreferences.Editor editor = validd.edit();
-        //editor.clear();
-        //editor.commit();
-        Intent intent = new Intent(lesson2_qualification_past.this, lessons.class);
-        startActivity(intent);
     }
 }

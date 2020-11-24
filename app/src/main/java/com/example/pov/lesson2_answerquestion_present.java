@@ -139,6 +139,8 @@ public class lesson2_answerquestion_present extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(lesson2_answerquestion_present.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(lesson2_answerquestion_present.this, lesson2_qualification_vocabulary.class);
+                startActivity(intent);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -154,7 +156,5 @@ public class lesson2_answerquestion_present extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(lesson2_answerquestion_present.this, lesson2_qualification_vocabulary.class);
-        startActivity(intent);
     }
 }

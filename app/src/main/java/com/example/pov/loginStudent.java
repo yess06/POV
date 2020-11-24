@@ -64,9 +64,9 @@ public class loginStudent extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //login();
-                Intent intent = new Intent(loginStudent.this, lessons.class);
-                startActivity(intent);
+                login();
+                //Intent intent = new Intent(loginStudent.this, lessons.class);
+                //startActivity(intent);
             }
         });
     }
@@ -120,7 +120,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.4:8000/api/auth/users";
+        String url2 = "http://10.0.0.6:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

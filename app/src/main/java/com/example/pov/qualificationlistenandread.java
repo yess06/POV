@@ -62,6 +62,8 @@ public class qualificationlistenandread extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(qualificationlistenandread.this, qualificationvocabulary.class);
+                startActivity(intent);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -77,8 +79,6 @@ public class qualificationlistenandread extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(qualificationlistenandread.this, qualificationvocabulary.class);
-        startActivity(intent);
     }
     public void quallificationtime(){
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);

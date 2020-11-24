@@ -60,14 +60,18 @@ public class MenuTeacher extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.logout_teacher,menu);
+        inflater.inflate(R.menu.logout,menu);
         return super.onCreateOptionsMenu(menu);
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id == R.id.logoutt){
+        if(id == R.id.log){
             logout();
+        }
+        if (id == R.id.myinfo){
+            Intent intent = new Intent(MenuTeacher.this, Info_Teacher.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

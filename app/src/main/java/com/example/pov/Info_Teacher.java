@@ -22,13 +22,13 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Info_Student extends AppCompatActivity {
+public class Info_Teacher extends AppCompatActivity {
     EditText txtname, txtemail, txtpass,txtpassconfirmation;
     String id, token,email,name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info__student);
+        setContentView(R.layout.activity_info__teacher);
         txtname = findViewById(R.id.txtinfoname);
         txtemail = findViewById(R.id.txtinfoemail);
         txtpass = findViewById(R.id.txtinfopass);
@@ -60,7 +60,7 @@ public class Info_Student extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(Info_Student.this, "Successful updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Info_Teacher.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = info.edit();
                 editor.putString("name", txtname.getText().toString());
@@ -73,7 +73,7 @@ public class Info_Student extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(Info_Student.this, "wrong with the update", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Info_Teacher.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
             @Override
@@ -105,14 +105,14 @@ public class Info_Student extends AppCompatActivity {
                 url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(Info_Student.this, "Successful updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Info_Teacher.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 txtpass.setText("");
                 txtpassconfirmation.setText("");
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(Info_Student.this, "wrong with the update", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Info_Teacher.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
             @Override

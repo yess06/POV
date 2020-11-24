@@ -148,6 +148,9 @@ public class questionPresentL1 extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(questionPresentL1.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(questionPresentL1.this, qualificationanswer.class);
+                startActivity(intent);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -163,8 +166,6 @@ public class questionPresentL1 extends AppCompatActivity {
             }
         };
         requestQueue.add(objectRequest);
-        Intent intent = new Intent(questionPresentL1.this, qualificationanswer.class);
-        startActivity(intent);
     }
 
 

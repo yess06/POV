@@ -1,15 +1,13 @@
 package com.example.pov;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.RequestQueue;
@@ -25,15 +23,53 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class qualificationfilltheverb extends AppCompatActivity {
+public class lesson3_qualification_future extends AppCompatActivity {
     String id, token;
-    TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qualificationfilltheverb);
+        setContentView(R.layout.activity_lesson3_qualification_future);
         quallificationtime();
-
+    }
+    public void qualifitime(View view){
+        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+        token = preferencess.getString("token", "null");
+        id = preferences.getString("id", "null");
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        JSONObject object = new JSONObject();
+        try {
+            object.put("user_id", id);
+            object.put("lesson_id", "3");
+            object.put("time_id", "4");
+            object.put("qualification", valid.getString("qualifi", "null"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
+        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
+                object, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(lesson3_qualification_future.this, lesson3_qualification_lesson.class);
+                startActivity(intent);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
+            }
+        }){
+            @Override
+            public Map getHeaders() throws AuthFailureError {
+                HashMap headers = new HashMap();
+                headers.put("Authorization", "Bearer " + token);
+                return headers;
+            }
+        };
+        requestQueue.add(objectRequest);
     }
     public void quallificationtime(){
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
@@ -54,17 +90,16 @@ public class qualificationfilltheverb extends AppCompatActivity {
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
-                                if (u.getString("lesson_id").equals("1")) {
-                                    if (u.getString("time_id").equals("3")) {
+                                if (u.getString("lesson_id").equals("3")) {
+                                    if (u.getString("time_id").equals("4")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationfilltheverb.this, "Score " + qualification, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(lesson3_qualification_future.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));
                                         editor.commit();
                                     }
                                 }
-
                             }
                         }
 
@@ -75,7 +110,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(qualificationfilltheverb.this, "Wrong data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(lesson3_qualification_future.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
                 @Override
@@ -87,48 +122,10 @@ public class qualificationfilltheverb extends AppCompatActivity {
                 }
             };
             requestQueue.add(jsonObjectRequest);
+            //Intent intent = new Intent(qualificationanswer.this, qualificationanswer.class);
+            //startActivity(intent);
         }catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    public void qualifitime(View view){
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        JSONObject object = new JSONObject();
-        try {
-            object.put("user_id", id);
-            object.put("lesson_id", "1");
-            object.put("time_id", "3");
-            object.put("qualification", valid.getString("qualifi", ""));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
-        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
-                object, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(qualificationfilltheverb.this, lessons.class);
-                startActivity(intent);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
-            }
-        }){
-            @Override
-            public Map getHeaders() throws AuthFailureError {
-                HashMap headers = new HashMap();
-                headers.put("Authorization", "Bearer " + token);
-                return headers;
-            }
-        };
-        requestQueue.add(objectRequest);
     }
 }
