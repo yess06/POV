@@ -1,8 +1,11 @@
 package com.example.pov;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class lesson6_menu_activities_future extends AppCompatActivity {
 
@@ -10,5 +13,32 @@ public class lesson6_menu_activities_future extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson6_menu_activities_future);
+
+        Button listen = findViewById(R.id.btnlisten);
+        listen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_listenread_future.class);
+                startActivity(intent);
+            }
+        });
+
+        Button Fill = findViewById(R.id.btnFill);
+        Fill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_fillverbs_future.class);
+                startActivity(intent);
+            }
+        });
+
+        Button answer = findViewById(R.id.btnAnswer);
+        answer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_answerquestion_future.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -4,12 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,7 +41,7 @@ public class loginStudent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student);
-      txtemail = findViewById(R.id.tvEmail);
+     /* txtemail = findViewById(R.id.tvEmail);
         txtpassword = findViewById(R.id.tvPassword);
         pass = findViewById(R.id.checkBoxloginstudent);
 
@@ -57,16 +54,16 @@ public class loginStudent extends AppCompatActivity {
                     txtpassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
             }
-        });
+        });*/
 
 
        login = findViewById(R.id.btnlogin);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login();
-                //Intent intent = new Intent(loginStudent.this, lessons.class);
-                //startActivity(intent);
+                //login();
+                Intent intent = new Intent(loginStudent.this, lessons.class);
+                startActivity(intent);
             }
         });
     }

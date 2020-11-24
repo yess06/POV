@@ -66,6 +66,132 @@
             android:parentActivityName=".lesson3_menu_vocabulary" />
 
         <activity
+            android:name=".lesson4_answerquestion_present"
+            android:label="Anwer Question"
+            android:parentActivityName=".lesson4_menu_activities_present" />
+        <activity
+            android:name=".lesson4_answerquestion_past"
+            android:label="Answer Question"
+            android:parentActivityName=".lesson4_menu_activities_past" />
+        <activity
+            android:name=".lesson4_answerquestion_future"
+            android:label="Answer Question"
+            android:parentActivityName=".lesson4_menu_activities_future" />
+        <activity
+            android:name=".lesson4_fillverbs_present"
+            android:label="Fill The Verbs"
+            android:parentActivityName=".lesson4_menu_activities_present" />
+        <activity
+            android:name=".lesson4_fillverbs_past"
+            android:label="Fill The Verbs"
+            android:parentActivityName=".lesson4_menu_activities_past" />
+        <activity
+            android:name=".lesson4_fillverbs_future"
+            android:label="Fill The Verbs"
+            android:parentActivityName=".lesson4_menu_activities_future" />
+        <activity
+            android:name=".lesson4_listenread_present"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson4_menu_activities_present" />
+        <activity
+            android:name=".lesson4_listenread_past"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson4_menu_activities_past" />
+        <activity
+            android:name=".lesson4_listenread_future"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson4_menu_activities_future" />
+        <activity
+            android:name=".lesson4_menu_activities_present"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson4_menu_tenses" />
+        <activity
+            android:name=".lesson4_menu_activities_past"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson4_menu_tenses" />
+        <activity
+            android:name=".lesson4_menu_activities_future"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson4_menu_tenses" />
+        <activity
+            android:name=".lesson4_answer_vocabulary"
+            android:label="Answer Vocabulary"
+            android:parentActivityName=".lesson4_menu_vocabulary" />
+        <activity
+            android:name=".lesson4_preview_vocabulary"
+            android:label="Preview Vocabulary"
+            android:parentActivityName=".lesson4_menu_vocabulary" />
+        <activity
+            android:name=".lesson4_menu_vocabulary"
+            android:label="Menu Vokcabulary"
+            android:parentActivityName=".lesson4_menu_tenses" />
+        <activity
+            android:name=".lesson4_menu_tenses"
+            android:label="Menu Tenses"
+            android:parentActivityName=".lessons" />
+
+
+
+
+
+
+        <activity
+            android:name=".lesson6_preview_vocabulary"
+            android:label="Preview Vocabulary"
+            android:parentActivityName=".lesson6_menu_vocabulary" />
+        <activity
+            android:name=".lesson6_menu_vocabulary"
+            android:label="Menu Vocabulary"
+            android:parentActivityName=".lesson6_menu_tenses" />
+        <activity
+            android:name=".lesson6_menu_tenses"
+            android:label="Menu Tenses"
+            android:parentActivityName=".lessons" />
+        <activity
+            android:name=".lesson6_menu_activities_present"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson6_menu_tenses" />
+
+        <activity
+            android:name=".lesson6_menu_activities_future"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson6_menu_tenses" />
+        <activity
+            android:name=".lesson6_listenread_present"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson6_menu_activities_present" />
+
+        <activity
+            android:name=".lesson6_listenread_future"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson6_menu_activities_future" />
+        <activity
+            android:name=".lesson6_fillverbs_present"
+            android:label="Fill The Verbs"
+            android:parentActivityName=".lesson6_menu_activities_present" />
+
+        <activity
+            android:name=".lesson6_fillverbs_future"
+            android:label="Fill The Verbs"
+            android:parentActivityName=".lesson6_menu_activities_future" />
+        <activity
+            android:name=".lesson6_answerquestion_present"
+            android:label="Answer The Question"
+            android:parentActivityName=".lesson6_menu_activities_present" />
+
+        <activity
+            android:name=".lesson6_answerquestion_future"
+            android:label="Answer The Question"
+            android:parentActivityName=".lesson6_menu_activities_future" />
+        <activity
+            android:name=".lesson6_answer_vocabulary"
+            android:label="Answer Vocabulary"
+            android:parentActivityName=".lesson6_menu_vocabulary" />
+
+
+
+
+        <activity
             android:name=".lesson3_menu_vocabulary"
             android:label="Menu Vocabulary"
             android:parentActivityName=".lesson3_menu_tenses" />

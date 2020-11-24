@@ -57,7 +57,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/btnPOV2" />
 
             <Button
-                android:id="@+id/button35"
+                android:id="@+id/btnPOV4"
                 android:layout_width="360dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="20dp"
@@ -82,10 +82,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button35" />
+                app:layout_constraintTop_toBottomOf="@+id/btnPOV4" />
 
             <Button
-                android:id="@+id/button37"
+                android:id="@+id/btnPOV6"
                 android:layout_width="360dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="20dp"
@@ -110,7 +110,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button37" />
+                app:layout_constraintTop_toBottomOf="@+id/btnPOV6" />
 
             <Button
                 android:id="@+id/button39"

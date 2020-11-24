@@ -1714,4 +1714,919 @@
         <item>Yes, he did. He liked living in America now</item>
         <item>Yes, he will. He will like living in America now</item>
     </string-array>
+
+
+    <string-array name="QsPsL41">
+        <item>answer</item>
+        <item>Freddie is a frog </item>
+        <item>Freddie was a frog</item>
+        <item>Freddie is going to be a frog</item>
+    </string-array>
+
+
+    <string-array name="QsPsL42">
+        <item>answer</item>
+        <item>Freddie lives in the country of frogland</item>
+        <item>Freddie lived in the country of frogland</item>
+        <item>Freddie is gonna live in the country of frogland</item>
+    </string-array>
+
+    <string-array name="QsPsL43">
+        <item>answer</item>
+        <item>His father runs a tight ship</item>
+        <item>His father ran a tight ship</item>
+        <item>His father is gonna run a tight ship</item>
+    </string-array>
+
+    <string-array name="QsPsL44">
+        <item>answer</item>
+        <item>He makes Freddie practice jumping twelve hours every day</item>
+        <item>He made Freddie practice jumping twelve hours every day</item>
+        <item>He is gonna make Freddie practice jumping twelve hours every day</item>
+    </string-array>
+
+    <string-array name="QsPsL45">
+        <item>answer</item>
+        <item>He can’t tell what day it is</item>
+        <item>He couldn’t tell what day it was</item>
+        <item>He won’t tell what day it is</item>
+    </string-array>
+
+    <string-array name="QsPsL46">
+        <item>answer</item>
+        <item>He says he wants to chase flies with his friends</item>
+        <item>He said he wanted to chase flies with his friends</item>
+        <item> 	He said he wanted to chase flies with his friends</item>
+    </string-array>
+
+    <string-array name="QsPsL47">
+        <item>answer</item>
+        <item>He becomes the jumping champion of his country</item>
+        <item>He became the jumping champion of his country</item>
+        <item>He will become the jumping champion of his country</item>
+    </string-array>
+
+    <string-array name="QsPsL48">
+        <item>answer</item>
+        <item>He is 55 years old</item>
+        <item>He was 55 years old</item>
+        <item>He will be 55 years old</item>
+    </string-array>
+
+    <string-array name="QsPsL49">
+        <item>answer</item>
+        <item>Yes, he thinks about his dad a lot</item>
+        <item>Yes, he thought about his dad a lot</item>
+        <item>Yes, he is gonna think about his dad a lot</item>
+    </string-array>
+
+    <string-array name="QsPsL410">
+        <item>answer</item>
+        <item>He knows that there is method to his dad’s madness</item>
+        <item>He knew that there was method to his dad’s madness</item>
+        <item>He will know there is method to his dad’s madness</item>
+    </string-array>
+
+    <string-array name="QsPasL41">
+        <item>answer</item>
+        <item>Freddie is a frog</item>
+        <item>Freddie was a frog</item>
+        <item>Freddie is going to be a frog</item>
+    </string-array>
+
+    <string-array name="QsPasL42">
+        <item>answer</item>
+        <item>Freddie lives in the country of frogland</item>
+        <item>Freddie lived in the country of frogland</item>
+        <item>Freddie is gonna live in the country of frogland</item>
+    </string-array>
+
+    <string-array name="QsPasL43">
+        <item>answer</item>
+        <item>His father runs a tight ship</item>
+        <item>His father ran a tight ship</item>
+        <item>His father is gonna run a tight ship</item>
+    </string-array>
+
+    <string-array name="QsPasL44">
+        <item>answer</item>
+        <item>He makes Freddie practice jumping ten hours every day</item>
+        <item>He made Freddie practice jumping ten hours every day</item>
+        <item>He is gonna make Freddie practice jumping ten hours every day</item>
+    </string-array>
+
+    <string-array name="QsPasL45">
+        <item>answer</item>
+        <item>He won’t tell what day it is</item>
+        <item>He couldn’t tell what day it was</item>
+        <item>He couldn’t tell what day it was</item>
+    </string-array>
+
+    <string-array name="QsPasL46">
+        <item>answer</item>
+        <item>He says he wants to chase flies with his friends</item>
+        <item>He said he wanted to chase flies with his friends</item>
+        <item>He will he wanted to chase flies with his friends</item>
+    </string-array>
+
+    <string-array name="QsPasL47">
+        <item>answer</item>
+        <item>He becomes the jumping champion of his country</item>
+        <item>He became the jumping champion of his country</item>
+        <item>He will become the jumping champion of his country</item>
+    </string-array>
+
+    <string-array name="QsPasL48">
+        <item>answer</item>
+        <item>He is 55 years old</item>
+        <item>He was 55 years old</item>
+        <item>He will be 55 years old</item>
+    </string-array>
+
+    <string-array name="QsPasL49">
+        <item>answer</item>
+        <item>Yes,he thinks about his dad a lot</item>
+        <item>Yes,he thought about his dad a lot</item>
+        <item>Yes,he is gonna think about his dad a lot</item>
+    </string-array>
+
+    <string-array name="QsPasL410">
+        <item>answer</item>
+        <item>He knows that there is method to his dad’s madness</item>
+        <item>He knew that there was method to his dad’s madness</item>
+        <item>He will know that there is method to his dad’s madness</item>
+    </string-array>
+
+    <string-array name="QsFutL41">
+        <item>answer</item>
+        <item>Freddie is a frog</item>
+        <item>Freddie was a frog</item>
+        <item>Freddie is going to be a frog</item>
+    </string-array>
+
+    <string-array name="QsFutL42">
+        <item>answer</item>
+        <item>Freddie lives in the country of frogland</item>
+        <item>Freddie lived in the country of frogland</item>
+        <item>Freddie is gonna live in the country of frogland</item>
+    </string-array>
+
+    <string-array name="QsFutL43">
+        <item>answer</item>
+        <item>His father runs a tight ship</item>
+        <item>His father ran a tight ship</item>
+        <item>His father is gonna run a tight ship</item>
+    </string-array>
+
+    <string-array name="QsFutL44">
+        <item>answer</item>
+        <item>He makes Freddie practice jumping twelve hours every day</item>
+        <item>He made Freddie practice jumping ten hours every day</item>
+        <item>He will make Freddie practice jumping ten hours every day</item>
+    </string-array>
+
+    <string-array name="QsFutL45">
+        <item>answer</item>
+        <item>No, he can’t tell what day it is</item>
+        <item>No, he couldn’t tell what day it was</item>
+        <item>No, he won’t be able to even tell what day it is</item>
+    </string-array>
+
+    <string-array name="QsFutL46">
+        <item>answer</item>
+        <item>He says he wants to chase flies with his friends</item>
+        <item>He said he wanted to chase flies with his friends</item>
+        <item>He will he say wants to chase flies with his friends</item>
+    </string-array>
+
+    <string-array name="QsFutL47">
+        <item>answer</item>
+        <item>He becomes the jumping champion of his country</item>
+        <item>He became the jumping champion of his country</item>
+        <item>He will become the jumping champion of his country</item>
+    </string-array>
+
+    <string-array name="QsFutL48">
+        <item>answer</item>
+        <item>He is 55 years old</item>
+        <item>He was 55 years old</item>
+        <item>He will be 55 years old</item>
+    </string-array>
+
+
+    <string-array name="QsFutL49">
+        <item>answer</item>
+        <item>Yes, he thinks about his dad a lot</item>
+        <item>Yes, he thought about his dad a lot</item>
+        <item>Yes, he will think about his dad a lot</item>
+    </string-array>
+
+    <string-array name="QsFutL410">
+        <item>answer</item>
+        <item>He knows the method to his dad’s madness</item>
+        <item>He knew the method to his dad’s madness</item>
+        <item>He will know that there is method to his dad’s madness</item>
+    </string-array>
+
+    <string-array name="fillfutL41">
+        <item>answer</item>
+        <item>lives</item>
+        <item>live</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillfutL42">
+        <item>answer</item>
+        <item>runs</item>
+        <item>is gonna</item>
+        <item>run</item>
+    </string-array>
+
+    <string-array name="fillfutL43">
+        <item>answer</item>
+        <item>makes</item>
+        <item>made</item>
+        <item>will make</item>
+    </string-array>
+
+    <string-array name="fillfutL44">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillfutL45">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>could not</item>
+    </string-array>
+
+    <string-array name="fillfutL46">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>wont</item>
+        <item>could not</item>
+    </string-array>
+
+    <string-array name="fillfutL47">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL48">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL49">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL410">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>gonna tell</item>
+    </string-array>
+
+    <string-array name="fillfutL411">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>be</item>
+    </string-array>
+
+    <string-array name="fillfutL412">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillfutL413">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL414">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillfutL415">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpastL41">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>live</item>
+    </string-array>
+
+    <string-array name="fillpastL42">
+        <item>answer</item>
+        <item>runs</item>
+        <item>ran</item>
+        <item>run</item>
+    </string-array>
+
+    <string-array name="fillpastL43">
+        <item>answer</item>
+        <item>makes</item>
+        <item>made</item>
+        <item>make</item>
+    </string-array>
+
+    <string-array name="fillpastL44">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpastL45">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>could not</item>
+    </string-array>
+
+    <string-array name="fillpastL46">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>could not</item>
+    </string-array>
+
+    <string-array name="fillpastL47">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL48">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpastL49">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpastL410">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>will tell</item>
+    </string-array>
+
+    <string-array name="fillpastL411">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+    <string-array name="fillpastL412">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpastL413">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL414">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+    <string-array name="fillpastL415">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpsL41">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>live</item>
+    </string-array>
+
+    <string-array name="fillpsL42">
+        <item>answer</item>
+        <item>runs</item>
+        <item>ran</item>
+        <item>run</item>
+    </string-array>
+
+    <string-array name="fillpsL43">
+        <item>answer</item>
+        <item>makes</item>
+        <item>made</item>
+        <item>make</item>
+    </string-array>
+
+    <string-array name="fillpsL44">
+        <item>answer</item>
+        <item>was</item>
+        <item>is</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpsL45">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>would not</item>
+    </string-array>
+
+    <string-array name="fillpsL46">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>would not</item>
+    </string-array>
+
+    <string-array name="fillpsL47">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL48">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL49">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL410">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>will tell</item>
+    </string-array>
+
+    <string-array name="fillpsL411">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL412">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillpsL413">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL414">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpsL415">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+
+    <string-array name="fillfutL61">
+        <item>answer</item>
+        <item>is going to be</item>
+        <item>lives</item>
+        <item>lived</item>
+    </string-array>
+
+    <string-array name="fillfutL62">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL63">
+        <item>answer</item>
+        <item>are</item>
+        <item>were</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL64">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL65">
+        <item>answer</item>
+        <item>decides</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillfutL66">
+        <item>answer</item>
+        <item>arrived</item>
+        <item>arrives</item>
+        <item>is going to arrive</item>
+    </string-array>
+
+    <string-array name="fillfutL67">
+        <item>answer</item>
+        <item>finds</item>
+        <item>found</item>
+        <item>will find</item>
+    </string-array>
+
+    <string-array name="fillfutL68">
+        <item>answer</item>
+        <item>orders</item>
+        <item>ordered</item>
+        <item>will order</item>
+    </string-array>
+
+    <string-array name="fillfutL69">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL610">
+        <item>answer</item>
+        <item>throws</item>
+        <item>threw</item>
+        <item>throw</item>
+    </string-array>
+
+    <string-array name="fillfutL611">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL612">
+        <item>answer</item>
+        <item>gives</item>
+        <item>gave</item>
+        <item>is gonna give</item>
+    </string-array>
+
+    <string-array name="fillfutL613">
+        <item>answer</item>
+        <item>wanted</item>
+        <item>will want</item>
+        <item>wants</item>
+    </string-array>
+
+    <string-array name="fillfutL614">
+        <item>answer</item>
+        <item>will say</item>
+        <item>say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillfutL615">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL616">
+        <item>answer</item>
+        <item>likes</item>
+        <item>gonna like</item>
+        <item>will like</item>
+    </string-array>
+
+    <string-array name="fillfutL617">
+        <item>answer</item>
+        <item>decide</item>
+        <item>decides</item>
+        <item>will decide</item>
+    </string-array>
+
+
+    <string-array name="fillpsL61">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillpsL62">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL63">
+        <item>answer</item>
+        <item>are</item>
+        <item>were</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL64">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL65">
+        <item>answer</item>
+        <item>decides</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillpsL66">
+        <item>answer</item>
+        <item>arrived</item>
+        <item>arrives</item>
+        <item>is going to arrive</item>
+    </string-array>
+
+    <string-array name="fillpsL67">
+        <item>answer</item>
+        <item>finds</item>
+        <item>found</item>
+        <item>will find</item>
+    </string-array>
+
+    <string-array name="fillpsL68">
+        <item>answer</item>
+        <item>orders</item>
+        <item>ordered</item>
+        <item>will order</item>
+    </string-array>
+
+    <string-array name="fillpsL69">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL610">
+        <item>answer</item>
+        <item>throws</item>
+        <item>threw</item>
+        <item>will throw</item>
+    </string-array>
+
+    <string-array name="fillpsL611">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL612">
+        <item>answer</item>
+        <item>gives</item>
+        <item>gave</item>
+        <item>will give</item>
+    </string-array>
+
+    <string-array name="fillpsL613">
+        <item>answer</item>
+        <item>wanted</item>
+        <item>want</item>
+        <item>wants</item>
+    </string-array>
+
+    <string-array name="fillpsL614">
+        <item>answer</item>
+        <item>will say</item>
+        <item>say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillpsL615">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL616">
+        <item>answer</item>
+        <item>likes</item>
+        <item>liked</item>
+        <item>will like</item>
+    </string-array>
+
+    <string-array name="fillpsL617">
+        <item>answer</item>
+        <item>decide</item>
+        <item>decides</item>
+        <item>will decide</item>
+    </string-array>
+
+
+    <string-array name="QsPsL61">
+        <item>answer</item>
+        <item>Mario lives in a small town named Smallsville</item>
+        <item>Mario lived in a small town named Smallsville</item>
+        <item>Mario will live in a small town named Smallsville</item>
+    </string-array>
+
+    <string-array name="QsPsL62">
+        <item>answer</item>
+        <item>Mario lived in a small town</item>
+        <item>Mario is going to be living in a small town</item>
+        <item>Mario lives in a small town</item>
+    </string-array>
+
+    <string-array name="QsPsL63">
+        <item>answer</item>
+        <item>Mario is hungry</item>
+        <item>Mario was hungry</item>
+        <item>Mario will be hungry</item>
+    </string-array>
+
+    <string-array name="QsPsL64">
+        <item>answer</item>
+        <item>No, there are not restaurants open twenty-four seven</item>
+        <item>No, there were not restaurants open twenty-four seven</item>
+        <item>No, there will not be restaurants open twenty-four seven</item>
+    </string-array>
+
+    <string-array name="QsPsL65">
+        <item>answer</item>
+        <item>“New York is a city that doesn’t sleep,” Mario says</item>
+        <item>“New York is a city that doesn’t sleep,” Mario said</item>
+        <item>“New York is a city that doesn’t sleep,” Mario will say</item>
+    </string-array>
+
+    <string-array name="QsPsL66">
+        <item>answer</item>
+        <item>He arrives in New York at 3 o’clock a.m</item>
+        <item>He arrived in New York at 3 o’clock a.m</item>
+        <item>He will arrive in New York at 3 o’clock a.m</item>
+    </string-array>
+
+    <string-array name="QsPsL67">
+        <item>answer</item>
+        <item>He orders a hamburger with peanut butter</item>
+        <item>He ordered a hamburger with peanut butter</item>
+        <item>He will order a hamburger with peanut butter</item>
+    </string-array>
+
+    <string-array name="QsPsL68">
+        <item>answer</item>
+        <item>Yes, he finishes his hamburger</item>
+        <item>Yes, he finished his hamburger</item>
+        <item>Yes, he will finish his hamburger</item>
+    </string-array>
+
+    <string-array name="QsPsL69">
+        <item>answer</item>
+        <item>Yes, Mario’s food was on the house</item>
+        <item>Yes, Mario’s food is on the house</item>
+        <item>Yes, Mario’s food will be on the house</item>
+    </string-array>
+
+    <string-array name="QsPsL610">
+        <item>answer</item>
+        <item>The next day he decides to stay</item>
+        <item>The next day he decided to stay</item>
+        <item>The next day he will decide to stay</item>
+    </string-array>
+
+
+    <string-array name="QsFutL61">
+        <item>answer</item>
+        <item>Mario lives in a small town named Smallsville</item>
+        <item>Mario lived in a small town named Smallsville</item>
+        <item>Mario is going to be living in a small town named Smallsville</item>
+    </string-array>
+
+    <string-array name="QsFutL62">
+        <item>answer</item>
+        <item>Mario lived in a small town</item>
+        <item>Mario is going to be living in a small town</item>
+        <item>Mario lives in a small town</item>
+    </string-array>
+
+    <string-array name="QsFutL63">
+        <item>answer</item>
+        <item>At 1 o’clock a.m. and Mario is hungry</item>
+        <item>At 1 o’clock a.m. and Mario was hungry</item>
+        <item>At 1 o’clock a.m. and Mario will be hungry</item>
+    </string-array>
+
+    <string-array name="QsFutL64">
+        <item>answer</item>
+        <item>No, there are not restaurants open twenty-four seven</item>
+        <item>No, there were not restaurants open twenty-four seven</item>
+        <item>No, there will not be restaurants open twenty-four seven</item>
+    </string-array>
+
+    <string-array name="QsFutL65">
+        <item>answer</item>
+        <item>“New York is a city that doesn’t sleep,” Mario says</item>
+        <item>“New York is a city that doesn’t sleep,” Mario said</item>
+        <item>“New York is a city that doesn’t sleep,” Mario will say</item>
+    </string-array>
+
+    <string-array name="QsFutL66">
+        <item>answer</item>
+        <item>He arrives in New York at 3 o’clock a.m</item>
+        <item>He arrived in New York at 3 o’clock a.m</item>
+        <item>He is going to arrive in New York at 3 o’clock a.m</item>
+    </string-array>
+
+    <string-array name="QsFutL67">
+        <item>answer</item>
+        <item>He orders a hamburger with peanut butter</item>
+        <item>He ordered a hamburger with peanut butter</item>
+        <item>He will order a hamburger with peanut butter</item>
+    </string-array>
+
+    <string-array name="QsFutL68">
+        <item>answer</item>
+        <item>Yes, he finishes his hamburger</item>
+        <item>Yes, he finished his hamburger</item>
+        <item>Yes, he will finish his hamburger</item>
+    </string-array>
+
+    <string-array name="QsFutL69">
+        <item>answer</item>
+        <item>Yes, Mario’s food was on the house</item>
+        <item>Yes, Mario’s food is on the house</item>
+        <item>Yes, Mario’s food will be on the house</item>
+    </string-array>
+
+    <string-array name="QsFutL610">
+        <item>answer</item>
+        <item>The next day he decides to stay</item>
+        <item>The next day he decided to stay</item>
+        <item>The next day he will decide to stay</item>
+    </string-array>
+
+
+
+
+
+
+
 </resources>
