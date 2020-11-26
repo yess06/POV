@@ -44,7 +44,7 @@ public class lessons extends AppCompatActivity {
         pov1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(lessons.this, menuTenses.class);
+           Intent intent = new Intent(lessons.this, menuTenses.class);
                 startActivity(intent);
             }
         });
@@ -76,6 +76,15 @@ public class lessons extends AppCompatActivity {
             }
         });
 
+
+        Button pov5 = findViewById(R.id.btnPOV5);
+        pov5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lessons.this, lesson5_menu_tenses.class);
+                startActivity(intent);
+            }
+        });
 
         Button pov6 = findViewById(R.id.btnPOV6);
         pov6.setOnClickListener(new View.OnClickListener() {

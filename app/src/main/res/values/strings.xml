@@ -2623,5 +2623,645 @@
         <item>The next day he will decide to stay</item>
     </string-array>
 
+    <string-array name="QsFutL51">
+        <item>answer</item>
+        <item>He can’t stand bathing</item>
+        <item>He will not stand bathing </item>
+        <item>He won’t stand bathing</item>
+    </string-array>
+
+    <string-array name="QsFutL52">
+        <item>answer</item>
+        <item>He has not taken a shower for 2 years</item>
+        <item>He had not taken a shower for 2 years</item>
+        <item>He will have not taken a shower for 2 years</item>
+    </string-array>
+
+    <string-array name="QsFutL53">
+        <item>answer</item>
+        <item>He smells awful</item>
+        <item>He smelled awful</item>
+        <item>He’s gonna smell awful</item>
+    </string-array>
+
+    <string-array name="QsFutL54">
+        <item>answer</item>
+        <item>He wants a girlfriend</item>
+        <item>He is going to want a girlfriend</item>
+        <item>He wanted a girlfriend</item>
+    </string-array>
+
+    <string-array name="QsFutL55">
+        <item>answer</item>
+        <item>They always say no</item>
+        <item>They said no</item>
+        <item>They will always say no</item>
+    </string-array>
+
+    <string-array name="QsFutL56">
+        <item>answer</item>
+        <item>His sister finds him a date</item>
+        <item>His sister found him a date</item>
+        <item>His sister will find him a date</item>
+    </string-array>
+
+    <string-array name="QsFutL57">
+        <item>answer</item>
+        <item>The girl gets sick</item>
+        <item>The girl got sick</item>
+        <item>The girl is gonna get sick</item>
+    </string-array>
+
+    <string-array name="QsFutL58">
+        <item>answer</item>
+        <item>He meets a very nice girl named Paula</item>
+        <item>He met a very nice girl named Paula</item>
+        <item>He will meet a very nice girl named Paula</item>
+    </string-array>
+
+    <string-array name="QsFutL59">
+        <item>answer</item>
+        <item>He can’t believe his eyes</item>
+        <item>He won’t be able to believe his eyes</item>
+        <item>He could not believe his eyes</item>
+    </string-array>
+
+    <string-array name="QsFutL510">
+        <item>answer</item>
+        <item>Yes, now Peter bathes every day</item>
+        <item>Yes, Peter bathed every day</item>
+        <item>Yes, Peter will bathe every day</item>
+    </string-array>
+
+    <string-array name="QsPsL51">
+        <item>answer</item>
+        <item>He can’t stand bathing</item>
+        <item>He will not stand bathing</item>
+        <item>He won’t stand bathing</item>
+    </string-array>
+
+    <string-array name="QsPsL52">
+        <item>answer</item>
+        <item>He has not taken a shower for 2 years</item>
+        <item>He had not taken a shower for 2 years</item>
+        <item>He will have not taken a shower for 2 years</item>
+    </string-array>
+
+    <string-array name="QsPsL53">
+        <item>answer</item>
+        <item>He smells awful</item>
+        <item>He smelled awful</item>
+        <item>He will smell awful</item>
+    </string-array>
+
+    <string-array name="QsPsL54">
+        <item>answer</item>
+        <item>He will smell awful</item>
+        <item>He will want a girlfriend</item>
+        <item>He wanted a girlfriend</item>
+    </string-array>
+
+    <string-array name="QsPsL55">
+        <item>answer</item>
+        <item>They always say no</item>
+        <item>They said no</item>
+        <item>They will say no</item>
+    </string-array>
+
+    <string-array name="QsPsL56">
+        <item>answer</item>
+        <item>His sister finds him a date</item>
+        <item>His sister found him a date</item>
+        <item>His sister will find him a date</item>
+    </string-array>
+
+    <string-array name="QsPsL57">
+        <item>answer</item>
+        <item>The girl gets sick</item>
+        <item>The girl got sick</item>
+        <item>The girl will get sick</item>
+    </string-array>
+
+    <string-array name="QsPsL58">
+        <item>answer</item>
+        <item>He meets a very nice girl named Paula</item>
+        <item>He met a very nice girl named Paula</item>
+        <item>He will meet a very nice girl named Paula</item>
+    </string-array>
+
+    <string-array name="QsPsL59">
+        <item>answer</item>
+        <item>He cannot believe his eyes</item>
+        <item>He will not be able to believe his eyes</item>
+        <item>He could not believe his eyes</item>
+    </string-array>
+
+    <string-array name="QsPsL510">
+        <item>answer</item>
+        <item>Yes, now Peter bathes every day</item>
+        <item>Yes, Peter bathed every day</item>
+        <item>Yes, Peter will bathe every day</item>
+    </string-array>
+
+
+    <string-array name="QsPasL51">
+        <item>answer</item>
+        <item>He can’t stand bathing</item>
+        <item>He will not stand bathing</item>
+        <item>He couldn’t stand bathing</item>
+    </string-array>
+
+    <string-array name="QsPasL52">
+        <item>answer</item>
+        <item>He has not taken a shower for 2 years</item>
+        <item>He had not taken a shower for 2 years</item>
+        <item>He will have not taken a shower for 2 years</item>
+    </string-array>
+
+    <string-array name="QsPasL53">
+        <item>answer</item>
+        <item>He smells awful</item>
+        <item>He smelled awful</item>
+        <item>He will smell awful</item>
+    </string-array>
+
+    <string-array name="QsPasL54">
+        <item>answer</item>
+        <item>He wants a girlfriend</item>
+        <item>He will want a girlfriend</item>
+        <item>He wanted a girlfriend</item>
+    </string-array>
+
+    <string-array name="QsPasL55">
+        <item>answer</item>
+        <item>They always say no</item>
+        <item>They said no</item>
+        <item>They will say no</item>
+    </string-array>
+
+    <string-array name="QsPasL56">
+        <item>answer</item>
+        <item>His sister finds him a date</item>
+        <item>His sister found him a date</item>
+        <item>His sister will find him a date</item>
+    </string-array>
+
+    <string-array name="QsPasL57">
+        <item>answer</item>
+        <item>The girl gets sick</item>
+        <item>The girl got sick</item>
+        <item>The girl will get sick</item>
+    </string-array>
+
+    <string-array name="QsPasL58">
+        <item>answer</item>
+        <item>He meets a very nice girl named Paula</item>
+        <item>He met a very nice girl named Paula</item>
+        <item>He will meet a very nice girl named Paula</item>
+    </string-array>
+
+    <string-array name="QsPasL59">
+        <item>answer</item>
+        <item>He can’t believe his eyes</item>
+        <item>He will not believe his eyes</item>
+        <item>He could not believe his eyes</item>
+    </string-array>
+
+    <string-array name="QsPasL510">
+        <item>answer</item>
+        <item>Yes, now Peter bathes every day</item>
+        <item>Yes, Peter bathed every day</item>
+        <item>Yes, Peter will bathe every day</item>
+    </string-array>
+
+
+    <string-array name="fillfutL51">
+        <item>answer</item>
+        <item>cannot</item>
+        <item>will not</item>
+        <item>could not</item>
+    </string-array>
+
+    <string-array name="fillfutL52">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillfutL53">
+        <item>answer</item>
+        <item>is gonna smell</item>
+        <item>smelled</item>
+        <item>will smell</item>
+    </string-array>
+
+    <string-array name="fillfutL54">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>is going to think</item>
+    </string-array>
+
+    <string-array name="fillfutL55">
+        <item>answer</item>
+        <item>asks</item>
+        <item>had asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillfutL56">
+        <item>answer</item>
+        <item>is going to want</item>
+        <item>wanted</item>
+        <item>wants</item>
+    </string-array>
+
+    <string-array name="fillfutL57">
+        <item>answer</item>
+        <item>asks</item>
+        <item>asked</item>
+        <item>is gonna ask</item>
+    </string-array>
+
+    <string-array name="fillfutL58">
+        <item>answer</item>
+        <item>say</item>
+        <item>said</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillfutL59">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>is going to think</item>
+    </string-array>
+
+    <string-array name="fillfutL510">
+        <item>answer</item>
+        <item>finds</item>
+        <item>found</item>
+        <item>will find</item>
+    </string-array>
+
+    <string-array name="fillfutL511">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>is gonna get</item>
+    </string-array>
+
+    <string-array name="fillfutL512">
+        <item>answer</item>
+        <item>tries</item>
+        <item>tried</item>
+        <item>is going to try</item>
+    </string-array>
+
+    <string-array name="fillfutL513">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>will meet</item>
+    </string-array>
+
+    <string-array name="fillfutL514">
+        <item>answer</item>
+        <item>decide</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillfutL515">
+        <item>answer</item>
+        <item>smells</item>
+        <item>smelled</item>
+        <item>is gonna smell</item>
+    </string-array>
+
+    <string-array name="fillfutL516">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillfutL517">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>is going to be</item>
+    </string-array>
+
+    <string-array name="fillfutL518">
+        <item>answer</item>
+        <item>have</item>
+        <item>had</item>
+        <item>are gonna have</item>
+    </string-array>
+
+    <string-array name="fillfutL519">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told tell</item>
+        <item>is gonna tell</item>
+    </string-array>
+
+
+    <string-array name="fillpastL51">
+        <item>answer</item>
+        <item>cant</item>
+        <item>wont</item>
+        <item>couldnt</item>
+    </string-array>
+
+
+    <string-array name="fillpastL52">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpastL53">
+        <item>answer</item>
+        <item>smells</item>
+        <item>smelled</item>
+        <item>will smell</item>
+    </string-array>
+
+    <string-array name="fillpastL54">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpastL55">
+        <item>answer</item>
+        <item>asks</item>
+        <item>had asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpastL56">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+    <string-array name="fillpastL57">
+        <item>answer</item>
+        <item>asks</item>
+        <item>asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpastL58">
+        <item>answer</item>
+        <item>say</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpastL59">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpastL510">
+        <item>answer</item>
+        <item>finds</item>
+        <item>found</item>
+        <item>will find</item>
+    </string-array>
+
+    <string-array name="fillpastL511">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>will get</item>
+    </string-array>
+
+    <string-array name="fillpastL512">
+        <item>answer</item>
+        <item>tries</item>
+        <item>tried</item>
+        <item>will try</item>
+    </string-array>
+
+    <string-array name="fillpastL513">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>will meet</item>
+    </string-array>
+
+    <string-array name="fillpastL514">
+        <item>answer</item>
+        <item>decide</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+
+    <string-array name="fillpastL515">
+        <item>answer</item>
+        <item>smells</item>
+        <item>smelled</item>
+        <item>will smell</item>
+    </string-array>
+
+    <string-array name="fillpastL516">
+        <item>answer</item>
+        <item>sees</item>
+        <item>saw</item>
+        <item>will see</item>
+    </string-array>
+
+    <string-array name="fillpastL517">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL518">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpastL519">
+        <item>answer</item>
+        <item>have</item>
+        <item>had</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpastL520">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>will tell</item>
+    </string-array>
+
+    <string-array name="fillpastL521">
+        <item>answer</item>
+        <item>takes</item>
+        <item>took</item>
+        <item>will take</item>
+    </string-array>
+
+    <string-array name="fillpsL51">
+        <item>answer</item>
+        <item>cant</item>
+        <item>wont</item>
+        <item>couldnt</item>
+    </string-array>
+
+    <string-array name="fillpsL52">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpsL53">
+        <item>answer</item>
+        <item>smells</item>
+        <item>smelled</item>
+        <item>will smell</item>
+    </string-array>
+
+    <string-array name="fillpsL54">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpsL55">
+        <item>answer</item>
+        <item>asks</item>
+        <item>asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpsL56">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+    <string-array name="fillpsL57">
+        <item>answer</item>
+        <item>asks</item>
+        <item>asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpsL58">
+        <item>answer</item>
+        <item>say</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL59">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpsL510">
+        <item>answer</item>
+        <item>finds</item>
+        <item>found</item>
+        <item>will find</item>
+    </string-array>
+
+    <string-array name="fillpsL511">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>will get</item>
+    </string-array>
+
+    <string-array name="fillpsL512">
+        <item>answer</item>
+        <item>tries</item>
+        <item>tried</item>
+        <item>will try</item>
+    </string-array>
+
+    <string-array name="fillpsL513">
+        <item>answer</item>
+        <item>meets</item>
+        <item>met</item>
+        <item>will meet</item>
+    </string-array>
+
+    <string-array name="fillpsL514">
+        <item>answer</item>
+        <item>decide</item>
+        <item>decided</item>
+        <item>will decide</item>
+    </string-array>
+    <string-array name="fillpsL515">
+        <item>answer</item>
+        <item>smells</item>
+        <item>smelled</item>
+        <item>will smell</item>
+    </string-array>
+
+    <string-array name="fillpsL516">
+        <item>answer</item>
+        <item>sees</item>
+        <item>saw</item>
+        <item>will see</item>
+    </string-array>
+
+    <string-array name="fillpsL517">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL518">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL519">
+        <item>answer</item>
+        <item>have</item>
+        <item>had</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpsL520">
+        <item>answer</item>
+        <item>tells</item>
+        <item>told</item>
+        <item>will tell</item>
+    </string-array>
+
+    <string-array name="fillpsL521">
+        <item>answer</item>
+        <item>takes</item>
+        <item>took</item>
+        <item>will take</item>
+    </string-array>
+
 
 </resources>
