@@ -40,17 +40,6 @@ public class lessons extends AppCompatActivity {
         token = preferences.getString("token", "null");
         email = preferences.getString("email", "null");
         getbtn();
-        getbtn2();
-        getbtn3();
-        getbtn4();
-        getbtn5();
-        getbtn6();
-        getbtn7();
-        getbtn8();
-        getbtn9();
-        getbtn10();
-        getbtn11();
-        getbtn12();
         Button pov1 = findViewById(R.id.btnPOV1);
         pov1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,26 +162,62 @@ public class lessons extends AppCompatActivity {
                 public void onResponse(JSONObject response) {
                     try {
                         int cont = 0;
+                        int cont2 = 0, cont3 = 0,cont4 =0,cont6 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
                                 if (u.getString("lesson_id").equals("1")){
                                     cont++;
-                                    Toast.makeText(lessons.this, "cont " + cont, Toast.LENGTH_SHORT).show();
+                                    //Toast.makeText(lessons.this, "cont " + cont, Toast.LENGTH_SHORT).show();
                                     SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor editor = valid.edit();
                                     editor.putInt("cont", cont);
                                     editor.commit();
+                                } else if (u.getString("lesson_id").equals("2")){
+                                    cont2++;
+                                    //Toast.makeText(lessons.this, "cont " + cont2, Toast.LENGTH_SHORT).show();
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putInt("cont5", cont2);
+                                    editor.commit();
+                                }else if (u.getString("lesson_id").equals("3")){
+                                    cont3++;
+                                    //Toast.makeText(lessons.this, "cont " + cont3, Toast.LENGTH_SHORT).show();
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putInt("cont9", cont3);
+                                    editor.commit();
+                                }else if (u.getString("lesson_id").equals("4")){
+                                    cont4++;
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putInt("cont10", cont4);
+                                    editor.commit();
+
+                                }else if (u.getString("lesson_id").equals("6")){
+                                    cont6++;
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putInt("cont12", cont6);
+                                    editor.commit();
+                                }else{
+                                    cont = 0;
+                                    cont2 = 0;
+                                    cont3 = 0;
+                                    cont4 = 0;
+                                    cont6 = 0;
+                                    //Toast.makeText(lessons.this, "cont " + cont, Toast.LENGTH_SHORT).show();
+                                    SharedPreferences vali = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = vali.edit();
+                                    editor.putInt("cont", cont);
+                                    editor.putInt("cont5", cont2);
+                                    editor.putInt("cont9", cont3);
+                                    editor.putInt("cont10", cont4);
+                                    editor.putInt("cont12", cont6);
+                                    editor.commit();
                                 }
 
-                            }else{
-                                cont = 0;
-                                Toast.makeText(lessons.this, "cont " + cont, Toast.LENGTH_SHORT).show();
-                                SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-                                SharedPreferences.Editor editor = vali.edit();
-                                editor.putInt("cont", cont);
-                                editor.commit();
                             }
                         }
 

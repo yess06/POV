@@ -22,19 +22,19 @@ public class lesson3_menu_activities_past extends AppCompatActivity {
 
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
 
-        if (vali.getInt("cont11", 0) == 0){
+        if (vali.getInt("cont3", 0) == 0){
             btnListen.setEnabled(true);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont11", 0) == 1){
+        }else if(vali.getInt("cont3", 0) == 1){
             btnListen.setEnabled(false);
             btnFill.setEnabled(true);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont11", 0) == 2){
+        }else if(vali.getInt("cont3", 0) == 2){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(true);
-        }else if(vali.getInt("cont11", 0) == 3){
+        }else if(vali.getInt("cont3", 0) == 3){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);

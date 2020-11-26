@@ -1,21 +1,44 @@
 package com.example.pov;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class lesson6_menu_activities_future extends AppCompatActivity {
-
+    Button btnFill,btnAnswer, btnListen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson6_menu_activities_future);
-
-        Button listen = findViewById(R.id.btnlisten);
-        listen.setOnClickListener(new View.OnClickListener() {
+        btnListen = findViewById(R.id.btnlisten);
+        btnFill = findViewById(R.id.btnFill);
+        btnAnswer = findViewById(R.id.btnAnswer);
+        SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
+        if (vali.getInt("cont2", 0) == 0){
+            btnListen.setEnabled(true);
+            btnFill.setEnabled(false);
+            btnAnswer.setEnabled(false);
+        }else if(vali.getInt("cont2", 0) == 1){
+            btnListen.setEnabled(false);
+            btnFill.setEnabled(true);
+            btnAnswer.setEnabled(false);
+        }else if(vali.getInt("cont2", 0) == 2){
+            btnListen.setEnabled(false);
+            btnFill.setEnabled(false);
+            btnAnswer.setEnabled(true);
+        }else if(vali.getInt("cont2", 0) == 3){
+            btnListen.setEnabled(false);
+            btnFill.setEnabled(false);
+            btnAnswer.setEnabled(false);
+            Toast.makeText(this, "Verbal Tense ending", Toast.LENGTH_SHORT).show();
+        }
+        btnListen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_listenread_future.class);
@@ -23,8 +46,7 @@ public class lesson6_menu_activities_future extends AppCompatActivity {
             }
         });
 
-        Button Fill = findViewById(R.id.btnFill);
-        Fill.setOnClickListener(new View.OnClickListener() {
+        btnFill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_fillverbs_future.class);
@@ -32,8 +54,7 @@ public class lesson6_menu_activities_future extends AppCompatActivity {
             }
         });
 
-        Button answer = findViewById(R.id.btnAnswer);
-        answer.setOnClickListener(new View.OnClickListener() {
+        btnAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson6_menu_activities_future.this, lesson6_answerquestion_future.class);

@@ -37,19 +37,19 @@ public class lesson2_menu_activities_present extends AppCompatActivity {
         getbtn();
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
 
-        if (vali.getInt("cont8", 0) == 0){
+        if (vali.getInt("cont4", 0) == 0){
             btnListen.setEnabled(true);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont8", 0) == 1){
+        }else if(vali.getInt("cont4", 0) == 1){
             btnListen.setEnabled(false);
             btnFill.setEnabled(true);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont8", 0) == 2){
+        }else if(vali.getInt("cont4", 0) == 2){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(true);
-        }else if(vali.getInt("cont8", 0) == 3){
+        }else if(vali.getInt("cont4", 0) == 3){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);
