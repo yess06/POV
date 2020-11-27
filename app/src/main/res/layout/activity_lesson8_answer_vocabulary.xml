@@ -6,4 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".lesson8_answer_vocabulary">
 
+    <TextView
+        android:id="@+id/textView909"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Get off : To get out of trouble (with the police)"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Had no Idea : Does not know"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView909" />
+
+    <TextView
+        android:id="@+id/textView999"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Pulled over : To be stopped by the police while driving"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView998" />
+
+    <TextView
+        android:id="@+id/textView1000"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Run-in with the law : To get in trouble (with the police)"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView999" />
+
+    <TextView
+        android:id="@+id/textView1001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Throw in jall : To be put in jail"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1000" />
+
+    <TextView
+        android:id="@+id/textView1002"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Throw the book at me : To make someone go to jail for a long time"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+    <Button
+        android:id="@+id/button39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:background="#207A7A"
+        android:text="More Practice"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1002" />
+
+    <Button
+        android:id="@+id/button90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:background="#E7323D"
+        android:text="Check Score"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1002" />
 </androidx.constraintlayout.widget.ConstraintLayout>

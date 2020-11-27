@@ -27,7 +27,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/fillFutL81"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="32dp"
@@ -61,7 +61,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/fillFutL82"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="90dp"
@@ -95,7 +95,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/fillFutL83"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="190dp"
@@ -129,7 +129,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner4"
+                android:id="@+id/fillFutL84"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="300dp"
@@ -163,7 +163,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner5"
+                android:id="@+id/fillFutL85"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="354dp"
@@ -197,7 +197,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner6"
+                android:id="@+id/fillFutL86"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="408dp"
@@ -243,7 +243,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner7"
+                android:id="@+id/fillFutL87"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="484dp"
@@ -277,7 +277,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner8"
+                android:id="@+id/fillFutL88"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="540dp"
@@ -311,7 +311,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner9"
+                android:id="@+id/fillFutL89"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="596dp"
@@ -333,7 +333,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner11"
+                android:id="@+id/fillFutL810"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="672dp"
@@ -379,7 +379,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner12"
+                android:id="@+id/fillFutL811"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="778dp"
@@ -413,7 +413,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner13"
+                android:id="@+id/fillFutL812"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="832dp"
@@ -435,7 +435,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner14"
+                android:id="@+id/fillFutL813"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="908dp"
@@ -469,7 +469,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner15"
+                android:id="@+id/fillFutL814"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="984dp"
@@ -491,7 +491,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner16"
+                android:id="@+id/fillFutL815"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1082dp"
@@ -549,7 +549,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner18"
+                android:id="@+id/fillFutL816"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1210dp"

@@ -3589,5 +3589,378 @@
         <item>Timmy will be really head and shoulders above the rest</item>
     </string-array>
 
+    <string-array name="QsFutL81">
+        <item>answer</item>
+        <item>Leo the lion is excited</item>
+        <item>Leo the lion was excited</item>
+        <item>Leo the lion is gonna be excited</item>
+    </string-array>
+
+    <string-array name="QsFutL82">
+        <item>answer</item>
+        <item>He wants to fly to the moon</item>
+        <item>He wanted to fly to the moon</item>
+        <item>He will want to fly to the moon</item>
+    </string-array>
+
+    <string-array name="QsFutL83">
+        <item>answer</item>
+        <item>One week before leaving he goes to a bar with his friend Samuel the snake</item>
+        <item>One week before leaving he went to a bar with his friend Samuel the snake</item>
+        <item>One week before leaving he will go to a bar with his friend Samuel the snake</item>
+    </string-array>
+
+    <string-array name="QsFutL84">
+        <item>answer</item>
+        <item>Samuel and Leo drink twelve beers each</item>
+        <item>Samuel and Leo drank twelve beers each</item>
+        <item>Samuel and Leo will drink twelve beers each</item>
+    </string-array>
+
+    <string-array name="QsFutL85">
+        <item>answer</item>
+        <item>Samuel is so drunk that he falls on the floor</item>
+        <item>Samuel was so drunk that he fell on the floor</item>
+        <item>Samuel is gonna be so drunk that he will fall on the floor</item>
+    </string-array>
+
+    <string-array name="QsFutL86">
+        <item>answer</item>
+        <item>The bartender then says, “I had no idea you were so drunk.  It is time for you to go home</item>
+        <item>The bartender then said, “I had no idea you were so drunk.  It is time for you to go home.”   </item>
+        <item>The bartender will then say, “I had no idea you were so drunk.  It is time for you to go home.” </item>
+    </string-array>
+
+    <string-array name="QsFutL87">
+        <item>answer</item>
+        <item>After driving one mile he is pulled over</item>
+        <item>After driving one mile he was pulled over</item>
+        <item>After driving one mile he will be pulled over</item>
+    </string-array>
+
+    <string-array name="QsFutL88">
+        <item>answer</item>
+        <item>The next day Samuel asks Leo to borrow money so he can hire a lawyer</item>
+        <item>The next day Samuel asked Leo to borrow money so he can hire a lawyer</item>
+        <item>The next day Samuel is gonna ask Leo to borrow money so he can hire a lawyer</item>
+    </string-array>
+
+    <string-array name="QsFutL89">
+        <item>answer</item>
+        <item>Yes, he does. Leo gives Samuel money for the lawyer</item>
+        <item>Yes, he did. Leo gave Samuel money for the lawyer</item>
+        <item>Yes, he will. Leo will give Samuel money for the lawyer</item>
+    </string-array>
+
+    <string-array name="QsFutL810">
+        <item>answer</item>
+        <item>Leo Says, “Now I have no money. I can´t go to the moon”</item>
+        <item>Leo will say, “Now I have no money. I can´t go to the moon”</item>
+        <item>Leo Say, “Now I have no money. I can´t go to the moon”</item>
+    </string-array>
+
+
+    <string-array name="QsPsL81">
+        <item>answer</item>
+        <item>Leo the lion is excited</item>
+        <item>Leo the lion was excited</item>
+        <item>Leo the lion will be excited</item>
+    </string-array>
+
+    <string-array name="QsPsL82">
+        <item>answer</item>
+        <item>He wants to fly to the moon</item>
+        <item>He wanted to fly to the moon</item>
+        <item>He will want to fly to the moon</item>
+    </string-array>
+
+    <string-array name="QsPsL83">
+        <item>answer</item>
+        <item>One week before leaving he goes to a bar with his friend Samuel the snake</item>
+        <item>One week before leaving he went to a bar with his friend Samuel the snake</item>
+        <item>One week before leaving he will go to a bar with his friend Samuel the snake</item>
+    </string-array>
+
+    <string-array name="QsPsL84">
+        <item>answer</item>
+        <item>Samuel and Leo drink twelve beers each</item>
+        <item>muel and Leo drank twelve beers each</item>
+        <item>Samuel and Leo will drink twelve beers each</item>
+    </string-array>
+
+    <string-array name="QsPsL85">
+        <item>answer</item>
+        <item>Samuel is so drunk that he falls on the floor</item>
+        <item>Samuel was so drunk that he fell on the floor</item>
+        <item>Samuel will be so drunk that he will fall on the floor</item>
+    </string-array>
+
+    <string-array name="QsPsL86">
+        <item>answer</item>
+        <item>The bartender then says, “I had no idea you were so drunk.  It is time for you to go home.”</item>
+        <item>The bartender then said, “I had no idea you were so drunk.  It is time for you to go home.”</item>
+        <item>The bartender then will say, “I had no idea you were so drunk.  It is time for you to go home.”</item>
+    </string-array>
+
+    <string-array name="QsPsL87">
+        <item>answer</item>
+        <item>After driving one mile he is pulled over</item>
+        <item>After driving one mile he was pulled over</item>
+        <item>After driving one mile he will be pulled over</item>
+    </string-array>
+
+    <string-array name="QsPsL88">
+        <item>answer</item>
+        <item>The next day Samuel asks Leo to borrow money so he can hire a lawyer</item>
+        <item>The next day Samuel asked Leo to borrow money so he can hire a lawyer</item>
+        <item>The next day Samuel will ask Leo to borrow money so he can hire a lawyer</item>
+    </string-array>
+
+    <string-array name="QsPsL89">
+        <item>answer</item>
+        <item>Yes, he does. Leo gives Samuel money for the lawyer</item>
+        <item>Yes, he did. Leo gave Samuel money for the lawyer</item>
+        <item>Yes, he will. Leo will give Samuel money for the lawyer</item>
+    </string-array>
+
+    <string-array name="QsPsL810">
+        <item>answer</item>
+        <item>Leo Says, “Now I have no money. I can´t go to the moon”</item>
+        <item>Leo will say, “Now I have no money. I can´t go to the moon”</item>
+        <item>Leo Say, “Now I have no money. I can´t go to the moon”</item>
+    </string-array>
+
+
+    <string-array name="fillfutL81">
+        <item>answer</item>
+        <item>is gonna be</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+
+    <string-array name="fillfutL82">
+        <item>answer</item>
+        <item>saves</item>
+        <item>saved</item>
+        <item>will save</item>
+    </string-array>
+
+
+    <string-array name="fillfutL83">
+        <item>answer</item>
+        <item>go</item>
+        <item>will go</item>
+        <item>went</item>
+    </string-array>
+
+
+    <string-array name="fillfutL84">
+        <item>answer</item>
+        <item>will drink</item>
+        <item>drink</item>
+        <item>drank</item>
+    </string-array>
+
+
+    <string-array name="fillfutL85">
+        <item>answer</item>
+        <item>is gonna be</item>
+        <item>was</item>
+        <item>is</item>
+    </string-array>
+
+
+    <string-array name="fillfutL86">
+        <item>answer</item>
+        <item>will say</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillfutL87">
+        <item>answer</item>
+        <item>leave</item>
+        <item>left</item>
+        <item>will leave</item>
+    </string-array>
+
+
+    <string-array name="fillfutL88">
+        <item>answer</item>
+        <item>wanted</item>
+        <item>wants</item>
+        <item>will want</item>
+    </string-array>
+
+
+    <string-array name="fillfutL89">
+        <item>answer</item>
+        <item>will say</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+
+    <string-array name="fillfutL810">
+        <item>answer</item>
+        <item>drives</item>
+        <item>drove</item>
+        <item>will drive</item>
+    </string-array>
+
+    <string-array name="fillfutL811">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillfutL812">
+        <item>answer</item>
+        <item>will says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillfutL813">
+        <item>answer</item>
+        <item>is gonna ask</item>
+        <item>asked</item>
+        <item>asking</item>
+    </string-array>
+
+    <string-array name="fillfutL814">
+        <item>answer</item>
+        <item>will says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillfutL815">
+        <item>answer</item>
+        <item>will give</item>
+        <item>gave</item>
+        <item>giving</item>
+    </string-array>
+
+    <string-array name="fillfutL816">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpsL81">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpsL82">
+        <item>answer</item>
+        <item>saves</item>
+        <item>saved</item>
+        <item>will save</item>
+    </string-array>
+
+    <string-array name="fillpsL83">
+        <item>answer</item>
+        <item>go</item>
+        <item>goes</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpsL84">
+        <item>answer</item>
+        <item>will drink</item>
+        <item>drink</item>
+        <item>drank</item>
+    </string-array>
+
+    <string-array name="fillpsL85">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will be</item>
+    </string-array>
+
+    <string-array name="fillpsL86">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillpsL87">
+        <item>answer</item>
+        <item>leave</item>
+        <item>left</item>
+        <item>will leave</item>
+    </string-array>
+
+    <string-array name="fillpsL88">
+        <item>answer</item>
+        <item>wanted</item>
+        <item>wants</item>
+        <item>will want</item>
+    </string-array>
+
+    <string-array name="fillpsL89">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillpsL810">
+        <item>answer</item>
+        <item>drives</item>
+        <item>drove</item>
+        <item>will drive</item>
+    </string-array>
+
+    <string-array name="fillpsL811">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
+
+    <string-array name="fillpsL812">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillpsL813">
+        <item>answer</item>
+        <item>asks</item>
+        <item>asked</item>
+        <item>will ask</item>
+    </string-array>
+
+    <string-array name="fillpsL814">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>say</item>
+    </string-array>
+
+    <string-array name="fillpsL815">
+        <item>answer</item>
+        <item>gives</item>
+        <item>gave</item>
+        <item>will give</item>
+    </string-array>
+
+    <string-array name="fillpsL816">
+        <item>answer</item>
+        <item>knows</item>
+        <item>knew</item>
+        <item>will know</item>
+    </string-array>
 
 </resources>
