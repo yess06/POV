@@ -67,7 +67,7 @@ public class Info_Student extends AppCompatActivity {
                 editor.commit();
                 SharedPreferences preferences1 = getSharedPreferences("credentials", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor1 = preferences1.edit();
-                editor.putString("email", txtemail.getText().toString());
+                editor1.putString("email", txtemail.getText().toString());
                 editor.commit();
             }
         }, new Response.ErrorListener() {
