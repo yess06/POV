@@ -150,7 +150,7 @@ public class lesson7_fillverbs_future extends AppCompatActivity {
         JSONObject object = new JSONObject();
         try {
             object.put("user_id", id);
-            object.put("lesson_id", "6");
+            object.put("lesson_id", "7");
             object.put("time_id", "4");
             object.put("activity_id", "1");
             object.put("qualification", String.valueOf(fina));
