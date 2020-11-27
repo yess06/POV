@@ -3264,4 +3264,333 @@
     </string-array>
 
 
+    <string-array name="fillfutL71">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>is gonna be</item>
+    </string-array>
+
+    <string-array name="fillfutL72">
+        <item>answer</item>
+        <item>seems</item>
+        <item>seemed</item>
+        <item>will only seem</item>
+    </string-array>
+
+    <string-array name="fillfutL73">
+        <item>answer</item>
+        <item>changes</item>
+        <item>changed</item>
+        <item>will change</item>
+    </string-array>
+
+    <string-array name="fillfutL74">
+        <item>answer</item>
+        <item>runs</item>
+        <item>run</item>
+        <item>is gonna run</item>
+    </string-array>
+
+    <string-array name="fillfutL75">
+        <item>answer</item>
+        <item>have</item>
+        <item>has</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillfutL76">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillfutL77">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>is gonna to want</item>
+    </string-array>
+
+    <string-array name="fillfutL78">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillfutL79">
+        <item>answer</item>
+        <item>agrees</item>
+        <item>agreed</item>
+        <item>is gonna agree</item>
+    </string-array>
+
+    <string-array name="fillfutL710">
+        <item>answer</item>
+        <item>sees</item>
+        <item>saw</item>
+        <item>will see</item>
+    </string-array>
+
+    <string-array name="fillfutL711">
+        <item>answer</item>
+        <item>is</item>
+        <item>are</item>
+        <item>is gonna be</item>
+    </string-array>
+
+    <string-array name="fillfutL712">
+        <item>answer</item>
+        <item>have</item>
+        <item>has</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillfutL713">
+        <item>answer</item>
+        <item>says</item>
+        <item>say</item>
+        <item>will say</item>
+    </string-array>
+
+
+    <string-array name="fillpsL71">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>is gonna be</item>
+    </string-array>
+
+    <string-array name="fillpsL72">
+        <item>answer</item>
+        <item>seems</item>
+        <item>seemed</item>
+        <item>will seem</item>
+    </string-array>
+
+    <string-array name="fillpsL73">
+        <item>answer</item>
+        <item>changes</item>
+        <item>changed</item>
+        <item>will change</item>
+    </string-array>
+
+    <string-array name="fillpsL74">
+        <item>answer</item>
+        <item>runs</item>
+        <item>run</item>
+        <item>is gonna run</item>
+    </string-array>
+
+    <string-array name="fillpsL75">
+        <item>answer</item>
+        <item>have</item>
+        <item>has</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpsL76">
+        <item>answer</item>
+        <item>is</item>
+        <item>was</item>
+        <item>will</item>
+    </string-array>
+
+    <string-array name="fillpsL77">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>is gonna to want</item>
+    </string-array>
+
+    <string-array name="fillpsL78">
+        <item>answer</item>
+        <item>thinks</item>
+        <item>thought</item>
+        <item>will think</item>
+    </string-array>
+
+    <string-array name="fillpsL79">
+        <item>answer</item>
+        <item>agrees</item>
+        <item>agreed</item>
+        <item>is gonna agree</item>
+    </string-array>
+
+    <string-array name="fillpsL710">
+        <item>answer</item>
+        <item>sees</item>
+        <item>saw</item>
+        <item>will see</item>
+    </string-array>
+
+    <string-array name="fillpsL711">
+        <item>answer</item>
+        <item>is</item>
+        <item>are</item>
+        <item>is gonna be</item>
+    </string-array>
+
+    <string-array name="fillpsL712">
+        <item>answer</item>
+        <item>have</item>
+        <item>has</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpsL713">
+        <item>answer</item>
+        <item>says</item>
+        <item>say</item>
+        <item>will say</item>
+    </string-array>
+
+
+
+    <string-array name="QsFutL71">
+        <item>answer</item>
+        <item>Yes, she is ready to stop dating</item>
+        <item>Yes, she was ready to stop dating</item>
+        <item>Yes, she is gonna be ready to stop dating</item>
+    </string-array>
+
+    <string-array name="QsFutL72">
+        <item>answer</item>
+        <item>Yes, she does. She only seems to meet total losers</item>
+        <item>Yes, she did. She only seemed to meet total losers</item>
+        <item>Yes, she will. She will only seem to meet total losers</item>
+    </string-array>
+
+    <string-array name="QsFutL73">
+        <item>answer</item>
+        <item>On December 31st, her luck changes</item>
+        <item>On December 31st, her luck changed</item>
+        <item>On December 31st, her luck will change</item>
+    </string-array>
+
+    <string-array name="QsFutL74">
+        <item>answer</item>
+        <item>She runs into her friend Katie the cougar at the library</item>
+        <item>She ran into her friend Katie the cougar at the library</item>
+        <item>She will run into her friend Katie the cougar at the library</item>
+    </string-array>
+
+    <string-array name="QsFutL75">
+        <item>answer</item>
+        <item>Katie is now living in America again</item>
+        <item>Katie was living in America again</item>
+        <item>Katie will be living in America again</item>
+    </string-array>
+
+    <string-array name="QsFutL76">
+        <item>answer</item>
+        <item>Katie wants to set her up on a blind date with her friend Timmy the tiger</item>
+        <item>Katie wanted to set her up on a blind date with her friend Timmy the tiger</item>
+        <item>Katie is gonna want to set her up on a blind date with her friend Timmy the tiger</item>
+    </string-array>
+
+    <string-array name="QsFutL77">
+        <item>answer</item>
+        <item>Carly thinks that all blind dates are a recipe for disaster</item>
+        <item>Carly thought that all blind dates are a recipe for disaster</item>
+        <item>Carly will think that all blind dates are a recipe for disaster</item>
+    </string-array>
+
+    <string-array name="QsFutL78">
+        <item>answer</item>
+        <item>Yes she does. She agrees to go out with Timmy one time</item>
+        <item>Yes she did. She agreed to go out with Timmy one time</item>
+        <item>Yes she is. She’s gonna agree to go out with Timmy one time</item>
+    </string-array>
+
+    <string-array name="QsFutL79">
+        <item>answer</item>
+        <item>She and Timmy have fallen in love</item>
+        <item>She and Timmy had fallen in love</item>
+        <item>She and Timmy will have fallen in love</item>
+    </string-array>
+
+    <string-array name="QsFutL710">
+        <item>answer</item>
+        <item>Timmy is really head and shoulders above the rest</item>
+        <item>Timmy was really head and shoulders above the rest</item>
+        <item>Timmy will be really head and shoulders above the rest</item>
+    </string-array>
+
+
+    <string-array name="QsPsL71">
+        <item>answer</item>
+        <item>Yes, she is ready to stop dating</item>
+        <item>Yes, she was ready to stop dating</item>
+        <item>Yes, she is gonna be ready to stop dating</item>
+    </string-array>
+
+    <string-array name="QsPsL72">
+        <item>answer</item>
+        <item>Yes, she does. She only seems to meet total losers</item>
+        <item>Yes, she did. She only seemed to meet total losers</item>
+        <item>Yes, she will. She will only seem to meet total losers</item>
+    </string-array>
+
+    <string-array name="QsPsL73">
+        <item>answer</item>
+        <item>On December 31st, her luck changes</item>
+        <item>On December 31st, her luck changed</item>
+        <item>On December 31st, her luck will change</item>
+    </string-array>
+
+    <string-array name="QsPsL74">
+        <item>answer</item>
+        <item>She runs into her friend Katie the cougar at the library</item>
+        <item>She ran into her friend Katie the cougar at the library</item>
+        <item>She will run into her friend Katie the cougar at the library</item>
+    </string-array>
+
+    <string-array name="QsPsL75">
+        <item>answer</item>
+        <item>Katie is now living in America again</item>
+        <item>Katie was living in America again</item>
+        <item>Katie will be living in America again</item>
+    </string-array>
+
+    <string-array name="QsPsL76">
+        <item>answer</item>
+        <item>Katie wants to set her up on a blind date with her friend Timmy the tiger</item>
+        <item>Katie wanted to set her up on a blind date with her friend Timmy the tiger</item>
+        <item>Katie will want to set her up on a blind date with her friend Timmy the tiger</item>
+    </string-array>
+
+    <string-array name="QsPsL77">
+        <item>answer</item>
+        <item>Carly thinks that all blind dates are a recipe for disaster</item>
+        <item>Carly thought that all blind dates are a recipe for disaster</item>
+        <item>Carly will think that all blind dates are a recipe for disaster</item>
+    </string-array>
+
+    <string-array name="QsPsL78">
+        <item>answer</item>
+        <item>Yes she does. She agrees to go out with Timmy one time</item>
+        <item>Yes she did. She agreed to go out with Timmy one time</item>
+        <item>Yes she is. She’s gonna agree to go out with Timmy one time</item>
+    </string-array>
+
+    <string-array name="QsPsL79">
+        <item>answer</item>
+        <item>She and Timmy have fallen in love</item>
+        <item>She and Timmy had fallen in love</item>
+        <item>She and Timmy will have fallen in love</item>
+    </string-array>
+
+    <string-array name="QsPsL710">
+        <item>answer</item>
+        <item>Timmy is really head and shoulders above the rest</item>
+        <item>Timmy was really head and shoulders above the rest</item>
+        <item>Timmy will be really head and shoulders above the rest</item>
+    </string-array>
+
+
+
+
 </resources>

@@ -95,6 +95,15 @@ public class lessons extends AppCompatActivity {
             }
         });
 
+        Button pov7 = findViewById(R.id.btnPOV7);
+        pov7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lessons.this, lesson7_menu_tenses.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
