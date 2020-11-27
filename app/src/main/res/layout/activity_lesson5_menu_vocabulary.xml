@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".lesson5_menu_vocabulary">
+
     <Button
         android:id="@+id/btnlessontwoPreview"
         android:layout_width="337dp"
@@ -12,6 +13,7 @@
         android:layout_marginTop="216dp"
         android:background="#EBEBEB"
         android:drawableLeft="@drawable/preview"
+        android:onClick="answer_vocabulary"
         android:text="Preview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

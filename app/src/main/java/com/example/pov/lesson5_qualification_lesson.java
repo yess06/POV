@@ -23,15 +23,15 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class lesson4_qualification_future extends AppCompatActivity {
+public class lesson5_qualification_lesson extends AppCompatActivity {
     String id, token;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson4_qualification_future);
-        quallificationtime();
+        setContentView(R.layout.activity_lesson5_qualification_lesson);
+        quallificationlesson();
     }
-    public void qualifitime(View view){
+    public void qualifilesson(View view){
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -41,19 +41,18 @@ public class lesson4_qualification_future extends AppCompatActivity {
         JSONObject object = new JSONObject();
         try {
             object.put("user_id", id);
-            object.put("lesson_id", "4");
-            object.put("time_id", "4");
-            object.put("qualification", valid.getString("qualifi", "null"));
+            object.put("lesson_id", "5");
+            object.put("qualification", valid.getString("qualifi", ""));
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
+        String url = getResources().getString(R.string.urlpostqualificationlessonlesson1);
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(lesson4_qualification_future.this, lesson4_qualification_lesson.class);
+                Intent intent = new Intent(lesson5_qualification_lesson.this, lessons.class);
                 startActivity(intent);
             }
         }, new Response.ErrorListener() {
@@ -71,14 +70,14 @@ public class lesson4_qualification_future extends AppCompatActivity {
         };
         requestQueue.add(objectRequest);
     }
-    public void quallificationtime(){
+    public void quallificationlesson(){
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
-            String url = getResources().getString(R.string.urlgetqualificationsactivity);
+            String url = getResources().getString(R.string.urlgetqualificationstimelesson1);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
@@ -90,16 +89,15 @@ public class lesson4_qualification_future extends AppCompatActivity {
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
-                                if (u.getString("lesson_id").equals("4")) {
-                                    if (u.getString("time_id").equals("4")) {
-                                        qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(lesson4_qualification_future.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
-                                    }
+                                if (u.getString("lesson_id").equals("5")) {
+                                    qualification += Double.parseDouble(u.getString("qualification"));
+                                    Toast.makeText(lesson5_qualification_lesson.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putString("qualifi", String.valueOf(qualification));
+                                    editor.commit();
                                 }
+
                             }
                         }
 
@@ -110,7 +108,7 @@ public class lesson4_qualification_future extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(lesson4_qualification_future.this, "Wrong data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(lesson5_qualification_lesson.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
                 @Override
@@ -122,8 +120,7 @@ public class lesson4_qualification_future extends AppCompatActivity {
                 }
             };
             requestQueue.add(jsonObjectRequest);
-            //Intent intent = new Intent(qualificationanswer.this, qualificationanswer.class);
-            //startActivity(intent);
+
         }catch (Exception e) {
             e.printStackTrace();
         }

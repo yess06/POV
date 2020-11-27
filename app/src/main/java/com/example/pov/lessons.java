@@ -171,7 +171,7 @@ public class lessons extends AppCompatActivity {
                 public void onResponse(JSONObject response) {
                     try {
                         int cont = 0;
-                        int cont2 = 0, cont3 = 0,cont4 =0,cont6 = 0;
+                        int cont2 = 0, cont3 = 0,cont4 =0,cont6 = 0, cont5 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -202,6 +202,13 @@ public class lessons extends AppCompatActivity {
                                     SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                     SharedPreferences.Editor editor = valid.edit();
                                     editor.putInt("cont10", cont4);
+                                    editor.commit();
+
+                                }else if (u.getString("lesson_id").equals("5")){
+                                    cont5++;
+                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                                    SharedPreferences.Editor editor = valid.edit();
+                                    editor.putInt("cont11", cont5);
                                     editor.commit();
 
                                 }else if (u.getString("lesson_id").equals("6")){

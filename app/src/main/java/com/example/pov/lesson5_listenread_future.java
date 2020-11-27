@@ -1,6 +1,9 @@
 package com.example.pov;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,13 +11,26 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class lesson5_listenread_future extends AppCompatActivity {
-
+    String id, token;
     TextView playerPosition,playerDuration;
     SeekBar seekBar;
     ImageView btPlay,btPause;
@@ -120,5 +136,45 @@ public class lesson5_listenread_future extends AppCompatActivity {
                 , TimeUnit.MILLISECONDS.toSeconds(duration)-
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
 
+    }
+    public void qualification(View view){
+        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+        token = preferencess.getString("token", "null");
+        id = preferences.getString("id", "null");
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        JSONObject object = new JSONObject();
+        try {
+            object.put("user_id", id);
+            object.put("lesson_id", "5");
+            object.put("time_id", "4");
+            object.put("activity_id", "2");
+            object.put("qualification", "10.0");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String url = getResources().getString(R.string.urlpostqualificationlesson1);
+        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
+                object, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                Toast.makeText(lesson5_listenread_future.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(lesson5_listenread_future.this, lessons.class);
+                startActivity(intent);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(lesson5_listenread_future.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
+            }
+        }){
+            @Override
+            public Map getHeaders() throws AuthFailureError {
+                HashMap headers = new HashMap();
+                headers.put("Authorization", "Bearer " + token);
+                return headers;
+            }
+        };
+        requestQueue.add(objectRequest);
     }
 }

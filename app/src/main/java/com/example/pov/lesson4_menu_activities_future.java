@@ -16,6 +16,9 @@ public class lesson4_menu_activities_future extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson4_menu_activities_future);
+        btnListen = findViewById(R.id.btnlisten);
+        btnFill = findViewById(R.id.btnFill);
+        btnAnswer = findViewById(R.id.btnAnswer);
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
 
         if (vali.getInt("cont2", 0) == 0){
@@ -36,7 +39,6 @@ public class lesson4_menu_activities_future extends AppCompatActivity {
             btnAnswer.setEnabled(false);
             Toast.makeText(this, "Verbal Tense ending", Toast.LENGTH_SHORT).show();
         }
-        btnListen = findViewById(R.id.btnlisten);
         btnListen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +47,6 @@ public class lesson4_menu_activities_future extends AppCompatActivity {
             }
         });
 
-        btnFill = findViewById(R.id.btnFill);
         btnFill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +55,6 @@ public class lesson4_menu_activities_future extends AppCompatActivity {
             }
         });
 
-        btnAnswer = findViewById(R.id.btnAnswer);
         btnAnswer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
