@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".lesson9MenuActivitiesFuture">
 
+
+    <Button
+        android:id="@+id/btnlisten"
+        android:layout_width="337dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="172dp"
+        android:background="#EBEBEB"
+        android:drawableLeft="@drawable/listen"
+        android:text="Listen and Read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFill"
+        android:layout_width="337dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="20dp"
+        android:background="#EBEBEB"
+        android:drawableLeft="@drawable/fill"
+        android:text="Fill the verbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlisten" />
+
+    <Button
+        android:id="@+id/btnAnswer"
+        android:layout_width="337dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="20dp"
+        android:background="#EBEBEB"
+        android:drawableLeft="@drawable/question"
+        android:text="Answer the Question"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFill"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

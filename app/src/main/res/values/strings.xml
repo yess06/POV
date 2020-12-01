@@ -3963,4 +3963,621 @@
         <item>will know</item>
     </string-array>
 
+    <string-array name="fillfutL91">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+
+    <string-array name="fillfutL92">
+        <item>answer</item>
+        <item>goes</item>
+        <item>is gonna go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillfutL93">
+        <item>answer</item>
+        <item>says</item>
+        <item>will say</item>
+        <item>said</item>
+    </string-array>
+
+
+    <string-array name="fillfutL94">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL95">
+        <item>answer</item>
+        <item>goes</item>
+        <item>will go</item>
+        <item>went</item>
+    </string-array>
+
+
+    <string-array name="fillfutL96">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillfutL97">
+        <item>answer</item>
+        <item>feels</item>
+        <item>felt</item>
+        <item>is gonna feel</item>
+    </string-array>
+
+    <string-array name="fillfutL98">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>is gonna get</item>
+    </string-array>
+
+    <string-array name="fillfutL99">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>is gonna become</item>
+        <item>became</item>
+    </string-array>
+
+    <string-array name="fillfutL910">
+        <item>answer</item>
+        <item>decides</item>
+        <item>will decide</item>
+        <item>decided</item>
+    </string-array>
+
+
+    <string-array name="fillfutL911">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillfutL912">
+        <item>answer</item>
+        <item>does not like</item>
+        <item>will not like</item>
+        <item>didnt like</item>
+    </string-array>
+
+
+    <string-array name="fillfutL913">
+        <item>answer</item>
+        <item>ignores</item>
+        <item>ignored</item>
+        <item>is gonna ignore</item>
+    </string-array>
+
+    <string-array name="fillfutL914">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>is gonna have</item>
+    </string-array>
+
+    <string-array name="fillfutL915">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillfutL916">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillfutL917">
+        <item>answer</item>
+        <item>loses</item>
+        <item>will lose</item>
+        <item>lost</item>
+    </string-array>
+
+    <string-array name="fillfutL918">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillfutL919">
+        <item>answer</item>
+        <item>plays</item>
+        <item>played</item>
+        <item>is gonna play</item>
+    </string-array>
+
+    <string-array name="fillpasL91">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+    <string-array name="fillpasL92">
+        <item>answer</item>
+        <item>goes</item>
+        <item>go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpasL93">
+        <item>answer</item>
+        <item>says</item>
+        <item>will say</item>
+        <item>said</item>
+    </string-array>
+
+    <string-array name="fillpasL94">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpasL95">
+        <item>answer</item>
+        <item>goes</item>
+        <item>go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpasL96">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillpasL97">
+        <item>answer</item>
+        <item>feels</item>
+        <item>felt</item>
+        <item>will feel</item>
+    </string-array>
+
+    <string-array name="fillpasL98">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>will get</item>
+    </string-array>
+
+    <string-array name="fillpasL99">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillpasL910">
+        <item>answer</item>
+        <item>decides</item>
+        <item>will decide</item>
+        <item>decided</item>
+    </string-array>
+
+    <string-array name="fillpasL911">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillpasL912">
+        <item>answer</item>
+        <item>does not like</item>
+        <item>will not like</item>
+        <item>didnt like</item>
+    </string-array>
+
+    <string-array name="fillpasL913">
+        <item>answer</item>
+        <item>ignores</item>
+        <item>ignored</item>
+        <item>will ignore</item>
+    </string-array>
+
+    <string-array name="fillpasL914">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpasL915">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillpasL916">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillpasL917">
+        <item>answer</item>
+        <item>loses</item>
+        <item>will lose</item>
+        <item>lost</item>
+    </string-array>
+
+    <string-array name="fillpasL918">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillpasL919">
+        <item>answer</item>
+        <item>plays</item>
+        <item>played</item>
+        <item>is gonna play</item>
+    </string-array>
+
+    <string-array name="fillpsL91">
+        <item>answer</item>
+        <item>wants</item>
+        <item>wanted</item>
+        <item>will want</item>
+    </string-array>
+
+    <string-array name="fillpsL92">
+        <item>answer</item>
+        <item>goes</item>
+        <item>go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpsL93">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL94">
+        <item>answer</item>
+        <item>says</item>
+        <item>said</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL95">
+        <item>answer</item>
+        <item>goes</item>
+        <item>go</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpsL96">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillpsL97">
+        <item>answer</item>
+        <item>feels</item>
+        <item>felt</item>
+        <item>will feel</item>
+    </string-array>
+
+    <string-array name="fillpsL98">
+        <item>answer</item>
+        <item>gets</item>
+        <item>got</item>
+        <item>will get</item>
+    </string-array>
+
+    <string-array name="fillpsL99">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillpsL910">
+        <item>answer</item>
+        <item>decides</item>
+        <item>will decide</item>
+        <item>decided</item>
+    </string-array>
+
+    <string-array name="fillpsL911">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillpsL912">
+        <item>answer</item>
+        <item>does not like</item>
+        <item>will not like</item>
+        <item>didnt like</item>
+    </string-array>
+
+    <string-array name="fillpsL913">
+        <item>answer</item>
+        <item>ignores</item>
+        <item>ignored</item>
+        <item>will ignore</item>
+    </string-array>
+
+    <string-array name="fillpsL914">
+        <item>answer</item>
+        <item>has</item>
+        <item>had</item>
+        <item>will have</item>
+    </string-array>
+
+    <string-array name="fillpsL915">
+        <item>answer</item>
+        <item>goes</item>
+        <item>went</item>
+        <item>will go</item>
+    </string-array>
+
+    <string-array name="fillpsL916">
+        <item>answer</item>
+        <item>eats</item>
+        <item>ate</item>
+        <item>will eat</item>
+    </string-array>
+
+    <string-array name="fillpsL917">
+        <item>answer</item>
+        <item>loses</item>
+        <item>will lose</item>
+        <item>lost</item>
+    </string-array>
+
+    <string-array name="fillpsL918">
+        <item>answer</item>
+        <item>becomes</item>
+        <item>became</item>
+        <item>will become</item>
+    </string-array>
+
+    <string-array name="fillpsL919">
+        <item>answer</item>
+        <item>plays</item>
+        <item>played</item>
+        <item>is gonna play</item>
+    </string-array>
+
+    <string-array name="QsFutL91">
+        <item>answer</item>
+        <item>Porky pig wants to lose weight</item>
+        <item>Porky pig wanted to lose weight</item>
+        <item>Porky pig will want to lose weight</item>
+    </string-array>
+
+    <string-array name="QsFutL92">
+        <item>answer</item>
+        <item>he goes to Dr. Atkins</item>
+        <item>he went to Dr. Atkins</item>
+        <item>he will go to Dr. Atkins</item>
+    </string-array>
+
+    <string-array name="QsFutL93">
+        <item>answer</item>
+        <item>Eat lots of meat and fat</item>
+        <item>You had to eat lots of meat and fat</item>
+        <item>You will eat lots of meat and fat</item>
+    </string-array>
+
+    <string-array name="QsFutL94">
+        <item>answer</item>
+        <item>He feels terrible</item>
+        <item>He felt terrible</item>
+        <item>He will feel terrible</item>
+    </string-array>
+
+    <string-array name="QsFutL95">
+        <item>answer</item>
+        <item>He becomes super fat</item>
+        <item>He became super fat</item>
+        <item>He will become super fat</item>
+    </string-array>
+
+    <string-array name="QsFutL96">
+        <item>answer</item>
+        <item>He goes to John Robbins</item>
+        <item>He went to John Robbins</item>
+        <item>He will go to John Robbins</item>
+    </string-array>
+
+    <string-array name="QsFutL97">
+        <item>answer</item>
+        <item>He tells him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He told him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He will tell him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+    </string-array>
+
+    <string-array name="QsFutL98">
+        <item>answer</item>
+        <item>Porky does not like this idea. This information goes in one ear and out the other</item>
+        <item>Porky did not like this idea. This information went in one ear and out the other</item>
+        <item>Porky will not like this idea. This information will go in one ear and out the other</item>
+    </string-array>
+
+    <string-array name="QsFutL99">
+        <item>answer</item>
+        <item>One month later Porky has a heart attack</item>
+        <item>One month later Porky had a heart attack</item>
+        <item>One month later Porky will have a heart attack</item>
+    </string-array>
+
+    <string-array name="QsFutL910">
+        <item>answer</item>
+        <item>He becomes a vegetarian</item>
+        <item>He became a vegetarian</item>
+        <item>He will become a vegetarian</item>
+    </string-array>
+
+    <string-array name="QsPasL91">
+        <item>answer</item>
+        <item>Porky pig wants to lose weight</item>
+        <item>Porky pig wanted to lose weight</item>
+        <item>Porky pig will want to lose weight</item>
+    </string-array>
+
+    <string-array name="QsPasL92">
+        <item>answer</item>
+        <item>He goes to Dr. Atkins</item>
+        <item>He went to Dr. Atkins</item>
+        <item>He will  go to Dr. Atkins</item>
+    </string-array>
+
+    <string-array name="QsPasL93">
+        <item>answer</item>
+        <item>eat lots of meat and fat</item>
+        <item>you had to eat lots of meat and fat</item>
+        <item>you will eat lots of meat and fat</item>
+    </string-array>
+
+    <string-array name="QsPasL94">
+        <item>answer</item>
+        <item>He feels terrible</item>
+        <item>He felt terrible</item>
+        <item>He  will feel terrible</item>
+    </string-array>
+
+    <string-array name="QsPasL95">
+        <item>answer</item>
+        <item>He becomes super fat</item>
+        <item>He became super fat</item>
+        <item>He will become super fat</item>
+    </string-array>
+
+    <string-array name="QsPasL96">
+        <item>answer</item>
+        <item>He goes to John Robbins</item>
+        <item>He went to John Robbins</item>
+        <item>He will go to John Robbins</item>
+    </string-array>
+
+    <string-array name="QsPasL97">
+        <item>answer</item>
+        <item>He tells him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He told him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He will tell him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+    </string-array>
+
+    <string-array name="QsPasL98">
+        <item>answer</item>
+        <item>Porky does not like this idea. This information goes in one ear and out the other</item>
+        <item>Porky did not like this idea. This information went in one ear and out the other</item>
+        <item>Porky will not like this idea. This information will go in one ear and out the other</item>
+    </string-array>
+
+    <string-array name="QsPasL99">
+        <item>answer</item>
+        <item>One month later Porky has a heart attack</item>
+        <item>One month later Porky had a heart attack</item>
+        <item>One month later Porky will have a heart attack</item>
+    </string-array>
+
+    <string-array name="QsPasL910">
+        <item>answer</item>
+        <item>He becomes a vegetarian</item>
+        <item>He became a vegetarian</item>
+        <item>He will become a vegetarian</item>
+    </string-array>
+
+    <string-array name="QsPsL91">
+        <item>answer</item>
+        <item>Porky pig wants to lose weight</item>
+        <item>Porky pig wanted to lose weight</item>
+        <item>Porky pig will want to lose weight</item>
+    </string-array>
+
+    <string-array name="QsPsL92">
+        <item>answer</item>
+        <item>he goes to Dr. Atkins</item>
+        <item>he went to Dr. Atkins</item>
+        <item>he will  go to Dr. Atkins</item>
+    </string-array>
+
+    <string-array name="QsPsL93">
+        <item>answer</item>
+        <item>Eat lots of meat and fat</item>
+        <item>You had to eat lots of meat and fat</item>
+        <item>You will eat lots of meat and fat</item>
+    </string-array>
+
+    <string-array name="QsPsL94">
+        <item>answer</item>
+        <item>He feels terrible</item>
+        <item>He felt terrible</item>
+        <item>He  will feel terrible</item>
+    </string-array>
+
+    <string-array name="QsPsL95">
+        <item>answer</item>
+        <item>He becomes super fat</item>
+        <item>He became super fat</item>
+        <item>He will become super fat</item>
+    </string-array>
+
+    <string-array name="QsPsL96">
+        <item>answer</item>
+        <item>He goes to John Robbins</item>
+        <item>He went to John Robbins</item>
+        <item>He will go to John Robbins</item>
+    </string-array>
+
+    <string-array name="QsPsL97">
+        <item>answer</item>
+        <item>He tells him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He will tell him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+        <item>He told him “As a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.”</item>
+    </string-array>
+
+    <string-array name="QsPsL98">
+        <item>answer</item>
+        <item>Porky does not like this idea. This information goes in one ear and out the other</item>
+        <item>Porky did not like this idea. This information went in one ear and out the other</item>
+        <item>Porky did not like this idea. This information went in one ear and out the other</item>
+    </string-array>
+
+    <string-array name="QsPsL99">
+        <item>answer</item>
+        <item>One month later Porky has a heart attack</item>
+        <item>One month later Porky had a heart attack</item>
+        <item>One month later Porky will have a heart attack</item>
+    </string-array>
+
+    <string-array name="QsPsL910">
+        <item>answer</item>
+        <item>He becomes a vegetarian</item>
+        <item>He became a vegetarian</item>
+        <item>He will become a vegetarian</item>
+    </string-array>
+
+
+
+
 </resources>
