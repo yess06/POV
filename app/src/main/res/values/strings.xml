@@ -4577,6 +4577,556 @@
         <item>He will become a vegetarian</item>
     </string-array>
 
+    <string-array name="fillfutL101">
+        <item>answer</item>
+        <item>wants</item>
+        <item>will want</item>
+        <item>wanted</item>
+    </string-array>
+
+    <string-array name="fillfutL102">
+        <item>answer</item>
+        <item>has</item>
+        <item>is not gonna have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillfutL103">
+        <item>answer</item>
+        <item>decides</item>
+        <item>is gonna decide</item>
+        <item>decided</item>
+    </string-array>
+
+    <string-array name="fillfutL104">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillfutL105">
+        <item>answer</item>
+        <item>said</item>
+        <item>will say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillfutL106">
+        <item>answer</item>
+        <item>is gonna go</item>
+        <item>goes</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillfutL107">
+        <item>answer</item>
+        <item>is gonna ask</item>
+        <item>asked</item>
+        <item>asks</item>
+    </string-array>
+
+    <string-array name="fillfutL108">
+        <item>answer</item>
+        <item>said</item>
+        <item>says</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillfutL109">
+        <item>answer</item>
+        <item>was</item>
+        <item>is gonna be</item>
+        <item>were</item>
+    </string-array>
+
+    <string-array name="fillfutL1010">
+        <item>answer</item>
+        <item>has</item>
+        <item>will not have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillfutL1011">
+        <item>answer</item>
+        <item>went</item>
+        <item>is gonna go</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillfutL1012">
+        <item>answer</item>
+        <item>caught</item>
+        <item>catches</item>
+        <item>is gonna catch</item>
+    </string-array>
+
+    <string-array name="fillfutL1013">
+        <item>answer</item>
+        <item>sells</item>
+        <item>sold</item>
+        <item>is gonna sell</item>
+    </string-array>
+
+    <string-array name="fillfutL1014">
+        <item>answer</item>
+        <item>pay</item>
+        <item>pays</item>
+        <item>will pay</item>
+    </string-array>
+
+    <string-array name="fillfutL1015">
+        <item>answer</item>
+        <item>takes</item>
+        <item>take</item>
+        <item>will take</item>
+    </string-array>
+
+    <string-array name="fillfutL1016">
+        <item>answer</item>
+        <item>buys</item>
+        <item>bought</item>
+        <item>will buy</item>
+    </string-array>
+
+    <string-array name="fillfutL1017">
+        <item>answer</item>
+        <item>was</item>
+        <item>will be</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="fillpasL101">
+        <item>answer</item>
+        <item>wants</item>
+        <item>will want</item>
+        <item>wanted</item>
+    </string-array>
+
+    <string-array name="fillpasL102">
+        <item>answer</item>
+        <item>has</item>
+        <item>have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillpasL103">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillpasL104">
+        <item>answer</item>
+        <item>said</item>
+        <item>will say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillpasL105">
+        <item>answer</item>
+        <item>is gonna ask</item>
+        <item>asked</item>
+        <item>asks</item>
+    </string-array>
+
+    <string-array name="fillpasL106">
+        <item>answer</item>
+        <item>said</item>
+        <item>says</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpasL107">
+        <item>answer</item>
+        <item>was</item>
+        <item>will be</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="fillpasL108">
+        <item>answer</item>
+        <item>has</item>
+        <item>will not have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillpasL109">
+        <item>answer</item>
+        <item>went</item>
+        <item>is gonna go</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillpasL1010">
+        <item>answer</item>
+        <item>caught</item>
+        <item>catches</item>
+        <item>is gonna catch</item>
+    </string-array>
+
+    <string-array name="fillpasL1011">
+        <item>answer</item>
+        <item>sells</item>
+        <item>sold</item>
+        <item>is gonna sell</item>
+    </string-array>
+
+    <string-array name="fillpasL1012">
+        <item>answer</item>
+        <item>paid</item>
+        <item>pays</item>
+        <item>will pay</item>
+    </string-array>
+
+    <string-array name="fillpasL1013">
+        <item>answer</item>
+        <item>buys</item>
+        <item>bought</item>
+        <item>will buy</item>
+    </string-array>
+
+    <string-array name="fillpasL1014">
+        <item>answer</item>
+        <item>was</item>
+        <item>will be</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="fillpsL101">
+        <item>answer</item>
+        <item>wants</item>
+        <item>will want</item>
+        <item>wanted</item>
+    </string-array>
+
+    <string-array name="fillpsL102">
+        <item>answer</item>
+        <item>has</item>
+        <item>have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillpsL103">
+        <item>answer</item>
+        <item>decides</item>
+        <item>is gonna decide</item>
+        <item>decided</item>
+    </string-array>
+
+    <string-array name="fillpsL104">
+        <item>answer</item>
+        <item>lives</item>
+        <item>lived</item>
+        <item>will live</item>
+    </string-array>
+
+    <string-array name="fillpsL105">
+        <item>answer</item>
+        <item>said</item>
+        <item>will say</item>
+        <item>says</item>
+    </string-array>
+
+    <string-array name="fillpsL106">
+        <item>answer</item>
+        <item>will go</item>
+        <item>goes</item>
+        <item>went</item>
+    </string-array>
+
+    <string-array name="fillpsL107">
+        <item>answer</item>
+        <item>is gonna ask</item>
+        <item>asked</item>
+        <item>asks</item>
+    </string-array>
+
+    <string-array name="fillpsL108">
+        <item>answer</item>
+        <item>said</item>
+        <item>says</item>
+        <item>will say</item>
+    </string-array>
+
+    <string-array name="fillpsL109">
+        <item>answer</item>
+        <item>was</item>
+        <item>will be</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="fillpsL1010">
+        <item>answer</item>
+        <item>has</item>
+        <item>will not have</item>
+        <item>had</item>
+    </string-array>
+
+    <string-array name="fillpsL1011">
+        <item>answer</item>
+        <item>went</item>
+        <item>is gonna go</item>
+        <item>goes</item>
+    </string-array>
+
+    <string-array name="fillpsL1012">
+        <item>answer</item>
+        <item>caught</item>
+        <item>catches</item>
+        <item>is gonna catch</item>
+    </string-array>
+
+    <string-array name="fillpsL1013">
+        <item>answer</item>
+        <item>sells</item>
+        <item>sold</item>
+        <item>is gonna sell</item>
+    </string-array>
+
+    <string-array name="fillpsL1014">
+        <item>answer</item>
+        <item>pay</item>
+        <item>pays</item>
+        <item>will pay</item>
+    </string-array>
+
+    <string-array name="fillpsL1015">
+        <item>answer</item>
+        <item>takes</item>
+        <item>take</item>
+        <item>will take</item>
+    </string-array>
+
+    <string-array name="fillpsL1016">
+        <item>answer</item>
+        <item>buys</item>
+        <item>bought</item>
+        <item>will buy</item>
+    </string-array>
+
+    <string-array name="fillpsL1017">
+        <item>answer</item>
+        <item>was</item>
+        <item>will be</item>
+        <item>is</item>
+    </string-array>
+
+    <string-array name="QsFutL101">
+        <item>answer</item>
+        <item>Terry the toad wants a Ferrari</item>
+        <item>Terry the toad wanted a Ferrari</item>
+        <item>Terry the toad will want a Ferrari</item>
+    </string-array>
+
+    <string-array name="QsFutL102">
+        <item>answer</item>
+        <item>He has no money</item>
+        <item>He had no money</item>
+        <item>He’s not gonna have any money.</item>
+    </string-array>
+
+    <string-array name="QsFutL103">
+        <item>answer</item>
+        <item>Terry the toad wants a green Ferrari</item>
+        <item>Terry the toad wanted a green Ferrari</item>
+        <item>Terry the toad will want a green Ferrari</item>
+    </string-array>
+
+    <string-array name="QsFutL104">
+        <item>answer</item>
+        <item>Terry lives in Miami</item>
+        <item>Terry lived in Miami</item>
+        <item>Terry will live in Miami</item>
+    </string-array>
+
+    <string-array name="QsFutL105">
+        <item>answer</item>
+        <item>Terry the toad has no money</item>
+        <item>Terry the toad had no money</item>
+        <item>Terry the toad is not gonna have any money</item>
+    </string-array>
+
+    <string-array name="QsFutL106">
+        <item>answer</item>
+        <item>Terry goes to Everglade Swamp.</item>
+        <item>Terry went to Everglade Swamp</item>
+        <item>Terry is gonna go to Everglade Swamp</item>
+    </string-array>
+
+    <string-array name="QsFutL107">
+        <item>answer</item>
+        <item>Every day he catches flies</item>
+        <item>Every day he catched flies</item>
+        <item>Every day he is gonna catch flies</item>
+    </string-array>
+
+    <string-array name="QsFutL108">
+        <item>answer</item>
+        <item>Terry catches 20.7 billion flies.</item>
+        <item>Terry catched 20.7 billion flies</item>
+        <item>Terry will catch20.7 billion flies</item>
+    </string-array>
+
+    <string-array name="QsFutL109">
+        <item>answer</item>
+        <item>he sells them to Bill Gates</item>
+        <item>he sold them to Bill Gates</item>
+        <item>he will sell them to Bill Gates</item>
+    </string-array>
+
+    <string-array name="QsFutL1010">
+        <item>answer</item>
+        <item>Yes he does. He buys a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he did. He bought a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he will. He will buy a brand new, bright green, super-fast, Ferrari</item>
+    </string-array>
+
+    <string-array name="QsPasL101">
+        <item>answer</item>
+        <item>Terry the toad wants a Ferrari</item>
+        <item>Terry the toad wanted a Ferrari.</item>
+        <item>Terry the toad will want a Ferrari</item>
+    </string-array>
+
+    <string-array name="QsPasL102">
+        <item>answer</item>
+        <item>He has no money</item>
+        <item>He had no money</item>
+        <item>He will have no money</item>
+    </string-array>
+
+    <string-array name="QsPasL103">
+        <item>answer</item>
+        <item>Terry the toad wants a green Ferrari</item>
+        <item>Terry the toad wanted a green Ferrari</item>
+        <item>Terry the toad will want a green Ferrari</item>
+    </string-array>
+
+    <string-array name="QsPasL104">
+        <item>answer</item>
+        <item>Terry lives in Miami</item>
+        <item>Terry lived in Miami</item>
+        <item>Terry will live in Miami</item>
+    </string-array>
+
+    <string-array name="QsPasL105">
+        <item>answer</item>
+        <item>Terry the toad has no cash</item>
+        <item>Terry the toad had no cash</item>
+        <item>Terry the toad will have no cash</item>
+    </string-array>
+
+    <string-array name="QsPasL106">
+        <item>answer</item>
+        <item>Terry goes to Everglade Swamp</item>
+        <item>Terry went to Everglade Swamp</item>
+        <item>Terry will go to Everglade Swamp</item>
+    </string-array>
+
+    <string-array name="QsPasL107">
+        <item>answer</item>
+        <item>Every day he catches flies</item>
+        <item>Every day he caught flies</item>
+        <item>Every day he will catch flies</item>
+    </string-array>
+
+    <string-array name="QsPasL108">
+        <item>answer</item>
+        <item>Terry catches 20.7 billion flies</item>
+        <item>Terry caught 20.7 billion flies</item>
+        <item>Terry will catch20.7 billion flies</item>
+    </string-array>
+
+    <string-array name="QsPasL109">
+        <item>answer</item>
+        <item>he sells them to Bill Gates</item>
+        <item>he sold them to Bill Gates.</item>
+        <item>he will sell them to Bill Gates</item>
+    </string-array>
+
+    <string-array name="QsPasL1010">
+        <item>answer</item>
+        <item>Yes he does. He buys a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he did. He bought a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he will. He will buy a brand new, bright green, super-fast, Ferrari</item>
+    </string-array>
+
+    <string-array name="QsPsL101">
+        <item>answer</item>
+        <item>Terry the toad wants a Ferrari</item>
+        <item>Terry the toad wanted a Ferrari</item>
+        <item>Terry the toad will want a Ferrari</item>
+    </string-array>
+
+    <string-array name="QsPsL102">
+        <item>answer</item>
+        <item>He has no money</item>
+        <item>He had no money</item>
+        <item>He will have no money</item>
+    </string-array>
+
+
+    <string-array name="QsPsL103">
+        <item>answer</item>
+        <item>Terry the toad wants a green Ferrari</item>
+        <item>Terry the toad wanted a green Ferrari</item>
+        <item>Terry the toad will want a green Ferrari</item>
+    </string-array>
+
+
+    <string-array name="QsPsL104">
+        <item>answer</item>
+        <item>Terry lives in Miami</item>
+        <item>Terry lived in Miami</item>
+        <item>Terry will  live in Miami</item>
+    </string-array>
+
+
+    <string-array name="QsPsL105">
+        <item>answer</item>
+        <item>Terry the toad has no cash</item>
+        <item>Terry the toad had no cash</item>
+        <item>Terry the toad will have no cash</item>
+    </string-array>
+
+    <string-array name="QsPsL106">
+        <item>answer</item>
+        <item>Terry goes to Everglade Swamp</item>
+        <item>Terry went to Everglade Swamp</item>
+        <item>Terry will go to Everglade Swamp</item>
+    </string-array>
+
+    <string-array name="QsPsL107">
+        <item>answer</item>
+        <item>Every day he catches flies</item>
+        <item>Every day he catched flies</item>
+        <item>Every day he will catch flies</item>
+    </string-array>
+
+    <string-array name="QsPsL108">
+        <item>answer</item>
+        <item>Terry catches 20.7 billion flies</item>
+        <item>Terry catched 20.7 billion flies</item>
+        <item>Terry will catch20.7 billion flies</item>
+    </string-array>
+
+    <string-array name="QsPsL109">
+        <item>answer</item>
+        <item>he sells them to Bill Gates</item>
+        <item>he sold them to Bill Gates</item>
+        <item>he will sell them to Bill Gates</item>
+    </string-array>
+
+    <string-array name="QsPsL1010">
+        <item>answer</item>
+        <item>Yes he does. He buys a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he did. He bought a brand new, bright green, super-fast, Ferrari</item>
+        <item>Yes he will. He will buy a brand new, bright green, super-fast, Ferrari</item>
+    </string-array>
+
+
 
 
 

@@ -398,6 +398,66 @@
             android:label="Menu Tenses"
             android:parentActivityName=".lessons" />
 
+        <activity
+            android:name=".lesson10AnserquestionPresent"
+            android:label="Answer The Question"
+            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+        <activity
+            android:name=".lesson10AnswerquestionPast"
+            android:label="Answer The Question"
+            android:parentActivityName=".lesson10MenuActivitiesPast" />
+        <activity
+            android:name=".lesson10AnswerquestionFuture"
+            android:label="Answer The Question"
+            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+        <activity
+            android:name=".lesson10FillverbsPresent"
+            android:label="Till The Verbs"
+            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+        <activity
+            android:name=".lesson10FillverbsPast"
+            android:label="Till The Verbs"
+            android:parentActivityName=".lesson10MenuActivitiesPast" />
+        <activity
+            android:name=".lesson10FillverbsFuture"
+            android:label="Till The Verbs"
+            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+        <activity
+            android:name=".lesson10ListenreadPresent"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+        <activity
+            android:name=".lesson10ListenreadPast"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson10MenuActivitiesPast" />
+        <activity
+            android:name=".lesson10ListenreadFuture"
+            android:label="Listen and Read"
+            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+        <activity
+            android:name=".lesson10MenuActivitiesPresent"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson10MenuTesnses" />
+        <activity
+            android:name=".lesson10MenuActivitiesPast"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson10MenuTesnses" />
+        <activity
+            android:name=".lesson10MenuActivitiesFuture"
+            android:label="Menu Activities"
+            android:parentActivityName=".lesson10MenuTesnses" />
+        <activity
+            android:name=".lesson10AnswerVocabulary"
+            android:label="Answer Vocabulary"
+            android:parentActivityName=".lesson10MenuVocabulary" />
+        <activity
+            android:name=".lesson10PreviewVocabulary"
+            android:label="Preview Vocabulary"
+            android:parentActivityName=".lesson10MenuVocabulary" />
+        <activity
+            android:name=".lesson10MenuTesnses"
+            android:label="Menu Tenses"
+            android:parentActivityName=".lessons" />
 
 
 
