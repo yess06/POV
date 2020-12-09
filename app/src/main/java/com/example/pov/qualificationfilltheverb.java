@@ -32,6 +32,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationfilltheverb);
+        score = findViewById(R.id.scorequal);
         quallificationtime();
 
     }
@@ -57,7 +58,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("1")) {
                                     if (u.getString("time_id").equals("3")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationfilltheverb.this, "Score " + qualification, Toast.LENGTH_LONG).show();
+                                        score.setText("Score " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));

@@ -34,21 +34,20 @@ public class menuFutureL1 extends AppCompatActivity {
         btnlisten = findViewById(R.id.btnFutureListenL1);
         btnFill = findViewById(R.id.btnFutureFillL1);
         btnQuestion = findViewById(R.id.btnFutureQuestionL1);
-        getbtn();
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-        if (vali.getInt("cont2", 0) == 0){
+        if (vali.getInt("lesson1future", 0) == 0){
             btnlisten.setEnabled(true);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(false);
-        }else if(vali.getInt("cont2", 0) == 1){
+        }else if(vali.getInt("lesson1future", 0) == 1){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(true);
             btnQuestion.setEnabled(false);
-        }else if(vali.getInt("cont2", 0) == 2){
+        }else if(vali.getInt("lesson1future", 0) == 2){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(true);
-        }else if(vali.getInt("cont2", 0) == 3){
+        }else if(vali.getInt("lesson1future", 0) == 3){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(false);
@@ -81,68 +80,5 @@ public class menuFutureL1 extends AppCompatActivity {
             }
         });
     }
-    public void getbtn() {
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        try {
-            String url = getResources().getString(R.string.urlgetqualificationsactivity);
-            JSONObject object = new JSONObject();
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
-                    null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-                        int cont = 0;
-                        JSONArray user = response.getJSONArray("qualifications");
-                        for (int i = 0; i <= user.length(); i++) {
-                            JSONObject u = user.getJSONObject(i);
-                            if (u.getString("user_id").equals(preferences.getString("id", "null"))){
-                                if (u.getString("lesson_id").equals("1")){
-                                    if (u.getString("time_id").equals("4")){
-                                        cont++;
-                                        //Toast.makeText(menuFutureL1.this, "cont " + cont, Toast.LENGTH_SHORT).show();
-                                        SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont2", cont);
-                                        editor.commit();
-                                    }
-                                }
 
-                            }else{
-                                cont = 0;
-                                //Toast.makeText(menuActivities.this, "cont " + cont, Toast.LENGTH_SHORT).show();
-                                SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-                                SharedPreferences.Editor editor = vali.edit();
-                                editor.putInt("cont2", cont);
-                                editor.commit();
-                            }
-                        }
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(menuFutureL1.this, "Wrong data", Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                public Map getHeaders()throws AuthFailureError {
-                    HashMap headers = new HashMap();
-                    headers.put("Content-Type", "application/json");
-                    headers.put("Authorization", "Bearer " + token);
-                    return headers;
-                }
-            };
-            requestQueue.add(jsonObjectRequest);
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
 }

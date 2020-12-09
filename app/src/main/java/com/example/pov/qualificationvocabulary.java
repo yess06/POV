@@ -30,6 +30,7 @@ public class qualificationvocabulary extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        score = findViewById(R.id.scorequal3);
         setContentView(R.layout.activity_qualificationvocabulary);
         quallificationlesson();
     }
@@ -93,7 +94,7 @@ public class qualificationvocabulary extends AppCompatActivity {
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
                                 if (u.getString("lesson_id").equals("1")) {
                                         qualification += Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationvocabulary.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        score.setText("Score: " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));

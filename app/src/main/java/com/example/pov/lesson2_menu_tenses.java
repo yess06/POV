@@ -72,13 +72,13 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             Toast.makeText(this, "Verbal Tense ending", Toast.LENGTH_SHORT).show();
         }
 
-        btnPresent.setOnClickListener(new View.OnClickListener() {
+       /* btnPresent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_activities_present.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         btnPast.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,6 +111,10 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             }
         });
     }
+    public void present(View view){
+        Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_activities_present.class);
+        startActivity(intent);
+    }
     public void getbtn() {
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -136,20 +140,20 @@ public class lesson2_menu_tenses extends AppCompatActivity {
                                         //Toast.makeText(menuFutureL1.this, "cont " + cont, Toast.LENGTH_SHORT).show();
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont2", cont);
+                                        editor.putInt("lesson2future", cont);
                                         editor.commit();
                                     }else if (u.getString("time_id").equals("3")){
                                         cont2++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont3", cont2);
+                                        editor.putInt("lesson2past", cont2);
                                         editor.commit();
                                     }
                                     else if (u.getString("time_id").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont4", cont3);
+                                        editor.putInt("lesson2present", cont3);
                                         editor.commit();
                                     }
                                 }

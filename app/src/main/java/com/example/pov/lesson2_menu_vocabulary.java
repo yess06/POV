@@ -23,5 +23,13 @@ public class lesson2_menu_vocabulary extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btnpractice = findViewById(R.id.btnlessontwoPractice);
+        btnpractice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson2_menu_vocabulary.this, lesson2_preview_vocabulary.class);
+                startActivity(intent);
+            }
+        });
     }
 }

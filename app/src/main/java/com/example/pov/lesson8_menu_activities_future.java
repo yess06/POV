@@ -21,19 +21,19 @@ public class lesson8_menu_activities_future extends AppCompatActivity {
         btnFill = findViewById(R.id.btnFill);
         btnAnswer = findViewById(R.id.btnAnswer);
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-        if (vali.getInt("cont2", 0) == 0){
+        if (vali.getInt("lesson8future", 0) == 0){
             btnListen.setEnabled(true);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont2", 0) == 1){
+        }else if(vali.getInt("lesson8future", 0) == 1){
             btnListen.setEnabled(false);
             btnFill.setEnabled(true);
             btnAnswer.setEnabled(false);
-        }else if(vali.getInt("cont2", 0) == 2){
+        }else if(vali.getInt("lesson8future", 0) == 2){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(true);
-        }else if(vali.getInt("cont2", 0) == 3){
+        }else if(vali.getInt("lesson8future", 0) == 3){
             btnListen.setEnabled(false);
             btnFill.setEnabled(false);
             btnAnswer.setEnabled(false);

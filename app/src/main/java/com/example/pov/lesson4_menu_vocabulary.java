@@ -15,6 +15,10 @@ public class lesson4_menu_vocabulary extends AppCompatActivity {
 
     }
     public void preview(View view){
+        Intent intent = new Intent(lesson4_menu_vocabulary.this, lesson4_answer_vocabulary.class);
+        startActivity(intent);
+    }
+    public  void practice(View view){
         Intent intent = new Intent(lesson4_menu_vocabulary.this, lesson4_preview_vocabulary.class);
         startActivity(intent);
     }

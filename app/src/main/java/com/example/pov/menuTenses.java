@@ -44,7 +44,7 @@ public class menuTenses extends AppCompatActivity {
             btnPast.setEnabled(false);
             btnFuture.setEnabled(false);
             btnQualification.setEnabled(false);
-            Toast.makeText(this, "Cont: " + valid.getInt("cont", 0), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Cont: " + valid.getInt("cont", 0), Toast.LENGTH_SHORT).show();
         }else if(valid.getInt("cont", 0) == 1){
             btnVocabulary.setEnabled(false);
             btnPresent.setEnabled(true);
@@ -142,16 +142,16 @@ public class menuTenses extends AppCompatActivity {
                                         //Toast.makeText(menuFutureL1.this, "cont " + cont, Toast.LENGTH_SHORT).show();
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont2", cont);
+                                        editor.putInt("lesson1future", cont);
                                         editor.commit();
                                     }else if (u.getString("time_id").equals("3")){
                                         cont2++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont3", cont2);
+                                        editor.putInt("lesson1past", cont2);
                                         editor.commit();
                                     }
-                                    else if (u.getString("time_id").equals("2")){
+                                    else if (u.getString("lesson1present").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();

@@ -31,7 +31,7 @@ public class qualificationfuturelesson1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationfuturelesson1);
-        score = findViewById(R.id.txtscorefuture);
+        score = findViewById(R.id.scorequal);
         quallificationtime();
     }
     public void qualifitime(View view){
@@ -96,7 +96,7 @@ public class qualificationfuturelesson1 extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("1")) {
                                     if (u.getString("time_id").equals("4")) {
                                         qualification += Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationfuturelesson1.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        score.setText("Score: " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));

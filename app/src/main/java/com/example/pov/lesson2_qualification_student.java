@@ -49,7 +49,6 @@ public class lesson2_qualification_student extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
-
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);

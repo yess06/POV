@@ -18,4 +18,8 @@ public class lesson8_menu_vocabulary extends AppCompatActivity {
         Intent intent = new Intent(lesson8_menu_vocabulary.this, lesson8_answer_vocabulary.class);
         startActivity(intent);
     }
+    public void practice(View view){
+        Intent intent = new Intent(lesson8_menu_vocabulary.this, lesson8_preview_vocabulary.class);
+        startActivity(intent);
+    }
 }

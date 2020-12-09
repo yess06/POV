@@ -23,15 +23,14 @@ public class menuVocabulary extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        /*Button practice = findViewById(R.id.btnPractice);
+        Button practice = findViewById(R.id.btnPractice);
         practice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(menuVocabulary.this, practiceVocabulary.class);
+                Intent intent = new Intent(menuVocabulary.this, VocabulryansL1.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     }
 }

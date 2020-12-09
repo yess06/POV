@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -25,10 +26,12 @@ import java.util.Map;
 
 public class lesson7_qualification_future extends AppCompatActivity {
     String id, token;
+    TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson7_qualification_future);
+        score =  findViewById(R.id.scorequal20);
         quallificationtime();
     }
     public void qualifitime(View view){
@@ -93,7 +96,7 @@ public class lesson7_qualification_future extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("7")) {
                                     if (u.getString("time_id").equals("4")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(lesson7_qualification_future.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        score.setText("Score: " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));

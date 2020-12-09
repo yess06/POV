@@ -36,19 +36,19 @@ public class menuPastL1 extends AppCompatActivity {
         btnFill = findViewById(R.id.filPastL1);
         getbtn();
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-        if (vali.getInt("cont3", 0) == 0){
+        if (vali.getInt("lesson1past", 0) == 0){
             btnlisten.setEnabled(true);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(false);
-        }else if(vali.getInt("cont3", 0) == 1){
+        }else if(vali.getInt("lesson1past", 0) == 1){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(true);
             btnQuestion.setEnabled(false);
-        }else if(vali.getInt("cont3", 0) == 2){
+        }else if(vali.getInt("lesson1past", 0) == 2){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(true);
-        }else if(vali.getInt("cont3", 0) == 3){
+        }else if(vali.getInt("lesson1past", 0) == 3){
             btnlisten.setEnabled(false);
             btnFill.setEnabled(false);
             btnQuestion.setEnabled(false);

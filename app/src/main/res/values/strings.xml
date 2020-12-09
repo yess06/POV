@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">POV</string>
-    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
-    <string name="urllogout">"http://10.0.0.5:8000/api/auth/logout"</string>
-    <string name="urlgetroles">"http://10.0.0.5:8000/api/auth/roles"</string>
-    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
-    <string name="urlgetusers">"http://10.0.0.5:8000/api/auth/users"</string>
-    <string name="urlpostqualificationlesson1">"http://10.0.0.5:8000/api/auth/add_qualification_activity"</string>
-    <string name="urlgetqualificationsactivity">"http://10.0.0.5:8000/api/auth/show_qualification_activity"</string>
-    <string name="urlpostqualificationtimelesson1">"http://10.0.0.5:8000/api/auth/add_qualification_time"</string>
-    <string name="urlpostqualificationlessonlesson1">"http://10.0.0.5:8000/api/auth/add_qualification_lesson"</string>
-    <string name="urlgetqualificationstimelesson1">"http://10.0.0.5:8000/api/auth/show_qualification_time"</string>
-    <string name="urlgetqualificationstimelesson1all">"http://10.0.0.5:8000/api/auth/show_qualification_time_all"</string>
-    <string name="urlgetqualificationlesson1">"http://10.0.0.5:8000/api/auth/show_qualification_lesson"</string>
-    <string name="urlputinfouser">"http://10.0.0.5:8000/api/auth/updateuser/"</string>
-    <string name="urlputpassword">"http://10.0.0.5:8000/api/auth/updatepass/"</string>
-    <string name="urldeleteuser">"http://10.0.0.5:8000/api/auth/deleteuser/"</string>
+    <string name="urllogin">"http://10.0.0.10:8000/api/auth/login"</string>
+    <string name="urllogout">"http://10.0.0.10:8000/api/auth/logout"</string>
+    <string name="urlgetroles">"http://10.0.0.10:8000/api/auth/roles"</string>
+    <string name="urlregister">"http://10.0.0.10:8000/api/auth/signup"</string>
+    <string name="urlgetusers">"http://10.0.0.10:8000/api/auth/users"</string>
+    <string name="urlpostqualificationlesson1">"http://10.0.0.10:8000/api/auth/add_qualification_activity"</string>
+    <string name="urlgetqualificationsactivity">"http://10.0.0.10:8000/api/auth/show_qualification_activity"</string>
+    <string name="urlpostqualificationtimelesson1">"http://10.0.0.10:8000/api/auth/add_qualification_time"</string>
+    <string name="urlpostqualificationlessonlesson1">"http://10.0.0.10:8000/api/auth/add_qualification_lesson"</string>
+    <string name="urlgetqualificationstimelesson1">"http://10.0.0.10:8000/api/auth/show_qualification_time"</string>
+    <string name="urlgetqualificationstimelesson1all">"http://10.0.0.10:8000/api/auth/show_qualification_time_all"</string>
+    <string name="urlgetqualificationlesson1">"http://10.0.0.10:8000/api/auth/show_qualification_lesson"</string>
+    <string name="urlputinfouser">"http://10.0.0.10:8000/api/auth/updateuser/"</string>
+    <string name="urlputpassword">"http://10.0.0.10:8000/api/auth/updatepass/"</string>
+    <string name="urldeleteuser">"http://10.0.0.10:8000/api/auth/deleteuser/"</string>
 
 
     <string-array name="verbs">
@@ -5125,9 +5125,14 @@
         <item>Yes he did. He bought a brand new, bright green, super-fast, Ferrari</item>
         <item>Yes he will. He will buy a brand new, bright green, super-fast, Ferrari</item>
     </string-array>
-
-
-
+    <string-array name="vocabucont">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 
 
 </resources>

@@ -749,6 +749,7 @@
                 android:layout_marginTop="1650dp"
                 android:layout_marginBottom="32dp"
                 android:background="#E7323D"
+                android:onClick="qualification"
                 android:text="Check Score"
                 android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -16,11 +16,19 @@ public class lesson3_menu_vocabulary extends AppCompatActivity {
 
 
 
-        Button vocabulary = findViewById(R.id.    btnlessontwoPreview);
+        Button vocabulary = findViewById(R.id.btnlessontwoPreview);
         vocabulary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson3_menu_vocabulary.this, lesson3_answer_vocabulary.class);
+                startActivity(intent);
+            }
+        });
+        Button practie = findViewById(R.id.btnlessontwoPractice);
+        practie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson3_menu_vocabulary.this, lesson3_preview_vocabulary.class);
                 startActivity(intent);
             }
         });

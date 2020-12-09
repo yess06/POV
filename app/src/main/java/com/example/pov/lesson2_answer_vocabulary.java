@@ -36,43 +36,5 @@ public class lesson2_answer_vocabulary extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
-    public void postqualification(View view){
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        JSONObject object = new JSONObject();
-        try {
-            object.put("user_id", id);
-            object.put("lesson_id", "2");
-            object.put("time_id", "1");
-            object.put("qualification", "10.0");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
-        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
-                object, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                Toast.makeText(lesson2_answer_vocabulary.this, "Qualification added", Toast.LENGTH_SHORT).show();
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(lesson2_answer_vocabulary.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
-            }
-        }){
-            @Override
-            public Map getHeaders() throws AuthFailureError {
-                HashMap headers = new HashMap();
-                headers.put("Authorization", "Bearer " + token);
-                return headers;
-            }
-        };
-        requestQueue.add(objectRequest);
-        Intent intent = new Intent(lesson2_answer_vocabulary.this, lessons.class);
-        startActivity(intent);
-    }
+
 }

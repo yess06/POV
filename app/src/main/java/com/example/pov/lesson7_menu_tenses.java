@@ -117,20 +117,20 @@ public class lesson7_menu_tenses extends AppCompatActivity {
                                         //Toast.makeText(menuFutureL1.this, "cont " + cont, Toast.LENGTH_SHORT).show();
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont2", cont);
+                                        editor.putInt("lesson7future", cont);
                                         editor.commit();
                                     }else if (u.getString("time_id").equals("3")){
                                         cont2++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont3", cont2);
+                                        editor.putInt("lesson7past", cont2);
                                         editor.commit();
                                     }
                                     else if (u.getString("time_id").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont4", cont3);
+                                        editor.putInt("lesson7present", cont3);
                                         editor.commit();
                                     }
                                 }

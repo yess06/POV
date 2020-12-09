@@ -83,78 +83,87 @@ public class lesson5_answerquestion_present extends AppCompatActivity {
         exercise10.setAdapter(adapter10);
     }
     public void qualification(View view){
-        int conta = 0;
-        if (exercise1.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise2.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise3.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise4.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise5.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise6.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise7.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise8.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise9.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        if (exercise10.getSelectedItemPosition() == 1){
-            conta++;
-        }
-        final double fin,fina;
-        fin = (100 * conta) /10;
-        fina = (10 * fin) / 100;
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        JSONObject object = new JSONObject();
-        try {
-            object.put("user_id", id);
-            object.put("lesson_id", "5");
-            object.put("time_id", "2");
-            object.put("activity_id", "3");
-            object.put("qualification", String.valueOf(fina));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        String url = getResources().getString(R.string.urlpostqualificationlesson1);
-        JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
-                object, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                Toast.makeText(lesson5_answerquestion_present.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(lesson5_answerquestion_present.this, lesson5_qualification_present.class);
-                startActivity(intent);
+        if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
+                ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0||exercise6.getSelectedItemPosition() == 0
+                ||exercise7.getSelectedItemPosition() ==0||exercise8.getSelectedItemPosition() ==0||exercise9.getSelectedItemPosition() == 0
+                ||exercise10.getSelectedItemPosition() ==0){
+            Toast.makeText(this, "it remains to select a question", Toast.LENGTH_SHORT).show();
+
+        }else{
+            int conta = 0;
+            if (exercise1.getSelectedItemPosition() == 1){
+                conta++;
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(lesson5_answerquestion_present.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
+            if (exercise2.getSelectedItemPosition() == 1){
+                conta++;
             }
-        }){
-            @Override
-            public Map getHeaders() throws AuthFailureError {
-                HashMap headers = new HashMap();
-                headers.put("Authorization", "Bearer " + token);
-                return headers;
+            if (exercise3.getSelectedItemPosition() == 1){
+                conta++;
             }
-        };
-        requestQueue.add(objectRequest);
+            if (exercise4.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise5.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise6.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise7.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise8.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise9.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            if (exercise10.getSelectedItemPosition() == 1){
+                conta++;
+            }
+            final double fin,fina;
+            fin = (100 * conta) /10;
+            fina = (10 * fin) / 100;
+            SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+            SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+            token = preferencess.getString("token", "null");
+            id = preferences.getString("id", "null");
+            RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+            JSONObject object = new JSONObject();
+            try {
+                object.put("user_id", id);
+                object.put("lesson_id", "5");
+                object.put("time_id", "2");
+                object.put("activity_id", "3");
+                object.put("qualification", String.valueOf(fina));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            String url = getResources().getString(R.string.urlpostqualificationlesson1);
+            JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
+                    object, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Toast.makeText(lesson5_answerquestion_present.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(lesson5_answerquestion_present.this, lesson5_qualification_present.class);
+                    startActivity(intent);
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(lesson5_answerquestion_present.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
+                }
+            }){
+                @Override
+                public Map getHeaders() throws AuthFailureError {
+                    HashMap headers = new HashMap();
+                    headers.put("Authorization", "Bearer " + token);
+                    return headers;
+                }
+            };
+            requestQueue.add(objectRequest);
+        }
+
 
     }
 }

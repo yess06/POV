@@ -25,6 +25,7 @@
         android:layout_height="122dp"
         android:background="#EBEBEB"
         android:drawableLeft="@drawable/practice"
+        android:onClick="practice"
         android:text="Practice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -35,6 +35,7 @@ public class lesson5_menu_tenses extends AppCompatActivity {
         btnPast = findViewById(R.id. btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
         btnVocabulary = findViewById(R.id.vocabularyL3);
+        btnQualification = findViewById(R.id.btnlessontwoscore);
         getbtn();
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont11", 0) == 0){
@@ -128,20 +129,20 @@ public class lesson5_menu_tenses extends AppCompatActivity {
                                         //Toast.makeText(menuFutureL1.this, "cont " + cont, Toast.LENGTH_SHORT).show();
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont2", cont);
+                                        editor.putInt("lesson5future", cont);
                                         editor.commit();
                                     }else if (u.getString("time_id").equals("3")){
                                         cont2++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont3", cont2);
+                                        editor.putInt("lesson5past", cont2);
                                         editor.commit();
                                     }
                                     else if (u.getString("time_id").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont4", cont3);
+                                        editor.putInt("lesson5present", cont3);
                                         editor.commit();
                                     }
                                 }
