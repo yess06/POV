@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -26,6 +27,7 @@ import java.util.Map;
 
 public class lesson5_fillverbs_present extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     Spinner exercise11, exercise12, exercise13, exercise14, exercise15, exercise16, exercise17, exercise18,exercise19,exercise20,exercise21;
     @Override
@@ -232,11 +234,15 @@ public class lesson5_fillverbs_present extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            progressDialog = new ProgressDialog(lesson5_fillverbs_present.this);
+            progressDialog.setMessage("Submit...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlpostqualificationlesson1);
             JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressDialog.hide();
                     Toast.makeText(lesson5_fillverbs_present.this, "Qualification Max : 10.00\nQualification Obt :" + fina, Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(lesson5_fillverbs_present.this, lesson5_menu_tenses.class);
                     startActivity(intent);
@@ -244,6 +250,7 @@ public class lesson5_fillverbs_present extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson5_fillverbs_present.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }
             }){

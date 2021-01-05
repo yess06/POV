@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -27,6 +28,7 @@ import java.util.Map;
 
 public class qualificationanswer extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +61,15 @@ public class qualificationanswer extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(qualificationanswer.this);
+        progressDialog.setMessage("Submit...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(qualificationanswer.this, lessons.class);
                 startActivity(intent);
@@ -71,6 +77,7 @@ public class qualificationanswer extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
         }){

@@ -1,6 +1,7 @@
 package com.example.pov;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -31,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class lesson7_listenread_future extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     TextView playerPosition,playerDuration;
     SeekBar seekBar;
     ImageView btPlay,btPause;
@@ -153,11 +155,15 @@ public class lesson7_listenread_future extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(lesson7_listenread_future.this);
+        progressDialog.setMessage("Submit...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlpostqualificationlesson1);
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(lesson7_listenread_future.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(lesson7_listenread_future.this, lesson7_menu_tenses.class);
                 startActivity(intent);
@@ -165,6 +171,7 @@ public class lesson7_listenread_future extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(lesson7_listenread_future.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
         }){

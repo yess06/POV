@@ -2,6 +2,7 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ import java.util.Map;
 
 public class Qualification_user_teacher extends AppCompatActivity {
     String id, token, lesson;
+    ProgressDialog progressDialog;
     TextView txtqualification, txtname,txtid, txtemail, txtqualifitimes;
     Bundle bundle;
     @Override
@@ -50,6 +52,9 @@ public class Qualification_user_teacher extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(Qualification_user_teacher.this);
+            progressDialog.setMessage("Submit...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationstimelesson1all);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -57,6 +62,7 @@ public class Qualification_user_teacher extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        progressDialog.hide();
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -76,6 +82,7 @@ public class Qualification_user_teacher extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(Qualification_user_teacher.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

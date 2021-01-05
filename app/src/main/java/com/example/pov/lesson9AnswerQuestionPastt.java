@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -27,6 +28,7 @@ import java.util.Map;
 
 public class lesson9AnswerQuestionPastt extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     Button qual;
     @Override
@@ -148,11 +150,15 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            progressDialog = new ProgressDialog(lesson9AnswerQuestionPastt.this);
+            progressDialog.setMessage("Submit...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlpostqualificationlesson1);
             JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressDialog.hide();
                     Toast.makeText(lesson9AnswerQuestionPastt.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson9AnswerQuestionPastt.this, lesson9qualificationpast.class);
                     startActivity(intent);
@@ -160,6 +166,7 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson9AnswerQuestionPastt.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }
             }){

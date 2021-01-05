@@ -2,6 +2,7 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -27,6 +28,7 @@ import java.util.Map;
 
 public class lesson9qualificationpast extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +53,15 @@ public class lesson9qualificationpast extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(lesson9qualificationpast.this);
+        progressDialog.setMessage("Submit...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(lesson9qualificationpast.this, lessons.class);
@@ -64,6 +70,7 @@ public class lesson9qualificationpast extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
         }){

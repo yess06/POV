@@ -2,9 +2,11 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +26,7 @@ import java.util.Map;
 
 public class lesson5_qualification_student extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     TextView txtqualification, txtname,txtid, txtemail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,9 @@ public class lesson5_qualification_student extends AppCompatActivity {
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(lesson5_qualification_student.this);
+            progressDialog.setMessage("Submit...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationlesson1);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -49,7 +55,7 @@ public class lesson5_qualification_student extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
-
+                        progressDialog.hide();
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -72,6 +78,7 @@ public class lesson5_qualification_student extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson5_qualification_student.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

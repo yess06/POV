@@ -2,6 +2,7 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ import java.util.Map;
 
 public class lesson3_qualification_student extends AppCompatActivity {
     String id, token;
+    ProgressDialog progressDialog;
     TextView txtqualification, txtname,txtid, txtemail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,9 @@ public class lesson3_qualification_student extends AppCompatActivity {
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(lesson3_qualification_student.this);
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationlesson1);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -66,12 +71,13 @@ public class lesson3_qualification_student extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-
+                    progressDialog.hide();
                     //Toast.makeText(qualificationStudent.this, "qual: " + response.toString(), Toast.LENGTH_SHORT).show();
                 }
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson3_qualification_student.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
