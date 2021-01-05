@@ -2,6 +2,7 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ import java.util.Map;
 public class Info_Teacher extends AppCompatActivity {
     EditText txtname, txtemail, txtpass,txtpassconfirmation;
     String id, token,email,name;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,10 +58,14 @@ public class Info_Teacher extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(Info_Teacher.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputinfouser)+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(Info_Teacher.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = info.edit();
@@ -73,6 +79,7 @@ public class Info_Teacher extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(Info_Teacher.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -100,11 +107,15 @@ public class Info_Teacher extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(Info_Teacher.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputpassword)+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(Info_Teacher.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 txtpass.setText("");
                 txtpassconfirmation.setText("");
@@ -112,6 +123,7 @@ public class Info_Teacher extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(Info_Teacher.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){

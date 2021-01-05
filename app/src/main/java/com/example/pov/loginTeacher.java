@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,7 @@ public class loginTeacher extends AppCompatActivity {
     private String token, id, na;
     private EditText emailt, passt;
     private Button login;
+    private ProgressDialog progressBar;
     CheckBox pass;
     private static final String TAG = MainActivity.class.getSimpleName();
     @Override
@@ -58,6 +61,7 @@ public class loginTeacher extends AppCompatActivity {
 
     }
     public void login(View view){
+
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JSONObject object = new JSONObject();
         try {
@@ -67,6 +71,9 @@ public class loginTeacher extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressBar = new ProgressDialog(loginTeacher.this);
+        progressBar.setMessage("Loading.....");
+        progressBar.show();
         String url = getResources().getString(R.string.urllogin);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
@@ -74,7 +81,6 @@ public class loginTeacher extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
                     token = response.getString("access_token");
-
                     SharedPreferences sharedPreferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("token", token);
@@ -83,13 +89,15 @@ public class loginTeacher extends AppCompatActivity {
                     userlog();
                     RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonObject = new JSONObject();
-                    String url3 = "http://10.0.0.10:8000/api/auth/roles";
+                    String url3 = "http://10.0.0.4:8000/api/auth/roles";
                     JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
                             new Response.Listener<JSONObject>() {
                                 @Override
                                 public void onResponse(JSONObject response) {
+
                                     SharedPreferences preferences3 = getSharedPreferences("info", Context.MODE_PRIVATE);
                                     try {
+                                        progressBar.hide();
                                         JSONArray role = response.getJSONArray("roles");
                                         for (int i = 0; i<=role.length();i++){
                                             JSONObject u = role.getJSONObject(i);
@@ -113,7 +121,7 @@ public class loginTeacher extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-
+                            progressBar.hide();
                         }
                     }){
                         @Override
@@ -132,6 +140,7 @@ public class loginTeacher extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressBar.hide();
                 Toast.makeText(getBaseContext(), "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -147,7 +156,7 @@ public class loginTeacher extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.10:8000/api/auth/users";
+        String url2 = "http://10.0.0.4:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override
@@ -185,4 +194,5 @@ public class loginTeacher extends AppCompatActivity {
         };
         requestQueue1.add(objectRequest);
     }
+
 }

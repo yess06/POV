@@ -72,13 +72,13 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             Toast.makeText(this, "Verbal Tense ending", Toast.LENGTH_SHORT).show();
         }
 
-       /* btnPresent.setOnClickListener(new View.OnClickListener() {
+       btnPresent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_activities_present.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         btnPast.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,10 +110,6 @@ public class lesson2_menu_tenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public void present(View view){
-        Intent intent = new Intent(lesson2_menu_tenses.this, lesson2_menu_activities_present.class);
-        startActivity(intent);
     }
     public void getbtn() {
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);

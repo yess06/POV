@@ -159,7 +159,7 @@ public class lesson10ListenreadFuture extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 Toast.makeText(lesson10ListenreadFuture.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(lesson10ListenreadFuture.this, lessons.class);
+                Intent intent = new Intent(lesson10ListenreadFuture.this, lesson10MenuTesnses.class);
                 startActivity(intent);
             }
         }, new Response.ErrorListener() {

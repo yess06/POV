@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,20 +26,24 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Studentlist extends AppCompatActivity {
+public class Studentlist extends AppCompatActivity implements SearchView.OnQueryTextListener {
     ArrayList<Users> listusers;
     RecyclerView recycler;
+    AdapterUser adapterUser;
     String token;
     EditText txtname;
+    SearchView svsearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studentlist);
-        txtname = findViewById(R.id.txtnamestlist);
+        svsearch = findViewById(R.id.svsearch);
+        //txtname = findViewById(R.id.txtnamestlist);
         recycler = (RecyclerView) findViewById(R.id.rv);
         listusers = new ArrayList<>();
         recycler.setLayoutManager(new LinearLayoutManager(this));
         getUsers();
+        initListener();
     }
 
     public void getUsers() {
@@ -59,7 +64,7 @@ public class Studentlist extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    AdapterUser adapterUser = new AdapterUser(listusers);
+                    adapterUser = new AdapterUser(listusers);
                     adapterUser.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -91,60 +96,18 @@ public class Studentlist extends AppCompatActivity {
         }
 
     }
-    public void search(View view){
-        clear();
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        try {
-            String url = getResources().getString(R.string.urlgetusers);
-            JSONObject object = new JSONObject();
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
-                    null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-                        JSONArray user = response.getJSONArray("users");
-                        for (int i = 0; i <= user.length(); i++) {
-                            JSONObject u = user.getJSONObject(i);
-                            if (txtname.getText().toString().equals(u.getString("name"))){
-                                listusers.add(new Users(u.getString("id"),u.getString("name"),u.getString("email")));
-                            }
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    AdapterUser adapterUser = new AdapterUser(listusers);
-                    adapterUser.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(Studentlist.this, InfoStudent.class);
-                            intent.putExtra("id", listusers.get(recycler.getChildAdapterPosition(view)).getId());
-                            intent.putExtra("name", listusers.get(recycler.getChildAdapterPosition(view)).getName());
-                            intent.putExtra("email", listusers.get(recycler.getChildAdapterPosition(view)).getEmail());
-                            startActivity(intent);
-                        }
-                    });
-                    recycler.setAdapter(adapterUser);
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(Studentlist.this, "Wrong data", Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                public  Map getHeaders()throws AuthFailureError {
-                    HashMap headers = new HashMap();
-                    headers.put("Content-Type", "application/json");
-                    return headers;
-                }
-            };
-            requestQueue.add(jsonObjectRequest);
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
+    private void initListener(){
+        svsearch.setOnQueryTextListener(this);
     }
-    public void clear(){
-        recycler.removeAllViewsInLayout();
-        listusers.clear();
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        adapterUser.filter(newText);
+        return false;
     }
 }

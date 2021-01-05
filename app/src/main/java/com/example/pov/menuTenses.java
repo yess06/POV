@@ -151,11 +151,11 @@ public class menuTenses extends AppCompatActivity {
                                         editor.putInt("lesson1past", cont2);
                                         editor.commit();
                                     }
-                                    else if (u.getString("lesson1present").equals("2")){
+                                    else if (u.getString("time_id").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont4", cont3);
+                                        editor.putInt("lesson1present", cont3);
                                         editor.commit();
                                     }
                                 }

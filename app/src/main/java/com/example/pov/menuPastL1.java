@@ -34,7 +34,6 @@ public class menuPastL1 extends AppCompatActivity {
         btnlisten = findViewById(R.id.readPastL1);
         btnQuestion = findViewById(R.id.questionPastL1);
         btnFill = findViewById(R.id.filPastL1);
-        getbtn();
         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
         if (vali.getInt("lesson1past", 0) == 0){
             btnlisten.setEnabled(true);
@@ -81,68 +80,5 @@ public class menuPastL1 extends AppCompatActivity {
             }
         });
     }
-    public void getbtn() {
-        SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-        token = preferencess.getString("token", "null");
-        id = preferences.getString("id", "null");
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        try {
-            String url = getResources().getString(R.string.urlgetqualificationsactivity);
-            JSONObject object = new JSONObject();
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
-                    null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-                        int cont = 0;
-                        JSONArray user = response.getJSONArray("qualifications");
-                        for (int i = 0; i <= user.length(); i++) {
-                            JSONObject u = user.getJSONObject(i);
-                            if (u.getString("user_id").equals(preferences.getString("id", "null"))){
-                                if (u.getString("lesson_id").equals("1")){
-                                    if (u.getString("time_id").equals("3")){
-                                        cont++;
-                                        //Toast.makeText(menuActivities.this, "cont " + cont, Toast.LENGTH_SHORT).show();
-                                        SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont3", cont);
-                                        editor.commit();
-                                    }
-                                }
 
-                            }else{
-                                cont = 0;
-                                //Toast.makeText(menuActivities.this, "cont " + cont, Toast.LENGTH_SHORT).show();
-                                SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
-                                SharedPreferences.Editor editor = vali.edit();
-                                editor.putInt("cont3", cont);
-                                editor.commit();
-                            }
-                        }
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(menuPastL1.this, "Wrong data", Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                public Map getHeaders()throws AuthFailureError {
-                    HashMap headers = new HashMap();
-                    headers.put("Content-Type", "application/json");
-                    headers.put("Authorization", "Bearer " + token);
-                    return headers;
-                }
-            };
-            requestQueue.add(jsonObjectRequest);
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
 }

@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -18,6 +19,7 @@ import org.json.JSONObject;
 
 public class register extends AppCompatActivity {
     EditText txtemail, txtname, txtpass, txtreppass;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +45,15 @@ public class register extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(register.this);
+        progressDialog.setMessage("Register...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlregister);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST,
                 url, object,  new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                     Toast.makeText(register.this, "Successful register", Toast.LENGTH_SHORT).show();
                     txtname.setText("");
                     txtemail.setText("");
@@ -57,6 +63,7 @@ public class register extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(register.this, "Registration failed", Toast.LENGTH_SHORT).show();
             }
         });

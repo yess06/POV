@@ -206,7 +206,7 @@ public class lesson6_fillverbs_future extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     Toast.makeText(lesson6_fillverbs_future.this, "Qualification Max : 10.00\nQualification Obt :" + fina, Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(lesson6_fillverbs_future.this, lessons.class);
+                    Intent intent = new Intent(lesson6_fillverbs_future.this, lesson6_menu_tenses.class);
                     startActivity(intent);
                 }
             }, new Response.ErrorListener() {

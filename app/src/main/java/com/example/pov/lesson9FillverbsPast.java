@@ -222,7 +222,7 @@ public class lesson9FillverbsPast extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     Toast.makeText(lesson9FillverbsPast.this, "Qualification Max : 10.00\nQualification Obt :" + fina, Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(lesson9FillverbsPast.this, lessons.class);
+                    Intent intent = new Intent(lesson9FillverbsPast.this, lesson9MenuTenses.class);
                     startActivity(intent);
                 }
             }, new Response.ErrorListener() {

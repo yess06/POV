@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -31,6 +32,7 @@ import java.util.Map;
 public class InfoStudent extends AppCompatActivity {
     EditText txtname, txtemail, txtpass,txtpassconfirmation;
     String id, token;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,15 +60,20 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(InfoStudent.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputinfouser)+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "Successful updated", Toast.LENGTH_SHORT).show();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -94,11 +101,15 @@ public class InfoStudent extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(InfoStudent.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputpassword)+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 txtpass.setText("");
                 txtpassconfirmation.setText("");
@@ -106,6 +117,7 @@ public class InfoStudent extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -125,10 +137,14 @@ public class InfoStudent extends AppCompatActivity {
         token = preferencess.getString("token", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JSONObject object = new JSONObject();
+        progressDialog = new ProgressDialog(InfoStudent.this);
+        progressDialog.setMessage("Delete...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urldeleteuser)+id+"/";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "Successful delete", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getBaseContext(), Studentlist.class);
                 startActivity(intent);
@@ -136,6 +152,7 @@ public class InfoStudent extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "wrong with the delete", Toast.LENGTH_SHORT).show();
             }
         }){

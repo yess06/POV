@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -38,6 +39,7 @@ public class loginStudent extends AppCompatActivity {
     Button login;
     private String token;
     private TextView resul;
+    ProgressDialog progressDialog;
     private static final String TAG= loginStudent.class.getSimpleName();
 
     @Override
@@ -65,12 +67,11 @@ public class loginStudent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 login();
-                //Intent intent = new Intent(loginStudent.this, lessons.class);
-                //startActivity(intent);
             }
         });
     }
     public void login(){
+
         String email= txtemail.getText().toString().trim();
         String password = txtpassword.getText().toString().trim();
         RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
@@ -82,7 +83,9 @@ public class loginStudent extends AppCompatActivity {
         }catch (JSONException e){
             e.printStackTrace();
         }
-
+        progressDialog = new ProgressDialog(loginStudent.this);
+        progressDialog.setMessage("Loading.....");
+        progressDialog.show();
         String url = getResources().getString(R.string.urllogin);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url, object,
                 new
@@ -90,6 +93,7 @@ public class loginStudent extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response){
                 try {
+                    progressDialog.hide();
                     token = response.getString("access_token");
                     SharedPreferences sharedPreferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -110,6 +114,7 @@ public class loginStudent extends AppCompatActivity {
                 }, new com.android.volley.Response.ErrorListener(){
             @Override
             public void onErrorResponse(VolleyError Error){
+                progressDialog.hide();
                 Toast.makeText(getApplicationContext(),
                         "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
             }
@@ -120,7 +125,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.10:8000/api/auth/users";
+        String url2 = "http://192.168.1.161:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

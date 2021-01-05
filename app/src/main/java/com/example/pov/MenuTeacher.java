@@ -3,6 +3,7 @@ package com.example.pov;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -32,6 +33,7 @@ import java.util.Map;
 
 public class MenuTeacher extends AppCompatActivity {
     TextView example;
+    ProgressDialog progressDialog;
     public String token, id, name, email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,11 +80,15 @@ public class MenuTeacher extends AppCompatActivity {
 
     public void logout(){
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        progressDialog = new ProgressDialog(MenuTeacher.this);
+        progressDialog.setMessage("Log out....");
+        progressDialog.show();
         String url = getResources().getString(R.string.urllogout);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
                 null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.hide();
                 Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),loginTeacher.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -96,6 +102,7 @@ public class MenuTeacher extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.hide();
                 Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
             }
         }){

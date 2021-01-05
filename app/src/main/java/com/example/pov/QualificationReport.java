@@ -1,6 +1,7 @@
 package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,8 +29,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class QualificationReport extends AppCompatActivity {
+public class QualificationReport extends AppCompatActivity implements SearchView.OnQueryTextListener {
+    AdapterQualification adapterQualification;
     String lesson;
+    SearchView svsearch;
     ArrayList<Qualifications> listqual;
     RecyclerView recycler;
     String token;
@@ -38,6 +41,7 @@ public class QualificationReport extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualification_report);
+        svsearch = findViewById(R.id.svsearchq);
         txtname = findViewById(R.id.txtnamest);
         Bundle bundle = getIntent().getExtras();
         lesson = bundle.getString("lesson");
@@ -48,7 +52,14 @@ public class QualificationReport extends AppCompatActivity {
         listqual = new ArrayList<>();
         recycler.setLayoutManager(new LinearLayoutManager(this));
         getQual();
+        initListener();
     }
+
+    private void initListener() {
+        svsearch.setOnQueryTextListener(this);
+    }
+
+
     public void getQual() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
@@ -69,7 +80,7 @@ public class QualificationReport extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    AdapterQualification adapterQualification = new AdapterQualification(listqual);
+                    adapterQualification = new AdapterQualification(listqual);
                     adapterQualification.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -104,65 +115,14 @@ public class QualificationReport extends AppCompatActivity {
         }
 
     }
-    public void seaechqual(View view){
-        clear();
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        try {
-            String url = getResources().getString(R.string.urlgetqualificationlesson1);
-            JSONObject object = new JSONObject();
-            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
-                    null, new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-                        JSONArray user = response.getJSONArray("qualifications");
-                        for (int i = 0; i <= user.length(); i++) {
-                            JSONObject u = user.getJSONObject(i);
-                            if (u.getString("lesson_id").equals(lesson)){
-                                if (u.getString("name").equals(txtname.getText().toString())){
-                                    listqual.add(new Qualifications(u.getString("id"),u.getString("name"),u.getString("email"),u.getString("lesson_id"),u.getString("qualification")));
-                                }
-                            }
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    AdapterQualification adapterQualification = new AdapterQualification(listqual);
-                    adapterQualification.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Intent intent = new Intent(QualificationReport.this, Qualification_user_teacher.class);
-                            intent.putExtra("user_id", listqual.get(recycler.getChildAdapterPosition(view)).getUser_id());
-                            intent.putExtra("id", listqual.get(recycler.getChildAdapterPosition(view)).getLesson_id());
-                            intent.putExtra("name", listqual.get(recycler.getChildAdapterPosition(view)).getName());
-                            intent.putExtra("email", listqual.get(recycler.getChildAdapterPosition(view)).getEmail());
-                            intent.putExtra("qualification", listqual.get(recycler.getChildAdapterPosition(view)).getQualification());
-                            startActivity(intent);
-                        }
-                    });
-                    recycler.setAdapter(adapterQualification);
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(QualificationReport.this, "Wrong data", Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                public Map getHeaders()throws AuthFailureError {
-                    HashMap headers = new HashMap();
-                    headers.put("Content-Type", "application/json");
-                    headers.put("Authorization", "Bearer " + token);
-                    return headers;
-                }
-            };
-            requestQueue.add(jsonObjectRequest);
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
     }
-    public void clear(){
-        recycler.removeAllViewsInLayout();
-        listqual.clear();
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        adapterQualification.filter(newText);
+        return false;
     }
 }

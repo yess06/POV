@@ -148,11 +148,11 @@ public class lesson3_menu_tenses extends AppCompatActivity {
                                         editor.putInt("lesson3past", cont2);
                                         editor.commit();
                                     }
-                                    else if (u.getString("lesson3present").equals("2")){
+                                    else if (u.getString("time_id").equals("2")){
                                         cont3++;
                                         SharedPreferences vali = getSharedPreferences("vali", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = vali.edit();
-                                        editor.putInt("cont4", cont3);
+                                        editor.putInt("lesson3present", cont3);
                                         editor.commit();
                                     }
                                 }

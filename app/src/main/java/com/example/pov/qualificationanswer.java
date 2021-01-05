@@ -32,6 +32,7 @@ public class qualificationanswer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationanswer);
+        score = findViewById(R.id.scorequal34);
         quallificationtime();
         Button activities = findViewById(R.id.btnActivitiesAnsw);
         activities.setOnClickListener(new View.OnClickListener() {
@@ -104,7 +105,7 @@ public class qualificationanswer extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("1")) {
                                     if (u.getString("time_id").equals("2")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        Toast.makeText(qualificationanswer.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
+                                        score.setText("Score: " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));
