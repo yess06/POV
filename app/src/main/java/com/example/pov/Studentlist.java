@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,7 @@ import java.util.Map;
 public class Studentlist extends AppCompatActivity implements SearchView.OnQueryTextListener {
     ArrayList<Users> listusers;
     RecyclerView recycler;
+    ProgressBar progressBar;
     AdapterUser adapterUser;
     String token;
     EditText txtname;
@@ -42,6 +44,8 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
         recycler = (RecyclerView) findViewById(R.id.rv);
         listusers = new ArrayList<>();
         recycler.setLayoutManager(new LinearLayoutManager(this));
+        progressBar = findViewById(R.id.pgbr1);
+        progressBar.setEnabled(false);
         getUsers();
         initListener();
     }
@@ -49,12 +53,14 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
     public void getUsers() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressBar.setEnabled(true);
             String url = getResources().getString(R.string.urlgetusers);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressBar.setEnabled(false);
                     try {
                         JSONArray user = response.getJSONArray("users");
                         for (int i = 0; i <= user.length(); i++) {
@@ -80,6 +86,7 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressBar.setEnabled(false);
                     Toast.makeText(Studentlist.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,7 @@ import java.util.Map;
 
 public class QualificationReport extends AppCompatActivity implements SearchView.OnQueryTextListener {
     AdapterQualification adapterQualification;
+    ProgressBar progressBar;
     String lesson;
     SearchView svsearch;
     ArrayList<Qualifications> listqual;
@@ -51,6 +53,8 @@ public class QualificationReport extends AppCompatActivity implements SearchView
         recycler = findViewById(R.id.rvless);
         listqual = new ArrayList<>();
         recycler.setLayoutManager(new LinearLayoutManager(this));
+        progressBar = findViewById(R.id.pgbr2);
+        progressBar.setEnabled(false);
         getQual();
         initListener();
     }
@@ -63,12 +67,14 @@ public class QualificationReport extends AppCompatActivity implements SearchView
     public void getQual() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressBar.setEnabled(true);
             String url = getResources().getString(R.string.urlgetqualificationlesson1);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressBar.setEnabled(false);
                     try {
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
@@ -98,6 +104,7 @@ public class QualificationReport extends AppCompatActivity implements SearchView
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressBar.setEnabled(false);
                     Toast.makeText(QualificationReport.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
