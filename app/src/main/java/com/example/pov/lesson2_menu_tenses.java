@@ -32,7 +32,7 @@ public class lesson2_menu_tenses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_menu_tenses);
         btnQualification = findViewById(R.id.btnlessontwoscore);
-        btnPresent = findViewById(R.id.btnlessontwoscore);
+        btnPresent = findViewById(R.id.btnlessontwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);

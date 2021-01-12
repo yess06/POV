@@ -45,7 +45,7 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
         listusers = new ArrayList<>();
         recycler.setLayoutManager(new LinearLayoutManager(this));
         progressBar = findViewById(R.id.pgbr1);
-        progressBar.setEnabled(false);
+        progressBar.setVisibility(View.INVISIBLE);
         getUsers();
         initListener();
     }
@@ -53,14 +53,14 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
     public void getUsers() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
-            progressBar.setEnabled(true);
+            progressBar.setVisibility(View.VISIBLE);
             String url = getResources().getString(R.string.urlgetusers);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
-                    progressBar.setEnabled(false);
+                    progressBar.setVisibility(View.INVISIBLE);
                     try {
                         JSONArray user = response.getJSONArray("users");
                         for (int i = 0; i <= user.length(); i++) {
@@ -86,7 +86,7 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    progressBar.setEnabled(false);
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(Studentlist.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {
