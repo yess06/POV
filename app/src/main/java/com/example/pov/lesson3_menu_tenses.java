@@ -33,7 +33,7 @@ public class lesson3_menu_tenses extends AppCompatActivity {
         setContentView(R.layout.activity_lesson3_menu_tenses);
 
         btnQualification = findViewById(R.id.btnlessontwoscore);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);

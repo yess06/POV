@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">POV</string>
-    <string name="urllogin">"http://10.0.0.5:8000/api/auth/login"</string>
-    <string name="urllogout">"http://10.0.0.5:8000/api/auth/logout"</string>
-    <string name="urlgetroles">"http://10.0.0.5:8000/api/auth/roles"</string>
-    <string name="urlregister">"http://10.0.0.5:8000/api/auth/signup"</string>
-    <string name="urlgetusers">"http://10.0.0.5:8000/api/auth/users"</string>
-    <string name="urlpostqualificationlesson1">"http://10.0.0.5:8000/api/auth/add_qualification_activity"</string>
-    <string name="urlgetqualificationsactivity">"http://10.0.0.5:8000/api/auth/show_qualification_activity"</string>
-    <string name="urlpostqualificationtimelesson1">"http://10.0.0.5:8000/api/auth/add_qualification_time"</string>
-    <string name="urlpostqualificationlessonlesson1">"http://10.0.0.5:8000/api/auth/add_qualification_lesson"</string>
-    <string name="urlgetqualificationstimelesson1">"http://10.0.0.5:8000/api/auth/show_qualification_time"</string>
-    <string name="urlgetqualificationstimelesson1all">"http://10.0.0.5:8000/api/auth/show_qualification_time_all"</string>
-    <string name="urlgetqualificationlesson1">"http://10.0.0.5:8000/api/auth/show_qualification_lesson"</string>
-    <string name="urlputinfouser">"http://10.0.0.5:8000/api/auth/updateuser/"</string>
-    <string name="urlputpassword">"http://10.0.0.5:8000/api/auth/updatepass/"</string>
-    <string name="urldeleteuser">"http://10.0.0.5:8000/api/auth/deleteuser/"</string>
+    <string name="urllogin">"http://192.168.1.70:8000/api/auth/login"</string>
+    <string name="urllogout">"http://192.168.1.70:8000/api/auth/logout"</string>
+    <string name="urlgetroles">"http://192.168.1.70:8000/api/auth/roles"</string>
+    <string name="urlregister">"http://192.168.1.70:8000/api/auth/signup"</string>
+    <string name="urlgetusers">"http://192.168.1.70:8000/api/auth/users"</string>
+    <string name="urlpostqualificationlesson1">"http://192.168.1.70:8000/api/auth/add_qualification_activity"</string>
+    <string name="urlgetqualificationsactivity">"http://192.168.1.70:8000/api/auth/show_qualification_activity"</string>
+    <string name="urlpostqualificationtimelesson1">"http://192.168.1.70:8000/api/auth/add_qualification_time"</string>
+    <string name="urlpostqualificationlessonlesson1">"http://192.168.1.70:8000/api/auth/add_qualification_lesson"</string>
+    <string name="urlgetqualificationstimelesson1">"http://192.168.1.70:8000/api/auth/show_qualification_time"</string>
+    <string name="urlgetqualificationstimelesson1all">"http://192.168.1.70:8000/api/auth/show_qualification_time_all"</string>
+    <string name="urlgetqualificationlesson1">"http://192.168.1.70:8000/api/auth/show_qualification_lesson"</string>
+    <string name="urlputinfouser">"http://192.168.1.70:8000/api/auth/updateuser/"</string>
+    <string name="urlputpassword">"http://192.168.1.70:8000/api/auth/updatepass/"</string>
+    <string name="urldeleteuser">"http://192.168.1.70:8000/api/auth/deleteuser/"</string>
 
 
     <string-array name="verbs">
@@ -31,7 +31,7 @@
     </string-array>
 
     <string-array name="fillFut2">
-        <item>answer</item>
+        <item>answer</item> 
         <item>lived</item>
         <item>is gonna live</item>
         <item>lives</item>
@@ -597,15 +597,15 @@
     <string-array name="QsPsL14">
         <item>answer</item>
         <item>No, his mom does not beg him to eat vegetables</item>
-        <item>Yes his mom begged him to eat vegetables</item>
-        <item>Yes his mom begs him to eat vegetables</item>
+        <item>Yes, his mom begged him to eat vegetables</item>
+        <item>Yes, his mom begs him to eat vegetables</item>
     </string-array>
 
     <string-array name="QsPsL15">
         <item>answer</item>
-        <item>Yes Carlos and Martha will be out and about</item>
-        <item>Yes Carlos and Martha are out and about</item>
-        <item>Yes Carlos and Martha were out and about</item>
+        <item>Yes, Carlos and Martha will be out and about</item>
+        <item>Yes, Carlos and Martha are out and about</item>
+        <item>Yes, Carlos and Martha were out and about</item>
     </string-array>
 
     <string-array name="QsPsL16">
@@ -645,9 +645,9 @@
 
     <string-array name="QsPsL21">
         <item>answer</item>
-        <item>Yes Jackie has her hands full</item>
-        <item>No Jackie doesn’t have her hands full</item>
-        <item>Yes Jackie had her hands full</item>
+        <item>Yes, Jackie has her hands full</item>
+        <item>No, Jackie doesn’t have her hands full</item>
+        <item>Yes, Jackie had her hands full</item>
     </string-array>
 
     <string-array name="QsPsL22">
@@ -716,15 +716,15 @@
 
     <string-array name="QsPasL21">
         <item>answer</item>
-        <item>Yes Jackie has her hands full</item>
-        <item>No Jackie doesn’t have her hands full</item>
-        <item>Yes Jackie had her hands full</item>
+        <item>Yes, Jackie has her hands full</item>
+        <item>No, Jackie doesn’t have her hands full</item>
+        <item>Yes, Jackie had her hands full</item>
     </string-array>
 
     <string-array name="QsPasL22">
         <item>answer</item>
         <item>She is working as a lawyer</item>
-        <item>She is working as a lawyer</item>
+        <item>She will be working as a lawyer</item>
         <item>She worked as a lawyer</item>
     </string-array>
 
@@ -747,7 +747,7 @@
         <item>answer</item>
         <item>Yes, she needs a vacation</item>
         <item>Yes, she needed a vacation</item>
-        <item>Yes, she needed a vacation</item>
+        <item>Yes, she is gonna need a vacation</item>
     </string-array>
 
     <string-array name="QsPasL26">
@@ -782,7 +782,7 @@
         <item>answer</item>
         <item>Yes, she did. She decided to stay in Thailand</item>
         <item>Yes, she will. She’ll decide to stay in Thailand</item>
-        <item>ºYes, she does. She decides to stay in Thailand</item>
+        <item>Yes, she does. She decides to stay in Thailand</item>
     </string-array>
 
     <string-array name="QsFutL21">
@@ -803,7 +803,7 @@
         <item>answer</item>
         <item>She works everyday</item>
         <item>She worked everyday</item>
-        <item>She worked everyday</item>
+        <item>She will work everyday</item>
     </string-array>
 
     <string-array name="QsFutL24">
@@ -859,7 +859,7 @@
         <item>answer</item>
         <item>works</item>
         <item>worked</item>
-        <item>ll be working</item>
+        <item>will be working</item>
     </string-array>
 
     <string-array name="fillpastL22">
@@ -894,21 +894,21 @@
         <item>answer</item>
         <item>says</item>
         <item>said</item>
-        <item>ll say</item>
+        <item>will say</item>
     </string-array>
 
     <string-array name="fillpastL27">
         <item>answer</item>
         <item>says</item>
         <item>said</item>
-        <item>ll say</item>
+        <item>will say</item>
     </string-array>
 
     <string-array name="fillpastL28">
         <item>answer</item>
         <item>flies</item>
         <item>flew</item>
-        <item>ll fly to Thailand</item>
+        <item>will fly</item>
     </string-array>
 
     <string-array name="fillpastL29">
@@ -997,9 +997,9 @@
 
     <string-array name="fillpastL221">
         <item>answer</item>
-        <item>did</item>
-        <item>do</item>
-        <item>will do</item>
+        <item>wanted</item>
+        <item>want</item>
+        <item>wants</item>
     </string-array>
 
 
@@ -2716,7 +2716,7 @@
 
     <string-array name="QsPsL54">
         <item>answer</item>
-        <item>He will smell awful</item>
+        <item>He wants a girlfriend</item>
         <item>He will want a girlfriend</item>
         <item>He wanted a girlfriend</item>
     </string-array>

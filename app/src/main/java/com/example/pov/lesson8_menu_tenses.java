@@ -34,7 +34,7 @@ public class lesson8_menu_tenses extends AppCompatActivity {
 
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnFuture = findViewById(R.id.btnlessontwofuture);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnQualification = findViewById(R.id.btnlessontwoscore);
         getbtn();
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);

@@ -31,7 +31,7 @@ public class lesson5_menu_tenses extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson5_menu_tenses);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnPast = findViewById(R.id. btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
         btnVocabulary = findViewById(R.id.vocabularyL3);

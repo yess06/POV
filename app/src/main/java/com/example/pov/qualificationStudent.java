@@ -45,7 +45,7 @@ public class qualificationStudent extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
             progressDialog = new ProgressDialog(qualificationStudent.this);
-            progressDialog.setMessage("Submit...");
+            progressDialog.setMessage("Loading...");
             progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationlesson1);
             JSONObject object = new JSONObject();
@@ -53,8 +53,8 @@ public class qualificationStudent extends AppCompatActivity {
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressDialog.hide();
                     try {
-                        progressDialog.hide();
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);

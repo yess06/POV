@@ -34,7 +34,7 @@ public class lesson9MenuTenses extends AppCompatActivity {
 
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnFuture = findViewById(R.id.btnlessontwofuture);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnQualification =  findViewById(R.id.btnlessontwoscore);
         getbtn();

@@ -11,7 +11,7 @@
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Hello again and welcome to the point of view stories for “Las Vegas Part 1”. Okay, so let’s get started."
+        android:text="Okay, so let’s get started."
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"

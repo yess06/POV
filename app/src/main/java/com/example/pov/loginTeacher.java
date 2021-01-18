@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,6 +58,9 @@ public class loginTeacher extends AppCompatActivity {
             }
         });
 
+
+
+
     }
     public void login(View view){
 
@@ -71,10 +73,12 @@ public class loginTeacher extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        progressBar = new ProgressDialog(loginTeacher.this);
+        /*progressBar = new ProgressDialog(loginTeacher.this);
         progressBar.setMessage("Loading.....");
-        progressBar.show();
+        progressBar.show();*/
+
         String url = getResources().getString(R.string.urllogin);
+
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                 object, new Response.Listener<JSONObject>() {
             @Override
@@ -89,20 +93,24 @@ public class loginTeacher extends AppCompatActivity {
                     userlog();
                     RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonObject = new JSONObject();
-                    String url3 = "http://10.0.0.5:8000/api/auth/roles";
+                    String url3 = "http://192.168.1.70/api/auth/roles";
+
                     JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
                             new Response.Listener<JSONObject>() {
+
                                 @Override
                                 public void onResponse(JSONObject response) {
 
                                     SharedPreferences preferences3 = getSharedPreferences("info", Context.MODE_PRIVATE);
                                     try {
-                                        progressBar.hide();
+
+                                       /*progressBar.hide();*/
                                         JSONArray role = response.getJSONArray("roles");
                                         for (int i = 0; i<=role.length();i++){
                                             JSONObject u = role.getJSONObject(i);
                                             if (preferences3.getString("id", "null").equals(u.getString("user_id"))){
                                                 if (u.getString("name").equals("Teacher")){
+
                                                     Toast.makeText(getBaseContext(), "successful login", Toast.LENGTH_SHORT).show();
                                                     Intent intent = new Intent(getBaseContext(), MenuTeacher.class);
                                                     startActivity(intent);
@@ -121,7 +129,7 @@ public class loginTeacher extends AppCompatActivity {
                             }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            progressBar.hide();
+                            /*progressBar.hide();*/
                         }
                     }){
                         @Override
@@ -140,7 +148,7 @@ public class loginTeacher extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                progressBar.hide();
+              /* progressBar.hide();*/
                 Toast.makeText(getBaseContext(), "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -156,7 +164,7 @@ public class loginTeacher extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://10.0.0.5:8000/api/auth/users";
+        String url2 = "http://192.168.1.70/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

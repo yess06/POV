@@ -91,7 +91,7 @@ public class fillFutureL1 extends AppCompatActivity {
         adapter11.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise11.setAdapter(adapter11);
 
-        exercise12 = findViewById(R.id.fillFutL12);
+        exercise12 = findViewById(R.id.fillFutL112);
         ArrayAdapter<CharSequence> adapter12 = ArrayAdapter.createFromResource(this, R.array.fillFut12, android.R.layout.simple_spinner_item);
         adapter12.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise12.setAdapter(adapter12);
@@ -140,7 +140,7 @@ public class fillFutureL1 extends AppCompatActivity {
                 ||exercise10.getSelectedItemPosition() ==0||exercise11.getSelectedItemPosition() ==0||exercise12.getSelectedItemPosition() == 0
                 ||exercise13.getSelectedItemPosition() ==0||exercise14.getSelectedItemPosition() ==0||exercise15.getSelectedItemPosition() == 0
                 ||exercise16.getSelectedItemPosition() ==0||exercise17.getSelectedItemPosition() ==0||exercise18.getSelectedItemPosition() == 0
-                ||exercise19.getSelectedItemPosition() ==0||exercise20.getSelectedItemPosition() ==0){
+                ||exercise19.getSelectedItemPosition() ==0){
             Toast.makeText(this, "it remains to select a question", Toast.LENGTH_SHORT).show();
 
         }else{

@@ -428,6 +428,10 @@
             android:name=".lesson9MenuTenses"
             android:label="Menu Tenses"
             android:parentActivityName=".lessons" />
+
+        <activity android:name=".lesson9MenuVocabulary"
+            android:label="Menu Vocabulary"
+            android:parentActivityName=".lesson9MenuTenses"/>
         <activity
             android:name=".lesson10AnserquestionPresent"
             android:label="Answer The Question"
@@ -488,6 +492,10 @@
             android:name=".lesson10MenuTesnses"
             android:label="Menu Tenses"
             android:parentActivityName=".lessons" />
+
+        <activity android:name=".lesson10MenuVocabulary"
+            android:label="Menu Vocabulary"
+            android:parentActivityName=".lesson10MenuTesnses"/>
         <activity
             android:name=".lesson3_menu_vocabulary"
             android:label="Menu Vocabulary"

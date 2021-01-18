@@ -123,7 +123,7 @@ public class lesson2_fillverbs_past extends AppCompatActivity {
         exercise18 = findViewById(R.id.fillPas18);
         ArrayAdapter<CharSequence> adapter18 = ArrayAdapter.createFromResource(this, R.array.fillpastL218, android.R.layout.simple_spinner_item);
         adapter18.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        exercise17.setAdapter(adapter18);
+        exercise18.setAdapter(adapter18);
 
         exercise19 = findViewById(R.id.fillPas19);
         ArrayAdapter<CharSequence> adapter19 = ArrayAdapter.createFromResource(this, R.array.fillpastL219, android.R.layout.simple_spinner_item);

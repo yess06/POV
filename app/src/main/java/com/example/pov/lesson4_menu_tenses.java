@@ -33,7 +33,7 @@ public class lesson4_menu_tenses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson4_menu_tenses);
         btnQualification = findViewById(R.id.btnlessontwoscore);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
@@ -73,7 +73,7 @@ public class lesson4_menu_tenses extends AppCompatActivity {
             Toast.makeText(this, "Verbal Tense ending", Toast.LENGTH_SHORT).show();
         }
 
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         btnPresent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
