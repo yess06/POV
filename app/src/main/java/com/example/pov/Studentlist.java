@@ -3,6 +3,7 @@ package com.example.pov;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.RequestQueue;
@@ -35,6 +37,8 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
     String token;
     EditText txtname;
     SearchView svsearch;
+    Button buttontry;
+    SwipeRefreshLayout swipeRefreshLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +50,34 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
         recycler.setLayoutManager(new LinearLayoutManager(this));
         progressBar = findViewById(R.id.pgbr1);
         progressBar.setVisibility(View.INVISIBLE);
+        buttontry = findViewById(R.id.btntryagain);
+        buttontry.setVisibility(View.INVISIBLE);
+        swipeRefreshLayout = findViewById(R.id.swipere);
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         getUsers();
         initListener();
+        buttontry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getUsers();
+            }
+        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                listusers.clear();
+                adapterUser.notifyDataSetChanged();
+                swipeRefreshLayout.setRefreshing(true);
+                getUsers();
+            }
+        });
     }
 
     public void getUsers() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            swipeRefreshLayout.setRefreshing(false);
+            buttontry.setVisibility(View.INVISIBLE);
             progressBar.setVisibility(View.VISIBLE);
             String url = getResources().getString(R.string.urlgetusers);
             JSONObject object = new JSONObject();
@@ -60,6 +85,7 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    buttontry.setVisibility(View.INVISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     try {
                         JSONArray user = response.getJSONArray("users");
@@ -87,6 +113,7 @@ public class Studentlist extends AppCompatActivity implements SearchView.OnQuery
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     progressBar.setVisibility(View.INVISIBLE);
+                    buttontry.setVisibility(View.VISIBLE);
                     Toast.makeText(Studentlist.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

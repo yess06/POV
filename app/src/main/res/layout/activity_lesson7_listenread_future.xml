@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="608dp"
         android:background="#E7323D"
+        android:onClick="qualification"
         android:text="Check Score"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"

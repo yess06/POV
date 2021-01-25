@@ -1,8 +1,11 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,11 +30,12 @@ import java.util.Map;
 public class lesson10MenuTesnses extends AppCompatActivity {
     Button btnPresent, btnVocabulary,btnFuture,btnPast, btnQualification;
     public String token, id, name, email;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lesson10_menu_tesnses);
-
+        verifyconnection();
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnFuture = findViewById(R.id.btnlessontwofuture);
         btnPresent = findViewById(R.id.btnlessontwoPresent);
@@ -111,7 +115,19 @@ public class lesson10MenuTesnses extends AppCompatActivity {
             }
         });
     }
+    public void verifyconnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+
+        }else {
+            Toast.makeText(this, "No Internet Connection", Toast.LENGTH_LONG).show();
+        }
+    }
     public void getbtn() {
+        progressDialog = new ProgressDialog(lesson10MenuTesnses.this);
+        progressDialog.setMessage("Loading...");
+        progressDialog.show();
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -125,6 +141,7 @@ public class lesson10MenuTesnses extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        progressDialog.hide();
                         int cont = 0, cont2 = 0, cont3 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
@@ -171,6 +188,7 @@ public class lesson10MenuTesnses extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson10MenuTesnses.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

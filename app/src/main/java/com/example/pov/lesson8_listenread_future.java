@@ -164,7 +164,7 @@ public class lesson8_listenread_future extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 progressDialog.hide();
-                Toast.makeText(lesson8_listenread_future.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
+                Toast.makeText(lesson8_listenread_future.this, "Qualification Max : 15.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(lesson8_listenread_future.this, lesson8_menu_tenses.class);
                 startActivity(intent);
             }

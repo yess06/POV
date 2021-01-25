@@ -4,7 +4,7 @@
     package="com.example.pov">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,522 +14,748 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".lesson4_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson4_qualification_past"
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson4_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson4_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson4_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson4_menu_tenses"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson5_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson5_qualification_past"
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson5_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson5_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson5_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson5_menu_tenses"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson6_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson6_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson6_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson6_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson6_menu_tenses"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson7_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson7_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson7_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson7_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson7_menu_tenses"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson8_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson8_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson8_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson8_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson8_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity android:name=".lesson2_preview_vocabulary"
             android:label="Practice Vocabulary"
-            android:parentActivityName=".lesson2_menu_vocabulary"></activity>
+            android:parentActivityName=".lesson2_menu_vocabulary"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".lesson3_preview_vocabulary"
             android:label="Practice Vocabulary"
-            android:parentActivityName=".lesson3_menu_vocabulary"></activity>
-        <activity android:name=".VocabulryansL1" />
-        <activity android:name=".lesson10qualificationstudent" />
-        <activity android:name=".lesson10qualificationlesson" />
-        <activity android:name=".lesson10qualificationfuture" />
-        <activity android:name=".lesson10qualificationpast" />
-        <activity android:name=".lesson10qualificationpresent" />
-        <activity
-            android:name=".lesson5_qualification_student"
-            android:label="Qualification Student" />
+            android:parentActivityName=".lesson3_menu_vocabulary"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".VocabulryansL1"
+            android:label="Practice Vocabulary"
+            android:parentActivityName=".menuVocabulary"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson10qualificationstudent"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson10MenuTesnses"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson10qualificationlesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson10qualificationfuture"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson10qualificationpast"
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson10qualificationpresent"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9qualificationstudent"
-            android:label="Qualification Student" />
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson9MenuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9qualificationlesson"
-            android:label="Qualification Lesson" />
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9qualificationfuture"
-            android:label="Qualification Future" />
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9qualificationpast"
-            android:label="Qualification Past" />
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9qualificationpresent"
-            android:label="Qualification Present" />
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answerquestion_future"
-            android:label="Asnqwer Question"
-            android:parentActivityName=".lesson3_menu_activities_future" />
+            android:label="Answer Question"
+            android:parentActivityName=".lesson3_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answerquestion_past"
             android:label="Answer Question"
-            android:parentActivityName=".lesson3_menu_activities_past" />
+            android:parentActivityName=".lesson3_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answerquestion_present"
             android:label="Asnwer Question"
-            android:parentActivityName=".lesson3_menu_activities_present" />
+            android:parentActivityName=".lesson3_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_fillverbs_future"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson3_menu_activities_future" />
+            android:parentActivityName=".lesson3_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_fillverbs_past"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson3_menu_activities_past" />
+            android:parentActivityName=".lesson3_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_fillverbs_present"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson3_menu_activities_present" />
+            android:parentActivityName=".lesson3_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson3_menu_activities_future" />
+            android:parentActivityName=".lesson3_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_listenread_past"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson3_menu_activities_past" />
+            android:parentActivityName=".lesson3_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson3_menu_activities_present" />
+            android:parentActivityName=".lesson3_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson3_menu_tenses" />
+            android:parentActivityName=".lesson3_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson3_menu_tenses" />
+            android:parentActivityName=".lesson3_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_menu_activities_past"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson3_menu_tenses" />
+            android:parentActivityName=".lesson3_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson3_menu_vocabulary" />
+            android:parentActivityName=".lesson3_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_present"
             android:label="Anwer Question"
-            android:parentActivityName=".lesson4_menu_activities_present" />
+            android:parentActivityName=".lesson4_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_past"
             android:label="Answer Question"
-            android:parentActivityName=".lesson4_menu_activities_past" />
+            android:parentActivityName=".lesson4_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_future"
             android:label="Answer Question"
-            android:parentActivityName=".lesson4_menu_activities_future" />
+            android:parentActivityName=".lesson4_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_fillverbs_present"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson4_menu_activities_present" />
+            android:parentActivityName=".lesson4_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_fillverbs_past"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson4_menu_activities_past" />
+            android:parentActivityName=".lesson4_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_fillverbs_future"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson4_menu_activities_future" />
+            android:parentActivityName=".lesson4_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson4_menu_activities_present" />
+            android:parentActivityName=".lesson4_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_listenread_past"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson4_menu_activities_past" />
+            android:parentActivityName=".lesson4_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson4_menu_activities_future" />
+            android:parentActivityName=".lesson4_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson4_menu_tenses" />
+            android:parentActivityName=".lesson4_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_menu_activities_past"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson4_menu_tenses" />
+            android:parentActivityName=".lesson4_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson4_menu_tenses" />
+            android:parentActivityName=".lesson4_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson4_menu_vocabulary" />
+            android:parentActivityName=".lesson4_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_preview_vocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson4_menu_vocabulary" />
+            android:parentActivityName=".lesson4_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_menu_vocabulary"
             android:label="Menu Vokcabulary"
-            android:parentActivityName=".lesson4_menu_tenses" />
+            android:parentActivityName=".lesson4_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_present"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson5_menu_activities_present" />
+            android:parentActivityName=".lesson5_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_past"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson5_menu_activities_past" />
+            android:parentActivityName=".lesson5_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_future"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson5_menu_activities_future" />
+            android:parentActivityName=".lesson5_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_fillverbs_present"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson5_menu_activities_present" />
+            android:parentActivityName=".lesson5_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_fillverbs_past"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson5_menu_activities_past" />
+            android:parentActivityName=".lesson5_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_fillverbs_future"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson5_menu_activities_future" />
+            android:parentActivityName=".lesson5_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson5_menu_activities_present" />
+            android:parentActivityName=".lesson5_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_listenread_past"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson5_menu_activities_past" />
+            android:parentActivityName=".lesson5_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson5_menu_activities_future" />
+            android:parentActivityName=".lesson5_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson5_menu_tenses" />
+            android:parentActivityName=".lesson5_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_menu_activities_past"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson5_menu_tenses" />
+            android:parentActivityName=".lesson5_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson5_menu_tenses" />
+            android:parentActivityName=".lesson5_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson5_menu_vocabulary" />
+            android:parentActivityName=".lesson5_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_preview_vocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson5_menu_vocabulary" />
+            android:parentActivityName=".lesson5_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_menu_vocabulary"
             android:label="Menu Vocabulary"
-            android:parentActivityName=".lesson5_menu_tenses" />
+            android:parentActivityName=".lesson5_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_preview_vocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson6_menu_vocabulary" />
+            android:parentActivityName=".lesson6_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_menu_vocabulary"
             android:label="Menu Vocabulary"
-            android:parentActivityName=".lesson6_menu_tenses" />
+            android:parentActivityName=".lesson6_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson6_menu_tenses" />
+            android:parentActivityName=".lesson6_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson6_menu_tenses" />
+            android:parentActivityName=".lesson6_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson6_menu_activities_present" />
+            android:parentActivityName=".lesson6_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson6_menu_activities_future" />
+            android:parentActivityName=".lesson6_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_fillverbs_present"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson6_menu_activities_present" />
+            android:parentActivityName=".lesson6_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_fillverbs_future"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson6_menu_activities_future" />
+            android:parentActivityName=".lesson6_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answerquestion_present"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson6_menu_activities_present" />
+            android:parentActivityName=".lesson6_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answerquestion_future"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson6_menu_activities_future" />
+            android:parentActivityName=".lesson6_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson6_menu_vocabulary" />
+            android:parentActivityName=".lesson6_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_preview_vocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson7_menu_vocabulary" />
+            android:parentActivityName=".lesson7_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_menu_vocabulary"
             android:label="Menu Vocabulary"
-            android:parentActivityName=".lesson7_menu_tenses" />
+            android:parentActivityName=".lesson7_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson7_menu_tenses" />
+            android:parentActivityName=".lesson7_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson7_menu_tenses" />
+            android:parentActivityName=".lesson7_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson7_menu_activities_present" />
+            android:parentActivityName=".lesson7_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson7_menu_activities_future" />
+            android:parentActivityName=".lesson7_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_fillverbs_present"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson7_menu_activities_present" />
+            android:parentActivityName=".lesson7_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_fillverbs_future"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson7_menu_activities_future" />
+            android:parentActivityName=".lesson7_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answerquestion_present"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson7_menu_activities_present" />
+            android:parentActivityName=".lesson7_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answerquestion_future"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson7_menu_activities_future" />
+            android:parentActivityName=".lesson7_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson7_menu_vocabulary" />
+            android:parentActivityName=".lesson7_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_preview_vocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson8_menu_vocabulary" />
+            android:parentActivityName=".lesson8_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_menu_vocabulary"
             android:label="Menu Vocabulary"
-            android:parentActivityName=".lesson8_menu_tenses" />
+            android:parentActivityName=".lesson8_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lesson8_menu_tenses" />
+            android:parentActivityName=".lesson8_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_menu_activities_present"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson8_menu_tenses" />
+            android:parentActivityName=".lesson8_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_menu_activities_future"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson8_menu_tenses" />
+            android:parentActivityName=".lesson8_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson8_menu_activities_present" />
+            android:parentActivityName=".lesson8_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson8_menu_activities_future" />
+            android:parentActivityName=".lesson8_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_fillverbs_present"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson8_menu_activities_present" />
+            android:parentActivityName=".lesson8_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_fillverbs_future"
             android:label="Fill The Verbs"
-            android:parentActivityName=".lesson8_menu_activities_future" />
+            android:parentActivityName=".lesson8_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answerquestion_present"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson8_menu_activities_present" />
+            android:parentActivityName=".lesson8_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answerquestion_future"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson8_menu_activities_future" />
+            android:parentActivityName=".lesson8_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answer_vocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson8_menu_vocabulary" />
+            android:parentActivityName=".lesson8_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerquestionPresent"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson9MenuActivitiesPresent" />
+            android:parentActivityName=".lesson9MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerQuestionPastt"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson9MenuActivitiesPast" />
+            android:parentActivityName=".lesson9MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerquestionFuture"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson9MenuActivitiesFuture" />
+            android:parentActivityName=".lesson9MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsPresent"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson9MenuActivitiesPresent" />
+            android:parentActivityName=".lesson9MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsPast"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson9MenuActivitiesPast" />
+            android:parentActivityName=".lesson9MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsFuture"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson9MenuActivitiesFuture" />
+            android:parentActivityName=".lesson9MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9ListenreadPresent"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson9MenuActivitiesPresent" />
+            android:parentActivityName=".lesson9MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9ListenreadPast"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson9MenuActivitiesPast" />
+            android:parentActivityName=".lesson9MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9ListenreadFuture"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson9MenuActivitiesFuture" />
+            android:parentActivityName=".lesson9MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9MenuActivitiesPresent"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson9MenuTenses" />
+            android:parentActivityName=".lesson9MenuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9MenuActivitiesPast"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson9MenuTenses" />
+            android:parentActivityName=".lesson9MenuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9MenuActivitiesFuture"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson9MenuTenses" />
+            android:parentActivityName=".lesson9MenuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerVocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson9MenuVocabulary" />
+            android:parentActivityName=".lesson9MenuVocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9PreviewVocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson9MenuVocabulary" />
+            android:parentActivityName=".lesson9MenuVocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9MenuTenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnserquestionPresent"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+            android:parentActivityName=".lesson10MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerquestionPast"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson10MenuActivitiesPast" />
+            android:parentActivityName=".lesson10MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerquestionFuture"
             android:label="Answer The Question"
-            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+            android:parentActivityName=".lesson10MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10FillverbsPresent"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+            android:parentActivityName=".lesson10MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10FillverbsPast"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson10MenuActivitiesPast" />
+            android:parentActivityName=".lesson10MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10FillverbsFuture"
             android:label="Till The Verbs"
-            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+            android:parentActivityName=".lesson10MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10ListenreadPresent"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson10MenuActivitiesPresent" />
+            android:parentActivityName=".lesson10MenuActivitiesPresent"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10ListenreadPast"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson10MenuActivitiesPast" />
+            android:parentActivityName=".lesson10MenuActivitiesPast"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10ListenreadFuture"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson10MenuActivitiesFuture" />
+            android:parentActivityName=".lesson10MenuActivitiesFuture"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10MenuActivitiesPresent"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson10MenuTesnses" />
+            android:parentActivityName=".lesson10MenuTesnses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10MenuActivitiesPast"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson10MenuTesnses" />
+            android:parentActivityName=".lesson10MenuTesnses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10MenuActivitiesFuture"
             android:label="Menu Activities"
-            android:parentActivityName=".lesson10MenuTesnses" />
+            android:parentActivityName=".lesson10MenuTesnses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerVocabulary"
             android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson10MenuVocabulary" />
+            android:parentActivityName=".lesson10MenuVocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10PreviewVocabulary"
             android:label="Preview Vocabulary"
-            android:parentActivityName=".lesson10MenuVocabulary" />
+            android:parentActivityName=".lesson10MenuVocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10MenuTesnses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_menu_vocabulary"
             android:label="Menu Vocabulary"
-            android:parentActivityName=".lesson3_menu_tenses" />
+            android:parentActivityName=".lesson3_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
-        <activity android:name=".Info_Teacher" />
-        <activity android:name=".lesson3_qualification_lesson" />
-        <activity android:name=".lesson3_qualification_future" />
-        <activity android:name=".lesson3_qualification_past" />
-        <activity android:name=".lesson3_qualification_present" />
-        <activity android:name=".lesson3_qualification_student" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Info_Teacher"
+            android:label="Information Teacher"
+            android:parentActivityName=".MenuTeacher"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson3_qualification_lesson"
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson3_qualification_future"
+            android:label="Qualification Future"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson3_qualification_past"
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson3_qualification_present"
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".lesson3_qualification_student"
+            android:label="Qualification Student"
+            android:parentActivityName=".lesson3_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Qualification_user_teacher"
             android:label="Qualifications Lesson"
-            android:parentActivityName=".PovQualification" />
+            android:parentActivityName=".PovQualification"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_qualification_vocabulary"
-            android:label="Qualification Present" />
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_qualification_student"
             android:label="Qualification Student"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_qualification_lesson"
-            android:label="Qualification lesson" />
+            android:label="Qualification lesson"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_qualification_future"
-            android:label="Qualification future" />
+            android:label="Qualification future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_qualification_past"
-            android:label="qualification past" />
+            android:label="qualification past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Info_Student"
             android:label="Information Student"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationfuturelesson1"
-            android:label="Qualification" />
+            android:label="Qualification"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Splashactivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -539,179 +765,225 @@
         <activity
             android:name=".register"
             android:label="Register Student"
-            android:parentActivityName=".MenuTeacher" />
+            android:parentActivityName=".MenuTeacher"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".QualificationReport"
             android:label="Qualification Users"
-            android:parentActivityName=".PovQualification" />
+            android:parentActivityName=".PovQualification"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_tenses"
             android:label="Lesson 2"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answerquestion_present"
             android:label="Answer and Questions"
-            android:parentActivityName=".lesson2_menu_activities_present" />
+            android:parentActivityName=".lesson2_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answerquestion_past"
             android:label="Answer and Questions"
-            android:parentActivityName=".lesson2_menu_activities_past" />
+            android:parentActivityName=".lesson2_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_present"
             android:label="Activities"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_past"
             android:label="Activities"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_present"
             android:label="Fill Verbs"
-            android:parentActivityName=".lesson2_menu_activities_present" />
+            android:parentActivityName=".lesson2_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_past"
             android:label="Fill Verbs"
-            android:parentActivityName=".lesson2_menu_activities_past" />
+            android:parentActivityName=".lesson2_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answer_vocabulary"
             android:label="Vocabulary"
-            android:parentActivityName=".lesson2_menu_vocabulary" />
+            android:parentActivityName=".lesson2_menu_vocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_vocabulary"
             android:label="Menu"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_listenread_present"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson2_menu_activities_present" />
+            android:parentActivityName=".lesson2_menu_activities_present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_listen_read_past"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson2_menu_activities_past" />
+            android:parentActivityName=".lesson2_menu_activities_past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_listenread_future"
             android:label="Listen and Read"
-            android:parentActivityName=".lesson2_menu_activities_future" />
+            android:parentActivityName=".lesson2_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_future"
             android:label="Menu"
-            android:parentActivityName=".lesson2_menu_tenses" />
+            android:parentActivityName=".lesson2_menu_tenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_future"
             android:label="Fill Verbs"
-            android:parentActivityName=".lesson2_menu_activities_future" />
+            android:parentActivityName=".lesson2_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answerquestion_future"
             android:label="Answer and Question"
-            android:parentActivityName=".lesson2_menu_activities_future" />
+            android:parentActivityName=".lesson2_menu_activities_future"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".readingFutureL1"
             android:label="Listen and Read"
-            android:parentActivityName=".menuFutureL1" />
+            android:parentActivityName=".menuFutureL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".readingPastL1"
             android:label="Listen and Read"
-            android:parentActivityName=".menuPastL1" />
+            android:parentActivityName=".menuPastL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".readingPresentL1"
             android:label="Listen and Read"
-            android:parentActivityName=".menuActivities" />
+            android:parentActivityName=".menuActivities"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".questionFutureL1"
             android:label="Answer and Question"
-            android:parentActivityName=".menuFutureL1" />
+            android:parentActivityName=".menuFutureL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".questionPastL1"
             android:label="Answer and Question"
-            android:parentActivityName=".menuPastL1" />
+            android:parentActivityName=".menuPastL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".questionPresentL1"
             android:label="Answer and Question"
-            android:parentActivityName=".menuActivities" />
+            android:parentActivityName=".menuActivities"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".fillPastL1"
             android:label="Fill the Verbs"
-            android:parentActivityName=".menuPastL1" />
+            android:parentActivityName=".menuPastL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".fillFutureL1"
             android:label="Fill the Verbs"
-            android:parentActivityName=".menuFutureL1" />
+            android:parentActivityName=".menuFutureL1"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".fillPresentL1"
             android:label="Fill the Verbs"
-            android:parentActivityName=".menuActivities" />
+            android:parentActivityName=".menuActivities"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".vocabularyL1"
             android:label="Vocabulary"
-            android:parentActivityName=".menuVocabulary" />
+            android:parentActivityName=".menuVocabulary"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".menuPastL1"
             android:label="Menu Activities"
-            android:parentActivityName=".menuTenses" />
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".menuFutureL1"
             android:label="Menu Activities"
-            android:parentActivityName=".menuTenses" />
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MenuTeacher"
-            android:label="Menu Teacher" />
+            android:label="Menu Teacher"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationfilltheverb"
-            android:label="Qualification fill the verbs" />
+            android:label="Qualification Past"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationlistenandread"
-            android:label="Qualification "
-            android:parentActivityName=".menuTenses" />
+            android:label="Qualification Future"
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationvocabulary"
-            android:label="Qualification" />
+            android:label="Qualification Lesson"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationStudent"
             android:label="Qualification Student"
-            android:parentActivityName=".menuTenses" />
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".reportStudent"
             android:label="Report Student"
-            android:parentActivityName=".QualificationReport" />
+            android:parentActivityName=".QualificationReport"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".InfoStudent"
             android:label="Info Student"
-            android:parentActivityName=".Studentlist" />
+            android:parentActivityName=".Studentlist"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Studentlist"
             android:label="Student List"
-            android:parentActivityName=".MenuTeacher" />
+            android:parentActivityName=".MenuTeacher"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".menuActivities"
             android:label="Menu Activities"
-            android:parentActivityName=".menuTenses" />
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".PovQualification"
             android:label="POV Lessons"
-            android:parentActivityName=".MenuTeacher" />
+            android:parentActivityName=".MenuTeacher"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".qualificationanswer"
-            android:label="Qualification" />
+            android:label="Qualification Present"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".menuVocabulary"
             android:label="Vocabulary"
-            android:parentActivityName=".menuTenses" />
+            android:parentActivityName=".menuTenses"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".menuTenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lessons" />
+            android:parentActivityName=".lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".lessons"
-            android:label="Lessons" />
+            android:label="Lessons"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".loginStudent"
             android:label="Login Student"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".loginTeacher"
             android:label="Login Teacher"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

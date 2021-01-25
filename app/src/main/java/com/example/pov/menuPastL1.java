@@ -3,6 +3,8 @@ package com.example.pov;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +33,7 @@ public class menuPastL1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_past_l1);
+        verifyconnection();
         btnlisten = findViewById(R.id.readPastL1);
         btnQuestion = findViewById(R.id.questionPastL1);
         btnFill = findViewById(R.id.filPastL1);
@@ -79,6 +82,15 @@ public class menuPastL1 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    public void verifyconnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+
+        }else {
+            Toast.makeText(this, "No Internet Connection", Toast.LENGTH_LONG).show();
+        }
     }
 
 }

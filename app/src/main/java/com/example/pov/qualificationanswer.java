@@ -28,7 +28,7 @@ import java.util.Map;
 
 public class qualificationanswer extends AppCompatActivity {
     String id, token;
-    ProgressDialog progressDialog;
+    ProgressDialog progressDialog, progressDialog2;
     TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,6 +97,9 @@ public class qualificationanswer extends AppCompatActivity {
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog2 = new ProgressDialog(qualificationanswer.this);
+            progressDialog2.setMessage("Loading...");
+            progressDialog2.show();
             String url = getResources().getString(R.string.urlgetqualificationsactivity);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -104,6 +107,7 @@ public class qualificationanswer extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        progressDialog2.hide();
                         double qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
@@ -129,6 +133,7 @@ public class qualificationanswer extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog2.hide();
                     Toast.makeText(qualificationanswer.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

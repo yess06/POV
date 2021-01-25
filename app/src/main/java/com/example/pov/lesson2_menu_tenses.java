@@ -1,8 +1,11 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,10 +30,12 @@ import java.util.Map;
 public class lesson2_menu_tenses extends AppCompatActivity {
     Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification;
     public String token, id, name, email;
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_menu_tenses);
+        verifyconnection();
         btnQualification = findViewById(R.id.btnlessontwoscore);
         btnPresent = findViewById(R.id.btnlessontwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
@@ -111,6 +116,15 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             }
         });
     }
+    public void verifyconnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+
+        }else {
+            Toast.makeText(this, "No Internet Connection", Toast.LENGTH_LONG).show();
+        }
+    }
     public void getbtn() {
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -118,6 +132,9 @@ public class lesson2_menu_tenses extends AppCompatActivity {
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(lesson2_menu_tenses.this);
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationsactivity);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -125,6 +142,7 @@ public class lesson2_menu_tenses extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        progressDialog.hide();
                         int cont = 0, cont2 = 0, cont3 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
@@ -171,6 +189,7 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lesson2_menu_tenses.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

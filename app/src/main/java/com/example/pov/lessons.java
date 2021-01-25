@@ -1,8 +1,11 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -31,10 +34,12 @@ import java.util.Map;
 
 public class lessons extends AppCompatActivity {
     public String token, id, name, email;
+    ProgressDialog progressDialog, progressDialog2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons);
+        verifyconnection();
         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
@@ -133,6 +138,15 @@ public class lessons extends AppCompatActivity {
 
 
     }
+    public void verifyconnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+
+        }else {
+            Toast.makeText(this, "No Internet Connection", Toast.LENGTH_LONG).show();
+        }
+    }
 
 
 
@@ -148,12 +162,28 @@ public class lessons extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.log){
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+            progressDialog2 = new ProgressDialog(lessons.this);
+            progressDialog2.setMessage("Log out...");
+            progressDialog2.show();
             String url = getResources().getString(R.string.urllogout);
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressDialog2.hide();
                     Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_SHORT).show();
+                    SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
+                    final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = valid.edit();
+                    editor.clear();
+                    editor.commit();
+                    SharedPreferences.Editor editor1 = preferencess.edit();
+                    editor1.clear();
+                    editor1.commit();
+                    SharedPreferences.Editor editor2 = preferences.edit();
+                    editor2.clear();
+                    editor2.commit();
                     Intent intent = new Intent(getApplicationContext(),loginStudent.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -162,6 +192,7 @@ public class lessons extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog2.hide();
                     Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_SHORT).show();
                 }
             }){
@@ -173,18 +204,7 @@ public class lessons extends AppCompatActivity {
                 }
             };
             requestQueue.add(jsonObjectRequest);
-            SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-            final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
-            SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = valid.edit();
-            editor.clear();
-            editor.commit();
-            SharedPreferences.Editor editor1 = preferencess.edit();
-            editor1.clear();
-            editor1.commit();
-            SharedPreferences.Editor editor2 = preferences.edit();
-            editor2.clear();
-            editor2.commit();
+
         }
         if (id == R.id.myinfo){
             Intent intent = new Intent(lessons.this, Info_Student.class);
@@ -199,6 +219,9 @@ public class lessons extends AppCompatActivity {
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(lessons.this);
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationstimelesson1);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
@@ -206,6 +229,7 @@ public class lessons extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        progressDialog.hide();
                         int cont = 0;
                         int cont2 = 0, cont3 = 0,cont4 =0,cont6 = 0, cont5 = 0, cont7 = 0, cont8 = 0, cont9 = 0, cont10 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
@@ -288,6 +312,7 @@ public class lessons extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
                     Toast.makeText(lessons.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

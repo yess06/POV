@@ -203,7 +203,7 @@ public class lesson8_fillverbs_future extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     progressDialog.hide();
-                    Toast.makeText(lesson8_fillverbs_future.this, "Qualification Max : 10.00\nQualification Obt :" + fina, Toast.LENGTH_LONG).show();
+                    Toast.makeText(lesson8_fillverbs_future.this, "Qualification Max : 15.00\nQualification Obt :" + fina, Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(lesson8_fillverbs_future.this, lesson8_menu_tenses.class);
                     startActivity(intent);
                 }

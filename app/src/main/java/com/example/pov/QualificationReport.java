@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -39,6 +41,8 @@ public class QualificationReport extends AppCompatActivity implements SearchView
     RecyclerView recycler;
     String token;
     TextView txtname;
+    Button buttontry;
+    SwipeRefreshLayout swipeRefreshLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +59,27 @@ public class QualificationReport extends AppCompatActivity implements SearchView
         recycler.setLayoutManager(new LinearLayoutManager(this));
         progressBar = findViewById(R.id.pgbr2);
         progressBar.setVisibility(View.INVISIBLE);
+        buttontry = findViewById(R.id.btntry);
+        buttontry.setVisibility(View.INVISIBLE);
+        swipeRefreshLayout = findViewById(R.id.swiperef);
+        swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         getQual();
         initListener();
+        buttontry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getQual();
+            }
+        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                listqual.clear();
+                adapterQualification.notifyDataSetChanged();
+                swipeRefreshLayout.setRefreshing(true);
+                getQual();
+            }
+        });
     }
 
     private void initListener() {
@@ -67,6 +90,8 @@ public class QualificationReport extends AppCompatActivity implements SearchView
     public void getQual() {
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            swipeRefreshLayout.setRefreshing(false);
+            buttontry.setVisibility(View.INVISIBLE);
             progressBar.setVisibility(View.VISIBLE);
             String url = getResources().getString(R.string.urlgetqualificationlesson1);
             JSONObject object = new JSONObject();
@@ -74,6 +99,7 @@ public class QualificationReport extends AppCompatActivity implements SearchView
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    buttontry.setVisibility(View.INVISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     try {
                         JSONArray user = response.getJSONArray("qualifications");
@@ -104,6 +130,7 @@ public class QualificationReport extends AppCompatActivity implements SearchView
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    buttontry.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(QualificationReport.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

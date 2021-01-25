@@ -152,7 +152,7 @@ public class lesson7_answerquestion_future extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     progressDialog.hide();
-                    Toast.makeText(lesson7_answerquestion_future.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(lesson7_answerquestion_future.this, "Qualification Max : 15.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson7_answerquestion_future.this, lesson7_qualification_future.class);
                     startActivity(intent);
                 }

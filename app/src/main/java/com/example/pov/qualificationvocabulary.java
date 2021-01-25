@@ -32,8 +32,8 @@ public class qualificationvocabulary extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        score = findViewById(R.id.scorequal3);
         setContentView(R.layout.activity_qualificationvocabulary);
+        score = findViewById(R.id.scorequal3);
         quallificationlesson();
     }
     public void qualifilesson(View view){
