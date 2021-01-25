@@ -40,6 +40,7 @@ public class lesson7_answerquestion_present extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise1.setAdapter(adapter);
 
+        exercise2 = findViewById(R.id.QspsL72);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.QsPsL72, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise2.setAdapter(adapter2);

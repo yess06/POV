@@ -39,7 +39,7 @@ public class lesson6_menu_tenses extends AppCompatActivity {
         btnQualification = findViewById(R.id.btnlessontwoscore);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnFuture = findViewById(R.id.btnlessontwofuture);
-        btnPresent = findViewById(R.id.btnlessontwoPresent);
+        btnPresent = findViewById(R.id.btntwoPresent);
         getbtn();
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont12", 0) == 0){

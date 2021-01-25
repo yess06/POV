@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnlessontwoPresent"
+        android:id="@+id/btntwoPresent"
         android:layout_width="285dp"
         android:layout_height="71dp"
         android:layout_marginTop="16dp"
@@ -39,7 +39,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlessontwoPresent" />
+        app:layout_constraintTop_toBottomOf="@+id/btntwoPresent" />
 
     <Button
         android:id="@+id/btnlessontwofuture"
