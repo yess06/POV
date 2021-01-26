@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -46,6 +48,7 @@ public class loginStudent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student);
+        verifyconnection();
      txtemail = findViewById(R.id.tvEmail);
         txtpassword = findViewById(R.id.tvPassword);
         pass = findViewById(R.id.checkBoxloginstudent);
@@ -69,6 +72,15 @@ public class loginStudent extends AppCompatActivity {
                 login();
             }
         });
+    }
+    public void verifyconnection(){
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()){
+
+        }else {
+            Toast.makeText(this, "No Internet Connection", Toast.LENGTH_LONG).show();
+        }
     }
     public void login(){
 
@@ -125,7 +137,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://192.168.1.70:8000/api/auth/users";
+        String url2 = "http://10.0.0.3:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override
