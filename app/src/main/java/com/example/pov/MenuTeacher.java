@@ -34,7 +34,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MenuTeacher extends AppCompatActivity {
-    TextView example;
     ProgressDialog progressDialog;
     public String token, id, name, email;
     @Override
@@ -42,12 +41,10 @@ public class MenuTeacher extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_teacher);
         verifyconnection();
-        example = findViewById(R.id.exampletxt);
         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
         email = preferences.getString("email", "null");
-        example.append("Name: " + info.getString("name", "null") +"\n" + "Email: " + preferences.getString("email", "null"));
     }
     public void lessons(View view){
         Intent intent = new Intent(MenuTeacher.this, PovQualification.class);

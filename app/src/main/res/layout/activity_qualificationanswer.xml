@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="54dp"
         android:backgroundTint="#207A7A"
-        android:text="Activities"
+        android:text="Submit"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

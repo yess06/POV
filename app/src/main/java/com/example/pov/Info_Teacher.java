@@ -61,7 +61,7 @@ public class Info_Teacher extends AppCompatActivity {
         progressDialog = new ProgressDialog(Info_Teacher.this);
         progressDialog.setMessage("Update...");
         progressDialog.show();
-        String url = getResources().getString(R.string.urlputinfouser)+id+"/";
+        String url = getResources().getString(R.string.urlputinfouser)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -110,7 +110,7 @@ public class Info_Teacher extends AppCompatActivity {
         progressDialog = new ProgressDialog(Info_Teacher.this);
         progressDialog.setMessage("Update...");
         progressDialog.show();
-        String url = getResources().getString(R.string.urlputpassword)+id+"/";
+        String url = getResources().getString(R.string.urlputpassword)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override

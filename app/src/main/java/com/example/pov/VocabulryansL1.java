@@ -97,15 +97,15 @@ public class VocabulryansL1 extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            /*progressDialog = new ProgressDialog(VocabulryansL1.this);
+            progressDialog = new ProgressDialog(VocabulryansL1.this);
             progressDialog.setMessage("Submit...");
-            progressDialog.show();*/
+            progressDialog.show();
             String url = getResources().getString(R.string.urlpostqualificationtimelesson1);
             JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, url,
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
-                   /* progressDialog.hide();*/
+                   progressDialog.hide();
                     Toast.makeText(VocabulryansL1.this, "Score: " + fina, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(VocabulryansL1.this, lessons.class);
                     startActivity(intent);
@@ -113,7 +113,7 @@ public class VocabulryansL1 extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                  /* progressDialog.hide();*/
+                  progressDialog.hide();
                     Toast.makeText(VocabulryansL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }
             }){

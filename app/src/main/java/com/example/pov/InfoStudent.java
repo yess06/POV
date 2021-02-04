@@ -63,7 +63,7 @@ public class InfoStudent extends AppCompatActivity {
         progressDialog = new ProgressDialog(InfoStudent.this);
         progressDialog.setMessage("Update...");
         progressDialog.show();
-        String url = getResources().getString(R.string.urlputinfouser)+id+"/";
+        String url = getResources().getString(R.string.urlputinfouser)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -104,7 +104,7 @@ public class InfoStudent extends AppCompatActivity {
         progressDialog = new ProgressDialog(InfoStudent.this);
         progressDialog.setMessage("Update...");
         progressDialog.show();
-        String url = getResources().getString(R.string.urlputpassword)+id+"/";
+        String url = getResources().getString(R.string.urlputpassword)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
@@ -140,7 +140,7 @@ public class InfoStudent extends AppCompatActivity {
         progressDialog = new ProgressDialog(InfoStudent.this);
         progressDialog.setMessage("Delete...");
         progressDialog.show();
-        String url = getResources().getString(R.string.urldeleteuser)+id+"/";
+        String url = getResources().getString(R.string.urldeleteuser)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.DELETE, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
