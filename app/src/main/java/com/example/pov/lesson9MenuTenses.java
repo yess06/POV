@@ -107,6 +107,15 @@ public class lesson9MenuTenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnQualification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson9MenuTenses.this, lesson9qualificationstudent.class);
+                startActivity(intent);
+            }
+        });
+
     }
     public void verifyconnection(){
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);

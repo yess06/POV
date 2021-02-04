@@ -23,8 +23,8 @@
 
     <Spinner
         android:id="@+id/qspsL47"
-        android:layout_width="115dp"
-        android:layout_height="26dp"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,57 +35,58 @@
 
     <Spinner
         android:id="@+id/qspsL49"
-        android:layout_width="126dp"
-        android:layout_height="32dp"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <Spinner
         android:id="@+id/qspsL50"
-        android:layout_width="115dp"
-        android:layout_height="31dp"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintVertical_bias="0.324" />
 
     <Spinner
         android:id="@+id/qspsL51"
-        android:layout_width="111dp"
-        android:layout_height="28dp"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <Spinner
         android:id="@+id/qspsL48"
-        android:layout_width="118dp"
-        android:layout_height="33dp"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintVertical_bias="0.131" />
 
     <TextView
         android:id="@+id/textView1319"
         android:layout_width="115dp"
-        android:layout_height="36dp"
+        android:layout_height="wrap_content"
         android:text="Fed up with"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
@@ -96,8 +97,9 @@
     <TextView
         android:id="@+id/textView1320"
         android:layout_width="107dp"
-        android:layout_height="36dp"
+        android:layout_height="wrap_content"
         android:text="Pay through the           nose"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -108,8 +110,9 @@
     <TextView
         android:id="@+id/textView1321"
         android:layout_width="75dp"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:text="Brand new"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
@@ -120,8 +123,9 @@
     <TextView
         android:id="@+id/textView1322"
         android:layout_width="85dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:text="Everglade"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
@@ -132,20 +136,22 @@
     <TextView
         android:id="@+id/textView1323"
         android:layout_width="86dp"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:text="Swamp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        app:layout_constraintVertical_bias="0.414" />
 
     <TextView
         android:id="@+id/textView1324"
         android:layout_width="120dp"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:text="1. Pay a lot; pay a high amount"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.934"
@@ -156,48 +162,52 @@
     <TextView
         android:id="@+id/textView1325"
         android:layout_width="135dp"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:text="2. A national park in southern Florida"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintHorizontal_bias="0.985"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <TextView
         android:id="@+id/textView1326"
         android:layout_width="140dp"
-        android:layout_height="41dp"
+        android:layout_height="wrap_content"
         android:text="3. An area of very wet, soft land."
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
         android:id="@+id/textView1327"
         android:layout_width="135dp"
-        android:layout_height="37dp"
+        android:layout_height="wrap_content"
         android:text="4. Tired of; sick of; angry about"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintVertical_bias="0.342" />
 
     <TextView
         android:id="@+id/textView1328"
         android:layout_width="122dp"
-        android:layout_height="39dp"
+        android:layout_height="wrap_content"
         android:text="5. Completely new"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.427" />
 </androidx.constraintlayout.widget.ConstraintLayout>

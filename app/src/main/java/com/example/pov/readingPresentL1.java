@@ -49,7 +49,7 @@ public class readingPresentL1 extends AppCompatActivity {
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.past);
+        mediaPlayer = MediaPlayer.create(this, R.raw.present);
         runnable = new Runnable() {
             @Override
             public void run() {

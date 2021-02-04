@@ -30,41 +30,41 @@
                 android:id="@+id/textView226"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="204dp"
+                android:layout_marginTop="228dp"
                 android:text="in Thailand.  "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.732"
+                app:layout_constraintHorizontal_bias="0.748"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPas4"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="204dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintHorizontal_bias="0.932"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPas3"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="116dp"
+                android:layout_marginTop="120dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView193" />
 
             <Spinner
                 android:id="@+id/fillPas5"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="276dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,7 +73,7 @@
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="124dp"
-                android:text="a vacation because she "
+                android:text="a vacation because"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.962"
@@ -84,17 +84,17 @@
                 android:id="@+id/textView222"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="124dp"
+                android:layout_marginTop="128dp"
                 android:text="She"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintHorizontal_bias="0.055"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView225"
-                android:layout_width="71dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="204dp"
                 android:text="Jackie’s cousin Mary"
@@ -108,21 +108,21 @@
                 android:id="@+id/textView224"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="172dp"
+                android:layout_marginTop="152dp"
                 android:text="really stressed out. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.906"
+                app:layout_constraintHorizontal_bias="0.902"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPas2"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="124dp"
+                android:layout_marginTop="128dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintHorizontal_bias="0.258"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,11 +140,11 @@
 
             <Spinner
                 android:id="@+id/fillPas6"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="336dp"
+                android:layout_marginTop="352dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.797"
+                app:layout_constraintHorizontal_bias="0.924"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -162,7 +162,7 @@
 
             <TextView
                 android:id="@+id/textView231"
-                android:layout_width="71dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="412dp"
                 android:text="“I want you to visit,” "
@@ -178,7 +178,7 @@
                 android:layout_height="25dp"
                 android:layout_marginTop="412dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.646"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -190,29 +190,29 @@
                 android:text="Mary"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintHorizontal_bias="0.854"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView233"
-                android:layout_width="71dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="488dp"
+                android:layout_marginTop="472dp"
                 android:text="So Jackie "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintHorizontal_bias="0.048"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPas8"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="488dp"
+                android:layout_marginTop="472dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.446"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -220,11 +220,11 @@
                 android:id="@+id/textView234"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="488dp"
+                android:layout_marginTop="472dp"
                 android:text="to Thailand."
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.731"
+                app:layout_constraintHorizontal_bias="0.899"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -232,21 +232,21 @@
                 android:id="@+id/textView235"
                 android:layout_width="71dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="544dp"
+                android:layout_marginTop="524dp"
                 android:text="Jackie really "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintHorizontal_bias="0.047"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPas9"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="544dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.446"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -258,7 +258,7 @@
                 android:text="Thailand."
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.688"
+                app:layout_constraintHorizontal_bias="0.845"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -298,11 +298,11 @@
 
             <Spinner
                 android:id="@+id/fillPas11"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="656dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -322,11 +322,11 @@
                 android:id="@+id/textView240"
                 android:layout_width="71dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="712dp"
+                android:layout_marginTop="700dp"
                 android:text="One day Jackie "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.055"
+                app:layout_constraintHorizontal_bias="0.052"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -354,11 +354,11 @@
 
             <Spinner
                 android:id="@+id/fillPas13"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="744dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -378,9 +378,9 @@
                 android:id="@+id/fillPas14"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="784dp"
+                android:layout_marginTop="794dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.357"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -388,11 +388,11 @@
                 android:id="@+id/textView243"
                 android:layout_width="71dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="784dp"
+                android:layout_marginTop="777dp"
                 android:text="The dolphins"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintHorizontal_bias="0.055"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -400,7 +400,7 @@
                 android:id="@+id/textView244"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="784dp"
+                android:layout_marginTop="790dp"
                 android:text="playing music in the café.  "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -422,11 +422,11 @@
 
             <Spinner
                 android:id="@+id/fillPas15"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="840dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -444,11 +444,11 @@
 
             <Spinner
                 android:id="@+id/fillPas16"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="868dp"
+                android:layout_marginTop="864dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -478,11 +478,11 @@
 
             <Spinner
                 android:id="@+id/fillPas17"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="916dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.294"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -494,7 +494,7 @@
                 android:text="so happy."
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintHorizontal_bias="0.719"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -534,11 +534,11 @@
 
             <Spinner
                 android:id="@+id/fillPas19"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="992dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintHorizontal_bias="0.203"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -568,11 +568,11 @@
 
             <Spinner
                 android:id="@+id/fillPas20"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="1028dp"
+                android:layout_marginTop="1048dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.79"
+                app:layout_constraintHorizontal_bias="0.924"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -590,11 +590,11 @@
 
             <Spinner
                 android:id="@+id/fillPas21"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="1072dp"
+                android:layout_marginTop="1092dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.797"
+                app:layout_constraintHorizontal_bias="0.936"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -614,7 +614,7 @@
                 android:id="@+id/button18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1100dp"
+                android:layout_marginTop="1160dp"
                 android:layout_marginBottom="30dp"
                 android:background="#E7323D"
                 android:onClick="qualification"
@@ -653,11 +653,11 @@
 
             <Spinner
                 android:id="@+id/fillPas1"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="64dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.347"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -682,6 +682,18 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.962"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="152dp"
+                android:text="she"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.059"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

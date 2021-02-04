@@ -108,7 +108,7 @@ public class lesson2_answerquestion_future extends AppCompatActivity {
             if (exercise3.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise4.getSelectedItemPosition() == 1){
+            if (exercise4.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise5.getSelectedItemPosition() == 3){

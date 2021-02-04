@@ -102,7 +102,7 @@ public class lesson10AnswerquestionFuture extends AppCompatActivity {
             if (exercise3.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise4.getSelectedItemPosition() == 2){
+            if (exercise4.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise5.getSelectedItemPosition() == 3){
@@ -117,7 +117,7 @@ public class lesson10AnswerquestionFuture extends AppCompatActivity {
             if (exercise8.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 2){
+            if (exercise9.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise10.getSelectedItemPosition() == 3){

@@ -133,7 +133,7 @@ public class fillPresentL1 extends AppCompatActivity {
         exercise19.setAdapter(adapter19);
 
         exercise20 = findViewById(R.id.pstL120);
-        ArrayAdapter<CharSequence> adapter20 = ArrayAdapter.createFromResource(this, R.array.exercise2, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter20 = ArrayAdapter.createFromResource(this, R.array.exercise20, android.R.layout.simple_spinner_item);
         adapter20.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise20.setAdapter(adapter20);
 

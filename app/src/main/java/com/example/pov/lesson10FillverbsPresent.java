@@ -143,34 +143,34 @@ public class lesson10FillverbsPresent extends AppCompatActivity {
             if (exercise4.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise5.getSelectedItemPosition() == 1){
+            if (exercise5.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise6.getSelectedItemPosition() == 1){
+            if (exercise6.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise7.getSelectedItemPosition() == 1){
+            if (exercise7.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise8.getSelectedItemPosition() == 1){
+            if (exercise8.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 1){
+            if (exercise9.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise10.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise11.getSelectedItemPosition() == 1){
+            if (exercise11.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise12.getSelectedItemPosition() == 1){
+            if (exercise12.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise13.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise14.getSelectedItemPosition() == 1){
+            if (exercise14.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise15.getSelectedItemPosition() == 1){
@@ -179,7 +179,7 @@ public class lesson10FillverbsPresent extends AppCompatActivity {
             if (exercise16.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise17.getSelectedItemPosition() == 1){
+            if (exercise17.getSelectedItemPosition() == 3){
                 conta++;
             }
 

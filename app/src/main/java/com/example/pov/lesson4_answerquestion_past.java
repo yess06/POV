@@ -102,10 +102,10 @@ public class lesson4_answerquestion_past extends AppCompatActivity {
             if (exercise3.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise4.getSelectedItemPosition() == 3){
+            if (exercise4.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise5.getSelectedItemPosition() == 3){
+            if (exercise5.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise6.getSelectedItemPosition() == 2){

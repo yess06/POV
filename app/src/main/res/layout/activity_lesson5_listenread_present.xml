@@ -10,18 +10,19 @@
         android:id="@+id/textView323"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text=" Each time we hear the story it will be from a different point of view. I'll either be changing the time of the story or the person who is telling the story. Okay, let’s get started"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="324dp"
-        android:layout_height="385dp"
+        android:layout_height="390dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView323">
 
@@ -29,7 +30,6 @@
             android:id="@+id/textView324"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Peter can’t stand bathing. He has not taken a shower for two years. He smells very bad. His mother thinks that it has gotten out of hand. She asks Peter to bathe but he will not do it. Peter wants a girlfriend. He asks quite a few girls for a date but they always say no. He thinks that he is in over his head. One time his sister finds him a date with a nice girl. But then the girl gets sick so the date falls through. So Peter tries to meet a girl on a dating website. He meets a very nice girl named Paula and they decide to meet for dinner. When Paula meets Peter she does not know what she is getting into. He smells awful. When Peter sees Paula, he cannot believe his eyes. He is blown away because she is so beautiful. They have a lot of fun that night. Paula tells Peter she will have dinner with him again if he takes a shower. Now Peter bathes every day."
             android:textSize="18sp" />
     </ScrollView>
@@ -95,11 +95,11 @@
         android:id="@+id/bt_pause"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="560dp"
         android:src="@drawable/ic_pause"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

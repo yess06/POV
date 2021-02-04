@@ -108,7 +108,7 @@ public class lesson5_qualification_present extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("5")) {
                                     if (u.getString("time_id").equals("2")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score: " + score);
+                                        score.setText("Score: " + qualification);
                                         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
                                         SharedPreferences.Editor editor = valid.edit();
                                         editor.putString("qualifi", String.valueOf(qualification));

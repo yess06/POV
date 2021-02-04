@@ -142,19 +142,19 @@ public class lesson9FillverbsPast extends AppCompatActivity {
 
         }else{
             int conta = 0;
-            if (exercise1.getSelectedItemPosition() == 3){
+            if (exercise1.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise2.getSelectedItemPosition() == 2){
+            if (exercise2.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise3.getSelectedItemPosition() == 2){
+            if (exercise3.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise4.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise5.getSelectedItemPosition() == 2){
+            if (exercise5.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise6.getSelectedItemPosition() == 2){
@@ -169,13 +169,13 @@ public class lesson9FillverbsPast extends AppCompatActivity {
             if (exercise9.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise10.getSelectedItemPosition() == 2){
+            if (exercise10.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise11.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise12.getSelectedItemPosition() == 2){
+            if (exercise12.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise13.getSelectedItemPosition() == 2){
@@ -190,7 +190,7 @@ public class lesson9FillverbsPast extends AppCompatActivity {
             if (exercise16.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise17.getSelectedItemPosition() == 2){
+            if (exercise17.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise18.getSelectedItemPosition() == 2){

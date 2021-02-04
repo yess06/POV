@@ -74,16 +74,16 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
             if (exercise1.getSelectedItemPosition() == 1){
                 cont++;
             }
-            if (exercise2.getSelectedItemPosition() == 2){
+            if (exercise2.getSelectedItemPosition() == 5){
                 cont++;
             }
-            if (exercise3.getSelectedItemPosition() == 3){
+            if (exercise3.getSelectedItemPosition() == 4){
                 cont++;
             }
-            if (exercise4.getSelectedItemPosition() == 4){
+            if (exercise4.getSelectedItemPosition() == 2){
                 cont++;
             }
-            if (exercise5.getSelectedItemPosition() == 5){
+            if (exercise5.getSelectedItemPosition() == 3){
                 cont++;
             }
             final double fin,fina;

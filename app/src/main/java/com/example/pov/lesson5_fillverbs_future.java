@@ -164,7 +164,7 @@ public class lesson5_fillverbs_future extends AppCompatActivity {
             if (exercise7.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise8.getSelectedItemPosition() == 3){
+            if (exercise8.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise9.getSelectedItemPosition() == 3){

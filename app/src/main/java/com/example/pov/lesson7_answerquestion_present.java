@@ -97,7 +97,7 @@ public class lesson7_answerquestion_present extends AppCompatActivity {
             if (exercise1.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise2.getSelectedItemPosition() == 3){
+            if (exercise2.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise3.getSelectedItemPosition() == 1){
@@ -118,7 +118,7 @@ public class lesson7_answerquestion_present extends AppCompatActivity {
             if (exercise8.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 2){
+            if (exercise9.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise10.getSelectedItemPosition() == 1){

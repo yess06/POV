@@ -65,7 +65,7 @@ public class lesson8_preview_vocabulary extends AppCompatActivity {
 
         }else{
             int cont = 0;
-            if (exercise1.getSelectedItemPosition() == 3){
+            if (exercise1.getSelectedItemPosition() == 2){
                 cont++;
             }
             if (exercise2.getSelectedItemPosition() == 5){

@@ -158,7 +158,7 @@ public class lesson2_fillverbs_past extends AppCompatActivity {
             if (exercise2.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise3.getSelectedItemPosition() == 2){
+            if (exercise3.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise4.getSelectedItemPosition() == 2){

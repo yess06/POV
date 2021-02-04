@@ -142,22 +142,22 @@ public class lesson9FillverbsFuture extends AppCompatActivity {
 
         }else{
             int conta = 0;
-            if (exercise1.getSelectedItemPosition() == 2){
+            if (exercise1.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise2.getSelectedItemPosition() == 3){
+            if (exercise2.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise3.getSelectedItemPosition() == 1){
+            if (exercise3.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise4.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise5.getSelectedItemPosition() == 3){
+            if (exercise5.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise6.getSelectedItemPosition() == 1){
+            if (exercise6.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise7.getSelectedItemPosition() == 3){
@@ -166,16 +166,16 @@ public class lesson9FillverbsFuture extends AppCompatActivity {
             if (exercise8.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 3){
+            if (exercise9.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise10.getSelectedItemPosition() == 3){
+            if (exercise10.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise11.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise12.getSelectedItemPosition() == 3){
+            if (exercise12.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise13.getSelectedItemPosition() == 3){
@@ -190,7 +190,7 @@ public class lesson9FillverbsFuture extends AppCompatActivity {
             if (exercise16.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise17.getSelectedItemPosition() == 3){
+            if (exercise17.getSelectedItemPosition() == 2){
                 conta++;
             }
             if (exercise18.getSelectedItemPosition() == 3){

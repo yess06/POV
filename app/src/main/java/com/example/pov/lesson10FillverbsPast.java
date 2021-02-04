@@ -118,43 +118,43 @@ public class lesson10FillverbsPast extends AppCompatActivity {
             if (exercise1.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise2.getSelectedItemPosition() == 2){
+            if (exercise2.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise3.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise4.getSelectedItemPosition() == 2){
+            if (exercise4.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise5.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise6.getSelectedItemPosition() == 2){
+            if (exercise6.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise7.getSelectedItemPosition() == 2){
+            if (exercise7.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise8.getSelectedItemPosition() == 2){
+            if (exercise8.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 2){
+            if (exercise9.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise10.getSelectedItemPosition() == 2){
+            if (exercise10.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise11.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise12.getSelectedItemPosition() == 2){
+            if (exercise12.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise13.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise14.getSelectedItemPosition() == 2){
+            if (exercise14.getSelectedItemPosition() == 1){
                 conta++;
             }
 

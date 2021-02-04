@@ -104,22 +104,22 @@ public class lesson6_fillverbs_future extends AppCompatActivity {
         exercise14 = findViewById(R.id.fillFutL614);
         ArrayAdapter<CharSequence> adapter14 = ArrayAdapter.createFromResource(this, R.array.fillfutL614, android.R.layout.simple_spinner_item);
         adapter14.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        exercise14.setAdapter(adapter13);
+        exercise14.setAdapter(adapter14);
 
         exercise15 = findViewById(R.id.fillFutL615);
         ArrayAdapter<CharSequence> adapter15 = ArrayAdapter.createFromResource(this, R.array.fillfutL615, android.R.layout.simple_spinner_item);
         adapter15.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        exercise15.setAdapter(adapter13);
+        exercise15.setAdapter(adapter15);
 
         exercise16 = findViewById(R.id.fillFutL616);
         ArrayAdapter<CharSequence> adapter16 = ArrayAdapter.createFromResource(this, R.array.fillfutL616, android.R.layout.simple_spinner_item);
         adapter16.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        exercise16.setAdapter(adapter13);
+        exercise16.setAdapter(adapter16);
 
         exercise17 = findViewById(R.id.fillFutL617);
         ArrayAdapter<CharSequence> adapter17 = ArrayAdapter.createFromResource(this, R.array.fillfutL617, android.R.layout.simple_spinner_item);
         adapter17.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        exercise17.setAdapter(adapter13);
+        exercise17.setAdapter(adapter17);
     }
     public void qualification(View view){
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0

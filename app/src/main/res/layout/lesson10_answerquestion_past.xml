@@ -219,7 +219,7 @@
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="10.	Does he buy a brand new, bright green, super-fast, Ferrari?"
+                android:text="10. Did he buy a brand new, bright green, super-fast, Ferrari?"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.516"

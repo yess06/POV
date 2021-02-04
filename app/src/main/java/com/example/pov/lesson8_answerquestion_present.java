@@ -96,7 +96,7 @@ public class lesson8_answerquestion_present extends AppCompatActivity {
             if (exercise1.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise2.getSelectedItemPosition() == 3){
+            if (exercise2.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise3.getSelectedItemPosition() == 1){

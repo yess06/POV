@@ -110,6 +110,13 @@ public class lesson4_menu_tenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnQualification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson4_menu_tenses.this, lesson4_qualification_student.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void getbtn() {

@@ -167,19 +167,19 @@ public class lesson6_fillverbs_present extends AppCompatActivity {
             if (exercise12.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise13.getSelectedItemPosition() == 1){
+            if (exercise13.getSelectedItemPosition() == 3){
                 conta++;
             }
             if (exercise14.getSelectedItemPosition() == 3){
                 conta++;
             }
-            if (exercise15.getSelectedItemPosition() == 3){
+            if (exercise15.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise16.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise17.getSelectedItemPosition() == 1){
+            if (exercise17.getSelectedItemPosition() == 2){
                 conta++;
             }
 

@@ -15,16 +15,6 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView1003"
-                android:layout_width="4dp"
-                android:layout_height="1700dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.992"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="0dp" />
-
-            <TextView
                 android:id="@+id/textView1004"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -38,11 +28,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL91"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="48dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,11 +62,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL92"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="108dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.291"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,11 +96,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL93"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="140dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.291"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,11 +130,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL94"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="208dp"
+                android:layout_marginTop="228dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -186,11 +176,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL95"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="360dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.418"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -202,15 +192,15 @@
                 android:text="home. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.641"
+                app:layout_constraintHorizontal_bias="0.787"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView1015"
-                android:layout_width="71dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="396dp"
+                android:layout_marginTop="390dp"
                 android:text="Every day he"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -220,11 +210,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL96"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="396dp"
+                android:layout_marginTop="388dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.697"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -232,11 +222,11 @@
                 android:id="@+id/textView1016"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="396dp"
+                android:layout_marginTop="416dp"
                 android:text="lots and lots of meat. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintHorizontal_bias="0.058"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -244,7 +234,7 @@
                 android:id="@+id/textView1017"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="448dp"
+                android:layout_marginTop="440dp"
                 android:text="And he’s gonna eat fat and everything else but the kitchen sink. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -256,7 +246,7 @@
                 android:id="@+id/textView1018"
                 android:layout_width="71dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="498dp"
+                android:layout_marginTop="492dp"
                 android:text="In fact he "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -268,7 +258,7 @@
                 android:id="@+id/fillFutL97"
                 android:layout_width="120dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="498dp"
+                android:layout_marginTop="512dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.329"
                 app:layout_constraintStart_toStartOf="parent"
@@ -324,11 +314,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL98"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="648dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.252"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -346,11 +336,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL99"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="694dp"
+                android:layout_marginTop="696dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.252"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -380,11 +370,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL910"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="724dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -414,11 +404,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL911"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="830dp"
+                android:layout_marginTop="828dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.252"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -460,11 +450,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL912"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="942dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.382"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -472,11 +462,11 @@
                 android:id="@+id/textView1031"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="942dp"
+                android:layout_marginTop="940dp"
                 android:text="this idea. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.685"
+                app:layout_constraintHorizontal_bias="0.841"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -506,11 +496,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL913"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1028dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.223"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -540,11 +530,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL914"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1104dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -586,11 +576,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL915"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1216dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.223"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -620,11 +610,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL916"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1290dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.223"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -654,11 +644,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL917"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="1368dp"
+                android:layout_marginTop="1384dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -688,11 +678,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL918"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="1444dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
+                app:layout_constraintHorizontal_bias="0.262"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -722,11 +712,11 @@
 
             <Spinner
                 android:id="@+id/fillFutL919"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="1500dp"
+                android:layout_marginTop="1520dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.877"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

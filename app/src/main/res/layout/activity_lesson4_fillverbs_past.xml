@@ -18,9 +18,9 @@
 
             <TextView
                 android:id="@+id/textView459"
-                android:layout_width="71dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="28dp"
                 android:text="Last year Freddie the frog "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +30,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL41"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintHorizontal_bias="0.944"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,7 +42,7 @@
                 android:id="@+id/textView460"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="60dp"
                 android:text="in the country of Frogland."
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -64,11 +64,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL42"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="116dp"
+                android:layout_marginTop="136dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.814"
+                app:layout_constraintHorizontal_bias="0.944"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,11 +98,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL43"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="192dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintHorizontal_bias="0.254"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -132,11 +132,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL44"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="264dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.321"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -154,11 +154,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL45"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="296dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -210,11 +210,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL47"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="392dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintHorizontal_bias="0.434"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -232,11 +232,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL48"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="428dp"
+                android:layout_marginTop="468dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.814"
+                app:layout_constraintHorizontal_bias="0.944"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -266,11 +266,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL49"
-                android:layout_width="120dp"
+                android:layout_width="130dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="524dp"
+                android:layout_marginTop="544dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.327"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -300,11 +300,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL410"
-                android:layout_width="120dp"
+                android:layout_width="130dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="576dp"
+                android:layout_marginTop="596dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.327"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -324,7 +324,7 @@
                 android:id="@+id/textView509"
                 android:layout_width="71dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="628dp"
+                android:layout_marginTop="626dp"
                 android:text="Sure enough, when he"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -334,21 +334,21 @@
 
             <Spinner
                 android:id="@+id/fillPasL411"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="628dp"
+                android:layout_marginTop="666dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.406"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPasL414"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="800dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintHorizontal_bias="0.286"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -356,21 +356,21 @@
                 android:id="@+id/textView510"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="628dp"
+                android:layout_marginTop="666dp"
                 android:text="18 years old, he"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.825"
+                app:layout_constraintHorizontal_bias="0.986"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Spinner
                 android:id="@+id/fillPasL412"
-                android:layout_width="120dp"
+                android:layout_width="160dp"
                 android:layout_height="25dp"
-                android:layout_marginTop="690dp"
+                android:layout_marginTop="694dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintHorizontal_bias="0.266"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -378,7 +378,7 @@
                 android:id="@+id/textView511"
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="690dp"
+                android:layout_marginTop="694dp"
                 android:text="the jumping champion of his country. "
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -400,11 +400,11 @@
 
             <Spinner
                 android:id="@+id/fillPasL413"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="764dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.357"
+                app:layout_constraintHorizontal_bias="0.339"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -446,7 +446,7 @@
 
             <Spinner
                 android:id="@+id/fillPasL415"
-                android:layout_width="120dp"
+                android:layout_width="130dp"
                 android:layout_height="25dp"
                 android:layout_marginTop="832dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -482,7 +482,7 @@
                 android:id="@+id/button63"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="896dp"
+                android:layout_marginTop="930dp"
                 android:layout_marginBottom="30dp"
                 android:background="#E7323D"
                 android:onClick="qualification"

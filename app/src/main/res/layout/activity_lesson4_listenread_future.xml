@@ -20,7 +20,7 @@
 
     <ScrollView
         android:layout_width="324dp"
-        android:layout_height="385dp"
+        android:layout_height="393dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,11 +96,11 @@
         android:id="@+id/bt_pause"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="560dp"
         android:src="@drawable/ic_pause"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

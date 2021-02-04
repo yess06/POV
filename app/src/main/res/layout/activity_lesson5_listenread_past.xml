@@ -20,7 +20,7 @@
 
     <ScrollView
         android:layout_width="324dp"
-        android:layout_height="385dp"
+        android:layout_height="420dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -32,7 +32,6 @@
             android:id="@+id/textView326"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
             android:text="One year ago Peter could not stand bathing. He had not taken a shower for two years. He smelled very bad. His mother thought that it had gotten out of control. She had asked Peter to bathe but he would not do it. Peter wanted a girlfriend. He asked quite a few girls for a date but they always said no. He thought that he was in over his head. One time his sister found him a date with a nice girl. But then the girl got sick so the date fell through. So Peter tried to meet a girl on a dating website. He met a very nice girl named Paula and they decided to meet for dinner. When Paula met Peter she did not know what she was getting into. He smelled awful. When Peter saw Paula, he could not believe his eyes. He was blown away because she was so beautiful. They had a lot of fun that night. Paula told Peter she would have dinner with him again if he took a shower. Then Peter bathed every day."
             android:textSize="18sp" />
     </ScrollView>
@@ -98,11 +97,11 @@
         android:id="@+id/bt_pause"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="560dp"
         android:src="@drawable/ic_pause"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
