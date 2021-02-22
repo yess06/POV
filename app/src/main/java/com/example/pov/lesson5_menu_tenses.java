@@ -103,6 +103,14 @@ public class lesson5_menu_tenses extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnQualification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(lesson5_menu_tenses.this, lesson5_qualification_student.class);
+                startActivity(intent);
+            }
+        });
     }
     public void getbtn() {
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);

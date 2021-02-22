@@ -145,7 +145,7 @@ public class fillFutureL1 extends AppCompatActivity {
 
         }else{
             int conta = 0;
-            if (exercise1.getSelectedItemPosition() == 2){
+            if (exercise1.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise2.getSelectedItemPosition() == 2){
@@ -160,16 +160,16 @@ public class fillFutureL1 extends AppCompatActivity {
             if (exercise5.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise6.getSelectedItemPosition() == 2){
+            if (exercise6.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise7.getSelectedItemPosition() == 2){
+            if (exercise7.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise8.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise9.getSelectedItemPosition() == 2){
+            if (exercise9.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise10.getSelectedItemPosition() == 1){
@@ -178,10 +178,10 @@ public class fillFutureL1 extends AppCompatActivity {
             if (exercise11.getSelectedItemPosition() == 1){
                 conta++;
             }
-            if (exercise12.getSelectedItemPosition() == 1){
+            if (exercise12.getSelectedItemPosition() == 2){
                 conta++;
             }
-            if (exercise13.getSelectedItemPosition() == 2){
+            if (exercise13.getSelectedItemPosition() == 1){
                 conta++;
             }
             if (exercise14.getSelectedItemPosition() == 1){

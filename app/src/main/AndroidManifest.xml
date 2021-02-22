@@ -177,17 +177,17 @@
 
         <activity
             android:name=".lesson3_answerquestion_future"
-            android:label="Asnqwer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson3_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answerquestion_past"
-            android:label="Answer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson3_menu_activities_past"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answerquestion_present"
-            android:label="Asnwer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson3_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
@@ -237,22 +237,22 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson3_answer_vocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson3_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_present"
-            android:label="Anwer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson4_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_past"
-            android:label="Answer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson4_menu_activities_past"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answerquestion_future"
-            android:label="Answer Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson4_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
@@ -302,17 +302,17 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson4_answer_vocabulary"
-            android:label="Answer Vocabulary"
-            android:parentActivityName=".lesson4_menu_vocabulary"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".lesson4_preview_vocabulary"
             android:label="Preview Vocabulary"
             android:parentActivityName=".lesson4_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".lesson4_preview_vocabulary"
+            android:label="Practice Vocabulary"
+            android:parentActivityName=".lesson4_menu_vocabulary"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".lesson4_menu_vocabulary"
-            android:label="Menu Vokcabulary"
+            android:label="Menu Vocabulary"
             android:parentActivityName=".lesson4_menu_tenses"
             android:screenOrientation="portrait"/>
         <activity
@@ -322,17 +322,17 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_present"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson5_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_past"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson5_menu_activities_past"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answerquestion_future"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson5_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
@@ -382,12 +382,12 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_answer_vocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson5_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson5_preview_vocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson5_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -402,7 +402,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_preview_vocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson6_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -447,22 +447,22 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answerquestion_present"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson6_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answerquestion_future"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson6_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson6_answer_vocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson6_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_preview_vocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson7_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -507,22 +507,22 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answerquestion_present"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson7_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answerquestion_future"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson7_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson7_answer_vocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson7_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_preview_vocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson8_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -567,47 +567,47 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answerquestion_present"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson8_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answerquestion_future"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson8_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_answer_vocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson8_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerquestionPresent"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson9MenuActivitiesPresent"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerQuestionPastt"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson9MenuActivitiesPast"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerquestionFuture"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson9MenuActivitiesFuture"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsPresent"
-            android:label="Till The Verbs"
+            android:label="Fill The Verbs"
             android:parentActivityName=".lesson9MenuActivitiesPresent"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsPast"
-            android:label="Till The Verbs"
+            android:label="Fill The Verbs"
             android:parentActivityName=".lesson9MenuActivitiesPast"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9FillverbsFuture"
-            android:label="Till The Verbs"
+            android:label="Fill The Verbs"
             android:parentActivityName=".lesson9MenuActivitiesFuture"
             android:screenOrientation="portrait"/>
         <activity
@@ -642,12 +642,12 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9AnswerVocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson9MenuVocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson9PreviewVocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson9MenuVocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -662,17 +662,17 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnserquestionPresent"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson10MenuActivitiesPresent"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerquestionPast"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson10MenuActivitiesPast"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerquestionFuture"
-            android:label="Answer The Question"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson10MenuActivitiesFuture"
             android:screenOrientation="portrait"/>
         <activity
@@ -722,12 +722,12 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10AnswerVocabulary"
-            android:label="Answer Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson10MenuVocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson10PreviewVocabulary"
-            android:label="Preview Vocabulary"
+            android:label="Practice Vocabulary"
             android:parentActivityName=".lesson10MenuVocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -820,47 +820,47 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_tenses"
-            android:label="Lesson 2"
+            android:label="Menu Tenses"
             android:parentActivityName=".lessons"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answerquestion_present"
-            android:label="Answer and Questions"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson2_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answerquestion_past"
-            android:label="Answer and Questions"
+            android:label="Answer and Question"
             android:parentActivityName=".lesson2_menu_activities_past"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_present"
-            android:label="Activities"
+            android:label="Menu Activities"
             android:parentActivityName=".lesson2_menu_tenses"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_past"
-            android:label="Activities"
+            android:label="Menu Activities"
             android:parentActivityName=".lesson2_menu_tenses"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_present"
-            android:label="Fill Verbs"
+            android:label="Fill the Verbs"
             android:parentActivityName=".lesson2_menu_activities_present"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_past"
-            android:label="Fill Verbs"
+            android:label="Fill the Verbs"
             android:parentActivityName=".lesson2_menu_activities_past"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_answer_vocabulary"
-            android:label="Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".lesson2_menu_vocabulary"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_vocabulary"
-            android:label="Menu"
+            android:label="Menu Vocabulary"
             android:parentActivityName=".lesson2_menu_tenses"
             android:screenOrientation="portrait"/>
         <activity
@@ -880,12 +880,12 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_menu_activities_future"
-            android:label="Menu"
+            android:label="Menu Activities"
             android:parentActivityName=".lesson2_menu_tenses"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson2_fillverbs_future"
-            android:label="Fill Verbs"
+            android:label="Fill the Verbs"
             android:parentActivityName=".lesson2_menu_activities_future"
             android:screenOrientation="portrait"/>
         <activity
@@ -940,7 +940,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".vocabularyL1"
-            android:label="Vocabulary"
+            android:label="Preview Vocabulary"
             android:parentActivityName=".menuVocabulary"
             android:screenOrientation="portrait"/>
         <activity
@@ -1006,7 +1006,7 @@
             android:screenOrientation="portrait"/>
         <activity
             android:name=".menuVocabulary"
-            android:label="Vocabulary"
+            android:label="Menu Vocabulary"
             android:parentActivityName=".menuTenses"
             android:screenOrientation="portrait"/>
         <activity

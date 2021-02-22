@@ -93,7 +93,7 @@ public class loginTeacher extends AppCompatActivity {
                     userlog();
                     RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonObject = new JSONObject();
-                    String url3 = "http://apipov.efa.edu.mx/service/api/auth/roles";
+                    String url3 = "http://192.168.1.70:8000/api/auth/roles";
 
                     JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
                             new Response.Listener<JSONObject>() {
@@ -164,7 +164,7 @@ public class loginTeacher extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://apipov.efa.edu.mx/service/api/auth/users";
+        String url2 = "http://192.168.1.70/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override
