@@ -125,7 +125,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://192.168.1.70:8000/api/auth/users";
+        String url2 = "http://apipov.efa.edu.mx/service/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override
