@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="313dp"
-        android:layout_height="520dp"
+        android:layout_width="298dp"
+        android:layout_height="512dp"
         android:text="1. Pregunta 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
