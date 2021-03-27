@@ -1,57 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson8_menu_tenses">
 
     <Button
         android:id="@+id/vocabularyL3"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:drawableLeft="@drawable/vocabulary2"
-        android:text="Vocabulary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Vocabulary" />
 
     <Button
         android:id="@+id/btntwoPresent"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#E7323D"
         android:text="Present tense"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vocabularyL3" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnlessontwofuture"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#207A7A"
         android:text="Future tense"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btntwoPresent" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnlessontwoscore"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#EBEBEB"
-        android:text="Lesson score"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnlessontwofuture"
-        app:layout_constraintVertical_bias="0.015" />
+        android:text="Lesson score" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

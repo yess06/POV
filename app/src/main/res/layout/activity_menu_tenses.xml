@@ -1,70 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".menuTenses">
 
     <Button
         android:id="@+id/btnVocabulary"
         android:layout_width="285dp"
         android:layout_height="71dp"
-        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
         android:drawableLeft="@drawable/vocabulary2"
-        android:text="Vocabulary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:gravity="center"
+        android:text="Vocabulary" />
 
     <Button
         android:id="@+id/btnPresent"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#E7323D"
+        android:gravity="center"
         android:text="Present tense"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVocabulary" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnPastL1"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#32999B"
         android:text="Past tense"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPresent" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnFutureL1"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#207A7A"
         android:text="Future tense"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPastL1" />
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnScore"
         android:layout_width="285dp"
         android:layout_height="71dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="#EBEBEB"
-        android:text="Lesson score"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFutureL1"
-        app:layout_constraintVertical_bias="0.015" />
+        android:text="Lesson score" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

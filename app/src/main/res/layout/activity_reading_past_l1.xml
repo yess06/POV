@@ -1,107 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".readingPastL1">
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="323dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="So in this version Carlos is actually the one telling the story. Here goes. "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="323dp"
-        android:layout_height="385dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView30"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="I never ate anything but sweets. I lived just a stone’s throw away from a bakery. There was also an ice cream store one block from my house. My mother used to beg me to eat vegetables but I would only eat sweets. One day I was out and about with my girlfriend Marta. First we went to a secondhand store. Then we went to a restaurant. Marta ate a salad. I ate seven pieces of cake and two bowls of ice cream. Later that day I started feeling under the weather. I thought that there was something going around so I went to the doctor. “Getting sick is a bummer,” I said. “You are sick because you only eat sweets,” said the doctor. Then the doctor told me that I must eat vegetables. So I started to eat vegetables every day. My body got stronger and I never got sick again."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="44dp"
+                android:text="So in this version Carlos is actually the one telling the story. Here goes. "
+                android:textSize="18sp" />
+
+            <ScrollView
+                android:layout_width="323dp"
+                android:layout_height="385dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I never ate anything but sweets. I lived just a stone’s throw away from a bakery. There was also an ice cream store one block from my house. My mother used to beg me to eat vegetables but I would only eat sweets. One day I was out and about with my girlfriend Marta. First we went to a secondhand store. Then we went to a restaurant. Marta ate a salad. I ate seven pieces of cake and two bowls of ice cream. Later that day I started feeling under the weather. I thought that there was something going around so I went to the doctor. “Getting sick is a bummer,” I said. “You are sick because you only eat sweets,” said the doctor. Then the doctor told me that I must eat vegetables. So I started to eat vegetables every day. My body got stronger and I never got sick again."
+                    android:textSize="18sp" />
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="338dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/player_position"
+                    android:layout_width="297dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00" />
+
+                <TextView
+                    android:id="@+id/player_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="106dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="106dp"
-        android:layout_height="48dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/player_duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
