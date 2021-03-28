@@ -9,16 +9,17 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="320dp"
-        android:layout_height="275dp"
-        android:layout_gravity="center" />
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/greatjob" />
 
     <TextView
         android:id="@+id/scorequal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Score: "
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -28,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:text="High Score : 20"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -37,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="54dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#207A7A"
         android:text="Submit"
         android:textColor="#FFFFFF" />

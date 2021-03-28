@@ -15,20 +15,20 @@
 
         <TextView
             android:id="@+id/textView1319"
-            android:layout_width="111dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sweet"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/qspsL3"
-            android:layout_width="114dp"
-            android:layout_height="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center" />
 
         <TextView
             android:id="@+id/textView1324"
-            android:layout_width="118dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="1. Very close"
@@ -37,25 +37,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="49dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView1320"
-            android:layout_width="111dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Beg"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/qspsL4"
-            android:layout_width="114dp"
-            android:layout_height="27dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView1325"
-            android:layout_width="164dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:text="2. Going from place to place"
@@ -64,26 +64,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="78dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView1321"
-            android:layout_width="112dp"
+            android:layout_width="83dp"
             android:layout_height="wrap_content"
             android:text="A stone's throw away"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/qspsL"
-            android:layout_width="114dp"
-            android:layout_height="30dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView1326"
-            android:layout_width="171dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:text="3. To ask for something you really want"
             android:textSize="16sp" />
@@ -91,25 +91,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView1322"
-            android:layout_width="112dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Block"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/qspsL5"
-            android:layout_width="114dp"
-            android:layout_height="30dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView1327"
-            android:layout_width="134dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Cookies, cake, candy"
             android:textSize="16sp" />
@@ -124,19 +124,19 @@
 
         <TextView
             android:id="@+id/textView1323"
-            android:layout_width="115dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Out and about"
             android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/qspsL6"
-            android:layout_width="114dp"
-            android:layout_height="28dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView1328"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. Part of a street"
             android:textSize="16sp" />

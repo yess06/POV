@@ -18,16 +18,15 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="323dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="44dp"
                 android:text="So in this version Carlos is actually the one telling the story. Here goes. "
                 android:textSize="18sp" />
 
             <ScrollView
-                android:layout_width="323dp"
-                android:layout_height="385dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp">
 
@@ -52,14 +51,14 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_pause"
                 android:visibility="gone" />
 
             <SeekBar
                 android:id="@+id/seekBar"
-                android:layout_width="338dp"
-                android:layout_height="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp" />
 
