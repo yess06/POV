@@ -36,8 +36,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="One year from now Carlos’ll never eat anything but sweets. He’s gonna live just a stone’s throw away from a bakery. There’ll also be an ice cream store one block from his house. His mother is gonna beg him to eat vegetables but he’ll only eat sweets. One day Carlos will be out and about with his girlfriend Marta. First they’ll go to a secondhand store. Then they’ll go to a restaurant. Marta is gonna eat a salad. Carlos is gonna eat seven pieces of cake and two bowls of ice cream. Later that day he’s gonna start to feel under the weather. He’s gonna think that there is something going around so he’ll go to the doctor. “Getting sick is a bummer,” he’ll say. “You are sick because you only eat sweets,” the doctor’ll say. Then the doctor’s going to tell him that he must eat vegetables. So he’s gonna start to eat vegetables every day. His body will get stronger and he will never get sick again."
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    />
             </ScrollView>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="00:00" />
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/btPlay"
@@ -55,33 +77,6 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_pause"
                 android:visibility="gone" />
-
-            <SeekBar
-                android:id="@+id/seekBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="5dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/player_position"
-                    android:layout_width="297dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="00:00" />
-
-                <TextView
-                    android:id="@+id/player_duration"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="00:00" />
-            </LinearLayout>
 
             <Button
                 android:id="@+id/button20"
