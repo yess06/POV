@@ -1,70 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson2_preview_vocabulary">
 
-    <Spinner
-        android:id="@+id/qspsL11"
-        android:layout_width="114dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.323" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
 
-    <Spinner
-        android:id="@+id/qspsL7"
-        android:layout_width="114dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034" />
+        <TextView
+            android:id="@+id/textView1319"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Have their hands full"
+            android:textSize="16sp" />
 
-    <Spinner
-        android:id="@+id/qspsL8"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        <Spinner
+            android:id="@+id/qspsL7"
+            android:layout_width="105dp"
+            android:layout_height="30dp"/>
 
-    <Spinner
-        android:id="@+id/qspsL9"
-        android:layout_width="114dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192" />
+        <TextView
+            android:id="@+id/textView1324"
+            android:layout_width="176dp"
+            android:layout_height="47dp"
+            android:text="1. Very busy."
+            android:textSize="16sp" />
+    </LinearLayout>
 
-    <Spinner
-        android:id="@+id/qspsL10"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1320"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Stressed out"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/qspsL8"
+            android:layout_width="105dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView1325"
+            android:layout_width="107dp"
+            android:layout_height="48dp"
+            android:text="2. Very likely to happen"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1321"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Put them out"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/qspsL9"
+            android:layout_width="105dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView1326"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="3. A lot"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1322"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Bound to happen"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/qspsL10"
+            android:layout_width="105dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView1327"
+            android:layout_width="102dp"
+            android:layout_height="49dp"
+            android:text="4. To inconvenience"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1323"
+            android:layout_width="98dp"
+            android:layout_height="49dp"
+            android:text="A bounch"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/qspsL11"
+            android:layout_width="105dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/textView1328"
+            android:layout_width="110dp"
+            android:layout_height="49dp"
+            android:text="5. Very worried."
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnlessontwopreviewvocabulary"
@@ -74,140 +140,5 @@
         android:onClick="postqualification"
         android:text="Ready"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
-
-    <TextView
-        android:id="@+id/textView1319"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="Have their hands full"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <TextView
-        android:id="@+id/textView1320"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="Stressed out"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.131" />
-
-    <TextView
-        android:id="@+id/textView1321"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="Put them out"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
-
-    <TextView
-        android:id="@+id/textView1322"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="Bound to happen"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
-
-    <TextView
-        android:id="@+id/textView1323"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:text="A bounch"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
-
-    <TextView
-        android:id="@+id/textView1324"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:text="1. Very busy."
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
-    <TextView
-        android:id="@+id/textView1325"
-        android:layout_width="147dp"
-        android:layout_height="43dp"
-        android:text="2. Very likely to happen"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
-
-    <TextView
-        android:id="@+id/textView1326"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:text="3. A lot"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
-
-    <TextView
-        android:id="@+id/textView1327"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="4. To inconvenience."
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
-
-    <TextView
-        android:id="@+id/textView1328"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="5. Very worried."
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center_vertical|center_horizontal"/>
+</LinearLayout>
