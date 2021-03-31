@@ -12,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -33,13 +34,14 @@ import java.util.Map;
 
 public class lesson2_answerquestion_future extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_answerquestion_future);
-
+        btnsubmit = findViewById(R.id.button28);
         exercise1 = findViewById(R.id.QsfutL21);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.QsFutL21, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -132,6 +134,7 @@ public class lesson2_answerquestion_future extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * conta) /10;
             fina = (10 * fin) / 100;
+            btnsubmit.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -155,6 +158,7 @@ public class lesson2_answerquestion_future extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson2_answerquestion_future.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson2_answerquestion_future.this, lesson2_qualification_future.class);
@@ -163,6 +167,7 @@ public class lesson2_answerquestion_future extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson2_answerquestion_future.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }

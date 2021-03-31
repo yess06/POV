@@ -9,6 +9,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -32,6 +33,7 @@ import java.util.concurrent.TimeUnit;
 
 public class readingFutureL1 extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
     TextView playerPosition;
     SeekBar seekBar;
@@ -47,7 +49,7 @@ public class readingFutureL1 extends AppCompatActivity {
         seekBar = findViewById(R.id.seekBar);
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
-
+        btnsubmit = findViewById(R.id.button20);
         mediaPlayer = MediaPlayer.create(this, R.raw.future);
         runnable = new Runnable() {
             @Override
@@ -132,6 +134,7 @@ public class readingFutureL1 extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
     public void qualification(View view){
+        btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -155,6 +158,7 @@ public class readingFutureL1 extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(readingFutureL1.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(readingFutureL1.this, menuTenses.class);
@@ -163,6 +167,7 @@ public class readingFutureL1 extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(readingFutureL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }

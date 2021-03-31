@@ -63,7 +63,7 @@ public class loginTeacher extends AppCompatActivity {
 
     }
     public void login(View view){
-
+        login.setEnabled(false);
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         JSONObject object = new JSONObject();
         try {
@@ -93,17 +93,17 @@ public class loginTeacher extends AppCompatActivity {
                     userlog();
                     RequestQueue requestQueue2 = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonObject = new JSONObject();
-                    String url3 = "http://apipov.efa.edu.mx/service/api/auth/roles";
+                    String url3 = "http://10.0.0.3:8000/api/auth/roles";
 
                     JsonObjectRequest request = new JsonObjectRequest(com.android.volley.Request.Method.GET, url3, null,
                             new Response.Listener<JSONObject>() {
 
                                 @Override
                                 public void onResponse(JSONObject response) {
-
+                                    login.setEnabled(true);
                                     SharedPreferences preferences3 = getSharedPreferences("info", Context.MODE_PRIVATE);
                                     try {
-
+                                        login.setEnabled(true);
                                        progressBar.hide();
                                         JSONArray role = response.getJSONArray("roles");
                                         for (int i = 0; i<=role.length();i++){
@@ -130,6 +130,7 @@ public class loginTeacher extends AppCompatActivity {
                         @Override
                         public void onErrorResponse(VolleyError error) {
                             progressBar.hide();
+                            login.setEnabled(true);
                         }
                     }){
                         @Override
@@ -149,6 +150,7 @@ public class loginTeacher extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
               progressBar.hide();
+              login.setEnabled(true);
                 Toast.makeText(getBaseContext(), "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -164,7 +166,7 @@ public class loginTeacher extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://apipov.efa.edu.mx/service/api/auth/users";
+        String url2 = "http://10.0.0.3:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

@@ -8,6 +8,15 @@
     tools:context=".menuTenses">
 
     <Button
+        android:id="@+id/btnag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:backgroundTint="#3F51B5"
+        android:text="try again"
+        android:textColor="#FFFFFF" />
+
+    <Button
         android:id="@+id/btnVocabulary"
         android:layout_width="285dp"
         android:layout_height="71dp"

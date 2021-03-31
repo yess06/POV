@@ -42,4 +42,13 @@
         android:textColor="#FFFFFF"
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#207A7A"
+        android:text="try again"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_vertical|center_horizontal"/>
 </LinearLayout>

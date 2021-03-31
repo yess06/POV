@@ -2,10 +2,12 @@ package com.example.pov;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -25,10 +27,14 @@ import java.util.Map;
 public class Info_Student extends AppCompatActivity {
     EditText txtname, txtemail, txtpass,txtpassconfirmation;
     String id, token,email,name;
+    ProgressDialog progressDialog;
+    Button btninf, btnpass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info__student);
+        btninf = findViewById(R.id.button);
+        btnpass = findViewById(R.id.button9);
         txtname = findViewById(R.id.txtinfoname);
         txtemail = findViewById(R.id.txtinfoemail);
         txtpass = findViewById(R.id.txtinfopass);
@@ -43,6 +49,7 @@ public class Info_Student extends AppCompatActivity {
         txtemail.setText(email);
     }
     public void updateuser(View view){
+        btninf.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -56,10 +63,15 @@ public class Info_Student extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(Info_Student.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputinfouser)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT, url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btninf.setEnabled(true);
+                progressDialog.hide();
                 Toast.makeText(Info_Student.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = info.edit();
@@ -73,6 +85,8 @@ public class Info_Student extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btninf.setEnabled(true);
+                progressDialog.hide();
                 Toast.makeText(Info_Student.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -87,6 +101,7 @@ public class Info_Student extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
     }
     public void updatepass(View view){
+        btnpass.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -100,11 +115,16 @@ public class Info_Student extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        progressDialog = new ProgressDialog(Info_Student.this);
+        progressDialog.setMessage("Update...");
+        progressDialog.show();
         String url = getResources().getString(R.string.urlputpassword)+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.PUT,
                 url, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnpass.setEnabled(true);
+                progressDialog.hide();
                 Toast.makeText(Info_Student.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 txtpass.setText("");
                 txtpassconfirmation.setText("");
@@ -112,6 +132,8 @@ public class Info_Student extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnpass.setEnabled(true);
+                progressDialog.hide();
                 Toast.makeText(Info_Student.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){

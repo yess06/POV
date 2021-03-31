@@ -29,13 +29,24 @@ import java.util.Map;
 public class qualificationfilltheverb extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog, progressDialog2;
+    Button btnsubmit, btntry;
     TextView score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationfilltheverb);
         score = findViewById(R.id.scorequal);
+        btnsubmit = findViewById(R.id.btnActivitiesFill);
+        btntry = findViewById(R.id.button27);
+        btnsubmit.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         quallificationtime();
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quallificationtime();
+            }
+        });
 
     }
     public void quallificationtime(){
@@ -55,6 +66,8 @@ public class qualificationfilltheverb extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        btnsubmit.setVisibility(View.VISIBLE);
+                        btntry.setVisibility(View.INVISIBLE);
                         progressDialog2.hide();
                         double qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
@@ -82,6 +95,8 @@ public class qualificationfilltheverb extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsubmit.setVisibility(View.INVISIBLE);
+                    btntry.setVisibility(View.VISIBLE);
                     progressDialog2.hide();
                     Toast.makeText(qualificationfilltheverb.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
@@ -100,6 +115,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
         }
     }
     public void qualifitime(View view){
+        btnsubmit.setEnabled(false);
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -123,6 +139,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(qualificationfilltheverb.this, lessons.class);
@@ -131,6 +148,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }

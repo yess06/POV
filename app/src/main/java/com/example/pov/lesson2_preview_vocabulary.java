@@ -15,6 +15,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -35,10 +36,12 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5;
+    Button btnsumbit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_preview_vocabulary);
+        btnsumbit = findViewById(R.id.btnlessontwopreviewvocabulary);
         exercise1 = findViewById(R.id.qspsL7);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.vocabucont, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -89,6 +92,7 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * cont) /5;
             fina = (10 * fin) / 100;
+            btnsumbit.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -111,6 +115,7 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnsumbit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson2_preview_vocabulary.this, "Score: " + fina, Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson2_preview_vocabulary.this, lessons.class);
@@ -119,6 +124,7 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsumbit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson2_preview_vocabulary.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }

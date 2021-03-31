@@ -36,10 +36,12 @@ import java.util.Map;
 public class MenuTeacher extends AppCompatActivity {
     ProgressDialog progressDialog;
     public String token, id, name, email;
+    Button btnlogout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_teacher);
+        btnlogout = findViewById(R.id.log);
         verifyconnection();
         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);

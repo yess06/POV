@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -32,11 +33,14 @@ import java.util.Map;
 public class InfoStudent extends AppCompatActivity {
     EditText txtname, txtemail, txtpass,txtpassconfirmation;
     String id, token;
+    Button btnpass, btninfo;
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_student);
+        btninfo = findViewById(R.id.button);
+        btnpass = findViewById(R.id.button9);
         txtname = findViewById(R.id.txtinfoname);
         txtemail = findViewById(R.id.txtinfoemail);
         txtpass = findViewById(R.id.txtinfopass);
@@ -47,6 +51,7 @@ public class InfoStudent extends AppCompatActivity {
         id = bundle.getString("id");
     }
     public void updateuser(View view){
+        btninfo.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -68,12 +73,14 @@ public class InfoStudent extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 progressDialog.hide();
+                btninfo.setEnabled(true);
                 Toast.makeText(InfoStudent.this, "Successful updated", Toast.LENGTH_SHORT).show();
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.hide();
+                btninfo.setEnabled(true);
                 Toast.makeText(InfoStudent.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }
         }){
@@ -88,6 +95,7 @@ public class InfoStudent extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
     }
     public void updatepass(View view){
+        btnpass.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -110,6 +118,7 @@ public class InfoStudent extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 progressDialog.hide();
+                btnpass.setEnabled(true);
                 Toast.makeText(InfoStudent.this, "Successful updated", Toast.LENGTH_SHORT).show();
                 txtpass.setText("");
                 txtpassconfirmation.setText("");
@@ -117,6 +126,7 @@ public class InfoStudent extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnpass.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(InfoStudent.this, "wrong with the update", Toast.LENGTH_SHORT).show();
             }

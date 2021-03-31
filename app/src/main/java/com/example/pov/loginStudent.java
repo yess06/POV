@@ -71,7 +71,7 @@ public class loginStudent extends AppCompatActivity {
         });
     }
     public void login(){
-
+        login.setEnabled(false);
         String email= txtemail.getText().toString().trim();
         String password = txtpassword.getText().toString().trim();
         RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
@@ -93,6 +93,7 @@ public class loginStudent extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response){
                 try {
+                    login.setEnabled(true);
                     progressDialog.hide();
                     token = response.getString("access_token");
                     SharedPreferences sharedPreferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
@@ -115,6 +116,7 @@ public class loginStudent extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError Error){
                 progressDialog.hide();
+                login.setEnabled(true);
                 Toast.makeText(getApplicationContext(),
                         "Wrong data verify your email or password", Toast.LENGTH_SHORT).show();
             }
@@ -125,7 +127,7 @@ public class loginStudent extends AppCompatActivity {
     public void userlog(){
         RequestQueue requestQueue1 = Volley.newRequestQueue(getApplicationContext());
         JSONObject jsonObject = new JSONObject();
-        String url2 = "http://apipov.efa.edu.mx/service/api/auth/users";
+        String url2 = "http://10.0.0.3:8000/api/auth/users";
         JsonObjectRequest objectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url2, null,
                 new Response.Listener<JSONObject>() {
                     @Override

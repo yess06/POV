@@ -35,17 +35,47 @@ import java.util.Map;
 public class lessons extends AppCompatActivity {
     public String token, id, name, email;
     ProgressDialog progressDialog, progressDialog2;
+    Button pov1, pov2, pov3, pov4, pov5, pov6, pov7, pov8, pov9,pov10, btntry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons);
+        btntry = findViewById(R.id.btnagain);
+        pov2 = findViewById(R.id.btnPOV2);
+        pov1 = findViewById(R.id.btnPOV1);
+        pov3 = findViewById(R.id.btnPOV3);
+        pov4 = findViewById(R.id.btnPOV4);
+        pov5 = findViewById(R.id.btnPOV5);
+        pov6 = findViewById(R.id.btnPOV6);
+        pov7 = findViewById(R.id.btnPOV7);
+        pov8 = findViewById(R.id.btnPOV8);
+        pov9 = findViewById(R.id.btnPOV9);
+        pov10 = findViewById(R.id.btnPOV10);
+        pov1.setVisibility(View.INVISIBLE);
+        pov2.setVisibility(View.INVISIBLE);
+        pov3.setVisibility(View.INVISIBLE);
+        pov4.setVisibility(View.INVISIBLE);
+        pov5.setVisibility(View.INVISIBLE);
+        pov6.setVisibility(View.INVISIBLE);
+        pov7.setVisibility(View.INVISIBLE);
+        pov8.setVisibility(View.INVISIBLE);
+        pov9.setVisibility(View.INVISIBLE);
+        pov10.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
+
         verifyconnection();
         SharedPreferences preferences = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences info = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferences.getString("token", "null");
         email = preferences.getString("email", "null");
         getbtn();
-        Button pov1 = findViewById(R.id.btnPOV1);
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getbtn();
+            }
+        });
+
         pov1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +84,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov2 = findViewById(R.id.btnPOV2);
+
         pov2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +93,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov3 = findViewById(R.id.btnPOV3);
+
         pov3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +102,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov4 = findViewById(R.id.btnPOV4);
+
         pov4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,7 +112,7 @@ public class lessons extends AppCompatActivity {
         });
 
 
-        Button pov5 = findViewById(R.id.btnPOV5);
+
         pov5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -91,7 +121,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov6 = findViewById(R.id.btnPOV6);
+
         pov6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -100,7 +130,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov7 = findViewById(R.id.btnPOV7);
+
         pov7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,7 +139,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov8 = findViewById(R.id.btnPOV8);
+
         pov8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,7 +148,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov9 = findViewById(R.id.btnPOV9);
+
         pov9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,7 +157,7 @@ public class lessons extends AppCompatActivity {
             }
         });
 
-        Button pov10 = findViewById(R.id.btnPOV10);
+
         pov10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -229,6 +259,17 @@ public class lessons extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        pov1.setVisibility(View.VISIBLE);
+                        pov2.setVisibility(View.VISIBLE);
+                        pov3.setVisibility(View.VISIBLE);
+                        pov4.setVisibility(View.VISIBLE);
+                        pov5.setVisibility(View.VISIBLE);
+                        pov6.setVisibility(View.VISIBLE);
+                        pov7.setVisibility(View.VISIBLE);
+                        pov8.setVisibility(View.VISIBLE);
+                        pov9.setVisibility(View.VISIBLE);
+                        pov10.setVisibility(View.VISIBLE);
+                        btntry.setVisibility(View.INVISIBLE);
                         progressDialog.hide();
                         int cont = 0;
                         int cont2 = 0, cont3 = 0,cont4 =0,cont6 = 0, cont5 = 0, cont7 = 0, cont8 = 0, cont9 = 0, cont10 = 0;
@@ -312,6 +353,17 @@ public class lessons extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    pov1.setVisibility(View.INVISIBLE);
+                    pov2.setVisibility(View.INVISIBLE);
+                    pov3.setVisibility(View.INVISIBLE);
+                    pov4.setVisibility(View.INVISIBLE);
+                    pov5.setVisibility(View.INVISIBLE);
+                    pov6.setVisibility(View.INVISIBLE);
+                    pov7.setVisibility(View.INVISIBLE);
+                    pov8.setVisibility(View.INVISIBLE);
+                    pov9.setVisibility(View.INVISIBLE);
+                    pov10.setVisibility(View.INVISIBLE);
+                    btntry.setVisibility(View.VISIBLE);
                     progressDialog.hide();
                     Toast.makeText(lessons.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

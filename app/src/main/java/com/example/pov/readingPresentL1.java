@@ -9,6 +9,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -32,8 +33,9 @@ import java.util.concurrent.TimeUnit;
 
 public class readingPresentL1 extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
-    TextView playerPosition,playerDuration;
+    TextView playerPosition;
     SeekBar seekBar;
     ImageView btPlay,btPause;
     MediaPlayer mediaPlayer;
@@ -44,11 +46,10 @@ public class readingPresentL1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading_present_l1);
         playerPosition = findViewById(R.id.player_position);
-        playerDuration = findViewById(R.id.player_duration);
         seekBar = findViewById(R.id.seekBar);
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
-
+        btnsubmit = findViewById(R.id.btnActivitiesAnswlessonone);
         mediaPlayer = MediaPlayer.create(this, R.raw.present);
         runnable = new Runnable() {
             @Override
@@ -59,7 +60,6 @@ public class readingPresentL1 extends AppCompatActivity {
         };
         int duration = mediaPlayer.getDuration();
         String sDuration = convertFormat(duration);
-        playerDuration.setText(sDuration);
         btPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -134,6 +134,7 @@ public class readingPresentL1 extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
     public void qualification(View view){
+        btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -157,6 +158,7 @@ public class readingPresentL1 extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(readingPresentL1.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(readingPresentL1.this, menuTenses.class);
@@ -165,6 +167,7 @@ public class readingPresentL1 extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(readingPresentL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }

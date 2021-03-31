@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class lesson2_menu_tenses extends AppCompatActivity {
-    Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification;
+    Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification, btntry;
     public String token, id, name, email;
     ProgressDialog progressDialog;
     @Override
@@ -36,12 +36,20 @@ public class lesson2_menu_tenses extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2_menu_tenses);
         verifyconnection();
+        btntry = findViewById(R.id.btnaga);
         btnQualification = findViewById(R.id.btnlessontwoscore);
         btnPresent = findViewById(R.id.btntwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
+        btntry.setVisibility(View.INVISIBLE);
         getbtn();
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getbtn();
+            }
+        });
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont5", 0) == 0){
             btnVocabulary.setEnabled(true);
@@ -126,6 +134,12 @@ public class lesson2_menu_tenses extends AppCompatActivity {
         }
     }
     public void getbtn() {
+        btnQualification.setVisibility(View.INVISIBLE);
+        btnFuture.setVisibility(View.INVISIBLE);
+        btnPast.setVisibility(View.INVISIBLE);
+        btnPresent.setVisibility(View.INVISIBLE);
+        btnVocabulary.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -142,6 +156,12 @@ public class lesson2_menu_tenses extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        btnQualification.setVisibility(View.VISIBLE);
+                        btnFuture.setVisibility(View.VISIBLE);
+                        btnPast.setVisibility(View.VISIBLE);
+                        btnPresent.setVisibility(View.VISIBLE);
+                        btnVocabulary.setVisibility(View.VISIBLE);
+                        btntry.setVisibility(View.INVISIBLE);
                         progressDialog.hide();
                         int cont = 0, cont2 = 0, cont3 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
@@ -189,6 +209,12 @@ public class lesson2_menu_tenses extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnQualification.setVisibility(View.INVISIBLE);
+                    btnFuture.setVisibility(View.INVISIBLE);
+                    btnPast.setVisibility(View.INVISIBLE);
+                    btnPresent.setVisibility(View.INVISIBLE);
+                    btnVocabulary.setVisibility(View.INVISIBLE);
+                    btntry.setVisibility(View.VISIBLE);
                     progressDialog.hide();
                     Toast.makeText(lesson2_menu_tenses.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

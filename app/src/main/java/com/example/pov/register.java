@@ -3,6 +3,7 @@ package com.example.pov;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,10 +21,12 @@ import org.json.JSONObject;
 public class register extends AppCompatActivity {
     EditText txtemail, txtname, txtpass, txtreppass;
     ProgressDialog progressDialog;
+    Button buttonregister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        buttonregister = findViewById(R.id.button2);
         txtname = findViewById(R.id.txtinfoemail);
         txtemail = findViewById(R.id.txtinfopass);
         txtpass = findViewById(R.id.passuser);
@@ -31,6 +34,7 @@ public class register extends AppCompatActivity {
     }
 
   public void register(View view){
+        buttonregister.setEnabled(false);
         String name = txtname.getText().toString();
         String email = txtemail.getText().toString();
         String pass = txtpass.getText().toString();
@@ -53,6 +57,7 @@ public class register extends AppCompatActivity {
                 url, object,  new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                buttonregister.setEnabled(true);
                 progressDialog.hide();
                     Toast.makeText(register.this, "Successful register", Toast.LENGTH_SHORT).show();
                     txtname.setText("");
@@ -63,6 +68,7 @@ public class register extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                buttonregister.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(register.this, "Registration failed", Toast.LENGTH_SHORT).show();
             }

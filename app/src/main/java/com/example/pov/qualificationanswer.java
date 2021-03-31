@@ -28,6 +28,7 @@ import java.util.Map;
 
 public class qualificationanswer extends AppCompatActivity {
     String id, token;
+    Button activities, btntry;
     ProgressDialog progressDialog, progressDialog2;
     TextView score;
     @Override
@@ -36,16 +37,27 @@ public class qualificationanswer extends AppCompatActivity {
         setContentView(R.layout.activity_qualificationanswer);
         score = findViewById(R.id.scorequal34);
         quallificationtime();
-        Button activities = findViewById(R.id.btnActivitiesAnsw);
+        btntry = findViewById(R.id.button4);
+        activities = findViewById(R.id.btnActivitiesAnsw);
+        activities.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         activities.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 qualifitime();
             }
         });
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quallificationtime();
+            }
+        });
 
     }
     public void qualifitime(){
+
+        activities.setEnabled(false);
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -69,6 +81,7 @@ public class qualificationanswer extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                activities.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(qualificationanswer.this, lessons.class);
@@ -77,6 +90,7 @@ public class qualificationanswer extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                activities.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
@@ -91,6 +105,8 @@ public class qualificationanswer extends AppCompatActivity {
         requestQueue.add(objectRequest);
     }
     public void quallificationtime(){
+        activities.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -107,6 +123,8 @@ public class qualificationanswer extends AppCompatActivity {
                 @Override
                 public void onResponse(JSONObject response) {
                     try {
+                        activities.setVisibility(View.VISIBLE);
+                        btntry.setVisibility(View.INVISIBLE);
                         progressDialog2.hide();
                         double qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
@@ -133,6 +151,8 @@ public class qualificationanswer extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btntry.setVisibility(View.VISIBLE);
+                    activities.setVisibility(View.INVISIBLE);
                     progressDialog2.hide();
                     Toast.makeText(qualificationanswer.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

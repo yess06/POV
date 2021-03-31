@@ -31,22 +31,32 @@ public class qualificationlistenandread extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog, progressDialog2;
     TextView score;
+    Button btntry, btnquali;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationlistenandread);
         score = findViewById(R.id.scorequal2);
+        btntry = findViewById(R.id.button68);
+        btnquali = findViewById(R.id.btnScoreAnswfuture);
+        btntry.setVisibility(View.INVISIBLE);
+        btnquali.setVisibility(View.INVISIBLE);
         quallificationtime();
-        Button btnquali = findViewById(R.id.btnScoreAnswfuture);
         btnquali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 qualifitime();
             }
         });
-
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quallificationtime();
+            }
+        });
     }
     public void qualifitime(){
+        btnquali.setEnabled(false);
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -70,6 +80,7 @@ public class qualificationlistenandread extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnquali.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(qualificationlistenandread.this, qualificationvocabulary.class);
@@ -78,6 +89,7 @@ public class qualificationlistenandread extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnquali.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
@@ -107,6 +119,8 @@ public class qualificationlistenandread extends AppCompatActivity {
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnquali.setVisibility(View.VISIBLE);
+                    btntry.setVisibility(View.INVISIBLE);
                     try {
                         progressDialog2.hide();
                         int qualification = 0;
@@ -134,6 +148,8 @@ public class qualificationlistenandread extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btntry.setVisibility(View.VISIBLE);
+                    btnquali.setVisibility(View.INVISIBLE);
                     progressDialog.hide();
                     Toast.makeText(qualificationlistenandread.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

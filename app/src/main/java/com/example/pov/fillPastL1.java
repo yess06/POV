@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ import java.util.Map;
 
 public class fillPastL1 extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     Spinner exercise11, exercise12,exercise13,exercise14,exercise15,exercise16,exercise17,exercise18,exercise19,exercise20;
@@ -35,7 +37,7 @@ public class fillPastL1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_past_l1);
-
+        btnsubmit = findViewById(R.id.button5);
         exercise1 = findViewById(R.id.fillPastL11);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fillpast1, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -202,6 +204,7 @@ public class fillPastL1 extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * conta) /19;
             fina = (10 * fin) / 100;
+            btnsubmit.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -225,6 +228,7 @@ public class fillPastL1 extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(fillPastL1.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(fillPastL1.this, menuTenses.class);
@@ -233,6 +237,7 @@ public class fillPastL1 extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(fillPastL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }

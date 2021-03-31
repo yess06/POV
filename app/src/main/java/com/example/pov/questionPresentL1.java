@@ -29,13 +29,14 @@ import java.util.Map;
 
 public class questionPresentL1 extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_present_l1);
-
+        btnsubmit = findViewById(R.id.button12);
         exercise1 = findViewById(R.id.QstPstL11);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.QsPsL11, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -134,6 +135,7 @@ public class questionPresentL1 extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * conta) /10;
             fina = (10 * fin) / 100;
+            btnsubmit.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -157,6 +159,7 @@ public class questionPresentL1 extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(questionPresentL1.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
 
@@ -166,6 +169,7 @@ public class questionPresentL1 extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(questionPresentL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }
