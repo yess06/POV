@@ -1,107 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson10ListenreadPresent">
 
-    <TextView
-        android:id="@+id/textView347"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Hello, this is AJ Hoge. Welcome to the POV lesson for “Health Care”. Let’s start."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="324dp"
-        android:layout_height="385dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView347">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView348"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Terry the toad wants a Ferrari. But he has no money. In fact, Terry the toad wants a green Ferrari, a bright green Ferrari. But Terry has no money. So he decides to get a Ferrari somehow. Now, of course, Terry lives in Miami, Florida and he says, “I’m fed up with hopping around everywhere. I want a fast, bright green, brand new Ferrari.” So he goes to a Ferrari dealer. He asks the dealer, “How much is a Ferrari?” And the dealer says, “$97,000 for a brand new, bright green Ferrari.” Terry says, “Jeez, that’s expensive. Can I have a loan?” The Ferrari dealer says, “Listen, you’ll pay through the nose if you get a loan. It’s very expensive. Cash is much cheaper.” But there is one problem, of course. Terry the toad has no cash. So Terry goes to Everglade Swamp. Every day he catches flies. Terry catches 20.7 billion flies. And he sells them to Bill Gates. Bill Gates pays him $97,210. And so Terry the toad takes his money to the Ferrari dealer. And he buys a brand new, bright green, super fast, Ferrari. He’s very happy. He is a very, very happy toad."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView347"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello, this is AJ Hoge. Welcome to the POV lesson for “Health Care”. Let’s start."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView348"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terry the toad wants a Ferrari. But he has no money. In fact, Terry the toad wants a green Ferrari, a bright green Ferrari. But Terry has no money. So he decides to get a Ferrari somehow. Now, of course, Terry lives in Miami, Florida and he says, “I’m fed up with hopping around everywhere. I want a fast, bright green, brand new Ferrari.” So he goes to a Ferrari dealer. He asks the dealer, “How much is a Ferrari?” And the dealer says, “$97,000 for a brand new, bright green Ferrari.” Terry says, “Jeez, that’s expensive. Can I have a loan?” The Ferrari dealer says, “Listen, you’ll pay through the nose if you get a loan. It’s very expensive. Cash is much cheaper.” But there is one problem, of course. Terry the toad has no cash. So Terry goes to Everglade Swamp. Every day he catches flies. Terry catches 20.7 billion flies. And he sells them to Bill Gates. Bill Gates pays him $97,210. And so Terry the toad takes his money to the Ferrari dealer. And he buys a brand new, bright green, super fast, Ferrari. He’s very happy. He is a very, very happy toad."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="00:00" />
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="604dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.863"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

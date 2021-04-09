@@ -134,6 +134,7 @@ public class lesson10AnswerquestionPast extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * conta) /10;
             fina = (10 * fin) / 100;
+            quali.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -157,6 +158,7 @@ public class lesson10AnswerquestionPast extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    quali.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson10AnswerquestionPast.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson10AnswerquestionPast.this, lesson10qualificationpast.class);
@@ -165,6 +167,7 @@ public class lesson10AnswerquestionPast extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    quali.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson10AnswerquestionPast.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }

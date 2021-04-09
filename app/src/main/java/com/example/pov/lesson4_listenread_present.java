@@ -9,6 +9,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -32,8 +33,9 @@ import java.util.concurrent.TimeUnit;
 
 public class lesson4_listenread_present extends AppCompatActivity {
     String id, token;
+    Button btnsubmit;
     ProgressDialog progressDialog;
-    TextView playerPosition,playerDuration;
+    TextView playerPosition;
     SeekBar seekBar;
     ImageView btPlay,btPause;
     MediaPlayer mediaPlayer;
@@ -43,8 +45,8 @@ public class lesson4_listenread_present extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson4_listenread_present);
+        btnsubmit = findViewById(R.id.button31);
         playerPosition = findViewById(R.id.player_position);
-        playerDuration = findViewById(R.id.player_duration);
         seekBar = findViewById(R.id.seekBar);
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
@@ -59,7 +61,6 @@ public class lesson4_listenread_present extends AppCompatActivity {
         };
         int duration = mediaPlayer.getDuration();
         String sDuration = convertFormat(duration);
-        playerDuration.setText(sDuration);
         btPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -139,6 +140,7 @@ public class lesson4_listenread_present extends AppCompatActivity {
 
     }
     public void qualification(View view){
+        btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -162,6 +164,7 @@ public class lesson4_listenread_present extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(lesson4_listenread_present.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(lesson4_listenread_present.this, lesson4_menu_tenses.class);
@@ -170,6 +173,7 @@ public class lesson4_listenread_present extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(lesson4_listenread_present.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }

@@ -1,107 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson8_listenread_future">
 
-    <TextView
-        android:id="@+id/textView339"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Next let’s hear the story told as if it will happen in two years. Here we go."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="324dp"
-        android:layout_height="385dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView339">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView340"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="In two years Leo the lion is gonna be excited. He’ll have finally saved enough money to buy a ticket to fly to the moon. One week before leaving he’ll go to a bar with his friend Samuel the snake. Samuel and Leo will drink twelve beers each. Samuel is gonna be so drunk that he’ll fall on the floor. The bartender will then say, “I had no idea you were so drunk. It is time for you to go home.” So Leo and Samuel will leave the bar. Samuel’ll want to drive his car home. “If you drive now, you will have a run-in with the law,” Leo will say. But Samuel will drive his car anyway. After driving one mile he’s gonna be pulled over. The policeman will know that Samuel is drunk. “Now you’re going to be thrown in jail,” the policeman’ll say. The next day Samuel is gonna ask Leo to borrow money so he can hire a lawyer. “I hope that he can get me off. I don’t want them to throw the book at me,” Samuel will say. Leo will give Samuel money for the lawyer. Then Leo will say, “Now I have no money. I can’t go to the moon.” He’ll be very upset. He’ll know he shouldn’t have let Samuel drive."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView340"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="In two years Leo the lion is gonna be excited. He’ll have finally saved enough money to buy a ticket to fly to the moon. One week before leaving he’ll go to a bar with his friend Samuel the snake. Samuel and Leo will drink twelve beers each. Samuel is gonna be so drunk that he’ll fall on the floor. The bartender will then say, “I had no idea you were so drunk. It is time for you to go home.” So Leo and Samuel will leave the bar. Samuel’ll want to drive his car home. “If you drive now, you will have a run-in with the law,” Leo will say. But Samuel will drive his car anyway. After driving one mile he’s gonna be pulled over. The policeman will know that Samuel is drunk. “Now you’re going to be thrown in jail,” the policeman’ll say. The next day Samuel is gonna ask Leo to borrow money so he can hire a lawyer. “I hope that he can get me off. I don’t want them to throw the book at me,” Samuel will say. Leo will give Samuel money for the lawyer. Then Leo will say, “Now I have no money. I can’t go to the moon.” He’ll be very upset. He’ll know he shouldn’t have let Samuel drive."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView339"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next let’s hear the story told as if it will happen in two years. Here we go."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="00:00" />
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="644dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

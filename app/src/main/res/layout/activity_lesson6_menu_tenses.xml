@@ -8,11 +8,19 @@
     tools:context=".lesson6_menu_tenses">
 
     <Button
+        android:id="@+id/button109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:backgroundTint="#3F51B5"
+        android:text="try again"
+        android:textColor="#FFFFFF" />
+
+    <Button
         android:id="@+id/vocabularyL3"
         android:layout_width="285dp"
         android:layout_height="71dp"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"
         android:drawableLeft="@drawable/vocabulary2"
         android:text="Vocabulary" />
 

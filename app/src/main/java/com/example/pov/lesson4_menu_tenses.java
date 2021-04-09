@@ -1,5 +1,6 @@
 package com.example.pov;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -25,18 +26,20 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class lesson4_menu_tenses extends AppCompatActivity {
-    Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification;
+    Button btnPresent, btnVocabulary, btnPast,btnFuture, btnQualification, btntry;
     public String token, id, name, email;
-
+    ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson4_menu_tenses);
+        btntry = findViewById(R.id.button104);
         btnQualification = findViewById(R.id.btnlessontwoscore);
         btnPresent = findViewById(R.id.btntwoPresent);
         btnVocabulary = findViewById(R.id.vocabularyL3);
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
+        btntry.setVisibility(View.INVISIBLE);
         getbtn();
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont10", 0) == 0){
@@ -120,19 +123,36 @@ public class lesson4_menu_tenses extends AppCompatActivity {
 
     }
     public void getbtn() {
+        btnQualification.setVisibility(View.INVISIBLE);
+        btnFuture.setVisibility(View.INVISIBLE);
+        btnPast.setVisibility(View.INVISIBLE);
+        btnPresent.setVisibility(View.INVISIBLE);
+        btnVocabulary.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         try {
+            progressDialog = new ProgressDialog(lesson4_menu_tenses.this);
+            progressDialog.setMessage("Loading...");
+            progressDialog.show();
             String url = getResources().getString(R.string.urlgetqualificationsactivity);
             JSONObject object = new JSONObject();
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.GET, url,
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    progressDialog.hide();
+                    btnQualification.setVisibility(View.VISIBLE);
+                    btnFuture.setVisibility(View.VISIBLE);
+                    btnPast.setVisibility(View.VISIBLE);
+                    btnPresent.setVisibility(View.VISIBLE);
+                    btnVocabulary.setVisibility(View.VISIBLE);
+                    btntry.setVisibility(View.INVISIBLE);
                     try {
+
                         int cont = 0, cont2 = 0, cont3 = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
@@ -179,6 +199,13 @@ public class lesson4_menu_tenses extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    progressDialog.hide();
+                    btnQualification.setVisibility(View.INVISIBLE);
+                    btnFuture.setVisibility(View.INVISIBLE);
+                    btnPast.setVisibility(View.INVISIBLE);
+                    btnPresent.setVisibility(View.INVISIBLE);
+                    btnVocabulary.setVisibility(View.INVISIBLE);
+                    btntry.setVisibility(View.VISIBLE);
                     Toast.makeText(lesson4_menu_tenses.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }
             }) {

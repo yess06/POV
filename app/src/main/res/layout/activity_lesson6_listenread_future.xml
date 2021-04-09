@@ -1,107 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson6_listenread_future">
 
-    <TextView
-        android:id="@+id/textView331"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Next we’re going to hear the story told as if it is going to happen four years from now. So let’s start."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="324dp"
-        android:layout_height="385dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView331">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView332"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="In four years Mario is going to be living in a small town named Smallsville. At 1 o’clock a.m. Mario’ll be hungry. But no restaurants will be open twenty-four seven. Mario’ll say, “New York is a city that doesn’t sleep.” So he’ll decide to drive to New York. He’s gonna arrive in New York at 3 a.m. After a while he’ll find a restaurant. He’ll order a hamburger with peanut butter. “I like peanut butter on my hamburger,” he’ll say to the waitress. This is gonna totally throw the waitress off. She’ll say, “That’s pretty crazy. I do not know anyone who likes peanut butter on their hamburger.” “You should try it, it kinda grows on you,” Mario’ll say. The waitress is gonna give him a hamburger with peanut butter. After he’s finished eating he’ll want to pay for the hamburger. “You don’t need to pay for the hamburger. Your food is on the house,” the waitress’ll say. Mario will be surprised and he’ll say, “Wow, I’ve never had a hamburger comped before.” Mario’s really gonna like New York. The next day he’ll decide to stay."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView331"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next we’re going to hear the story told as if it is going to happen four years from now. So let’s start."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView332"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="In four years Mario is going to be living in a small town named Smallsville. At 1 o’clock a.m. Mario’ll be hungry. But no restaurants will be open twenty-four seven. Mario’ll say, “New York is a city that doesn’t sleep.” So he’ll decide to drive to New York. He’s gonna arrive in New York at 3 a.m. After a while he’ll find a restaurant. He’ll order a hamburger with peanut butter. “I like peanut butter on my hamburger,” he’ll say to the waitress. This is gonna totally throw the waitress off. She’ll say, “That’s pretty crazy. I do not know anyone who likes peanut butter on their hamburger.” “You should try it, it kinda grows on you,” Mario’ll say. The waitress is gonna give him a hamburger with peanut butter. After he’s finished eating he’ll want to pay for the hamburger. “You don’t need to pay for the hamburger. Your food is on the house,” the waitress’ll say. Mario will be surprised and he’ll say, “Wow, I’ve never had a hamburger comped before.” Mario’s really gonna like New York. The next day he’ll decide to stay."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="00:00" />
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="624dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

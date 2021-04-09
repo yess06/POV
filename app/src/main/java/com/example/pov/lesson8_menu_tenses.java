@@ -28,7 +28,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class lesson8_menu_tenses extends AppCompatActivity {
-    Button btnPresent, btnVocabulary,btnFuture, btnQualification;
+    Button btnPresent, btnVocabulary,btnFuture, btnQualification, btntry;
     public String token, id, name, email;
     ProgressDialog progressDialog;
     @Override
@@ -40,7 +40,15 @@ public class lesson8_menu_tenses extends AppCompatActivity {
         btnFuture = findViewById(R.id.btnlessontwofuture);
         btnPresent = findViewById(R.id.btntwoPresent);
         btnQualification = findViewById(R.id.btnlessontwoscore);
+        btntry = findViewById(R.id.button112);
+        btntry.setVisibility(View.INVISIBLE);
         getbtn();
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getbtn();
+            }
+        });
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont14", 0) == 0){
             btnVocabulary.setEnabled(true);
@@ -105,6 +113,11 @@ public class lesson8_menu_tenses extends AppCompatActivity {
         }
     }
     public void getbtn() {
+        btnQualification.setVisibility(View.INVISIBLE);
+        btnFuture.setVisibility(View.INVISIBLE);
+        btnPresent.setVisibility(View.INVISIBLE);
+        btnVocabulary.setVisibility(View.INVISIBLE);
+        btntry.setVisibility(View.INVISIBLE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -120,6 +133,11 @@ public class lesson8_menu_tenses extends AppCompatActivity {
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnQualification.setVisibility(View.VISIBLE);
+                    btnFuture.setVisibility(View.VISIBLE);
+                    btnPresent.setVisibility(View.VISIBLE);
+                    btnVocabulary.setVisibility(View.VISIBLE);
+                    btntry.setVisibility(View.INVISIBLE);
                     try {
                         progressDialog.hide();
                         int cont = 0, cont2 = 0, cont3 = 0;
@@ -161,6 +179,11 @@ public class lesson8_menu_tenses extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnQualification.setVisibility(View.INVISIBLE);
+                    btnFuture.setVisibility(View.INVISIBLE);
+                    btnPresent.setVisibility(View.INVISIBLE);
+                    btnVocabulary.setVisibility(View.INVISIBLE);
+                    btntry.setVisibility(View.VISIBLE);
                     progressDialog.hide();
                     Toast.makeText(lesson8_menu_tenses.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson10qualificationfuture">
 
-    <TextView
-        android:id="@+id/scorequal30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Score: "
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
-
     <ImageView
-        android:id="@+id/imageViewlessontwo"
-        android:layout_width="287dp"
-        android:layout_height="313dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186"
+        android:id="@+id/imageView24"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
         app:srcCompat="@drawable/greatjob" />
 
     <TextView
@@ -37,11 +20,18 @@
         android:text="High Score: 30"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewlessontwo" />
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/scorequal30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:id="@+id/btnlessontwoactivities"
@@ -51,9 +41,16 @@
         android:onClick="qualifitime"
         android:text="submit"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtlessontwohigh"
-        app:layout_constraintVertical_bias="0.263" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="try again"
+        android:backgroundTint="#207A7A"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

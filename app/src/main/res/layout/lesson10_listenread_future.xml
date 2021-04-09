@@ -1,107 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson10ListenreadFuture">
 
-    <TextView
-        android:id="@+id/textView349"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Next, let’s go to the future. Imagine this will happen in the future. "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ScrollView
-        android:layout_width="324dp"
-        android:layout_height="385dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView349">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView350"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="So two years from now, two years in the future there will be a toad. His name is gonna be Terry. But Terry will have a problem. Terry the toad’ll want a green Ferrari, a bright green Ferrari. But he’s not gonna have any money. So he’s gonna decide to get a Ferrari somehow. Terry will live in Miami, Florida. He’s gonna live there in the future. Terry will be in Miami and he’ll say, “I’m fed up with hopping around everywhere. I want a fast, bright green, brand new Ferrari.” So he’s gonna go to a Ferrari dealer. And he’s gonna ask the dealer, “How much is a Ferrari?” And the dealer will say, “$97,000 for a brand new, bright green Ferrari.” Terry’s gonna say, “Jeez, that’s expensive. Can I have a loan?” The Ferrari dealer will say, “Listen, you’ll pay through the nose if you get a loan. It’s very expensive. Cash is much cheaper.” But there’s gonna be one problem, of course. Terry the toad will not have cash. He won’t have any cash. So Terry is gonna go to Everglade Swamp. And every day he’s gonna catch flies. And he will catch 20.7 billion flies. Then, he’s gonna sell them to Bill Gates. Bill Gates will pay him $97,210. And so Terry’ll take his money to the Ferrari dealer. And he’ll buy a brand new, bright green, super fast, Ferrari. He’ll be very happy. He’ll be a very, very happy toad."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView349"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next, let’s go to the future. Imagine this will happen in the future. "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView350"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So two years from now, two years in the future there will be a toad. His name is gonna be Terry. But Terry will have a problem. Terry the toad’ll want a green Ferrari, a bright green Ferrari. But he’s not gonna have any money. So he’s gonna decide to get a Ferrari somehow. Terry will live in Miami, Florida. He’s gonna live there in the future. Terry will be in Miami and he’ll say, “I’m fed up with hopping around everywhere. I want a fast, bright green, brand new Ferrari.” So he’s gonna go to a Ferrari dealer. And he’s gonna ask the dealer, “How much is a Ferrari?” And the dealer will say, “$97,000 for a brand new, bright green Ferrari.” Terry’s gonna say, “Jeez, that’s expensive. Can I have a loan?” The Ferrari dealer will say, “Listen, you’ll pay through the nose if you get a loan. It’s very expensive. Cash is much cheaper.” But there’s gonna be one problem, of course. Terry the toad will not have cash. He won’t have any cash. So Terry is gonna go to Everglade Swamp. And every day he’s gonna catch flies. And he will catch 20.7 billion flies. Then, he’s gonna sell them to Bill Gates. Bill Gates will pay him $97,210. And so Terry’ll take his money to the Ferrari dealer. And he’ll buy a brand new, bright green, super fast, Ferrari. He’ll be very happy. He’ll be a very, very happy toad."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:text="00:00" />
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/button55"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="612dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.351"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="552dp"
-        android:text="00:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_play"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="560dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
