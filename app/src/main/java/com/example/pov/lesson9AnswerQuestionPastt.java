@@ -30,13 +30,14 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
-    Button qual;
+
+    Button submit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson9_answerquestion_past);
-        qual = findViewById(R.id.button95);
-        qual.setOnClickListener(new View.OnClickListener() {
+        submit = findViewById(R.id.button95);
+        submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 qualification();
@@ -135,6 +136,7 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
             final double fin,fina;
             fin = (100 * conta) /10;
             fina = (10 * fin) / 100;
+            submit.setEnabled(false);
             SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
             SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
             token = preferencess.getString("token", "null");
@@ -158,6 +160,7 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
                     object, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    submit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson9AnswerQuestionPastt.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(lesson9AnswerQuestionPastt.this, lesson9qualificationpast.class);
@@ -166,6 +169,7 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    submit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson9AnswerQuestionPastt.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,14 +30,26 @@ public class lesson5_qualification_present extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog, progressDialog2;
     TextView score;
+    Button btnsumbit, btntry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson5_qualification_present);
         score = findViewById(R.id.scorequal19);
+        btnsumbit = findViewById(R.id.btnlessontwoactivities);
+        btntry = findViewById(R.id.button108);
+        btntry.setVisibility(View.INVISIBLE);
+        btnsumbit.setVisibility(View.INVISIBLE);
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quallificationtime();
+            }
+        });
         quallificationtime();
     }
     public void qualifitime(View view){
+        btnsumbit.setEnabled(false);
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
@@ -60,6 +73,7 @@ public class lesson5_qualification_present extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsumbit.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Qualification added", Toast.LENGTH_SHORT).show();
 
@@ -69,6 +83,7 @@ public class lesson5_qualification_present extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsumbit.setEnabled(true);
                 progressDialog.hide();
                 //Toast.makeText(vocabularyL1.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }
@@ -98,6 +113,8 @@ public class lesson5_qualification_present extends AppCompatActivity {
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btntry.setVisibility(View.INVISIBLE);
+                    btnsumbit.setVisibility(View.VISIBLE);
                     try {
                         progressDialog2.hide();
                         double qualification = 0;
@@ -125,6 +142,8 @@ public class lesson5_qualification_present extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btntry.setVisibility(View.VISIBLE);
+                    btnsumbit.setVisibility(View.INVISIBLE);
                     progressDialog2.hide();
                     Toast.makeText(lesson5_qualification_present.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

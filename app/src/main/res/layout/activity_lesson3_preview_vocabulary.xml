@@ -1,213 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson3_preview_vocabulary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1319"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Out of the blue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/qspsL12"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView1324"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="1. Area where there is a lot of farm land"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1320"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Right off the bat"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/qspsL13"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView1325"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="2. Group of sports team for childrens"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1321"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Rural"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/qspsL14"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView1326"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="3. New to the area"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1322"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="New kid on                the block"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/qspsL15"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView1327"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="4. Sudden and unexpected"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1323"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Little league              sports"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/qspsL16"
+            android:layout_width="114dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView1328"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="5. Right away, immediately"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnlessontwopreviewvocabulary10"
         android:layout_width="106dp"
         android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:background="#E7323D"
         android:onClick="postqualification"
         android:text="Ready"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922" />
-
-    <Spinner
-        android:id="@+id/qspsL12"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
-
-    <Spinner
-        android:id="@+id/qspsL14"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219" />
-
-    <Spinner
-        android:id="@+id/qspsL15"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.299" />
-
-    <Spinner
-        android:id="@+id/qspsL16"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381" />
-
-    <Spinner
-        android:id="@+id/qspsL13"
-        android:layout_width="114dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
-
-    <TextView
-        android:id="@+id/textView1319"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Out of the blue"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
-
-    <TextView
-        android:id="@+id/textView1320"
-        android:layout_width="105dp"
-        android:layout_height="wrap_content"
-        android:text="Right off the bat"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143" />
-
-    <TextView
-        android:id="@+id/textView1321"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:text="Rural"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229" />
-
-    <TextView
-        android:id="@+id/textView1322"
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:text="New kid on                the block"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
-
-    <TextView
-        android:id="@+id/textView1323"
-        android:layout_width="88dp"
-        android:layout_height="wrap_content"
-        android:text="Little league              sports"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
-
-    <TextView
-        android:id="@+id/textView1324"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:text="1. Area where there is a lot of farm land"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
-
-    <TextView
-        android:id="@+id/textView1325"
-        android:layout_width="142dp"
-        android:layout_height="wrap_content"
-        android:text="2. Group of sports team for childrens"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <TextView
-        android:id="@+id/textView1326"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:text="3. New to the area"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
-
-    <TextView
-        android:id="@+id/textView1327"
-        android:layout_width="154dp"
-        android:layout_height="wrap_content"
-        android:text="4. Sudden and unexpected"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
-
-    <TextView
-        android:id="@+id/textView1328"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:text="5. Right away, immediately"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,466 +1,350 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson7_fillverbs_present">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView858"
-                android:layout_width="71dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="Carly the cat"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.047"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/fillPsL71"
-                android:layout_width="120dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="52dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView858"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carly the cat"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView859"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="52dp"
-                android:text="ready to stop dating.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView860"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="84dp"
-                android:text="She only"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.046"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView859"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ready to stop dating.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <Spinner
-                android:id="@+id/fillPsL72"
-                android:layout_width="120dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="80dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView861"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:text="to meet total losers.   "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView860"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She only"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView862"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
-                android:text="Then on December 31st, her luck "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.075"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <Spinner
-                android:id="@+id/fillPsL73"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="140dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.932"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView861"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to meet total losers.   "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView863"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="176dp"
-                android:text="She "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.042"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/fillPsL74"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="176dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.243"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView862"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Then on December 31st, her luck "
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView864"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="176dp"
-                android:text="into her friend Katie the cougar at the library.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL73"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView863"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She "
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/fillPsL74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView864"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="into her friend Katie the cougar at the library.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView865"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="248dp"
                 android:text="Katie moved to Africa three years ago.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.164"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView866"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="280dp"
-                android:text="They"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.042"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/fillPsL75"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="280dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.243"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView866"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="They"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView867"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="280dp"
-                android:text="not been in touch since then but Katie "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <Spinner
-                android:id="@+id/fillPsL76"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="324dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.243"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView867"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="not been in touch since then but Katie "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView868"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="324dp"
-                android:text="now living in America again.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView869"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="380dp"
-                android:text="Katie"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.043"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL76"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <Spinner
-                android:id="@+id/fillPsL77"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="380dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.243"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView868"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="now living in America again.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView870"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="380dp"
-                android:text="to set her up on a blind date with her friend Timmy the tiger.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView871"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="476dp"
-                android:text="Carly "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.043"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView869"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Katie"
+                    android:textSize="18sp" />
 
-            <Spinner
-                android:id="@+id/fillPsL78"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="476dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.243"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView872"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="476dp"
-                android:text="that all blind dates are a recipe for disaster.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView870"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to set her up on a blind date with her friend Timmy the tiger.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView873"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="550dp"
-                android:text="But she "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.046"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/fillPsL79"
-                android:layout_width="140dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="550dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.329"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView871"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carly "
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView874"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="550dp"
-                android:text="to go out with Timmy one time.   "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView875"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="604dp"
-                android:text=" One month later Katie "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.069"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView872"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="that all blind dates are a recipe for disaster.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <Spinner
-                android:id="@+id/fillPsL710"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="600dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.932"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView873"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="But she "
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/fillPsL79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView874"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to go out with Timmy one time.   "
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView875"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" One month later Katie "
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/fillPsL710"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView876"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="628dp"
                 android:text="Carly at a café.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.056"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView877"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="660dp"
-                android:text="She"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.041"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/fillPsL711"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="660dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.223"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView877"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView878"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="660dp"
-                android:text="bursting at the seams.  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.97"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL711"
+                    android:layout_width="160dp"
+                    android:layout_height="25dp" />
 
-            <TextView
-                android:id="@+id/textView879"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="718dp"
-                android:text="She and Timmy "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.047"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView878"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bursting at the seams.  "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <Spinner
-                android:id="@+id/fillPsL712"
-                android:layout_width="120dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="718dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.532"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView880"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="720dp"
-                android:text="fallen in love.   "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.976"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView879"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="She and Timmy "
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/textView881"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="772dp"
-                android:text="“Thank you so much, Katie,” Carly"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.075"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Spinner
+                    android:id="@+id/fillPsL712"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <Spinner
-                android:id="@+id/fillPsL713"
-                android:layout_width="160dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="792dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.932"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textView880"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fallen in love.   "
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView881"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="“Thank you so much, Katie,” Carly"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/fillPsL713"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView882"
-                android:layout_width="381dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="828dp"
                 android:text="“Timmy is  really head and shoulders above the rest.”  "
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.466"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/button82"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="920dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
                 android:background="#E7323D"
                 android:onClick="qualification"
                 android:text="Check Score"
-                android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.814"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

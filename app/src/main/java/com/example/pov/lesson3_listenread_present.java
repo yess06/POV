@@ -9,6 +9,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -39,6 +40,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
     MediaPlayer mediaPlayer;
     Handler handler = new Handler();
     Runnable runnable;
+    Button btnsubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
         seekBar = findViewById(R.id.seekBar);
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
+        btnsubmit = findViewById(R.id.button3);
 
         mediaPlayer = MediaPlayer.create(this, R.raw.lesson3present);
         runnable = new Runnable() {
@@ -139,6 +142,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
 
     }
     public void qualification(View view){
+        btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -162,6 +166,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
                 object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(lesson3_listenread_present.this, "Qualification Max : 10.00\nQualification Obt : 10.00",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(lesson3_listenread_present.this, lesson3_menu_tenses.class);
@@ -170,6 +175,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                btnsubmit.setEnabled(true);
                 progressDialog.hide();
                 Toast.makeText(lesson3_listenread_present.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
             }

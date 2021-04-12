@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".lesson5_answer_vocabulary">
 
     <TextView
@@ -12,11 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Blown away : Pleased and very surprised"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView824"
@@ -24,23 +21,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Can't stand : Do not like"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView793" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView825"
-        android:layout_width="377dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Could not believe his eyes : What you see is not believable"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView824" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView826"
@@ -48,22 +37,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Fell through : To not happen"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView825" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView827"
-        android:layout_width="377dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="In over his head : To be inolved with something that is too difficult to do"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView826" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView828"
@@ -71,11 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Out of hand : Very bad"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView827" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView829"
@@ -83,22 +61,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Quite a few : A lot"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView828" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView830"
-        android:layout_width="377dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="To not know what you're getting into : To not know what to expect"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView829" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button80"
@@ -108,10 +79,6 @@
         android:background="#207A7A"
         android:onClick="practicepage"
         android:text="More Practice"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView830" />
+        android:textColor="#FFFFFF" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
