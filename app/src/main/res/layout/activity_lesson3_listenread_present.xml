@@ -7,72 +7,73 @@
     android:orientation="vertical"
     tools:context=".lesson3_listenread_present">
 
-    <TextView
-        android:id="@+id/textView312"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" So let’s start by telling the story as if it's happening right now, or in the present. Okay, here we go."
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView313"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Alex is twelve years old. He is an army brat. His dad joins the Army before he is born. Alex and his parents live on the moon for two years. Then, out of the blue, they move to America. Right off the bat, he hates it. The town they move to is rural, so it is a culture shock after living on the moon. Everyone at school knows he is the new kid on the block. He does not have any friends. He really misses living on the moon. After one month, Alex starts to play little league sports. Then he makes some friends. Soon he is feeling settled in. Now Alex really likes living in America and he does not miss living on the moon anymore."
-        android:textSize="18sp" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00:00" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="00:00" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView312"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" So let’s start by telling the story as if it's happening right now, or in the present. Okay, here we go."
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Alex is twelve years old. He is an army brat. His dad joins the Army before he is born. Alex and his parents live on the moon for two years. Then, out of the blue, they move to America. Right off the bat, he hates it. The town they move to is rural, so it is a culture shock after living on the moon. Everyone at school knows he is the new kid on the block. He does not have any friends. He really misses living on the moon. After one month, Alex starts to play little league sports. Then he makes some friends. Soon he is feeling settled in. Now Alex really likes living in America and he does not miss living on the moon anymore."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

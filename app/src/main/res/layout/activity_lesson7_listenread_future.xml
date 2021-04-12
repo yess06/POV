@@ -7,69 +7,73 @@
     android:orientation="vertical"
     tools:context=".lesson7_listenread_future">
 
-    <TextView
-        android:id="@+id/textView335"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Next we will hear the story told as if it is going to happen five years from now. Here we go."
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView336"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Five years from now Carly the cat is gonna be ready to stop dating. She will only seem to meet total losers. Then on December 31st, her luck will change. She’s gonna run into her friend Katie the cougar at the library. Katie will have moved to Africa three years earlier. They will not have been in touch for three years. Katie’ll now be living in America again. Katie’s gonna want to set her up on a blind date with her friend Timmy the tiger. Carly’ll think that all blind dates are a recipe for disaster. But she’s gonna agree to go out with Timmy one time. One month later Katie’ll see Carly at a café. She’s gonna be bursting at the seams. She and Timmy will have fallen in love. Carly’ll say to her, “Thank you so much, Katie. Timmy is really head and shoulders above the rest.” "
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00:00" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView335"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Next we will hear the story told as if it is going to happen five years from now. Here we go."
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button48"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/textView336"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Five years from now Carly the cat is gonna be ready to stop dating. She will only seem to meet total losers. Then on December 31st, her luck will change. She’s gonna run into her friend Katie the cougar at the library. Katie will have moved to Africa three years earlier. They will not have been in touch for three years. Katie’ll now be living in America again. Katie’s gonna want to set her up on a blind date with her friend Timmy the tiger. Carly’ll think that all blind dates are a recipe for disaster. But she’s gonna agree to go out with Timmy one time. One month later Katie’ll see Carly at a café. She’s gonna be bursting at the seams. She and Timmy will have fallen in love. Carly’ll say to her, “Thank you so much, Katie. Timmy is really head and shoulders above the rest.” "
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

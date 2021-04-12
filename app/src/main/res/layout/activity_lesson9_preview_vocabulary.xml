@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/textView1319"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Preachin' to the choir"
             android:textSize="18sp" />
@@ -40,7 +40,7 @@
 
         <TextView
             android:id="@+id/textView1320"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Everything but the kitchen sink"
             android:textSize="18sp" />
@@ -93,7 +93,7 @@
 
         <TextView
             android:id="@+id/textView1322"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="To go in one ear and out the other"
             android:textSize="18sp" />

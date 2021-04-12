@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 public class lesson3_listenread_future extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog;
-    TextView playerPosition,playerDuration;
+    TextView playerPosition;
     SeekBar seekBar;
     ImageView btPlay,btPause;
     MediaPlayer mediaPlayer;
@@ -47,7 +47,6 @@ public class lesson3_listenread_future extends AppCompatActivity {
         setContentView(R.layout.activity_lesson3_listenread_future);
         btnsubmit = findViewById(R.id.button30);
         playerPosition = findViewById(R.id.player_position);
-        playerDuration = findViewById(R.id.player_duration);
         seekBar = findViewById(R.id.seekBar);
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
@@ -62,7 +61,6 @@ public class lesson3_listenread_future extends AppCompatActivity {
         };
         int duration = mediaPlayer.getDuration();
         String sDuration = convertFormat(duration);
-        playerDuration.setText(sDuration);
         btPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

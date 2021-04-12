@@ -37,7 +37,7 @@ public class lesson5_qualification_future extends AppCompatActivity {
         setContentView(R.layout.activity_lesson5_qualification_future);
         score = findViewById(R.id.scorequal16);
         btnsubmit = findViewById(R.id.btnlessontwoactivities);
-        btntry = findViewById(R.id.button98);
+        btntry = findViewById(R.id.button81);
         btntry.setVisibility(View.INVISIBLE);
         btnsubmit.setVisibility(View.INVISIBLE);
         btntry.setOnClickListener(new View.OnClickListener() {

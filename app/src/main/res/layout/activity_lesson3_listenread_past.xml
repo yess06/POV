@@ -7,71 +7,74 @@
     android:orientation="vertical"
     tools:context=".lesson3_listenread_past">
 
-    <TextView
-        android:id="@+id/textView314"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Next let’s hear the story as if it happened last year."
-        android:textSize="18sp" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView315"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Last year, Alex was twelve years old. He was an army brat. His dad joined the Army before he was born. Alex and his parents lived on the moon for two years. Then, out of the blue, they moved to America. Right off the bat, he hated it. The town they moved to was rural, so it was a culture shock after living on the moon. Everyone at school knew he was the new kid on the block. He did not have any friends. He really missed living on the moon. After one month, Alex started to play little league sports. Then he made some friends. Soon he felt settled in. Alex really liked living in America and he did not miss living on the moon anymore. "
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="00:00" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="00:00" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView314"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next let’s hear the story as if it happened last year."
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/button29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/textView315"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Last year, Alex was twelve years old. He was an army brat. His dad joined the Army before he was born. Alex and his parents lived on the moon for two years. Then, out of the blue, they moved to America. Right off the bat, he hated it. The town they moved to was rural, so it was a culture shock after living on the moon. Everyone at school knew he was the new kid on the block. He did not have any friends. He really missed living on the moon. After one month, Alex started to play little league sports. Then he made some friends. Soon he felt settled in. Alex really liked living in America and he did not miss living on the moon anymore. "
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="00:00"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play"
+                />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

@@ -21,13 +21,13 @@
 
         <Spinner
             android:id="@+id/qspsL22"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1324"
-            android:layout_width="87dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. A lot"
             android:textSize="18sp" />
@@ -47,8 +47,8 @@
 
         <Spinner
             android:id="@+id/qspsL23"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
@@ -73,8 +73,8 @@
 
         <Spinner
             android:id="@+id/qspsL24"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
@@ -99,8 +99,8 @@
 
         <Spinner
             android:id="@+id/qspsL25"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
@@ -125,13 +125,13 @@
 
         <Spinner
             android:id="@+id/qspsL26"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1328"
-            android:layout_width="140dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. To be involved with something that is too difficult to do"
             android:textSize="18sp" />

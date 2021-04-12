@@ -74,10 +74,11 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="10dp"
         android:background="#207A7A"
         android:onClick="practicepage"
         android:text="More Practice"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_vertical|center_horizontal"/>
 
 </LinearLayout>

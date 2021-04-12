@@ -7,75 +7,73 @@
     android:orientation="vertical"
     tools:context=".lesson5_listenread_past">
 
-    <TextView
-        android:id="@+id/textView325"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let’s tell it as if it happened one year ago. Okay, here we go."
-        android:textSize="18sp" />
-
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView326"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="One year ago Peter could not stand bathing. He had not taken a shower for two years. He smelled very bad. His mother thought that it had gotten out of control. She had asked Peter to bathe but he would not do it. Peter wanted a girlfriend. He asked quite a few girls for a date but they always said no. He thought that he was in over his head. One time his sister found him a date with a nice girl. But then the girl got sick so the date fell through. So Peter tried to meet a girl on a dating website. He met a very nice girl named Paula and they decided to meet for dinner. When Paula met Peter she did not know what she was getting into. He smelled awful. When Peter saw Paula, he could not believe his eyes. He was blown away because she was so beautiful. They had a lot of fun that night. Paula told Peter she would have dinner with him again if he took a shower. Then Peter bathed every day."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView325"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let’s tell it as if it happened one year ago. Okay, here we go."
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView326"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="One year ago Peter could not stand bathing. He had not taken a shower for two years. He smelled very bad. His mother thought that it had gotten out of control. She had asked Peter to bathe but he would not do it. Peter wanted a girlfriend. He asked quite a few girls for a date but they always said no. He thought that he was in over his head. One time his sister found him a date with a nice girl. But then the girl got sick so the date fell through. So Peter tried to meet a girl on a dating website. He met a very nice girl named Paula and they decided to meet for dinner. When Paula met Peter she did not know what she was getting into. He smelled awful. When Peter saw Paula, he could not believe his eyes. He was blown away because she was so beautiful. They had a lot of fun that night. Paula told Peter she would have dinner with him again if he took a shower. Then Peter bathed every day."
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
 
 </LinearLayout>

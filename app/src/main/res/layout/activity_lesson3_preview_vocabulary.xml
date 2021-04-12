@@ -21,13 +21,13 @@
 
         <Spinner
             android:id="@+id/qspsL12"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1324"
-            android:layout_width="155dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. Area where there is a lot of farm land"
             android:textSize="18sp" />
@@ -47,13 +47,13 @@
 
         <Spinner
             android:id="@+id/qspsL13"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1325"
-            android:layout_width="142dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2. Group of sports team for childrens"
             android:textSize="18sp" />
@@ -73,13 +73,13 @@
 
         <Spinner
             android:id="@+id/qspsL14"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1326"
-            android:layout_width="117dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3. New to the area"
             android:textSize="18sp" />
@@ -100,13 +100,13 @@
 
         <Spinner
             android:id="@+id/qspsL15"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1327"
-            android:layout_width="154dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Sudden and unexpected"
             android:textSize="18sp" />
@@ -126,13 +126,13 @@
 
         <Spinner
             android:id="@+id/qspsL16"
-            android:layout_width="114dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/textView1328"
-            android:layout_width="155dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. Right away, immediately"
             android:textSize="18sp" />

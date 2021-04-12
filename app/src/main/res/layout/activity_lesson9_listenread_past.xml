@@ -7,76 +7,72 @@
     android:orientation="vertical"
     tools:context=".lesson9ListenreadPast">
 
-    <TextView
-        android:id="@+id/textView345"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Okay, finally, our last version of our story begins with, “Since last year…”"
-        android:textSize="18sp" />
-
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="385dp"
-        android:layout_marginTop="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView346"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Since last year Porky has wanted to lose weight. And since 10 years ago he has been fat. Porky has been fat for 10 years. But for 9 years he has not cared. However, since last year he has wanted to lose weight. Since last year he has thought about losing weight a lot. Almost every day he has thought about losing weight. He has read a lot of books about losing weight. Starting a year ago until recently. But he hasn’t lost any weight. Well finally one day he went to see Dr. Atkins. He said to Dr. Atkins, “I want to lose weight. Please help me.” And Dr. Atkins said, “Okay, eat lots of meat and fat. It tastes great and you’ll lose weight.” Porky said, “Hey, you are preachin’ to the choir. I love meat.” So Porky went home. Every day he ate lots and lots of meat. Lots and lots of fat, he ate everything but the kitchen sink. But, he felt terrible. He got sick. Every day he felt more and more sick. Yes, in the beginning he lost some weight. But eventually he gained more and more and more weight. He got fatter and fatter and fatter. He became super fat. He became obese. So he decided, “I need to see someone else. I need to ask another person for help.” He went to John Robbins. John Robbins said, “Porky, as a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.” Porky didn’t like this advice. This information went in one ear and out the other. Porky ignored John’s advice and he kept eating meat and he kept eating fat. And one month later he had a heart attack. He almost died. He finally said, “I’ve seen the light. I must eat lots of fruits and vegetables.” He went home from the hospital and became a vegetarian. He ate only fresh fruit and vegetables and brown rice. He began to feel better and better and better and he lost 528 pounds. He became a slim and handsome pig. And, of course, his vegetarian diet played a major role in helping him lose weight and stay healthy."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView345"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Okay, finally, our last version of our story begins with, “Since last year…”"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView346"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Since last year Porky has wanted to lose weight. And since 10 years ago he has been fat. Porky has been fat for 10 years. But for 9 years he has not cared. However, since last year he has wanted to lose weight. Since last year he has thought about losing weight a lot. Almost every day he has thought about losing weight. He has read a lot of books about losing weight. Starting a year ago until recently. But he hasn’t lost any weight. Well finally one day he went to see Dr. Atkins. He said to Dr. Atkins, “I want to lose weight. Please help me.” And Dr. Atkins said, “Okay, eat lots of meat and fat. It tastes great and you’ll lose weight.” Porky said, “Hey, you are preachin’ to the choir. I love meat.” So Porky went home. Every day he ate lots and lots of meat. Lots and lots of fat, he ate everything but the kitchen sink. But, he felt terrible. He got sick. Every day he felt more and more sick. Yes, in the beginning he lost some weight. But eventually he gained more and more and more weight. He got fatter and fatter and fatter. He became super fat. He became obese. So he decided, “I need to see someone else. I need to ask another person for help.” He went to John Robbins. John Robbins said, “Porky, as a rule, you should eat lots of fruits and vegetables to lose weight. You must also exercise.” Porky didn’t like this advice. This information went in one ear and out the other. Porky ignored John’s advice and he kept eating meat and he kept eating fat. And one month later he had a heart attack. He almost died. He finally said, “I’ve seen the light. I must eat lots of fruits and vegetables.” He went home from the hospital and became a vegetarian. He ate only fresh fruit and vegetables and brown rice. He began to feel better and better and better and he lost 528 pounds. He became a slim and handsome pig. And, of course, his vegetarian diet played a major role in helping him lose weight and stay healthy."
+                android:textSize="18sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
 
 </LinearLayout>

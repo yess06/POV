@@ -190,7 +190,6 @@ public class lesson7_menu_tenses extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     btnQualification.setVisibility(View.INVISIBLE);
                     btnFuture.setVisibility(View.INVISIBLE);
-
                     btnPresent.setVisibility(View.INVISIBLE);
                     btnVocabulary.setVisibility(View.INVISIBLE);
                     btntry.setVisibility(View.VISIBLE);

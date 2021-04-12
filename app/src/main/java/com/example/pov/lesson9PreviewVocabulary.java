@@ -35,7 +35,7 @@ public class lesson9PreviewVocabulary extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson9_preview_vocabulary);
-        btnsubmit = findViewById(R.id.btnlessontwopreviewvocabulary7);
+        btnsubmit = findViewById(R.id.btnlessontwopreviewvocabulary4);
         exercise1 = findViewById(R.id.qspsL42);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.vocabucont, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

@@ -30,7 +30,6 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
     String id, token;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
-
     Button submit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,75 +8,73 @@
     android:orientation="vertical"
     tools:context=".lesson5_listenread_present">
 
-    <TextView
-        android:id="@+id/textView323"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Each time we hear the story it will be from a different point of view. I'll either be changing the time of the story or the person who is telling the story. Okay, let’s get started"
-        android:textSize="18sp" />
-
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView324"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Peter can’t stand bathing. He has not taken a shower for two years. He smells very bad. His mother thinks that it has gotten out of hand. She asks Peter to bathe but he will not do it. Peter wants a girlfriend. He asks quite a few girls for a date but they always say no. He thinks that he is in over his head. One time his sister finds him a date with a nice girl. But then the girl gets sick so the date falls through. So Peter tries to meet a girl on a dating website. He meets a very nice girl named Paula and they decide to meet for dinner. When Paula meets Peter she does not know what she is getting into. He smells awful. When Peter sees Paula, he cannot believe his eyes. He is blown away because she is so beautiful. They have a lot of fun that night. Paula tells Peter she will have dinner with him again if he takes a shower. Now Peter bathes every day."
-            android:textSize="18sp" />
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView323"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Each time we hear the story it will be from a different point of view. I'll either be changing the time of the story or the person who is telling the story. Okay, let’s get started"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView324"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peter can’t stand bathing. He has not taken a shower for two years. He smells very bad. His mother thinks that it has gotten out of hand. She asks Peter to bathe but he will not do it. Peter wants a girlfriend. He asks quite a few girls for a date but they always say no. He thinks that he is in over his head. One time his sister finds him a date with a nice girl. But then the girl gets sick so the date falls through. So Peter tries to meet a girl on a dating website. He meets a very nice girl named Paula and they decide to meet for dinner. When Paula meets Peter she does not know what she is getting into. He smells awful. When Peter sees Paula, he cannot believe his eyes. He is blown away because she is so beautiful. They have a lot of fun that night. Paula tells Peter she will have dinner with him again if he takes a shower. Now Peter bathes every day."
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pause"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E7323D"
+                android:onClick="qualification"
+                android:text="Check Score"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/btPlay"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_play" />
-
-    <ImageView
-        android:id="@+id/bt_pause"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/ic_pause"
-        android:visibility="gone" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="338dp"
-        android:layout_height="12dp"
-        android:layout_gravity="center" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/player_duration"
-            android:layout_width="297dp"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-
-        <TextView
-            android:id="@+id/player_position"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:00" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#E7323D"
-        android:onClick="qualification"
-        android:text="Check Score"
-        android:textColor="#FFFFFF" />
 
 </LinearLayout>
