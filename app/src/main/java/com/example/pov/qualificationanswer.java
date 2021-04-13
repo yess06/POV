@@ -36,7 +36,6 @@ public class qualificationanswer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qualificationanswer);
         score = findViewById(R.id.scorequal34);
-        quallificationtime();
         btntry = findViewById(R.id.button4);
         activities = findViewById(R.id.btnActivitiesAnsw);
         activities.setVisibility(View.INVISIBLE);
@@ -53,10 +52,9 @@ public class qualificationanswer extends AppCompatActivity {
                 quallificationtime();
             }
         });
-
+        quallificationtime();
     }
     public void qualifitime(){
-
         activities.setEnabled(false);
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);

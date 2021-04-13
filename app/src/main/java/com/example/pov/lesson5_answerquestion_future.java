@@ -34,9 +34,8 @@ public class lesson5_answerquestion_future extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        btnsubmit = findViewById(R.id.button77);
         setContentView(R.layout.activity_lesson5_answerquestion_future);
-
+        btnsubmit = findViewById(R.id.button77);
         exercise1 = findViewById(R.id.QsfutL51);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.QsFutL51, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

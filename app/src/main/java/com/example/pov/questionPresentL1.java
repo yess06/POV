@@ -87,8 +87,8 @@ public class questionPresentL1 extends AppCompatActivity {
         adapter10.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise10.setAdapter(adapter10);
 
-        Button btnquali = findViewById(R.id.button12);
-        btnquali.setOnClickListener(new View.OnClickListener() {
+
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 qualification();
@@ -162,7 +162,6 @@ public class questionPresentL1 extends AppCompatActivity {
                     btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(questionPresentL1.this, "Qualification Max : 10.00\nQualification Obt :" + fina,Toast.LENGTH_SHORT).show();
-
                     Intent intent = new Intent(questionPresentL1.this, qualificationanswer.class);
                     startActivity(intent);
                 }
