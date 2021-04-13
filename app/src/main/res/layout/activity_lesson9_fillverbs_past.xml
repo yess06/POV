@@ -477,18 +477,25 @@
                     android:text="He began to feel better and better and he "
                     android:textSize="18sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <Spinner
                     android:id="@+id/fillPasL917"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1090"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="528 pounds. "
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView1090"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="528 pounds. "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -527,18 +534,25 @@
                     android:text="And, of course, his vegetarian diet"
                     android:textSize="18sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <Spinner
                     android:id="@+id/fillPasL919"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1095"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="a major role in helping him lose weight and stay healthy."
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView1095"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a major role in helping him lose weight and stay healthy."
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button92"

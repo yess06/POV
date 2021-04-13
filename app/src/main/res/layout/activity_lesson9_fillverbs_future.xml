@@ -28,18 +28,25 @@
                     android:text="In the future there will be a pig and he "
                     android:textSize="18sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <Spinner
                     android:id="@+id/fillFutL91"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1005"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="to lose weight. "
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView1005"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="to lose weight. "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -274,18 +281,25 @@
                     android:text="In fact, Porky pig will become obese. He"
                     android:textSize="18sp" />
 
-                <Spinner
-                    android:id="@+id/fillFutL910"
-                    android:layout_width="150dp"
-                    android:layout_height="25dp" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1026"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="“I need to see someone else. I need to ask another person for help.” "
-                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/fillFutL910"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView1026"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="“I need to see someone else. I need to ask another person for help.” "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -470,18 +484,25 @@
                     android:text="He’ll feel better and better and he "
                     android:textSize="18sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <Spinner
                     android:id="@+id/fillFutL917"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1043"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="528 pounds. "
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView1043"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="528 pounds. "
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -520,18 +541,25 @@
                     android:text="And, of course, his vegetarian diet"
                     android:textSize="18sp" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <Spinner
                     android:id="@+id/fillFutL919"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView1047"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="a major role in helping him lose weight and become healthy."
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView1047"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a major role in helping him lose weight and become healthy."
+                    android:textSize="18sp" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/button91"

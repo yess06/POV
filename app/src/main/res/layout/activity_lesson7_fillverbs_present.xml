@@ -78,11 +78,12 @@
                     android:text="Then on December 31st, her luck "
                     android:textSize="18sp" />
 
-                <Spinner
-                    android:id="@+id/fillPsL73"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
+
+            <Spinner
+                android:id="@+id/fillPsL73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,13 +102,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/textView864"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="into her friend Katie the cougar at the library.  "
-                    android:textSize="18sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView864"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="into her friend Katie the cougar at the library.  "
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView865"
@@ -176,13 +178,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/textView870"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="to set her up on a blind date with her friend Timmy the tiger.  "
-                    android:textSize="18sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView870"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to set her up on a blind date with her friend Timmy the tiger.  "
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -226,13 +229,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/textView874"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="to go out with Timmy one time.   "
-                    android:textSize="18sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView874"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to go out with Timmy one time.   "
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -321,11 +325,12 @@
                     android:text="“Thank you so much, Katie,” Carly"
                     android:textSize="18sp" />
 
-                <Spinner
-                    android:id="@+id/fillPsL713"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
+
+            <Spinner
+                android:id="@+id/fillPsL713"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/textView882"

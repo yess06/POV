@@ -130,13 +130,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp" />
 
-        <TextView
-            android:id="@+id/textView1328"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5. Trying to persuade someone who already agrees"
-            android:textSize="18sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1328"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Trying to persuade someone who already agrees"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnlessontwopreviewvocabulary4"

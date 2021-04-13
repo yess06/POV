@@ -25,11 +25,11 @@
 
             <TextView
                 android:id="@+id/textView336"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Five years from now Carly the cat is gonna be ready to stop dating. She will only seem to meet total losers. Then on December 31st, her luck will change. She’s gonna run into her friend Katie the cougar at the library. Katie will have moved to Africa three years earlier. They will not have been in touch for three years. Katie’ll now be living in America again. Katie’s gonna want to set her up on a blind date with her friend Timmy the tiger. Carly’ll think that all blind dates are a recipe for disaster. But she’s gonna agree to go out with Timmy one time. One month later Katie’ll see Carly at a café. She’s gonna be bursting at the seams. She and Timmy will have fallen in love. Carly’ll say to her, “Thank you so much, Katie. Timmy is really head and shoulders above the rest.” "
-                android:textSize="18sp"
-                android:layout_marginTop="10dp"/>
+                android:textSize="18sp" />
 
             <SeekBar
                 android:id="@+id/seekBar"
