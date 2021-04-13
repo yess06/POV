@@ -161,13 +161,13 @@ public class lesson2_answerquestion_past extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+                    btnsubmit.setEnabled(true);
                     progressDialog.hide();
                     Toast.makeText(lesson2_answerquestion_past.this, "Wrong with the qualification", Toast.LENGTH_SHORT).show();
                 }
             }){
                 @Override
                 public Map getHeaders() throws AuthFailureError {
-                    btnsubmit.setEnabled(true);
                     HashMap headers = new HashMap();
                     headers.put("Authorization", "Bearer " + token);
                     return headers;
