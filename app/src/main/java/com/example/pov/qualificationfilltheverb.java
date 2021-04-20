@@ -69,7 +69,8 @@ public class qualificationfilltheverb extends AppCompatActivity {
                         btnsubmit.setVisibility(View.VISIBLE);
                         btntry.setVisibility(View.INVISIBLE);
                         progressDialog2.hide();
-                        double qualification = 0;
+                        double qualification;
+                        qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -77,11 +78,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("1")) {
                                     if (u.getString("time_id").equals("3")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score " + qualification);
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
                                     }
                                 }
 
@@ -116,9 +113,8 @@ public class qualificationfilltheverb extends AppCompatActivity {
     }
     public void qualifitime(View view){
         btnsubmit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+        final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -127,7 +123,7 @@ public class qualificationfilltheverb extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "1");
             object.put("time_id", "3");
-            object.put("qualification", valid.getString("qualifi", ""));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }

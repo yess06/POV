@@ -30,6 +30,7 @@ import java.util.Map;
 public class fillPastL1 extends AppCompatActivity {
     String id, token;
     Button btnsubmit;
+    double fin,fina;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     Spinner exercise11, exercise12,exercise13,exercise14,exercise15,exercise16,exercise17,exercise18,exercise19,exercise20;
@@ -201,7 +202,8 @@ public class fillPastL1 extends AppCompatActivity {
             if (exercise19.getSelectedItemPosition() == 1){
                 conta++;
             }
-            final double fin,fina;
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /19;
             fina = (10 * fin) / 100;
             btnsubmit.setEnabled(false);

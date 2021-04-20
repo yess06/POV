@@ -28,6 +28,7 @@ import java.util.Map;
 
 public class lesson6_fillverbs_present extends AppCompatActivity {
     String id, token;
+    double fin,fina;
     Button btnsubmit;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
@@ -185,7 +186,9 @@ public class lesson6_fillverbs_present extends AppCompatActivity {
                 conta++;
             }
 
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /17;
             fina = (15 * fin) / 100;
             btnsubmit.setEnabled(false);

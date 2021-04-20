@@ -34,6 +34,7 @@ import java.util.Map;
 
 public class lesson2_preview_vocabulary extends AppCompatActivity {
     String id, token;
+    double fin,fina;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5;
     Button btnsumbit;
@@ -89,7 +90,9 @@ public class lesson2_preview_vocabulary extends AppCompatActivity {
             if (exercise5.getSelectedItemPosition() == 3){
                 cont++;
             }
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * cont) /5;
             fina = (10 * fin) / 100;
             btnsumbit.setEnabled(false);

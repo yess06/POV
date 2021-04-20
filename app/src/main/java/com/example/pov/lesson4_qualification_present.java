@@ -61,7 +61,7 @@ public class lesson4_qualification_present extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "4");
             object.put("time_id", "2");
-            object.put("qualification", valid.getString("qualifi", "null"));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -117,7 +117,8 @@ public class lesson4_qualification_present extends AppCompatActivity {
                     btnsumbit.setVisibility(View.VISIBLE);
                     try {
                         progressDialog2.hide();
-                        double qualification = 0;
+                        double qualification;
+                        qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -125,11 +126,7 @@ public class lesson4_qualification_present extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("4")) {
                                     if (u.getString("time_id").equals("2")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score: " + qualification);
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
                                     }
                                 }
                             }

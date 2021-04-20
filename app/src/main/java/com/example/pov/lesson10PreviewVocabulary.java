@@ -29,6 +29,7 @@ import java.util.Map;
 public class lesson10PreviewVocabulary extends AppCompatActivity {
     String id, token;
     Button btnsubmit;
+    double fin,fina;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5;
     @Override
@@ -83,7 +84,9 @@ public class lesson10PreviewVocabulary extends AppCompatActivity {
             if (exercise5.getSelectedItemPosition() == 3){
                 cont++;
             }
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * cont) /5;
             fina = (10 * fin) / 100;
             btnsubmit.setEnabled(false);

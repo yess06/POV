@@ -57,9 +57,8 @@ public class qualificationlistenandread extends AppCompatActivity {
     }
     public void qualifitime(){
         btnquali.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+        final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -68,7 +67,7 @@ public class qualificationlistenandread extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "1");
             object.put("time_id", "4");
-            object.put("qualification", String.valueOf(valid.getInt("qualifi", 0)));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -123,7 +122,8 @@ public class qualificationlistenandread extends AppCompatActivity {
                     btntry.setVisibility(View.INVISIBLE);
                     try {
                         progressDialog2.hide();
-                        int qualification = 0;
+                        int qualification;
+                        qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -131,11 +131,7 @@ public class qualificationlistenandread extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("1")) {
                                     if (u.getString("time_id").equals("4")) {
                                         qualification = qualification + Integer.parseInt(u.getString("qualification"));
-                                        score.setText("Score: " + qualification);
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
                                     }
                                 }
                             }

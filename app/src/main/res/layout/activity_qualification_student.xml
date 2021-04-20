@@ -23,6 +23,7 @@
             android:id="@+id/txtquall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:textSize="24sp" />
 
     </LinearLayout>
@@ -43,7 +44,8 @@
             android:id="@+id/txtnamequali"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -62,7 +64,8 @@
             android:id="@+id/txtemailqual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +84,8 @@
             android:id="@+id/txtqualqual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
 </LinearLayout>

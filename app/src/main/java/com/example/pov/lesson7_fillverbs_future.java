@@ -29,6 +29,7 @@ import java.util.Map;
 public class lesson7_fillverbs_future extends AppCompatActivity {
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10,exercise11,exercise12,exercise13;
     String id, token;
+    double fin,fina;
     ProgressDialog progressDialog;
     Button btnsubmit;
     @Override
@@ -152,7 +153,9 @@ public class lesson7_fillverbs_future extends AppCompatActivity {
                 conta++;
             }
 
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /13;
             fina = (15 * fin) / 100;
             btnsubmit.setEnabled(false);

@@ -24,7 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Armando"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -63,7 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="armando@gmail.com"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +86,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="80"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
     </LinearLayout>
 
 </LinearLayout>

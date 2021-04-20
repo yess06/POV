@@ -28,6 +28,7 @@ import java.util.Map;
 
 public class lesson9AnswerQuestionPastt extends AppCompatActivity {
     String id, token;
+    double fin,fina;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     Button submit;
@@ -132,7 +133,9 @@ public class lesson9AnswerQuestionPastt extends AppCompatActivity {
             if (exercise10.getSelectedItemPosition() == 2){
                 conta++;
             }
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /10;
             fina = (10 * fin) / 100;
             submit.setEnabled(false);

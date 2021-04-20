@@ -30,6 +30,7 @@ public class lesson8_fillverbs_present extends AppCompatActivity {
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10,exercise11,exercise12,exercise13;
     Spinner exercise14, exercise15, exercise16;
     ProgressDialog progressDialog;
+    double fin,fina;
     Button btnsubmit;
     String id, token;
     @Override
@@ -177,7 +178,9 @@ public class lesson8_fillverbs_present extends AppCompatActivity {
                 conta++;
             }
 
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /16;
             fina = (15 * fin) / 100;
             btnsubmit.setEnabled(false);

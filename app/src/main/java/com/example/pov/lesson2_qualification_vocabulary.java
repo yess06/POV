@@ -61,7 +61,7 @@ public class lesson2_qualification_vocabulary extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "2");
             object.put("time_id", "2");
-            object.put("qualification", valid.getString("qualifi", "null"));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -116,7 +116,8 @@ public class lesson2_qualification_vocabulary extends AppCompatActivity {
                     btntry.setVisibility(View.INVISIBLE);
                     try {
                         progressDialog2.hide();
-                        double qualification = 0;
+                        double qualification;
+                        qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
@@ -124,11 +125,7 @@ public class lesson2_qualification_vocabulary extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("2")) {
                                     if (u.getString("time_id").equals("2")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score: " + qualification);
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
                                     }
                                 }
                             }

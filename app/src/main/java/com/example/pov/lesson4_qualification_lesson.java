@@ -60,7 +60,7 @@ public class lesson4_qualification_lesson extends AppCompatActivity {
         try {
             object.put("user_id", id);
             object.put("lesson_id", "4");
-            object.put("qualification", valid.getString("qualifi", ""));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -115,18 +115,15 @@ public class lesson4_qualification_lesson extends AppCompatActivity {
                         btntry.setVisibility(View.INVISIBLE);
                         btnsubmit.setVisibility(View.VISIBLE);
                         progressDialog2.hide();
-                        double qualification = 0;
+                        double qualification;
+                        qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
                         for (int i = 0; i <= user.length(); i++) {
                             JSONObject u = user.getJSONObject(i);
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
                                 if (u.getString("lesson_id").equals("4")) {
                                     qualification += Double.parseDouble(u.getString("qualification"));
-                                    score.setText("Score: " + qualification);
-                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                    SharedPreferences.Editor editor = valid.edit();
-                                    editor.putString("qualifi", String.valueOf(qualification));
-                                    editor.commit();
+                                    score.setText(String.valueOf(qualification));
                                 }
 
                             }

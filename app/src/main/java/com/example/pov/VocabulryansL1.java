@@ -31,6 +31,7 @@ public class VocabulryansL1 extends AppCompatActivity {
     Button btnsubmit;
     ProgressDialog progressDialog;
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5;
+    double fin,fina;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +63,7 @@ public class VocabulryansL1 extends AppCompatActivity {
         exercise5.setAdapter(adapter5);
     }
     public void postqualification(View view){
+
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
                 ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0){
             Toast.makeText(this, "it remains to select a question", Toast.LENGTH_SHORT).show();
@@ -83,7 +85,8 @@ public class VocabulryansL1 extends AppCompatActivity {
             if (exercise5.getSelectedItemPosition() == 2){
                 cont++;
             }
-            final double fin,fina;
+            fin = 0;
+            fina = 0;
             fin = (100 * cont) /5;
             fina = (10 * fin) / 100;
             btnsubmit.setEnabled(false);

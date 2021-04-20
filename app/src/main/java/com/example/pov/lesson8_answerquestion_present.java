@@ -30,6 +30,7 @@ public class lesson8_answerquestion_present extends AppCompatActivity {
     Spinner exercise1,exercise2, exercise3, exercise4,exercise5,exercise6,exercise7,exercise8,exercise9,exercise10;
     ProgressDialog progressDialog;
     Button btnsubmit;
+    double fin,fina;
     String id, token;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -125,7 +126,9 @@ public class lesson8_answerquestion_present extends AppCompatActivity {
             if (exercise10.getSelectedItemPosition() == 1){
                 conta++;
             }
-            final double fin,fina;
+
+            fin = 0;
+            fina = 0;
             fin = (100 * conta) /10;
             fina = (15 * fin) / 100;
             btnsubmit.setEnabled(false);
