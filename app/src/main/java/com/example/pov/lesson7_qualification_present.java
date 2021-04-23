@@ -50,7 +50,6 @@ public class lesson7_qualification_present extends AppCompatActivity {
     }
     public void qualifitime(View view){
         btnsumbit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -61,7 +60,7 @@ public class lesson7_qualification_present extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "7");
             object.put("time_id", "2");
-            object.put("qualification", valid.getString("qualifi", "null"));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -125,12 +124,8 @@ public class lesson7_qualification_present extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("7")) {
                                     if (u.getString("time_id").equals("2")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score: " + qualification);
-                                        Toast.makeText(lesson7_qualification_present.this, "Score: " + qualification, Toast.LENGTH_LONG).show();
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
+
                                     }
                                 }
                             }

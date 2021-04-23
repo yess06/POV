@@ -44,7 +44,6 @@ public class fillPresentL1 extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise1.setAdapter(adapter);
 
-
         exercise2 = findViewById(R.id.pstL12);
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.exercise2, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

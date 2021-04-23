@@ -50,7 +50,6 @@ public class lesson3_qualification_present extends AppCompatActivity {
     }
     public void qualifitime(View view){
         btnsumbit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");

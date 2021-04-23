@@ -50,9 +50,8 @@ public class lesson6_qualification_future extends AppCompatActivity {
     }
     public void qualifitime(View view){
         btnsubmit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
-        SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
+        final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
         id = preferences.getString("id", "null");
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
@@ -61,7 +60,7 @@ public class lesson6_qualification_future extends AppCompatActivity {
             object.put("user_id", id);
             object.put("lesson_id", "6");
             object.put("time_id", "4");
-            object.put("qualification", valid.getString("qualifi", "null"));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -112,9 +111,9 @@ public class lesson6_qualification_future extends AppCompatActivity {
                     null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    btnsubmit.setVisibility(View.VISIBLE);
+                    btntry.setVisibility(View.INVISIBLE);
                     try {
-                        btnsubmit.setVisibility(View.VISIBLE);
-                        btntry.setVisibility(View.INVISIBLE);
                         progressDialog2.hide();
                         double qualification = 0;
                         JSONArray user = response.getJSONArray("qualifications");
@@ -124,11 +123,7 @@ public class lesson6_qualification_future extends AppCompatActivity {
                                 if (u.getString("lesson_id").equals("6")) {
                                     if (u.getString("time_id").equals("4")) {
                                         qualification = qualification + Double.parseDouble(u.getString("qualification"));
-                                        score.setText("Score: " + qualification);
-                                        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                        SharedPreferences.Editor editor = valid.edit();
-                                        editor.putString("qualifi", String.valueOf(qualification));
-                                        editor.commit();
+                                        score.setText(String.valueOf(qualification));
                                     }
                                 }
                             }
@@ -143,7 +138,6 @@ public class lesson6_qualification_future extends AppCompatActivity {
                 public void onErrorResponse(VolleyError error) {
                     btnsubmit.setVisibility(View.INVISIBLE);
                     btntry.setVisibility(View.VISIBLE);
-                    progressDialog2.hide();
                     progressDialog2.hide();
                     Toast.makeText(lesson6_qualification_future.this, "Wrong data", Toast.LENGTH_SHORT).show();
                 }

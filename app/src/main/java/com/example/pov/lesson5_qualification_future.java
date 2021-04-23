@@ -50,7 +50,6 @@ public class lesson5_qualification_future extends AppCompatActivity {
     }
     public void qualifitime(View view){
         btnsubmit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");

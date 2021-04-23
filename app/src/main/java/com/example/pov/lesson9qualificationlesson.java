@@ -50,7 +50,6 @@ public class lesson9qualificationlesson extends AppCompatActivity {
     }
     public void qualifilesson(View view){
         btnsubmit.setEnabled(false);
-        SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
         token = preferencess.getString("token", "null");
@@ -60,7 +59,7 @@ public class lesson9qualificationlesson extends AppCompatActivity {
         try {
             object.put("user_id", id);
             object.put("lesson_id", "9");
-            object.put("qualification", valid.getString("qualifi", ""));
+            object.put("qualification", score.getText().toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -122,11 +121,8 @@ public class lesson9qualificationlesson extends AppCompatActivity {
                             if (u.getString("user_id").equals(preferences.getString("id", "null"))){
                                 if (u.getString("lesson_id").equals("9")) {
                                     qualification += Double.parseDouble(u.getString("qualification"));
-                                    score.setText("Score: " + qualification);
-                                    SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
-                                    SharedPreferences.Editor editor = valid.edit();
-                                    editor.putString("qualifi", String.valueOf(qualification));
-                                    editor.commit();
+                                    score.setText(String.valueOf(qualification));
+
                                 }
 
                             }
