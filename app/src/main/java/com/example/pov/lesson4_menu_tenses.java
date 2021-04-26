@@ -40,6 +40,12 @@ public class lesson4_menu_tenses extends AppCompatActivity {
         btnPast = findViewById(R.id.btnlessontwopast);
         btnFuture = findViewById(R.id.btnlessontwofuture);
         btntry.setVisibility(View.INVISIBLE);
+        btntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getbtn();
+            }
+        });
         getbtn();
         SharedPreferences valid = getSharedPreferences("valid", Context.MODE_PRIVATE);
         if (valid.getInt("cont10", 0) == 0){
