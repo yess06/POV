@@ -533,7 +533,7 @@
         <activity
             android:name=".lesson8_menu_tenses"
             android:label="Menu Tenses"
-            android:parentActivityName=".lesson8_menu_tenses"
+            android:parentActivityName=".lessons"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".lesson8_menu_activities_present"
