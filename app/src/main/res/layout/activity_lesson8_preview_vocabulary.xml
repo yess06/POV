@@ -136,10 +136,9 @@
         android:id="@+id/btnlessontwopreviewvocabulary5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E7323D"
-        android:onClick="postqualification"
-        android:text="Ready"
-        android:textColor="#FFFFFF"
         android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="#E7323D"
+        android:text="Ready"
+        android:textColor="#FFFFFF" />
 </LinearLayout>

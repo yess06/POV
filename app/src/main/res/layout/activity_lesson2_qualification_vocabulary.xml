@@ -40,7 +40,6 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginTop="10dp"
         android:backgroundTint="#207A7A"
-        android:onClick="qualifitime"
         android:text="Submit"
         android:textColor="#FFFFFF" />
 

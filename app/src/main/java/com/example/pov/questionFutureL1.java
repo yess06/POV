@@ -38,6 +38,12 @@ public class questionFutureL1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_future_l1);
         btnsubmit = findViewById(R.id.button21);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualification();
+            }
+        });
         exercise1 = findViewById(R.id.questFutureL11);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.QsFutL11, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -89,7 +95,7 @@ public class questionFutureL1 extends AppCompatActivity {
         exercise10.setAdapter(adapter10);
 
     }
-    public void qualification(View view){
+    public void qualification(){
 
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
                 ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0||exercise6.getSelectedItemPosition() == 0

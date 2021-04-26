@@ -38,6 +38,12 @@ public class lesson8_fillverbs_present extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson8_fillverbs_present);
         btnsubmit = findViewById(R.id.button87);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualification();
+            }
+        });
         exercise1 = findViewById(R.id.fillPsL81);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fillpsL81, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -118,7 +124,7 @@ public class lesson8_fillverbs_present extends AppCompatActivity {
         adapter16.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise16.setAdapter(adapter16);
     }
-    public void qualification(View view){
+    public void qualification(){
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
                 ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0||exercise6.getSelectedItemPosition() == 0
                 ||exercise7.getSelectedItemPosition() ==0||exercise8.getSelectedItemPosition() ==0||exercise9.getSelectedItemPosition() == 0

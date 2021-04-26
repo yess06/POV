@@ -50,7 +50,12 @@ public class lesson3_listenread_present extends AppCompatActivity {
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
         btnsubmit = findViewById(R.id.button3);
-
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualification();
+            }
+        });
         mediaPlayer = MediaPlayer.create(this, R.raw.lesson3present);
         runnable = new Runnable() {
             @Override
@@ -139,7 +144,7 @@ public class lesson3_listenread_present extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
 
     }
-    public void qualification(View view){
+    public void qualification(){
         btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);

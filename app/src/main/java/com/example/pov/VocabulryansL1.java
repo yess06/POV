@@ -37,6 +37,12 @@ public class VocabulryansL1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vocabulryans_l1);
         btnsubmit = findViewById(R.id.btnlessontwopreviewvocabulary2);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                postqualification();
+            }
+        });
         exercise1 = findViewById(R.id.qspsL3);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.vocabucont, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -62,7 +68,7 @@ public class VocabulryansL1 extends AppCompatActivity {
         adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         exercise5.setAdapter(adapter5);
     }
-    public void postqualification(View view){
+    public void postqualification(){
 
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
                 ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0){

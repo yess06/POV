@@ -40,6 +40,12 @@ public class lesson2_qualification_lesson extends AppCompatActivity {
         btntry = findViewById(R.id.button86);
         btntry.setVisibility(View.INVISIBLE);
         btnsubmit.setVisibility(View.INVISIBLE);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualifilesson();
+            }
+        });
         btntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +54,7 @@ public class lesson2_qualification_lesson extends AppCompatActivity {
         });
         quallificationlesson();
     }
-    public void qualifilesson(View view){
+    public void qualifilesson(){
         btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);

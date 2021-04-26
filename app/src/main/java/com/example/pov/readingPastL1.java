@@ -50,6 +50,12 @@ public class readingPastL1 extends AppCompatActivity {
         btPlay = findViewById(R.id.btPlay);
         btPause = findViewById(R.id.bt_pause);
         btnsubmit = findViewById(R.id.button14);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualification();
+            }
+        });
         mediaPlayer = MediaPlayer.create(this, R.raw.past);
         runnable = new Runnable() {
             @Override
@@ -133,7 +139,7 @@ public class readingPastL1 extends AppCompatActivity {
                 , TimeUnit.MILLISECONDS.toSeconds(duration)-
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
-    public void qualification(View view){
+    public void qualification(){
         btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);

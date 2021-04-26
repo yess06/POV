@@ -145,7 +145,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="#E7323D"
-        android:onClick="postqualification"
         android:text="Ready"
         android:textColor="#FFFFFF" />
 </LinearLayout>

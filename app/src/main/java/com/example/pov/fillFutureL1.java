@@ -38,6 +38,12 @@ public class fillFutureL1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fill_future_l1);
         btnsubmit = findViewById(R.id.button6);
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualification();
+            }
+        });
 
         exercise1 = findViewById(R.id.fillFutL11);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fillFut1, android.R.layout.simple_spinner_item);
@@ -136,7 +142,7 @@ public class fillFutureL1 extends AppCompatActivity {
 
 
     }
-    public void qualification(View view){
+    public void qualification(){
         if(exercise1.getSelectedItemPosition() ==0||exercise2.getSelectedItemPosition() ==0||exercise3.getSelectedItemPosition() ==0
         ||exercise4.getSelectedItemPosition() ==0||exercise5.getSelectedItemPosition() ==0||exercise6.getSelectedItemPosition() == 0
                 ||exercise7.getSelectedItemPosition() ==0||exercise8.getSelectedItemPosition() ==0||exercise9.getSelectedItemPosition() == 0

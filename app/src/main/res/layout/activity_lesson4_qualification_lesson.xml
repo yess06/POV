@@ -54,12 +54,11 @@
         android:id="@+id/btnlessontwoactivities"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#207A7A"
-        android:onClick="qualifilesson"
-        android:text="submit"
-        android:textColor="#FFFFFF"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#207A7A"
+        android:text="submit"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button106"

@@ -164,7 +164,6 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
                 android:background="#E7323D"
-                android:onClick="qualification"
                 android:text="Check Score"
                 android:textColor="#FFFFFF" />
         </LinearLayout>

@@ -41,6 +41,12 @@ public class qualificationfuturelesson1 extends AppCompatActivity {
         btnsubmit.setVisibility(View.INVISIBLE);
         btntry.setVisibility(View.INVISIBLE);
         quallificationtime();
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                qualifitime();
+            }
+        });
         btntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +54,7 @@ public class qualificationfuturelesson1 extends AppCompatActivity {
             }
         });
     }
-    public void qualifitime(View view){
+    public void qualifitime(){
         btnsubmit.setEnabled(false);
         SharedPreferences preferencess = getSharedPreferences("credentials", Context.MODE_PRIVATE);
         final SharedPreferences preferences = getSharedPreferences("info", Context.MODE_PRIVATE);
